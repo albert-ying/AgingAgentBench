@@ -19,9 +19,10 @@ Attribution, source revision, and modifications are documented in
 license overrides CC BY 4.0 for those derivatives.
 
 `data/expert/mouse_rna_groups.jsonl` contains factual group definitions and
-GSM lists derived from the public Tyshkovskiy et al. annotation. Its source
-does not state a data license in the cached metadata. The compilation
-license does not assert a license for the underlying annotation; clarify
-those terms for redistribution. The original annotation workbook is not
-distributed. The separately generated benchmark calls and parsed reference
+GSM lists derived from Tyshkovskiy et al., Nature 2026, DOI
+10.1038/s41586-026-10542-3, Zenodo record 18763485. The record states a license
+for clock models and software and none for the annotation. The repository
+ships these derived rules and lists with attribution and does not redistribute
+the original workbook. The compilation license does not relicense the source
+annotation. The separately generated benchmark calls and parsed reference
 predictions are included in the CC BY 4.0 compilation.

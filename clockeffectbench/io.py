@@ -15,9 +15,20 @@ def resource(folder, name):
 def read_rows(path):
     path = Path(path)
     try:
-        with path.open(encoding="utf-8", newline="") as handle:
+        with path.open(encoding="utf-8-sig", newline="") as handle:
             if path.suffix.lower() == ".csv":
-                return list(csv.DictReader(handle))
+                rows = list(csv.DictReader(handle))
+                # The published CSV stores nested fields as JSON. Prediction
+                # effect columns remain numeric scalars.
+                for row in rows:
+                    for key in ("source", "effect", "eligibility", "case_gsms", "control_gsms", "covariates"):
+                        value = row.get(key)
+                        if value and value.lstrip().startswith(("{", "[")):
+                            row[key] = json.loads(value)
+                    if "significant" in row:
+                        row["significant"] = {"True": True, "False": False, "": None}.get(
+                            row["significant"], row["significant"])
+                return rows
             if path.suffix.lower() == ".jsonl":
                 return [json.loads(line) for line in handle if line.strip()]
         raise ValueError("Input must be a CSV or JSONL file")

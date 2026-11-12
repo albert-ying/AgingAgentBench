@@ -1,6 +1,6 @@
 """Export parsed benchmark predictions without copying responses or execution logs.
 
-Run with --source-root pointing to the read-only ClockBase revision directory.
+Run with --source-root pointing to the ClockBase records deposit.
 Only selected numeric outputs and call metadata are written.
 """
 from __future__ import annotations
@@ -90,11 +90,13 @@ def write_csv(path, rows, fields=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-root", type=Path, required=True)
+    parser.add_argument("--results-root", type=Path, required=True,
+                        help="Records deposit directory containing published_released_test.csv.")
     parser.add_argument("--out", type=Path, default=Path("reference_results"))
     args = parser.parse_args()
     base = args.source_root
     bench = base / "data/clockbase-benchmark-2026-10-05"
-    results = base / "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/results_2026_11_12"
+    results = args.results_root.resolve()
     out = args.out
     out.mkdir(parents=True, exist_ok=True)
     final = {r["id"] for r in load_lines(bench / "ground_truth_t1_v2_final_2026-10-05.jsonl")}
@@ -161,6 +163,11 @@ def main():
             result.update(mean_diff=mean, p=p, significant=None, direction="higher" if mean > 0 else "lower" if mean < 0 else "none")
         guarded_results[r["id"]] = result
     exports["clockbase_paper_groups_guarded"] = [p for r in records if (p := prediction(r, guarded_results[r["id"]], "S3g"))]
+    for pred in exports["clockbase_paper_groups_guarded"]:
+        source_record = by_id[pred["record_id"]]
+        # Only the age and age-acceleration measures have estimates in years.
+        if source_record["modality"] == "human DNAm" and source_record["measure"] in ("age", "acceleration_difference", "acceleration_residual"):
+            pred["effect_unit"] = "years"
     effect_pairs = []
     for r in records:
         effect = r.get("effect") or {}
@@ -212,10 +219,17 @@ def main():
         rid = f"expert|{r['unit_id']}|{r['variant']}|{r['clock']}|{r['row_ordinal']}"
         stats = r.get("stats") or {}
         ref = stats.get("expert_design")
+        method = r["expert_design_method"]
+        test = {"Welch t-test (released)": "WELCH",
+                "Welch t-test on subject means": "WELCH_UNIT_MEANS",
+                "paired t-test on subject means": "PAIRED",
+                "least squares on arm and age": "AGE_ADJUSTED",
+                "least squares on arm and age, subject means": "AGE_ADJUSTED_UNIT_MEANS"}[method]
         expert_truth.append({"record_id": rid, "paper_id": r["gse"], "gse": r["gse"], "set": r["set"], "clock": r["clock"],
                              "published_call": CALLS[r["expert_design_call"]], "direction": "higher" if ref and ref[0] > 0 else "lower" if ref and ref[0] < 0 else "none",
                              "p_value": ref[1] if ref else None, "effect": ref[0] if ref else None,
-                             "released": r.get("released", False), "label_unconfirmed": r.get("label_unconfirmed"), "final_class": r.get("final_class")})
+                             "released": r.get("released", False), "label_unconfirmed": r.get("label_unconfirmed"), "final_class": r.get("final_class"),
+                             "test": test, "method": method})
         for stage in expert_out:
             if stage != "agent" and not r.get("released"):
                 continue
@@ -226,18 +240,19 @@ def main():
                     "p_value": pair[1], "effect": pair[0], "paper_id": r["gse"], "source_system": stage,
                     "method": r.get(stage + "_method"), "row_ordinal": r["row_ordinal"]}
             expert_out[stage].append(pred)
-    write_csv(out / "expert_truth.csv", expert_truth, ["record_id", "paper_id", "gse", "set", "clock", "published_call", "direction", "p_value", "effect", "released", "label_unconfirmed", "final_class"])
+    write_csv(out / "expert_truth.csv", expert_truth, ["record_id", "paper_id", "gse", "set", "clock", "published_call", "direction", "p_value", "effect", "released", "label_unconfirmed", "final_class", "test", "method"])
     for stage, rows in expert_out.items():
         exports["expert_" + stage] = rows
     for name, rows in exports.items():
-        write_csv(out / (name + ".csv"), rows)
+        write_csv(out / (name + ".csv"), rows,
+                  FIELDS + ["effect_unit"] if name == "clockbase_paper_groups_guarded" else None)
     (out / "cohorts.json").write_text(json.dumps(cohorts, indent=2) + "\n")
     sources = [bench / "ground_truth_t1_v2_final_2026-10-05.jsonl", results / "published_released_test.csv", results / "auroc.json"]
     sources.extend(bench / "runs" / name / "records.jsonl" for name in ("t1-openai-002-s4", "t1new-openai-001-s4"))
     sources.extend(bench / "agentbench" / folder / "records.jsonl" for _, folder in frameworks)
     sources.extend(bench / "groupbench/design-checks/final-2026-11-12" / modality / "rows.jsonl" for modality in ("dnam", "hs_rna", "mm_rna"))
     sources.append(bench / "groupbench/design-checks/final-2026-11-12/a_result_stages.jsonl")
-    notes = {"export_date": "2026-11-12", "inputs": [{"path": str(p.relative_to(base)), "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size, "mtime_ns": p.stat().st_mtime_ns} for p in sources],
+    notes = {"export_date": "2026-11-12", "inputs": [{"path": ("records deposit/benchmark/results/" + str(p.relative_to(results)) if p.is_relative_to(results) else "records deposit/" + str(p.relative_to(base))), "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size, "mtime_ns": p.stat().st_mtime_ns} for p in sources],
              "files": {name + ".csv": {"records": len(rows), "calls": dict(Counter(r["call"] for r in rows))} for name, rows in exports.items()},
              "cohorts": {k: len(v) for k, v in cohorts.items()},
              "bootstrap": {"balanced_accuracy": {"replicates": 1000, "seed": 20261005, "unit": "paper"}, "direction_auroc_and_effect": {"replicates": 2000, "seed": 20261009, "unit": "paper"}},

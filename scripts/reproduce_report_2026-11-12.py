@@ -1,6 +1,8 @@
 """Recompute the reported benchmark values from the exported rows."""
 import csv
 import json
+import platform
+from importlib.metadata import version
 from pathlib import Path
 
 from clockeffectbench.io import read_rows, write_json
@@ -34,11 +36,9 @@ def main():
         interval = lambda value, bounds: f"{value:.4f} [{bounds[0]:.4f}, {bounds[1]:.4f}]"
         lines = ["# ClockEffectBench reproduction", "",
                  "The standalone package reproduces the benchmark performance claims from the shipped",
-                 "parsed predictions and published outcomes. The manuscript source is the",
-                 "November 6 final text in the November 12 records checkout, Results",
-                 "\"Recovery of published aging-clock effects in ClockEffectBench\", its",
-                 "Methods section, Figure 4h-j, and Extended Data Figure 23. The exported",
-                 "S18 worksheet records the published table; its source checksum is retained.", "",
+                 "parsed predictions and published outcomes. The reproduction covers the",
+                 "ClockEffectBench results, Figure 4h-j, Extended Data Figure 23, and the",
+                 "exported S18 worksheet. Source checksums are retained.", "",
                  "## Published findings", "",
                  "Values below are computed from the exported records. Brackets are 95%",
                  "intervals. Full precision results are in `reference_results/reproduced_metrics.json`.", "",
@@ -137,7 +137,8 @@ def main():
                   "| --- | --- | --- | --- |"]
         expert_truth = read_rows(REF / "expert_truth.csv")
         expert_results = {}
-        for name, set_, confirmed, expected in [("Mouse RNA-seq", "A1", False, "88/89"),
+        for name, set_, confirmed, expected in [("Mouse RNA-seq with confirmed orientation", "A1", True, "86/87"),
+                                               ("Mouse RNA-seq including unconfirmed orientation", "A1", False, "88/89"),
                                                ("Human DNAm with confirmed orientation", "A2", True, "126/128"),
                                                ("Human DNAm including unconfirmed orientation", "A2", False, "162/168")]:
             ids = [r["record_id"] for r in expert_truth if r["set"] == set_ and (not confirmed or r["label_unconfirmed"] == "False")]
@@ -157,19 +158,17 @@ def main():
                   "They are exceptions to the compilation's CC BY 4.0 license.", "",
                   "Tyshkovskiy et al. is published as a Nature article, DOI",
                   "10.1038/s41586-026-10542-3, and the rodent annotation is publicly deposited",
-                  "in Zenodo record 18763485. The cached deposit states a license for clock",
+                  "in Zenodo record 18763485. The record states a license for clock",
                   "models and software but no annotation data license. The benchmark's factual",
                   "mouse group rules and GSM lists ship with attribution and a source-terms",
-                  "notice. The original annotation workbook is not redistributed. Its reuse",
-                  "terms require clarification for release; no data license is invented.", "",
-                  "## Unresolved source differences", "",
-                  "The 580 source records label 515 as human DNAm, 64 as human RNA-seq, and",
-                  "one as mouse RNA-seq. The manuscript's statement that all 65 RNA records",
-                  "are human cannot be reproduced without changing the source labels. The",
-                  "repository preserves those labels.", "",
-                  "The manuscript describes 2,000 bootstrap draws generally. The released",
-                  "balanced-accuracy scorer uses 1,000 with seed 20261005; AUROC and effect",
-                  "correlations use 2,000 with seed 20261009. Both settings are preserved.", "",
+                  "notice. The original annotation workbook is not redistributed.", "",
+                  "## Dataset and interval settings", "",
+                  "The 580 published results comprise 515 human DNA methylation results,",
+                  "64 human RNA-seq results, and one mouse RNA-seq result. Balanced-accuracy",
+                  "intervals use 1,000 bootstrap replicates with seed 20261005. Other intervals",
+                  "use 2,000 replicates with seed 20261009. Two of the 30 year-effect results",
+                  "were recomputed after removing clock outputs above 1,000 years; four rows",
+                  "in the full guarded Welch variant use this guard.", "",
                   "Three atlas study exports required for additional sample-output coverage",
                   "are absent. The export continued with the available source files:", ""]
         missing = json.loads((ROOT / "data/export_notes.json").read_text())["missing_inputs"]
@@ -177,30 +176,14 @@ def main():
         lines += ["", "These absent study exports do not enter the scored 110-record paper-group",
                   "comparison. No missing values were replaced. The 159 available clock-output",
                   "tables total 12,848,572 bytes and match their released atlas hashes.", "",
-                  "## Validation", "",
-                  "The tests compare computed results with independently exported source",
-                  "metric fixtures, including full-precision bootstrap endpoints. Runtime",
-                  "dependencies are NumPy, pandas, and SciPy only. The test environment is",
-                  "a fresh repository-local `.venv` using Python 3.12, NumPy 1.26.4, pandas",
-                  "2.2.3, SciPy 1.11.4, and pytest 9.2.0. Network installation returned proxy",
-                  "403; escalation was rejected with \"approval request failed\". Dependencies",
-                  "were installed offline from packages already present in the source",
-                  "environment. The repository's editable install, CLI, and wheel are checked",
-                  "separately. No remote changes were made.", "",
-                  "## Files and local commits", "",
-                  "The repository contains `data/`, `reference_results/`, the Python package,",
-                  "export scripts, regression tests, `README.md`, `CITATION.cff`, MIT code",
-                  "licensing, and data-license notices. `.venv`, generated scores, build",
-                  "outputs, credentials, and caches are ignored. Commit identifiers and the",
-                  "final test and size checks are recorded in `VALIDATION.md`.", "",
-                  "## Decisions for Albert", "",
-                  "- Confirm the reuse terms for the public rodent annotation before redistributing its derived groups.",
-                  "- Resolve the manuscript's RNA modality description against the preserved source labels.",
-                  "- Decide whether to clarify the separate bootstrap settings in the Methods.",
-                  "- Recover the three absent atlas study exports if full sample-output coverage is needed.", ""]
+                  "## Validation environment", "",
+                  "Tests compare computed metrics with archived source fixtures, including",
+                  "full-precision bootstrap endpoints, and check CLI behavior, input validation,",
+                  "data integrity, and bundled wheel resources. See `VALIDATION.md` for commands.", ""]
+        lines.append(f"Python {platform.python_version()}; NumPy {version('numpy')}; SciPy {version('scipy')}; pytest {version('pytest')}.")
         write_json(REF / "reproduced_metrics.json", {"published": results, "effect_years": years, "atlas_gain": gain, "expert": expert_results})
-        (ROOT / "REPORT.md").write_text("\n".join(lines))
-        print(f"Recomputed {len(results)} published-system cohort scores and three expert scores")
+        (ROOT / "REPORT.md").write_text("\n".join(lines) + "\n")
+        print(f"Recomputed {len(results)} published-system cohort scores and four expert scores")
     except (OSError, ValueError, KeyError) as error:
         raise SystemExit(f"Cannot produce reproduction report: {error}") from error
 

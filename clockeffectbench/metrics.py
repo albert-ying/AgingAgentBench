@@ -156,6 +156,8 @@ def score_predictions(predictions, ground_truth, record_ids=None):
             raise ValueError(f"Invalid direction for {key}")
         if call is None and direction is None:
             raise ValueError(f"A call or direction is required for {key}")
+        if p is not None and call == "not significant" and direction is None:
+            raise ValueError(f"A direction or signed effect is required with a P value for a nonsignificant call for {key}")
         if call in ("higher", "lower") and direction != call:
             raise ValueError(f"Call contradicts direction for {key}")
         if effect is not None and effect != 0 and direction in ("higher", "lower") and (effect > 0) != (direction == "higher"):
@@ -176,7 +178,7 @@ def score_predictions(predictions, ground_truth, record_ids=None):
         if call is not None:
             items.append(item)
         z = signed_z(direction, p)
-        if z is not None and call is not None:
+        if z is not None:
             findings.append(dict(item, z=z))
     significant = [i for i in items if i["truth"] != "not significant"]
     directed = directions
@@ -202,6 +204,7 @@ def score_predictions(predictions, ground_truth, record_ids=None):
         "balanced_accuracy_interval": bootstrap(bootstrap_cohort, balanced, 1000, 20261005),
         "published_significant": len(significant),
         "direction_agreement": [sum(i["direction"] == i["truth"] for i in directed), len(directed)],
+        "direction_significant_records_expected": sum(truth_call(truth[key]) in ("higher", "lower") for key in selected),
         "significant_in_published_direction": [sum(i["call"] == i["truth"] for i in significant), len(significant)],
         "significant_opposite": [sum(i["call"] != i["truth"] for i in both), len(significant)],
         "same_direction_both_significant": [sum(i["call"] == i["truth"] for i in both), len(both)],

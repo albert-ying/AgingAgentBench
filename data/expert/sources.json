@@ -57,7 +57,7 @@
     "publication_doi": "10.1038/s41586-026-10542-3",
     "publication_status": "published",
     "annotation_url": "https://zenodo.org/records/18763485/files/Data_annotation_absolute_rodents.xlsx",
-    "license_status": "Cached public deposit does not state a data license; factual benchmark group definitions are included with provenance; original annotation workbook is not redistributed."
+    "license_status": "Zenodo record 18763485 states a license for clock models and software and none for the annotation; derived group rules and sample lists ship with attribution to Tyshkovskiy et al., Nature 2026, DOI 10.1038/s41586-026-10542-3; original workbook not redistributed."
   },
   "human_annotation": {
     "publication_doi": "10.1101/2024.06.06.597715",

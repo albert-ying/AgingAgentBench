@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 from .io import read_rows, resource, write_json
-from .metrics import score_effects, score_predictions
+from .metrics import effect_pair, paper_key, score_effects, score_predictions
 from .prompts import build_prompt
 
 
@@ -27,27 +27,36 @@ def run_score(args):
             raise ValueError("Expert scores use --expert-set rather than published cohorts")
         subset = truth
         if args.expert_set != "all":
-            wanted = "A1" if args.expert_set == "mouse" else "A2"
+            wanted = "A1" if args.expert_set.startswith("mouse") else "A2"
             subset = [r for r in subset if r["set"] == wanted]
-        if args.expert_set == "human-confirmed":
+        if args.expert_set.endswith("-confirmed"):
             subset = [r for r in subset if r["label_unconfirmed"] == "False"]
         ids = [r["record_id"] for r in subset]
-    result = score_predictions(read_rows(args.predictions), truth, ids)
+    predictions = read_rows(args.predictions)
+    result = score_predictions(predictions, truth, ids)
     if args.effects:
         if args.expert:
             raise ValueError("Published year effects are unavailable for the expert task")
         indexed = {r["record_id"]: r for r in truth}
-        pairs = read_rows(args.effects)
-        for pair in pairs:
-            if pair["record_id"] not in indexed:
-                raise ValueError(f"Unknown effect record_id: {pair['record_id']}")
-            source = indexed[pair["record_id"]]
-            published = (source.get("effect") or {}).get("value")
-            if published is None or float(pair["published_effect"]) != float(published):
-                raise ValueError(f"Effect reference differs from ground truth for {pair['record_id']}")
-            pair["paper_id"] = source["paper_id"]
+        selection = read_rows(args.effects)
+        effect_ids = [r.get("record_id") for r in selection]
+        if len(effect_ids) != len(set(effect_ids)):
+            raise ValueError("Duplicate effect record_id in selection file")
+        for key in effect_ids:
+            if key not in indexed:
+                raise ValueError(f"Unknown effect record_id: {key}")
+        chosen = set(effect_ids)
+        pairs = []
+        for prediction in predictions:
+            key = prediction.get("record_id", prediction.get("id"))
+            if key in chosen:
+                pair = effect_pair(indexed[key], prediction)
+                if pair is not None:
+                    pairs.append({"record_id": key, "paper_id": paper_key(indexed[key]),
+                                  "published_effect": pair[0], "effect": pair[1], "unit": "years"})
         result["effect_years"] = score_effects(pairs)
-        result["effect_cohort"] = "Independent year-effect cohort; not restricted to the call cohort"
+        result["effect_cohort"] = {"selected": len(chosen), "source": "predictions",
+                                   "restriction": "Independent of the call cohort"}
     output = args.output or Path("scores") / (args.predictions.stem + "_" + (args.expert_set if args.expert else args.cohort) + ".json")
     write_json(output, result)
     print(json.dumps(result, indent=2, allow_nan=False))
@@ -66,7 +75,7 @@ def run_prompt(args):
         return
     prompts = {r["record_id"]: r for r in read_rows(resource("data", "prompts.jsonl"))}
     if args.record_id not in prompts:
-        raise ValueError(f"No frozen prompt for {args.record_id}; provide --study FILE with GEO title, summary, overall_design and n_samples")
+        raise ValueError(f"No frozen prompt for {args.record_id}; neutral prompts are shipped for 324 records only. The builder supports the 16 clocks in CLOCKS and four measures and can reject unsupported or revealing inputs.")
     print(prompts[args.record_id]["prompt"])
 
 
@@ -78,9 +87,9 @@ def main(argv=None):
     score.add_argument("--cohort", default="all", help="all, main110, atlas_shared93, or an agent cohort")
     score.add_argument("--ground-truth", type=Path, help="Optional ground truth CSV or JSONL")
     score.add_argument("--output", type=Path, help="Defaults to scores/PREDICTIONS_COHORT.json")
-    score.add_argument("--effects", type=Path, help="Separate published-effect pairs in years")
+    score.add_argument("--effects", type=Path, help="Select year-effect record_ids; estimates and units come from --predictions")
     score.add_argument("--expert", action="store_true", help="Use the frozen expert-group call reference")
-    score.add_argument("--expert-set", choices=("all", "mouse", "human", "human-confirmed"), default="all")
+    score.add_argument("--expert-set", choices=("all", "mouse", "mouse-confirmed", "human", "human-confirmed"), default="all")
     score.set_defaults(run=run_score)
     prompt = commands.add_parser("prompt", help="Print a neutral language-model input without API calls")
     prompt.add_argument("record_id", nargs="?", help="Defaults to the first main110 record")

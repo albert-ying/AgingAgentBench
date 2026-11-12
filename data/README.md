@@ -3,14 +3,18 @@
 `published.jsonl` and `published.csv` contain the same 580 published contrasts
 from 93 papers for 125 GEO series. One row is one paper, clock, measure, and
 group comparison. The source labels 515 records as human DNA methylation,
-64 as human RNA-seq, and one as mouse RNA-seq. The manuscript's combined
-description of 65 human RNA-seq records differs from these source labels.
+64 as human RNA-seq, and one as mouse RNA-seq.
 
 The paper's results are the reference outcomes. ClockBase's sample assignments
 and predictions are evaluated against those outcomes. Assigned samples can
 differ from a paper's reported group sizes because a deposit contains a
 different subset or the available metadata do not identify every participant.
 An empty assigned sample list means that no agreed assignment was retained.
+
+`tasks.jsonl` contains the same 580 identifiers with only series, modality,
+clock, measure, group labels and definitions, assigned GSM lists, and threshold.
+It excludes published outcomes, effects, P values, and source quotations.
+Provide this file to an evaluated system and keep the outcome files separate.
 
 ## Record fields
 
@@ -62,13 +66,16 @@ work records are omitted.
 ## Provenance
 
 `export_notes.json` records source file names, byte counts, SHA256 hashes,
-modification timestamps, missing inputs, and export choices. All source paths
-are relative to the original records checkout. It contains no agent responses
+modification timestamps, missing inputs, and export choices. Source paths
+use neutral records-deposit labels. It contains no agent responses
 or execution traces. `scripts/export_data_2026-11-12.py` recreates this export
-from a local copy of the records and benchmark code; it makes no API calls.
+from the records deposit and its benchmark code; it makes no API calls.
+`--source-root` contains the deposit's `data/` directory. `--results-root`
+contains `published_released_test.csv` and the other benchmark result files.
 
 ```sh
-python scripts/export_data_2026-11-12.py --source-root CLOCKBASE_RECORDS_FOLDER
+python scripts/export_data_2026-11-12.py --source-root RECORDS_DEPOSIT \
+  --results-root BENCHMARK_RESULTS_FOLDER
 ```
 
 The data compilation is licensed under CC BY 4.0, except the ComputAgeBench

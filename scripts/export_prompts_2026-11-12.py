@@ -4,6 +4,8 @@ import hashlib
 import json
 from pathlib import Path
 
+from clockeffectbench.prompts import redact_emails
+
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
@@ -28,16 +30,20 @@ def main():
                 if not keys:
                     continue
                 prompt = next(m["content"] for m in request["request"]["messages"] if m["role"] == "user")
+                cleaned = redact_emails(prompt)
+                flags = list(request.get("prompt_flags", []))
+                if cleaned != prompt:
+                    flags.append("geo_email_redacted")
                 for key in sorted(keys):
-                    unique[key] = {"record_id": key, "prompt": prompt, "flags": request.get("prompt_flags", [])}
-            provenance.append({"source": f"runs/{name}/requests.jsonl",
+                    unique[key] = {"record_id": key, "prompt": cleaned, "flags": flags}
+            provenance.append({"source": f"records deposit/benchmark/runs/{name}/requests.jsonl",
                                "sha256": hashlib.sha256((folder / "requests.jsonl").read_bytes()).hexdigest(),
                                "mtime_ns": (folder / "requests.jsonl").stat().st_mtime_ns})
         args.out.parent.mkdir(parents=True, exist_ok=True)
         args.out.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in unique.values()))
         manifest = {"records": len(unique), "inputs": provenance,
                     "selection": "Round 002 takes precedence over round 001 for a repeated record.",
-                    "content": "Only user input prompts and blinding flags; no model responses."}
+                    "content": "User input prompts and blinding flags; third-party email addresses replaced by [email removed]."}
         args.out.with_name("prompts_provenance.json").write_text(json.dumps(manifest, indent=2) + "\n")
         print(f"Exported {len(unique)} frozen input prompts")
     except FileNotFoundError as error:

@@ -37,6 +37,13 @@ RESULT_WORDS = re.compile(
     r'\b(?:slower|faster|progeria|premature ag[ei]ng|no (?:association|effect|change))\b|'
     r'\b(?:p|p[- ]value|fdr)\s*(?:[<>=≤≥]|of\s+\d)', re.I)
 
+EMAIL = re.compile(r"[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}", re.I)
+
+
+def redact_emails(text):
+    return EMAIL.sub("[email removed]", text)
+
+
 TASK = """Predict the case group relative to the control group for the specified clock measure in this series.
 Use the study description and your prior knowledge only. Do not access sample data, tools or external sources.
 Predict higher, lower, or none (no difference), and whether the difference would be significant at P < 0.05.
@@ -135,7 +142,11 @@ def build_prompt(record, study):
     flags = []
     metadata = {}
     for key in ('title', 'summary', 'overall_design'):
-        metadata[key], redacted = _blind_text(study.get(key) or '', record)
+        raw = study.get(key) or ''
+        cleaned = redact_emails(raw)
+        if cleaned != raw:
+            flags.append("geo_email_redacted")
+        metadata[key], redacted = _blind_text(cleaned, record)
         if redacted:
             flags.append(f'geo_{key}_redacted')
     name, description = clock_description(record)

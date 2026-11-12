@@ -58,8 +58,37 @@ Its schema follows the human group file. The original annotation workbook
 and its full sample fields are not redistributed. Obtain that workbook from
 the linked deposit to inspect or reconstruct the annotation-based rules.
 
-The cached deposit does not specify a data license for the annotation.
-Its description states an MGB Open Access License for the transcriptomic
-clock models and package. This repository does not apply that software
-license to the data or assert that the underlying annotation is CC BY 4.0.
-The source terms remain an open release decision, recorded with each group.
+Zenodo record 18763485 states an MGB Open Access License for the clock models
+and software and none for the annotation. The repository ships derived group
+rules and sample lists with attribution and does not redistribute the original
+workbook. The software license does not specify terms for the annotation.
+
+## Test selection
+
+`reference_results/expert_truth.csv` records the source `method` and a
+normalized `test` for every result. Estimates compare the case arm with the
+control arm; calls use two-sided P < 0.05. The frozen reference selects tests
+in this order:
+
+1. Subject identities must cover at least 80% of the selected samples for
+   subject findings to be assessed. A sample without a subject identifier is
+   treated as its own unit. If at least two subjects occur in both
+   arms and constitute at least half of all subjects, use `PAIRED`, a paired
+   t-test on subject means for the shared subjects. At least three pairs
+   are required. Pairing takes precedence over age adjustment.
+2. For human comparisons with ages recorded for at least 80% of each arm, use `AGE_ADJUSTED`, ordinary least
+   squares on an intercept, arm indicator, and age. DunedinPACE and contrasts
+   whose declared factor is age group are exempt. Average repeated samples
+   within subject and arm first; this is `AGE_ADJUSTED_UNIT_MEANS` when used.
+   Age adjustment requires at least two ages per arm, five observations,
+   overlapping arm age ranges, a full-rank design, and estimable uncertainty.
+   If adjustment is not estimable, retain Welch testing, using subject means
+   when repeated subjects are present.
+3. When subjects repeat within an arm but pairing and usable age adjustment
+   do not apply, use `WELCH_UNIT_MEANS`, a Welch t-test on subject means.
+   Otherwise use `WELCH`, a two-sided Welch t-test on sample outputs.
+
+A failed paired fit or insufficient independent units produces no inferential
+reference call. The frozen truth contains only rows with a computable call.
+The method columns record the selected reference test, independently of the
+candidate system's test.

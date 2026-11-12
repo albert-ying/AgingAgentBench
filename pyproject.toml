@@ -8,9 +8,9 @@ version = "0.1.0"
 description = "Score analysis systems against published aging-clock effects"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = {text = "MIT AND CC-BY-4.0 AND CC-BY-SA-4.0"}
 authors = [{name = "Kejun Albert Ying"}]
-dependencies = ["numpy>=1.24", "pandas>=2.0", "scipy>=1.10"]
+dependencies = ["numpy>=1.24", "scipy>=1.10"]
 
 [project.optional-dependencies]
 test = ["pytest>=8"]

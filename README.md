@@ -15,17 +15,16 @@ human DNA methylation series with scored results.
 
 ## Quick start
 
-Use Python 3.10 or later. Installation requires only NumPy, pandas, and SciPy
+Use Python 3.10 or later. Installation requires only NumPy and SciPy
 at runtime. All scoring runs locally without API calls.
 
 ```sh
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
 clockeffectbench score \
   --predictions reference_results/clockbase_paper_groups.csv \
-  --cohort main110 \
-  --effects reference_results/effect_pairs_years.csv
+  --cohort main110
 pytest -q
 ```
 
@@ -36,29 +35,40 @@ and 51/58 null results, with balanced accuracy 0.7792 and a 95% interval of
 0.6788 to 0.8641. Direction AUROC is 0.9965, with an interval of 0.9810 to
 1.0000. The paper rounds these to 0.78 and 1.00.
 
-The optional `--effects` file is a separate set of 30 effects in years from
-seven papers. It uses the paper's measure with the original overflow guard,
-where four results were recomputed after removing clock outputs above 1,000
-years. It is independent of the selected call cohort. It gives Spearman
-correlation 0.6071, an interval of 0.2725 to 0.9313, and median absolute
-difference 1.5137 years. The adjusted-test reference CSV does not contain
-effect estimates, so it does not silently substitute those Welch estimates.
+The paper's year-effect comparison uses 30 effects from seven papers. Two of
+these 30 results were recomputed after removing clock outputs above 1,000
+years; four rows in the full guarded Welch variant use this guard. To reproduce
+this comparison, submit the guarded estimates with their explicit year units:
+
+```sh
+clockeffectbench score \
+  --predictions reference_results/clockbase_paper_groups_guarded.csv \
+  --effects reference_results/effect_pairs_years.csv
+```
+
+This gives Spearman correlation 0.6071, an interval of 0.2725 to 0.9313, and
+median absolute difference 1.5137 years. `--effects` reads only the selection
+file's `record_id` column; estimates always come from your predictions. The
+30-record effect set is independent of the selected call cohort. Predictions
+without year estimates score zero effect pairs. The adjusted-test reference
+CSV has no effect estimates.
 
 ## Evaluate your system
 
 For each record, compare the case group with the control group using the
-specified clock and measure. Preserve `record_id` in your output. Use the
+specified clock and measure. Start from the answer-free `data/tasks.jsonl`
+file and preserve `record_id` in your output. Use the
 paper's significance threshold, or P < 0.05 when it states none. Submit a
 CSV or JSONL file with the following fields.
 
 | Field | Requirement |
 | --- | --- |
-| `record_id` | Identifier from `data/published.jsonl`. |
+| `record_id` | Identifier from `data/tasks.jsonl`. |
 | `call` | `higher`, `lower`, or `not significant`. |
-| `direction` | Optional `higher`, `lower`, or `none`; retain the sign even for a nonsignificant result. |
-| `p_value` | Optional two-sided P value between 0 and 1 for direction AUROC. |
+| `direction` | `higher`, `lower`, or `none`. Required with `p_value` for a nonsignificant call unless a signed `effect` supplies it. Significant calls imply their direction. |
+| `p_value` | Optional two-sided P value between 0 and 1 for direction AUROC; direction-only answers with a P value also enter AUROC. |
 | `effect` | Optional signed case-minus-control estimate. |
-| `effect_unit` | Use `years` for an effect to enter the year-effect correlation. |
+| `effect_unit` | Use `years` for an effect to enter the year-effect correlation. `--effects reference_results/effect_pairs_years.csv` restricts it to the paper's 30 record IDs; the default uses all eligible predictions in the call cohort. |
 
 The first line of the following example is the CSV header. The example row
 is copied from the shipped ClockBase reference result.
@@ -71,13 +81,15 @@ MED-25678027-GSE25395-Horvathv1-1,not significant,higher,0.05693342772072061
 ```sh
 clockeffectbench score --predictions my_predictions.csv
 clockeffectbench score --predictions my_predictions.csv --cohort main110
+clockeffectbench score --predictions my_predictions.csv \
+  --effects reference_results/effect_pairs_years.csv
 ```
 
 The default cohort is all 580 records, with each metric restricted to the
 records for which your system supplies the required fields and the reference
 has an interpretable outcome. Missing rows are abstentions. A blank call
 with a supplied direction is a direction-only answer and does not count as a
-null call. Coverage and denominators are printed alongside the metrics.
+null call; it enters direction AUROC when a P value is supplied. Coverage and denominators are printed alongside the metrics.
 Unknown or duplicate identifiers, invalid calls, invalid numeric values, and
 contradictory signed fields are rejected. A three-way call alone cannot
 recover the direction of a nonsignificant effect or a continuous AUROC score.
@@ -105,13 +117,18 @@ clockeffectbench prompt MED-25678027-GSE25395-Horvathv1-1
 This prints the frozen input used by the original baseline. The repository
 contains 324 such inputs, including every record in `main110`. These are
 model inputs, not model responses. `clockeffectbench/prompts.py` preserves
-the original neutral clock descriptions and redaction rules. For a record
-without a frozen input, supply `--study study.json` with `title`, `summary`,
-`overall_design`, and `n_samples` from GEO. The builder removes sentences
-with result wording and reports a failure if protected result fields leak.
+the original neutral clock descriptions and redaction rules. Neutral prompts are available only for these 324 shipped records.
+The optional `--study study.json` rebuilds inputs from local GEO `title`,
+`summary`, `overall_design`, and `n_samples` fields for supported records.
+The builder supports only the 16 clocks in `CLOCKS` and four measures in
+`MEASURES`; it can reject unsupported clocks, measures, or revealing inputs.
+It removes result sentences and replaces email addresses with `[email removed]`.
 Group definitions can themselves reveal a likely result; the original
-builder retains that limitation with a flag. Separate evaluation inputs from
-the published outcomes when assessing a new system.
+builder retains that limitation with a flag. Give an evaluated system only
+`data/tasks.jsonl`, selected prompts, and permitted sample inputs. Keep
+`published.*` and `reference_results/` in the scoring environment because they
+contain outcomes. The task file excludes outcomes, statistics, and quotations;
+its group definitions still describe the comparison asked by each paper.
 
 ## Data and reference files
 
@@ -134,8 +151,8 @@ Source hashes, timestamps, and export settings are recorded in the two
 ClockBase does not compute every published clock or measure, and its sample
 metadata do not resolve every group. Only 110 results support the released
 paper-group tests. Eligibility failures remain in the full dataset so other
-systems can address them. The source labels the 65 RNA records as 64 human
-and one mouse, whereas the manuscript describes all 65 as human.
+systems can address them. The 65 published RNA-seq results comprise 64 human
+and one mouse result.
 
 ## Reference performance
 
@@ -157,7 +174,7 @@ compared with 69% for Welch-only rows. Their direction agrees in 25 of 26
 results significant in both, with direction AUROC 0.98 [0.91, 1.00].
 The six reruns match 77% to 90% of covered calls and 90% to 95% of published
 significant directions. The [reproduction report](REPORT.md) gives each
-rerun, its denominator, and the comparison with the manuscript.
+rerun and its denominator.
 
 On `agent_task158`, each agent covers a different subset. These are the
 reported calls; the recomputed variants apply the verification tests to the
@@ -185,24 +202,28 @@ comparisons, use the identifiers in `reference_results/expert_truth.csv`.
 ```sh
 clockeffectbench score --expert --expert-set human-confirmed \
   --predictions reference_results/expert_candidate.csv
-clockeffectbench score --expert --expert-set mouse \
+clockeffectbench score --expert --expert-set mouse-confirmed \
   --predictions reference_results/expert_candidate.csv
 ```
 
-The final reference agrees in 126/128 human results with confirmed arm
-orientation, 162/168 when unconfirmed rows are included, and 88/89 mouse
-results. To evaluate group choice, use the complete annotated groups and
-the same clock outputs and test rules on both sides. Match the `unit_id` in
-the human group file to the identifier inside each expert record ID, then
-compare your selected groups' call against the frozen complete-group call.
-The package scores calls; it does not infer group definitions or implement
-the full original molecular preprocessing and test-selection pipeline.
+The final reference agrees in 86 of 87 mouse results and 126 of 128 human
+DNA methylation results with confirmed arm orientation. Including rows with
+unconfirmed orientation, agreement is 88 of 89 mouse results and 162 of 168
+human DNA methylation results. Use `mouse-confirmed` and `human-confirmed`
+for confirmed orientation, or `mouse` and `human` to include unconfirmed rows.
 
-Tyshkovskiy et al. is published and its rodent annotation is publicly
-deposited. The benchmark's factual group rules and GSM lists are included
-with provenance in `data/expert/mouse_rna_groups.jsonl`. The original workbook
-is not redistributed, and the cached deposit does not state a data license
-for it. Its annotation reuse terms remain an open release decision.
+To evaluate group choice, use the complete annotated groups and the same
+clock outputs and test rules on both sides. Match `unit_id` in each group
+file to the identifier inside the expert record ID. The expert truth CSV
+records the selected `test` and its full `method` for every row. The
+[expert notes](data/expert/README.md#test-selection) document the selection
+rules. The package scores calls and does not rerun molecular preprocessing.
+
+The mouse annotation comes from Tyshkovskiy et al., Nature 2026, DOI
+10.1038/s41586-026-10542-3, Zenodo record 18763485. The record states a license
+for clock models and software and none for the annotation. The repository
+ships derived group rules and sample lists with attribution, and does not
+redistribute the original workbook.
 
 ## Metric definitions
 
@@ -218,9 +239,7 @@ decreases, with ties worth one half. P values of zero are clipped to
 Bootstrap clusters are whole papers, sorted by the original DOI-first paper
 key. Balanced-accuracy intervals reproduce the released scorer's 1,000
 replicates with seed 20261005. AUROC and year-effect intervals use 2,000
-replicates with seed 20261009. The manuscript describes 2,000 replicates
-generally; preserving the original scorer's separate balanced-accuracy
-settings reproduces its published interval. Balanced-accuracy resampling
+replicates with seed 20261009. Balanced-accuracy resampling
 retains every paper in the selected cohort, including unanswered records;
 AUROC resampling uses records with the required scores. Comparisons require
 reporting coverage as well as accuracy.
@@ -228,7 +247,7 @@ reporting coverage as well as accuracy.
 ## Citation and licenses
 
 Cite Ying K, et al., *Autonomous AI Agents Discover Aging Interventions from
-Millions of Molecular Profiles*, preprint
+Millions of Molecular Profiles*, bioRxiv preprint (2025)
 [10.1101/2023.02.28.530532](https://doi.org/10.1101/2023.02.28.530532).
 Machine-readable citation details are in [CITATION.cff](CITATION.cff).
 
@@ -237,3 +256,13 @@ licensed under [CC BY 4.0](DATA_LICENSE.md). Evidence quotations come from
 the cited papers and retain their source rights. The two ComputAgeBench
 derivative annotation files retain CC BY-SA 4.0 as described in the expert
 notes. The mouse group file records the unstated source annotation terms.
+
+## Test the package
+
+Run `pytest -q` after installation. The wheel resource test is skipped unless
+a wheel has been built. To include it, run:
+
+```sh
+python -m pip wheel . --no-deps --no-build-isolation -w .venv/wheelcheck
+pytest -q
+```

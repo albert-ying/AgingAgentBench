@@ -70,7 +70,9 @@ def holds(rule, sample):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source-root", type=Path, required=True,
-                        help="Local revision folder holding data/ and aging-ai-nature-appeal/.")
+                        help="Records deposit root containing data/.")
+    parser.add_argument("--results-root", type=Path, required=True,
+                        help="Records deposit directory containing published_released_test.csv.")
     parser.add_argument("--out", type=Path, default=Path("data"))
     args = parser.parse_args()
     source = args.source_root.resolve()
@@ -78,11 +80,12 @@ def main():
     verifier = source / "data/clockbase-verifier-v3-2026-09-27"
     bundle = source / "data/bundle/clockbase_data"
     atlas = verifier / "final-2026-11-12/public-export"
-    results = source / "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/results_2026_11_12"
+    results = args.results_root.resolve()
     receipts, missing = {}, []
 
     def receipt(path):
-        relative = str(path.relative_to(source))
+        relative = ("records deposit/benchmark/results/" + str(path.relative_to(results))
+                    if path.is_relative_to(results) else "records deposit/" + str(path.relative_to(source)))
         if not path.exists():
             message = f"Cannot proceed - required data file not found: {relative}"
             if message not in missing:
@@ -149,6 +152,8 @@ def main():
                                                          else f"https://pubmed.ncbi.nlm.nih.gov/{original['pmid']}/" if original.get("pmid") else None))
         if not source_fields["year"]:
             source_fields["year"] = paper.get("pubYear")
+        if source_fields["citation"] == "hivhorvath":
+            source_fields["citation"] = "HIV-1 Infection Accelerates Age According to the Epigenetic Clock."
         if source_fields["citation"] == "phenoage" and paper.get("title"):
             source_fields["citation"] = paper["title"]
         evaluated = engine.get(record["id"], {})
@@ -172,6 +177,11 @@ def main():
         exported.append(item)
     write_jsonl(args.out / "published.jsonl", exported)
     write_csv(args.out / "published.csv", exported)
+
+    task_fields = ("record_id", "gse", "modality", "clock_reported", "clock_clockbase", "measure",
+                   "case_label", "control_label", "case_definition", "control_definition",
+                   "case_gsms", "control_gsms", "threshold")
+    write_jsonl(args.out / "tasks.jsonl", [{k: r[k] for k in task_fields} for r in exported])
 
     units_path = bench / "groupbench/prepared-v2/units.jsonl"
     declared_path = bench / "groupbench/frozen-v2/declared.json"
@@ -208,7 +218,7 @@ def main():
                     "comparison_id": variant["comparison_id"], "source": "Tyshkovskiy et al. 2026",
                     "publication_doi": "10.1038/s41586-026-10542-3",
                     "annotation_url": "https://zenodo.org/records/18763485/files/Data_annotation_absolute_rodents.xlsx",
-                    "license_status": "Source data license not stated in cached deposit metadata"})
+                    "license_status": "Zenodo record 18763485 states a license for clock models and software and none for the annotation; derived group rules and sample lists are attributed to Tyshkovskiy et al., Nature 2026, DOI 10.1038/s41586-026-10542-3; original workbook not redistributed"})
             continue
         human_series.add(gse)
         if gse not in series_cache:
@@ -248,7 +258,7 @@ def main():
     expert_manifest = {"mouse_rna_series": sorted(mouse_series), "human_dnam_series": sorted(human_series),
         "mouse_annotation": {"publication_doi": "10.1038/s41586-026-10542-3", "publication_status": "published",
             "annotation_url": "https://zenodo.org/records/18763485/files/Data_annotation_absolute_rodents.xlsx",
-            "license_status": "Cached public deposit does not state a data license; factual benchmark group definitions are included with provenance; original annotation workbook is not redistributed."},
+            "license_status": "Zenodo record 18763485 states a license for clock models and software and none for the annotation; derived group rules and sample lists ship with attribution to Tyshkovskiy et al., Nature 2026, DOI 10.1038/s41586-026-10542-3; original workbook not redistributed."},
         "human_annotation": {"publication_doi": "10.1101/2024.06.06.597715", "dataset_doi": "10.57967/hf/4347",
             "url": "https://huggingface.co/datasets/computage/computage_bench/tree/3cf52681537b303a5b7e21df03a3ae0a94ed497e",
             "revision": "3cf52681537b303a5b7e21df03a3ae0a94ed497e", "license": "CC-BY-SA-4.0",
@@ -296,7 +306,7 @@ def main():
                 raise ValueError(f"Cannot copy clock outputs for {entry['gse']}: {error}") from error
             output_manifest.append({"gse": entry["gse"], "modality": entry["modality"],
                 "file": str(target.relative_to(args.out / "clockbase_outputs")), "clocks": sorted(entry["clocks"]),
-                "bytes": info["bytes"], "sha256": info["sha256"], "source": key,
+                "bytes": info["bytes"], "sha256": info["sha256"], "source": "records deposit/" + key,
                 "atlas_expected_sha256": entry["expected_sha256"], "hash_matches_atlas": info["sha256"] == entry["expected_sha256"]})
     write_json(args.out / "clockbase_outputs/manifest.json", output_manifest)
     notes = {"export_date": "2026-11-12", "published_records": len(exported),
