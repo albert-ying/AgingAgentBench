@@ -2305,6 +2305,698 @@
         }
       }
     },
+    "clockbase_agent_stored@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 88,
+      "scored": 74,
+      "papers": 32,
+      "call_agreement": 0.8243243243243243,
+      "recall": {
+        "lower": [
+          4,
+          8
+        ],
+        "higher": [
+          15,
+          22
+        ],
+        "not significant": [
+          42,
+          44
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            15,
+            1
+          ],
+          [
+            4,
+            6,
+            42
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.712121212121212,
+      "balanced_accuracy_interval": [
+        0.5316203872853489,
+        0.8615785834535833
+      ],
+      "published_significant": 30,
+      "direction_agreement": [
+        26,
+        30
+      ],
+      "significant_in_published_direction": [
+        19,
+        30
+      ],
+      "significant_opposite": [
+        1,
+        30
+      ],
+      "same_direction_both_significant": [
+        19,
+        20
+      ],
+      "null_kept_null": [
+        42,
+        44
+      ],
+      "direction_auroc": 0.9659090909090909,
+      "direction_auroc_interval": [
+        0.8671614583333334,
+        1.0
+      ],
+      "auroc_significant_records": 30,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "clockbase_atlas_verified@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 96,
+      "scored": 78,
+      "papers": 32,
+      "call_agreement": 0.8461538461538461,
+      "recall": {
+        "lower": [
+          4,
+          8
+        ],
+        "higher": [
+          20,
+          25
+        ],
+        "not significant": [
+          42,
+          45
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            20,
+            2
+          ],
+          [
+            4,
+            4,
+            42
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.7444444444444445,
+      "balanced_accuracy_interval": [
+        0.5722927807486632,
+        0.8909786485444381
+      ],
+      "published_significant": 33,
+      "direction_agreement": [
+        31,
+        33
+      ],
+      "significant_in_published_direction": [
+        24,
+        33
+      ],
+      "significant_opposite": [
+        1,
+        33
+      ],
+      "same_direction_both_significant": [
+        24,
+        25
+      ],
+      "null_kept_null": [
+        42,
+        45
+      ],
+      "direction_auroc": 0.98,
+      "direction_auroc_interval": [
+        0.9,
+        1.0
+      ],
+      "auroc_significant_records": 33,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "language_model_gpt_6_astra@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 143,
+      "scored": 114,
+      "papers": 37,
+      "call_agreement": 0.7017543859649122,
+      "recall": {
+        "lower": [
+          3,
+          10
+        ],
+        "higher": [
+          17,
+          33
+        ],
+        "not significant": [
+          60,
+          71
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            3,
+            17,
+            8
+          ],
+          [
+            4,
+            15,
+            60
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.5534073125622422,
+      "balanced_accuracy_interval": [
+        0.4084710858027421,
+        0.7202336628364026
+      ],
+      "published_significant": 43,
+      "direction_agreement": [
+        26,
+        43
+      ],
+      "significant_in_published_direction": [
+        20,
+        43
+      ],
+      "significant_opposite": [
+        4,
+        43
+      ],
+      "same_direction_both_significant": [
+        20,
+        24
+      ],
+      "null_kept_null": [
+        60,
+        71
+      ],
+      "direction_auroc": null,
+      "direction_auroc_interval": null,
+      "auroc_significant_records": 0,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "language_model_gpt_6_sol@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 143,
+      "scored": 114,
+      "papers": 37,
+      "call_agreement": 0.6842105263157895,
+      "recall": {
+        "lower": [
+          3,
+          10
+        ],
+        "higher": [
+          18,
+          33
+        ],
+        "not significant": [
+          57,
+          71
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            3,
+            1,
+            3
+          ],
+          [
+            3,
+            18,
+            11
+          ],
+          [
+            4,
+            14,
+            57
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.5494238156209987,
+      "balanced_accuracy_interval": [
+        0.41006662216105155,
+        0.7129393725120469
+      ],
+      "published_significant": 43,
+      "direction_agreement": [
+        26,
+        43
+      ],
+      "significant_in_published_direction": [
+        21,
+        43
+      ],
+      "significant_opposite": [
+        4,
+        43
+      ],
+      "same_direction_both_significant": [
+        21,
+        25
+      ],
+      "null_kept_null": [
+        57,
+        71
+      ],
+      "direction_auroc": null,
+      "direction_auroc_interval": null,
+      "auroc_significant_records": 0,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "language_model_gpt_6_luna@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 143,
+      "scored": 114,
+      "papers": 37,
+      "call_agreement": 0.631578947368421,
+      "recall": {
+        "lower": [
+          3,
+          10
+        ],
+        "higher": [
+          12,
+          33
+        ],
+        "not significant": [
+          57,
+          71
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            3,
+            1,
+            4
+          ],
+          [
+            3,
+            12,
+            10
+          ],
+          [
+            4,
+            20,
+            57
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.4888177550149381,
+      "balanced_accuracy_interval": [
+        0.352085113960114,
+        0.6501623712221538
+      ],
+      "published_significant": 43,
+      "direction_agreement": [
+        23,
+        43
+      ],
+      "significant_in_published_direction": [
+        15,
+        43
+      ],
+      "significant_opposite": [
+        4,
+        43
+      ],
+      "same_direction_both_significant": [
+        15,
+        19
+      ],
+      "null_kept_null": [
+        57,
+        71
+      ],
+      "direction_auroc": null,
+      "direction_auroc_interval": null,
+      "auroc_significant_records": 0,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "language_model_gpt_5_5@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 143,
+      "scored": 114,
+      "papers": 37,
+      "call_agreement": 0.6666666666666666,
+      "recall": {
+        "lower": [
+          3,
+          10
+        ],
+        "higher": [
+          19,
+          33
+        ],
+        "not significant": [
+          54,
+          71
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            3,
+            0,
+            3
+          ],
+          [
+            3,
+            19,
+            14
+          ],
+          [
+            4,
+            14,
+            54
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.5454403186797553,
+      "balanced_accuracy_interval": [
+        0.399170991045991,
+        0.706522178290554
+      ],
+      "published_significant": 43,
+      "direction_agreement": [
+        30,
+        43
+      ],
+      "significant_in_published_direction": [
+        22,
+        43
+      ],
+      "significant_opposite": [
+        3,
+        43
+      ],
+      "same_direction_both_significant": [
+        22,
+        25
+      ],
+      "null_kept_null": [
+        54,
+        71
+      ],
+      "direction_auroc": null,
+      "direction_auroc_interval": null,
+      "auroc_significant_records": 0,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
+    "constant_higher@agent_task158": {
+      "records_in_cohort": 158,
+      "submitted": 158,
+      "scored": 128,
+      "papers": 42,
+      "call_agreement": 0.3203125,
+      "recall": {
+        "lower": [
+          0,
+          10
+        ],
+        "higher": [
+          41,
+          41
+        ],
+        "not significant": [
+          0,
+          77
+        ]
+      },
+      "confusion_matrix": {
+        "rows": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "columns": [
+          "lower",
+          "higher",
+          "not significant"
+        ],
+        "values": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            10,
+            41,
+            77
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "balanced_accuracy": 0.3333333333333333,
+      "balanced_accuracy_interval": [
+        0.3333333333333333,
+        0.3333333333333333
+      ],
+      "published_significant": 51,
+      "direction_agreement": [
+        41,
+        51
+      ],
+      "significant_in_published_direction": [
+        41,
+        51
+      ],
+      "significant_opposite": [
+        10,
+        51
+      ],
+      "same_direction_both_significant": [
+        41,
+        51
+      ],
+      "null_kept_null": [
+        0,
+        77
+      ],
+      "direction_auroc": null,
+      "direction_auroc_interval": null,
+      "auroc_significant_records": 0,
+      "effect_years": {
+        "pairs": 0,
+        "papers": 0,
+        "spearman": null,
+        "spearman_interval": null,
+        "median_absolute_difference": null
+      },
+      "bootstrap": {
+        "unit": "paper",
+        "level": 0.95,
+        "balanced_accuracy": {
+          "replicates": 1000,
+          "seed": 20261005
+        },
+        "auroc_and_effect": {
+          "replicates": 2000,
+          "seed": 20261009
+        }
+      }
+    },
     "clockbase_agent_stored@agent_shared_codex": {
       "records_in_cohort": 68,
       "submitted": 68,

@@ -44,7 +44,7 @@ The pinned source is available from the
 
 ## Mouse RNA-seq annotation
 
-Tyshkovskiy et al. is a published Nature article, not an unpublished source:
+Tyshkovskiy et al. is a published Nature article:
 *Universal transcriptomic hallmarks of mammalian ageing and mortality*,
 Nature 654, 173–188 (2026),
 [10.1038/s41586-026-10542-3](https://doi.org/10.1038/s41586-026-10542-3).
@@ -52,12 +52,14 @@ The source annotation is publicly deposited as
 `Data_annotation_absolute_rodents.xlsx` in
 [Zenodo record 18763485](https://zenodo.org/records/18763485).
 
-The cached deposit does not specify a data license for this annotation.
+`mouse_rna_groups.jsonl` supplies the benchmark's factual group labels,
+field rules, and complete GSM lists derived from this public annotation.
+Its schema follows the human group file. The original annotation workbook
+and its full sample fields are not redistributed. Obtain that workbook from
+the linked deposit to inspect or reconstruct the annotation-based rules.
+
+The cached deposit does not specify a data license for the annotation.
 Its description states an MGB Open Access License for the transcriptomic
-clock models and package. That statement does not establish permission to
-relicense the annotation under CC BY 4.0. This repository therefore supplies
-the 32 series identifiers and the annotation download location, while
-withholding the mouse group definitions pending a data-license clarification.
-The parsed expert truth and reference predictions permit reproduction of the
-reported call agreement; rebuilding mouse groups requires obtaining the
-annotation from the deposit and confirming its reuse terms.
+clock models and package. This repository does not apply that software
+license to the data or assert that the underlying annotation is CC BY 4.0.
+The source terms remain an open release decision, recorded with each group.

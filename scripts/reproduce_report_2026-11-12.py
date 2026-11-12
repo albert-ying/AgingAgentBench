@@ -33,7 +33,7 @@ def main():
         ratio = lambda pair: f"{pair[0]}/{pair[1]}"
         interval = lambda value, bounds: f"{value:.4f} [{bounds[0]:.4f}, {bounds[1]:.4f}]"
         lines = ["# ClockEffectBench reproduction", "",
-                 "The standalone package reproduces the benchmark claims from the shipped",
+                 "The standalone package reproduces the benchmark performance claims from the shipped",
                  "parsed predictions and published outcomes. The manuscript source is the",
                  "November 6 final text in the November 12 records checkout, Results",
                  "\"Recovery of published aging-clock effects in ClockEffectBench\", its",
@@ -103,6 +103,22 @@ def main():
             corrected = compute("agent_" + name + "_recomputed", "agent_task158")
             d = raw["direction_agreement"]
             lines.append(f"| {label} | {100*raw['call_agreement']:.2f}% of {raw['scored']} | {ratio(d)} ({100*d[0]/d[1]:.2f}%) | {raw['direction_auroc']:.6f} | {100*corrected['call_agreement']:.2f}% of {corrected['scored']} |")
+        lines += ["", "The manuscript also reports 82% call and 87% direction agreement for the",
+                  "stored ClockBase agent on this task, 85% call agreement for the verified",
+                  "atlas, 63-70% call and 53-70% direction agreement for the four GPT models",
+                  "without data, and 80% direction agreement for always higher.", "",
+                  "| Agent-task baseline | Call agreement | Direction agreement |",
+                  "| --- | --- | --- |"]
+        for name, label in [("clockbase_agent_stored", "Stored ClockBase agent"),
+                            ("clockbase_atlas_verified", "Verified atlas"),
+                            ("language_model_gpt_6_astra", "GPT-6 Astra without data"),
+                            ("language_model_gpt_6_sol", "GPT-6 Sol without data"),
+                            ("language_model_gpt_6_luna", "GPT-6 Luna without data"),
+                            ("language_model_gpt_5_5", "GPT-5.5 without data"),
+                            ("constant_higher", "Always higher")]:
+            value = compute(name, "agent_task158")
+            d = value["direction_agreement"]
+            lines.append(f"| {label} | {100*value['call_agreement']:.2f}% of {value['scored']} | {ratio(d)} ({100*d[0]/d[1]:.2f}%) |")
         lines += ["", "| Shared framework set | Manuscript agreement | Reproduced agreement |",
                   "| --- | --- | --- |"]
         for framework, raw_names, published in [
@@ -142,10 +158,10 @@ def main():
                   "Tyshkovskiy et al. is published as a Nature article, DOI",
                   "10.1038/s41586-026-10542-3, and the rodent annotation is publicly deposited",
                   "in Zenodo record 18763485. The cached deposit states a license for clock",
-                  "models and software but no annotation data license. Mouse groups are",
-                  "therefore withheld; the 32 identifiers and download instructions ship.",
-                  "This limits reconstruction of mouse groups, not reproduction of the",
-                  "parsed expert-call agreement.", "",
+                  "models and software but no annotation data license. The benchmark's factual",
+                  "mouse group rules and GSM lists ship with attribution and a source-terms",
+                  "notice. The original annotation workbook is not redistributed. Its reuse",
+                  "terms require clarification for release; no data license is invented.", "",
                   "## Unresolved source differences", "",
                   "The 580 source records label 515 as human DNAm, 64 as human RNA-seq, and",
                   "one as mouse RNA-seq. The manuscript's statement that all 65 RNA records",
@@ -178,7 +194,7 @@ def main():
                   "outputs, credentials, and caches are ignored. Commit identifiers and the",
                   "final test and size checks are recorded in `VALIDATION.md`.", "",
                   "## Decisions for Albert", "",
-                  "- Confirm the reuse terms for the public rodent annotation before adding mouse groups.",
+                  "- Confirm the reuse terms for the public rodent annotation before redistributing its derived groups.",
                   "- Resolve the manuscript's RNA modality description against the preserved source labels.",
                   "- Decide whether to clarify the separate bootstrap settings in the Methods.",
                   "- Recover the three absent atlas study exports if full sample-output coverage is needed.", ""]

@@ -101,6 +101,19 @@ def test_all_main_prompts_available():
     assert set(common) <= {r["record_id"] for r in prompts}
 
 
+def test_public_expert_groups_cover_every_frozen_reference():
+    truth = read_rows(ROOT / "reference_results/expert_truth.csv")
+    for set_, name, count in [("A1", "mouse_rna_groups", 98), ("A2", "human_dnam_groups", 50)]:
+        groups = read_rows(ROOT / "data/expert" / (name + ".jsonl"))
+        assert len(groups) == count
+        keys = {(r["unit_id"], str(r["variant"])) for r in groups}
+        for row in truth:
+            if row["set"] == set_:
+                assert tuple(row["record_id"].split("|")[1:3]) in keys
+        assert all(r["case_gsms"] and r["control_gsms"] for r in groups)
+        assert all(not set(r["case_gsms"]) & set(r["control_gsms"]) for r in groups)
+
+
 def test_s18_released_test_matches_computed_auroc():
     table = read_rows(ROOT / "reference_results/supplementary_table_s18.csv")
     row = next(r for r in table if r["reference"] == "Published results" and r["measure"] == "Direction AUROC"

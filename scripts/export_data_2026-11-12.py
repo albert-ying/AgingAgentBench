@@ -63,7 +63,7 @@ def paper_key(record):
 
 
 def holds(rule, sample):
-    return any(all(str(sample.get(p["source"], {}).get(p["field"])) in set(map(str, p["values"]))
+    return any(all(str((sample.get(p["source"]) or {}).get(p["field"])) in set(map(str, p["values"]))
                    for p in group) for group in rule or [])
 
 
@@ -179,7 +179,7 @@ def main():
     declared = read_json(declared_path) if receipt(declared_path) else {}
     label_path = bench / "groupbench/a2/labels.csv"
     meta_path = bench / "groupbench/a2/computage_bench_meta_3cf5268.tsv"
-    human_groups, human_samples, human_series, mouse_series = [], [], set(), set()
+    human_groups, mouse_groups, human_samples, human_series, mouse_series = [], [], [], set(), set()
     label_rows, cells = [], {}
     if receipt(label_path):
         with label_path.open() as handle:
@@ -192,6 +192,23 @@ def main():
         gse = unit["gse"]
         if unit["set"] == "A1":
             mouse_series.add(gse)
+            sample_path = bench / "groupbench/prepared-v2/samples/A1" / f"{gse}.json"
+            if not receipt(sample_path):
+                continue
+            samples = read_json(sample_path)["samples"]
+            for index, variant in enumerate(unit["variants"]):
+                contrast = declared.get(f"{unit['unit_id']}#{index}")
+                if not contrast or contrast.get("status") == "ambiguous":
+                    continue
+                mouse_groups.append({"unit_id": unit["unit_id"], "variant": index, "gse": gse,
+                    "case_label": contrast.get("case_level"), "control_label": contrast.get("reference_level"),
+                    "case_rule": contrast["case_rule"], "control_rule": contrast["reference_rule"],
+                    "case_gsms": [s["gsm"] for s in samples if holds(contrast["case_rule"], s)],
+                    "control_gsms": [s["gsm"] for s in samples if holds(contrast["reference_rule"], s)],
+                    "comparison_id": variant["comparison_id"], "source": "Tyshkovskiy et al. 2026",
+                    "publication_doi": "10.1038/s41586-026-10542-3",
+                    "annotation_url": "https://zenodo.org/records/18763485/files/Data_annotation_absolute_rodents.xlsx",
+                    "license_status": "Source data license not stated in cached deposit metadata"})
             continue
         human_series.add(gse)
         if gse not in series_cache:
@@ -227,10 +244,11 @@ def main():
                 "source_revision": "3cf52681537b303a5b7e21df03a3ae0a94ed497e", "license": "CC-BY-SA-4.0"})
     write_jsonl(args.out / "expert/human_dnam_groups.jsonl", human_groups)
     write_jsonl(args.out / "expert/human_dnam_samples.jsonl", human_samples)
+    write_jsonl(args.out / "expert/mouse_rna_groups.jsonl", mouse_groups)
     expert_manifest = {"mouse_rna_series": sorted(mouse_series), "human_dnam_series": sorted(human_series),
         "mouse_annotation": {"publication_doi": "10.1038/s41586-026-10542-3", "publication_status": "published",
             "annotation_url": "https://zenodo.org/records/18763485/files/Data_annotation_absolute_rodents.xlsx",
-            "license_status": "Cached public deposit does not state a data license; group definitions withheld pending clarification."},
+            "license_status": "Cached public deposit does not state a data license; factual benchmark group definitions are included with provenance; original annotation workbook is not redistributed."},
         "human_annotation": {"publication_doi": "10.1101/2024.06.06.597715", "dataset_doi": "10.57967/hf/4347",
             "url": "https://huggingface.co/datasets/computage/computage_bench/tree/3cf52681537b303a5b7e21df03a3ae0a94ed497e",
             "revision": "3cf52681537b303a5b7e21df03a3ae0a94ed497e", "license": "CC-BY-SA-4.0",

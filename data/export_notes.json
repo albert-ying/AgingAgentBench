@@ -10,7 +10,7 @@
   },
   "first_author_missing": [],
   "quote_policy": "A contiguous prefix of at most 25 whitespace-delimited words from the first extracted evidence passage; statistics retained from the full source extraction.",
-  "mouse_annotation_status": "Cached public deposit does not state a data license; group definitions withheld pending clarification.",
+  "mouse_annotation_status": "Cached public deposit does not state a data license; factual benchmark group definitions are included with provenance; original annotation workbook is not redistributed.",
   "expert_series_counts": {
     "mouse_rna": 32,
     "human_dnam": 18
@@ -95,6 +95,198 @@
       "bytes": 635321,
       "mtime_utc": "2026-10-06T05:08:01+00:00",
       "sha256": "0338cd96a5ba5d853bea2a5d20ee981c355b58c48318e3258694eac4e24e805f"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE101657.json",
+      "bytes": 25660,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "154dd51771c16b3d7b58222f5c93e4a4e6af23d6a58ac3f29938df557ca74d60"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE121395.json",
+      "bytes": 6417,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "3cfc9b315a42453b7e1237b13d63ba60bca694f683adb36c9a43ce56631ccf75"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE122080.json",
+      "bytes": 5533,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "4b5f0e786e5af01dcc788de66003013e49aa48fa9663429f9d01124680f6b79f"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE122243.json",
+      "bytes": 8586,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "40d9eb6ee8e58eda186cb688a8509107ac42ff0f1513801b55e51727aab3ea25"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE122367.json",
+      "bytes": 6979,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "9e621fc426650d783544827ee0b5be013cb191c180fc9cbbb15a6bf1cba161cf"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE124772.json",
+      "bytes": 6301,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "622eb65e2836a90aff35e71997b6891f6929f0b91dd75008c9fc8575822bf2a1"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE127475.json",
+      "bytes": 7081,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "9f79185fe9e82dc153fffa39d8040e7908ac795207979c04b7accf4addd3dce1"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE127758.json",
+      "bytes": 8011,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "8c30a1bd3f6f4e876fb31305ea1b419c9425404d94ec42fa3aeaf6540f7516e8"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE128724.json",
+      "bytes": 6119,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "938953ada90912c6793f19989e0f572b390fe46e4879808eabbd300346a462fa"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE129083.json",
+      "bytes": 6901,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "3aa777970fe1203abb6ee223e669c5dca03c39ce476b923b2b8421b87e5be12f"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE131754.json",
+      "bytes": 47470,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "a2be4789d0f20c50c394295e0865826ba4b30d12b82fa3719646c5b2586cb2f2"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE134780.json",
+      "bytes": 15768,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "f2f4c9d3b53faa4fd72a4204c9ce4988acd459b3b8641631465ceee184bf8484"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE134781.json",
+      "bytes": 5355,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "cd891820549835c152af177ec52f2e3a79d2bbdddde4a633a5a995b1de1254bb"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE137504.json",
+      "bytes": 6919,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "21a97359c6c13a20ae304ffbc90bfe9e78ef5f555d36be9ce6b2939d3ba80cdf"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE140286.json",
+      "bytes": 2499,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "8f5a94ae544a96c36c4203d35b45cc0edb58b48b19e9a74b71b3d912744bba24"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE143304.json",
+      "bytes": 11014,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "afc02124f0f806901beba2536520db3d3435eab9cd49f3a43a4e4506ba6bb8fb"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE145972.json",
+      "bytes": 5950,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "2f1b157807e5af0a1383d22a10dc8dfcf364beeb8e3c24274746602ac7046deb"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE146796.json",
+      "bytes": 15532,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "c6aa458604fb7b64643ea20f66295077e305f12d3065fc65bb366dfaa8b83e45"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE147666.json",
+      "bytes": 7603,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "5d89eff0cb0d59ee49a404f286ba5abe498fa5463e12497fabe4a7b68030fb18"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE148647.json",
+      "bytes": 11188,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "a2699abba3e34311bd520ce92bf7f8474a83b0d3122cad4219e04a22fb1a52d9"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE154832.json",
+      "bytes": 6334,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "3eb4a0060c5fa17c0e2bf82baab2c3334c27c38e6adc1f2f9de0270a4b277b1c"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE156762.json",
+      "bytes": 5640,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "e5d077434d5c53491611b49ac2efebd0668bb907f0cfc7e244c1eb9495de4929"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE158980.json",
+      "bytes": 8300,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "1e3f3396f7b24dca9dbbee4920d80df41f2f9aef4ec275cf34b15fe45be8d118"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE165409.json",
+      "bytes": 7687,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "d69627e4cd3aea1274a1985e8bf3fe5de60f3e887884493dbbb325677d97e8ba"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE166615.json",
+      "bytes": 5659,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "cf0e1531a2da29e232c4933bbe3e7d1dbf8386e3e53e2aff3c5bf21c3d397cdd"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE168211.json",
+      "bytes": 13154,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "99ee092a4d72f6a4c17f50765da36be79486c8712f67657cac2c318a12fa065e"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE175571.json",
+      "bytes": 7551,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "681aa2f8aa9ce36b3090557b1d055d06f60fdff0adc4ed37bdabea8a034f8e70"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE178770.json",
+      "bytes": 6583,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "07f2a940b1d6c73e35a9ec17b917b0c47c33a5b3c98f1ad655224a33b6716ae9"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE190939.json",
+      "bytes": 191366,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "4ebd7a105438961bedf122460d04c1ce4ced52348a614cb1206e9713c1d2170e"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE69952.json",
+      "bytes": 9726,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "6b472e1ea775fd82927600fb65eca80033a456fdf2658d03405f42169d21423f"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE89272.json",
+      "bytes": 8890,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "2b5b29b712c5fdde126bb2c6e83a6ca4fc112fd8c9e4f607f41870c21c882b95"
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/prepared-v2/samples/A1/GSE92486.json",
+      "bytes": 7224,
+      "mtime_utc": "2026-10-06T05:39:52+00:00",
+      "sha256": "64919b261d2d883d21840e1d512553c50a94f0d407eef3e504dcf4e657f26ede"
     },
     {
       "path": "data/bundle/clockbase_data/GEO_data/GEO_hs_dnam/processed_metadata_preharmonize/GSE103929.csv",

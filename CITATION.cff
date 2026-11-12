@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Cite the ClockBase paper when using ClockEffectBench."
+title: ClockEffectBench
+type: software
+version: 0.1.0
+date-released: 2026-11-12
+authors:
+  - family-names: Ying
+    given-names: K
+  - name: "et al."
+license: MIT
+preferred-citation:
+  type: article
+  title: Autonomous AI Agents Discover Aging Interventions from Millions of Molecular Profiles
+  authors:
+    - family-names: Ying
+      given-names: K
+    - name: "et al."
+  doi: 10.1101/2023.02.28.530532
