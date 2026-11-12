@@ -1,0 +1,17 @@
+{
+  "records": 324,
+  "inputs": [
+    {
+      "source": "runs/s4-openai-001-gpt-4.1/requests.jsonl",
+      "sha256": "e8b40693bbe596e83effa746b6ae6f0df8e74df3bef1a92c5c0a3e17c271c9a4",
+      "mtime_ns": 1791234156000000000
+    },
+    {
+      "source": "runs/s4-openai-002-gpt-4.1/requests.jsonl",
+      "sha256": "9e715bf42e1d644c69488713de84f3bb9e3634e8464f50e63ce3d37ec509491b",
+      "mtime_ns": 1791237406000000000
+    }
+  ],
+  "selection": "Round 002 takes precedence over round 001 for a repeated record.",
+  "content": "Only user input prompts and blinding flags; no model responses."
+}
