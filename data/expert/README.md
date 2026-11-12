@@ -6,10 +6,10 @@ choice and orientation using the same clock outputs and test rules.
 
 `sources.json` lists the series and annotation sources. The prepared source
 inventory contains 32 mouse RNA-seq series and 18 human DNA methylation
-series. The manuscript describes 16 human DNA methylation series; the source
-inventory is preserved rather than trimmed to that count. Scored subsets can
-have different coverage after ambiguous group definitions and unavailable
-results are excluded.
+series. The scored expert reference contains 16 human series, matching the
+manuscript. GSE134429 and GSE53841 are prepared but have no scored expert
+reference row. Scored subsets can have different coverage after ambiguous
+group definitions and unavailable results are excluded.
 
 ## Human DNA methylation groups
 

@@ -1,0 +1,325 @@
+record_id,call,direction,p_value,effect,paper_id,confidence,source_system,method,row_ordinal,n_case,n_control,recognizes_publication,status
+MED-25678027-GSE25395-Horvathv1-0,higher,higher,,,10.1111/acel.12325,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE25395-Horvathv1-1,higher,higher,,,10.1111/acel.12325,0.95,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-2,higher,higher,,,10.1111/acel.12325,0.97,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-3,higher,higher,,,10.1111/acel.12325,0.86,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-4,higher,higher,,,10.1111/acel.12325,0.96,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-5,higher,higher,,,10.1111/acel.12325,0.96,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-6,not significant,none,,,10.1111/acel.12325,0.74,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE63347-Horvathv1-7,higher,higher,,,10.1111/acel.12325,0.94,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE52588-Horvathv1-8,higher,higher,,,10.1111/acel.12325,0.99,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE52588-Horvathv1-9,lower,lower,,,10.1111/acel.12325,0.78,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE52588-Horvathv1-10,higher,higher,,,10.1111/acel.12325,0.97,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE50586-Horvathv1-11,not significant,higher,,,10.1111/acel.12325,0.72,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25678027-GSE50586-Horvathv1-12,not significant,none,,,10.1111/acel.12325,0.82,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE59457-Horvathv1-0,higher,higher,,,10.1093/infdis/jiv277,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE59457-Horvathv1-1,higher,higher,,,10.1093/infdis/jiv277,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE59457-Horvathv1-2,not significant,higher,,,10.1093/infdis/jiv277,0.75,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE59457-Horvathv1-3,higher,higher,,,10.1093/infdis/jiv277,0.86,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE59457-Horvathv1-4,higher,higher,,,10.1093/infdis/jiv277,0.95,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE53841-Horvathv1-5,higher,higher,,,10.1093/infdis/jiv277,0.97,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE53841-Horvathv1-6,higher,higher,,,10.1093/infdis/jiv277,0.99,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE67751-Horvathv1-7,higher,higher,,,10.1093/infdis/jiv277,0.96,S4:openai:gpt-6-astra,,,,,True,OK
+MED-25969563-GSE67751-Horvathv1-8,not significant,lower,,,10.1093/infdis/jiv277,0.62,S4:openai:gpt-6-astra,,,,,True,OK
+MED-29225347-GSE38873-Horvathv1-0,not significant,none,,,10.1038/s41398-017-0048-8,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29225347-GSE38873-Horvathv1-1,higher,higher,,,10.1038/s41398-017-0048-8,0.7,S4:openai:gpt-6-astra,,,,,True,OK
+MED-29225347-GSE38873-Horvathv1-2,higher,higher,,,10.1038/s41398-017-0048-8,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29974462-GSE75008-Horvathv1-0,lower,lower,,,10.1002/ijc.31641,0.67,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29974462-GSE75008-Horvathv1-1,higher,higher,,,10.1002/ijc.31641,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29974462-GSE75008-Horvathv1-2,higher,higher,,,10.1002/ijc.31641,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30185790-GSE72680-Horvathv1-0,not significant,higher,,,10.1038/s41398-018-0233-4,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30185790-GSE72680-Horvathv1-1,higher,higher,,,10.1038/s41398-018-0233-4,0.78,S4:openai:gpt-6-astra,,,,,True,OK
+MED-30185790-GSE60753-Horvathv1-2,higher,higher,,,10.1038/s41398-018-0233-4,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30185790-GSE60753-Horvathv1-3,higher,higher,,,10.1038/s41398-018-0233-4,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30185790-GSE49393-Horvathv1-4,not significant,none,,,10.1038/s41398-018-0233-4,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30185790-GSE49393-Horvathv1-5,not significant,higher,,,10.1038/s41398-018-0233-4,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30814520-GSE41169-Horvathv1-0,not significant,none,,,10.1038/s41537-019-0072-1,0.86,S4:openai:gpt-6-astra,,,,,True,OK
+MED-30814520-GSE41169-Horvathv1-1,not significant,none,,,10.1038/s41537-019-0072-1,0.86,S4:openai:gpt-6-astra,,,,,True,OK
+MED-30814520-GSE41169-other-2,not significant,none,,,10.1038/s41537-019-0072-1,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30814520-GSE38873-Horvathv1-3,not significant,none,,,10.1038/s41537-019-0072-1,0.82,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31409373-GSE74432-Horvathv1-0,higher,higher,,,10.1186/s13059-019-1753-9,0.99,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Horvathv1-1,higher,higher,,,10.1186/s13059-019-1753-9,0.99,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Hannum-2,higher,higher,,,10.1186/s13059-019-1753-9,0.72,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Hannum-3,higher,higher,,,10.1186/s13059-019-1753-9,0.72,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Lin-4,higher,higher,,,10.1186/s13059-019-1753-9,0.76,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Lin-5,higher,higher,,,10.1186/s13059-019-1753-9,0.76,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Horvathv2-6,not significant,none,,,10.1186/s13059-019-1753-9,0.62,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31409373-GSE74432-Horvathv2-7,not significant,none,,,10.1186/s13059-019-1753-9,0.62,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv1-0,lower,lower,,,10.1038/s41467-020-15174-3,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv1-1,lower,lower,,,10.1038/s41467-020-15174-3,0.95,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv1-2,not significant,lower,,,10.1038/s41467-020-15174-3,0.93,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv2-3,lower,lower,,,10.1038/s41467-020-15174-3,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv2-4,lower,lower,,,10.1038/s41467-020-15174-3,0.96,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32210226-GSE142439-Horvathv2-5,lower,lower,,,10.1038/s41467-020-15174-3,0.96,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32930491-GSE100249-PhenoAge-0,not significant,higher,,,10.1111/acel.13229,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE100249-Lin-1,not significant,none,,,10.1111/acel.13229,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE100249-Horvathv2-3,not significant,none,,,10.1111/acel.13229,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Lin-5,higher,higher,,,10.1111/acel.13229,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Lin-6,higher,higher,,,10.1111/acel.13229,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-PhenoAge-7,higher,higher,,,10.1111/acel.13229,0.77,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-PhenoAge-8,higher,higher,,,10.1111/acel.13229,0.75,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-PhenoAge-9,not significant,none,,,10.1111/acel.13229,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Lin-10,not significant,none,,,10.1111/acel.13229,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Hannum-11,not significant,none,,,10.1111/acel.13229,0.82,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Hannum-12,higher,higher,,,10.1111/acel.13229,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE91069-Hannum-13,higher,higher,,,10.1111/acel.13229,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE53051-PhenoAge-16,higher,higher,,,10.1111/acel.13229,0.84,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32930491-GSE53051-Hannum-18,higher,higher,,,10.1111/acel.13229,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Horvathv1-4,not significant,higher,,,10.18632/aging.206188,0.54,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Horvathv1-5,not significant,higher,,,10.18632/aging.206188,0.57,S4:openai:gpt-6-astra,,,,,True,OK
+MED-39853302-GSE72680-Horvathv1-6,not significant,higher,,,10.18632/aging.206188,0.6,S4:openai:gpt-6-astra,,,,,True,OK
+MED-39853302-GSE72680-Horvathv1-7,not significant,higher,,,10.18632/aging.206188,0.58,S4:openai:gpt-6-astra,,,,,True,OK
+MED-39853302-GSE72680-Hannum-8,not significant,higher,,,10.18632/aging.206188,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Hannum-9,not significant,higher,,,10.18632/aging.206188,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Hannum-10,not significant,higher,,,10.18632/aging.206188,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Hannum-11,not significant,higher,,,10.18632/aging.206188,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-PhenoAge-12,not significant,higher,,,10.18632/aging.206188,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-Horvathv2-13,not significant,higher,,,10.18632/aging.206188,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV1-14,not significant,higher,,,10.18632/aging.206188,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV2-15,not significant,higher,,,10.18632/aging.206188,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV1-16,not significant,higher,,,10.18632/aging.206188,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV2-17,not significant,higher,,,10.18632/aging.206188,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV1-18,not significant,higher,,,10.18632/aging.206188,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV1-19,not significant,higher,,,10.18632/aging.206188,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV2-20,not significant,higher,,,10.18632/aging.206188,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE72680-GrimAgeV2-21,not significant,higher,,,10.18632/aging.206188,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41250194-GSE164056-Horvathv1-0,not significant,none,,,10.1186/s12916-025-04480-6,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41250194-GSE164056-GrimAgeV1-1,not significant,higher,,,10.1186/s12916-025-04480-6,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41250194-GSE164056-Horvathv1-2,not significant,none,,,10.1186/s12916-025-04480-6,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41250194-GSE164056-GrimAgeV1-3,not significant,higher,,,10.1186/s12916-025-04480-6,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41469738-GSE77718-other-0,higher,higher,,,10.1186/s13148-025-02025-5,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41469738-GSE77718-other-1,not significant,higher,,,10.1186/s13148-025-02025-5,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41469738-GSE77718-other-2,higher,higher,,,10.1186/s13148-025-02025-5,0.82,S4:openai:gpt-6-astra,,,,,False,OK
+MED-41469738-GSE77718-other-3,higher,higher,,,10.1186/s13148-025-02025-5,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE179848-other-0,higher,higher,,,10.1038/s41586-026-10542-3,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE179848-other-1,higher,higher,,,10.1038/s41586-026-10542-3,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE179848-other-2,lower,lower,,,10.1038/s41586-026-10542-3,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE179848-other-3,lower,lower,,,10.1038/s41586-026-10542-3,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE175533-Hazard2_All_All_All_scaleddiff_EN_tAge-4,lower,lower,,,10.1038/s41586-026-10542-3,0.82,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE175533-other-5,lower,lower,,,10.1038/s41586-026-10542-3,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE104704-other-6,higher,higher,,,10.1038/s41586-026-10542-3,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE135055-other-7,higher,higher,,,10.1038/s41586-026-10542-3,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE157712-other-8,higher,higher,,,10.1038/s41586-026-10542-3,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42203874-GSE166925-other-9,higher,higher,,,10.1038/s41586-026-10542-3,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+PMC-PMC9158789-GSE99624-Horvathv1-1,not significant,none,,,PMC9158789,0.96,S4:openai:gpt-6-astra,,,,,False,OK
+PMC-PMC9158789-GSE45727-Horvathv1-3,higher,higher,,,PMC9158789,0.8,S4:openai:gpt-6-astra,,,,,True,OK
+PMC-PMC9158789-GSE45727-Horvathv1-5,not significant,none,,,PMC9158789,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-25856389-GSE62867-Horvathv1-0,not significant,none,,,10.1371/journal.pone.0122601,0.5,S4:openai:gpt-6-astra,,,,,False,OK
+MED-26000617-GSE64490-Horvathv1-0,lower,lower,,,10.18632/aging.100742,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-26000617-GSE64491-Horvathv1-1,lower,lower,,,10.18632/aging.100742,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-26000617-GSE64509-Horvathv1-2,lower,lower,,,10.18632/aging.100742,0.98,S4:openai:gpt-6-astra,,,,,True,OK
+MED-26000617-GSE64491-Horvathv1-3,lower,lower,,,10.18632/aging.100742,0.74,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27245352-GSE73747-Horvathv1-0,higher,higher,,,10.1080/15592294.2016.1192736,0.67,S4:openai:gpt-6-astra,,,,,False,OK
+MED-27511193-GSE27317-Horvathv1-0,not significant,none,,,10.1186/s13059-016-1030-0,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-27511193-GSE38873-Horvathv1-1,not significant,none,,,10.1186/s13059-016-1030-0,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-27511193-GSE53740-Horvathv1-2,not significant,none,,,10.1186/s13059-016-1030-0,0.6,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE72773-Horvathv1-3,lower,lower,,,10.1186/s13059-016-1030-0,0.95,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE72773-Horvathv1-4,lower,lower,,,10.1186/s13059-016-1030-0,0.91,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE72777-Horvathv1-5,not significant,none,,,10.1186/s13059-016-1030-0,0.55,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE78874-Horvathv1-6,lower,lower,,,10.1186/s13059-016-1030-0,0.88,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE78874-Horvathv1-7,higher,higher,,,10.1186/s13059-016-1030-0,0.84,S4:openai:gpt-6-astra,,,,,True,OK
+MED-27511193-GSE78874-Horvathv1-8,not significant,none,,,10.1186/s13059-016-1030-0,0.74,S4:openai:gpt-6-astra,,,,,True,OK
+MED-28693600-GSE88883-Horvathv1-0,higher,higher,,,10.1186/s13058-017-0873-y,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29515201-GSE69138-Hannum-0,higher,higher,,,10.1038/s41598-018-22579-0,0.9,S4:openai:gpt-6-astra,,,,,True,OK
+MED-29796118-GSE103010-Hannum-0,higher,higher,,,10.1186/s13148-018-0499-7,0.67,S4:openai:gpt-6-astra,,,,,False,OK
+MED-29796118-GSE103010-Horvathv1-1,not significant,none,,,10.1186/s13148-018-0499-7,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30575306-GSE69954-Horvathv1-0,higher,higher,,,10.1002/cam4.1917,0.86,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-0,lower,lower,,,10.1186/s13148-018-0584-y,0.61,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-1,lower,lower,,,10.1186/s13148-018-0584-y,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-2,lower,lower,,,10.1186/s13148-018-0584-y,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-3,not significant,lower,,,10.1186/s13148-018-0584-y,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-4,not significant,higher,,,10.1186/s13148-018-0584-y,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-5,not significant,none,,,10.1186/s13148-018-0584-y,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-6,not significant,lower,,,10.1186/s13148-018-0584-y,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-7,not significant,higher,,,10.1186/s13148-018-0584-y,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-8,not significant,none,,,10.1186/s13148-018-0584-y,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-9,not significant,lower,,,10.1186/s13148-018-0584-y,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-10,not significant,higher,,,10.1186/s13148-018-0584-y,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-30587242-GSE73894-Horvathv1-11,not significant,none,,,10.1186/s13148-018-0584-y,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE20067-Horvathv1-0,lower,lower,,,10.1371/journal.pone.0207834,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE20067-Horvathv1-1,lower,lower,,,10.1371/journal.pone.0207834,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE20242-Horvathv1-2,not significant,lower,,,10.1371/journal.pone.0207834,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE20242-Horvathv1-3,not significant,lower,,,10.1371/journal.pone.0207834,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE40279-Horvathv1-4,lower,lower,,,10.1371/journal.pone.0207834,0.92,S4:openai:gpt-6-astra,,,,,True,OK
+MED-31002714-GSE40279-Horvathv1-5,lower,lower,,,10.1371/journal.pone.0207834,0.9,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE41037-Horvathv1-6,lower,lower,,,10.1371/journal.pone.0207834,0.88,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE41037-Horvathv1-7,lower,lower,,,10.1371/journal.pone.0207834,0.86,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE41169-Horvathv1-8,not significant,lower,,,10.1371/journal.pone.0207834,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31002714-GSE41169-Horvathv1-9,not significant,lower,,,10.1371/journal.pone.0207834,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31375641-GSE116339-Horvathv1-0,higher,higher,,,10.18632/aging.102134,0.85,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31375641-GSE116339-Hannum-1,higher,higher,,,10.18632/aging.102134,0.86,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31526398-GSE80559-Horvathv1-0,not significant,higher,,,10.1186/s13104-019-4633-1,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31526398-GSE80559-Horvathv1-1,not significant,higher,,,10.1186/s13104-019-4633-1,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31526398-GSE80559-Horvathv1-2,not significant,none,,,10.1186/s13104-019-4633-1,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31628391-GSE100850-Horvathv1-0,higher,higher,,,10.1038/s41598-019-51457-6,0.86,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31628391-GSE100850-Horvathv1-1,higher,higher,,,10.1038/s41598-019-51457-6,0.84,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31628391-GSE100850-Horvathv1-2,higher,higher,,,10.1038/s41598-019-51457-6,0.84,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31943067-GSE133918-Horvathv1-0,not significant,higher,,,10.1093/hmg/ddz301,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-31943067-GSE133918-Horvathv1-1,not significant,higher,,,10.1093/hmg/ddz301,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-Hannum-0,not significant,none,,,10.3389/fpubh.2020.00172,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-Horvathv1-1,not significant,none,,,10.3389/fpubh.2020.00172,0.83,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-Hannum-2,not significant,none,,,10.3389/fpubh.2020.00172,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-Horvathv2-3,not significant,none,,,10.3389/fpubh.2020.00172,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-PhenoAge-4,not significant,none,,,10.3389/fpubh.2020.00172,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE53128-GrimAgeV1-5,not significant,none,,,10.3389/fpubh.2020.00172,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE85506-Horvathv1-6,not significant,none,,,10.3389/fpubh.2020.00172,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE85506-Hannum-7,not significant,none,,,10.3389/fpubh.2020.00172,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE85506-Horvathv2-8,not significant,none,,,10.3389/fpubh.2020.00172,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE85506-PhenoAge-9,not significant,higher,,,10.3389/fpubh.2020.00172,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32582603-GSE85506-GrimAgeV1-10,not significant,higher,,,10.3389/fpubh.2020.00172,0.63,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32660606-GSE151617-Horvathv2-3,higher,higher,,,10.1186/s13148-020-00899-1,0.85,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32660606-GSE151617-Horvathv2-7,not significant,lower,,,10.1186/s13148-020-00899-1,0.65,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32660606-GSE151617-Horvathv2-9,not significant,lower,,,10.1186/s13148-020-00899-1,0.62,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32660606-GSE142439-Horvathv2-10,lower,lower,,,10.1186/s13148-020-00899-1,0.94,S4:openai:gpt-6-astra,,,,,True,OK
+MED-32819411-GSE141106-Horvathv1-0,not significant,none,,,10.1186/s13148-020-00914-5,0.94,S4:openai:gpt-6-astra,,,,,False,OK
+MED-32819411-GSE141106-Horvathv1-1,not significant,none,,,10.1186/s13148-020-00914-5,0.95,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33268865-GSE147436-Horvathv2-0,higher,higher,,,10.1038/s41586-020-2975-4,0.94,S4:openai:gpt-6-astra,,,,,True,OK
+MED-33268865-GSE147436-Horvathv2-1,lower,lower,,,10.1038/s41586-020-2975-4,0.95,S4:openai:gpt-6-astra,,,,,True,OK
+MED-33374448-GSE123914-PhenoAge-0,not significant,higher,,,10.3390/biomedicines9010013,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33374448-GSE123914-PhenoAge-1,not significant,higher,,,10.3390/biomedicines9010013,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33374448-GSE123914-PhenoAge-2,not significant,higher,,,10.3390/biomedicines9010013,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33374448-GSE123914-PhenoAge-3,not significant,higher,,,10.3390/biomedicines9010013,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33530447-GSE152204-Horvathv1-0,not significant,none,,,10.3390/ijms22031190,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33815458-GSE30601-Horvathv1-0,higher,higher,,,10.3389/fgene.2021.563051,0.77,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-0,not significant,none,,,10.1038/s41598-021-87045-w,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-1,not significant,none,,,10.1038/s41598-021-87045-w,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-2,not significant,none,,,10.1038/s41598-021-87045-w,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-3,not significant,none,,,10.1038/s41598-021-87045-w,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-4,not significant,none,,,10.1038/s41598-021-87045-w,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-6,not significant,none,,,10.1038/s41598-021-87045-w,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-7,not significant,none,,,10.1038/s41598-021-87045-w,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-33833304-GSE78975-Horvathv1-8,not significant,none,,,10.1038/s41598-021-87045-w,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-34573415-GSE164563-Horvathv1-0,not significant,none,,,10.3390/genes12091433,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-34573415-GSE164563-Horvathv1-1,not significant,none,,,10.3390/genes12091433,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35092358-GSE125367-Horvathv1-0,not significant,none,,,10.1002/mgg3.1876,0.48,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35092358-GSE125367-Hannum-1,not significant,none,,,10.1002/mgg3.1876,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35092358-GSE125367-PhenoAge-2,not significant,none,,,10.1002/mgg3.1876,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35092358-GSE125367-GrimAgeV1-3,not significant,none,,,10.1002/mgg3.1876,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35094088-GSE191276-other-0,higher,higher,,,10.1093/hmg/ddac026,0.94,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Horvathv1-0,not significant,none,,,10.1371/journal.pone.0263478,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Hannum-1,not significant,none,,,10.1371/journal.pone.0263478,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Horvathv2-2,not significant,none,,,10.1371/journal.pone.0263478,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-PhenoAge-3,not significant,none,,,10.1371/journal.pone.0263478,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-GrimAgeV1-4,not significant,none,,,10.1371/journal.pone.0263478,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Horvathv1-6,not significant,none,,,10.1371/journal.pone.0263478,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Hannum-7,not significant,none,,,10.1371/journal.pone.0263478,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-Horvathv2-8,not significant,none,,,10.1371/journal.pone.0263478,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-PhenoAge-9,not significant,none,,,10.1371/journal.pone.0263478,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35113965-GSE109905-GrimAgeV1-10,not significant,none,,,10.1371/journal.pone.0263478,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35354948-GSE162560-Horvathv2-0,higher,higher,,,10.1038/s41416-022-01792-9,0.84,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35354948-GSE162560-Horvathv2-2,not significant,higher,,,10.1038/s41416-022-01792-9,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35369101-GSE193836-Horvathv1-0,not significant,none,,,10.3389/fnut.2022.785281,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35369101-GSE193836-Horvathv1-1,not significant,none,,,10.3389/fnut.2022.785281,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35369101-GSE193836-Horvathv1-2,not significant,higher,,,10.3389/fnut.2022.785281,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-35369101-GSE193836-Horvathv1-3,not significant,higher,,,10.3389/fnut.2022.785281,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-0,not significant,none,,,10.1038/s41537-022-00277-1,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-1,not significant,none,,,10.1038/s41537-022-00277-1,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-2,not significant,none,,,10.1038/s41537-022-00277-1,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-3,not significant,none,,,10.1038/s41537-022-00277-1,0.45,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-4,not significant,none,,,10.1038/s41537-022-00277-1,0.67,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Horvathv2-5,not significant,none,,,10.1038/s41537-022-00277-1,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Hannum-7,not significant,none,,,10.1038/s41537-022-00277-1,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36038613-GSE185973-Hannum-8,not significant,none,,,10.1038/s41537-022-00277-1,0.5,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36046788-GSE199700-Horvathv1-0,not significant,none,,,10.3389/fendo.2022.895489,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36046788-GSE199700-Horvathv1-3,not significant,none,,,10.3389/fendo.2022.895489,0.74,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36046788-GSE199700-Horvathv1-6,not significant,none,,,10.3389/fendo.2022.895489,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-GrimAgeV1-0,not significant,lower,,,10.1111/acel.13696,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-Horvathv1-1,not significant,lower,,,10.1111/acel.13696,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-Hannum-2,not significant,lower,,,10.1111/acel.13696,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-Horvathv2-3,lower,lower,,,10.1111/acel.13696,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-PhenoAge-4,not significant,lower,,,10.1111/acel.13696,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36052758-GSE210245-GrimAgeV1-5,not significant,lower,,,10.1111/acel.13696,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE106648-Horvathv1-0,higher,higher,,,10.3389/fnagi.2022.926468,0.66,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE40360-Horvathv1-2,not significant,none,,,10.3389/fnagi.2022.926468,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE40360-Horvathv1-4,not significant,none,,,10.3389/fnagi.2022.926468,0.74,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE40360-Horvathv1-6,not significant,lower,,,10.3389/fnagi.2022.926468,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE166207-Horvathv1-8,not significant,none,,,10.3389/fnagi.2022.926468,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE166207-Horvathv1-9,not significant,higher,,,10.3389/fnagi.2022.926468,0.61,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36092807-GSE119532-Horvathv1-10,not significant,lower,,,10.3389/fnagi.2022.926468,0.61,S4:openai:gpt-6-astra,,,,,False,OK
+MED-36542090-GSE143157-Horvathv1-2,not significant,none,,,10.1111/nan.12872,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Hannum-0,higher,higher,,,10.3390/cells12141922,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Hannum-1,not significant,none,,,10.3390/cells12141922,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Horvathv1-2,not significant,none,,,10.3390/cells12141922,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Horvathv1-3,not significant,none,,,10.3390/cells12141922,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Hannum-4,higher,higher,,,10.3390/cells12141922,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Hannum-5,not significant,none,,,10.3390/cells12141922,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Horvathv1-6,not significant,none,,,10.3390/cells12141922,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-Horvathv1-7,not significant,none,,,10.3390/cells12141922,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-other-8,higher,higher,,,10.3390/cells12141922,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-other-9,not significant,none,,,10.3390/cells12141922,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-PhenoAge-10,higher,higher,,,10.3390/cells12141922,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-GrimAgeV1-11,higher,higher,,,10.3390/cells12141922,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE53740-GrimAgeV1-12,higher,higher,,,10.3390/cells12141922,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37508584-GSE75704-Horvathv1-13,higher,higher,,,10.3390/cells12141922,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37541839-GSE106648-GrimAgeV1-0,higher,higher,,,10.1212/wnl.0000000000207489,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37541839-GSE106648-GrimAgeV1-1,higher,higher,,,10.1212/wnl.0000000000207489,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37702598-GSE52588-PhenoAge-0,lower,lower,,,10.18632/aging.205046,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37702598-GSE72774-PhenoAge-1,not significant,higher,,,10.18632/aging.205046,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-37702598-GSE72774-PhenoAge-2,higher,higher,,,10.18632/aging.205046,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38638005-GSE35069-Horvathv1-0,not significant,none,,,10.1111/acel.14170,0.65,S4:openai:gpt-6-astra,,,,,True,OK
+MED-38638005-GSE35069-Horvathv1-1,lower,lower,,,10.1111/acel.14170,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38638005-GSE35069-Horvathv1-2,not significant,none,,,10.1111/acel.14170,0.67,S4:openai:gpt-6-astra,,,,,True,OK
+MED-38820227-GSE178887-other-2,not significant,higher,,,10.1080/15592294.2024.2360160,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38820227-GSE178887-other-3,not significant,higher,,,10.1080/15592294.2024.2360160,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38820227-GSE178887-DunedinPACE-5,not significant,higher,,,10.1080/15592294.2024.2360160,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-Horvathv1-0,not significant,none,,,10.1016/j.jacig.2024.100275,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-Horvathv2-1,not significant,higher,,,10.1016/j.jacig.2024.100275,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-PhenoAge-2,not significant,higher,,,10.1016/j.jacig.2024.100275,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-GrimAgeV1-3,not significant,higher,,,10.1016/j.jacig.2024.100275,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-Horvathv1-5,not significant,higher,,,10.1016/j.jacig.2024.100275,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-38826624-GSE152084-Horvathv2-6,not significant,higher,,,10.1016/j.jacig.2024.100275,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39095531-GSE91069-PhenoAge-2,higher,higher,,,10.1038/s42003-024-06609-4,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39095531-GSE91069-Hannum-3,not significant,higher,,,10.1038/s42003-024-06609-4,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-1,lower,lower,,,10.18632/aging.206072,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-2,lower,lower,,,10.18632/aging.206072,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-3,not significant,lower,,,10.18632/aging.206072,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-4,not significant,lower,,,10.18632/aging.206072,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-5,not significant,lower,,,10.18632/aging.206072,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39159130-GSE69138-Horvathv1-6,lower,lower,,,10.18632/aging.206072,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-Horvathv1-0,not significant,none,,,10.1002/npr2.12487,0.72,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-Hannum-1,not significant,none,,,10.1002/npr2.12487,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-Horvathv2-2,not significant,none,,,10.1002/npr2.12487,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-PhenoAge-3,not significant,higher,,,10.1002/npr2.12487,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-GrimAgeV1-4,not significant,higher,,,10.1002/npr2.12487,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-GrimAgeV2-5,not significant,higher,,,10.1002/npr2.12487,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39403983-GSE164056-DunedinPACE-6,not significant,higher,,,10.1002/npr2.12487,0.61,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39680552-GSE199700-Horvathv1-0,not significant,none,,,10.1371/journal.pone.0315250,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39680552-GSE199700-Hannum-1,not significant,higher,,,10.1371/journal.pone.0315250,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39680552-GSE199700-PhenoAge-2,not significant,higher,,,10.1371/journal.pone.0315250,0.68,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39680552-GSE199700-GrimAgeV1-3,higher,higher,,,10.1371/journal.pone.0315250,0.76,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-Horvathv1-1,not significant,none,,,10.18632/aging.206188,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-Hannum-2,not significant,none,,,10.18632/aging.206188,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-PhenoAge-3,not significant,higher,,,10.18632/aging.206188,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-Horvathv2-4,not significant,none,,,10.18632/aging.206188,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-GrimAgeV1-5,not significant,higher,,,10.18632/aging.206188,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39853302-GSE144858-GrimAgeV2-6,higher,higher,,,10.18632/aging.206188,0.73,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE119846-Horvathv1-0,not significant,none,,,10.1186/s13148-025-01837-9,0.64,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE119846-Horvathv1-1,not significant,none,,,10.1186/s13148-025-01837-9,0.57,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE210301-Horvathv1-2,not significant,none,,,10.1186/s13148-025-01837-9,0.86,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE210301-Horvathv1-3,not significant,none,,,10.1186/s13148-025-01837-9,0.87,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE210301-Horvathv1-4,not significant,none,,,10.1186/s13148-025-01837-9,0.84,S4:openai:gpt-6-astra,,,,,False,OK
+MED-39980002-GSE210301-Horvathv1-5,not significant,none,,,10.1186/s13148-025-01837-9,0.88,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Horvathv1-0,not significant,none,,,10.59249/xmgo7523,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Horvathv1-1,not significant,none,,,10.59249/xmgo7523,0.7,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Horvathv1-2,not significant,none,,,10.59249/xmgo7523,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Horvathv1-3,not significant,none,,,10.59249/xmgo7523,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Hannum-4,not significant,none,,,10.59249/xmgo7523,0.61,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Hannum-5,not significant,none,,,10.59249/xmgo7523,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Hannum-6,not significant,none,,,10.59249/xmgo7523,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-Hannum-7,higher,higher,,,10.59249/xmgo7523,0.65,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-PhenoAge-8,not significant,none,,,10.59249/xmgo7523,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-PhenoAge-9,not significant,lower,,,10.59249/xmgo7523,0.56,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-PhenoAge-10,not significant,higher,,,10.59249/xmgo7523,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-PhenoAge-11,not significant,higher,,,10.59249/xmgo7523,0.62,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-DunedinPACE-12,not significant,none,,,10.59249/xmgo7523,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-DunedinPACE-13,not significant,lower,,,10.59249/xmgo7523,0.55,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-DunedinPACE-14,not significant,higher,,,10.59249/xmgo7523,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-40589934-GSE176394-DunedinPACE-15,not significant,higher,,,10.59249/xmgo7523,0.58,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42481916-GSE171140-DunedinPACE-0,not significant,none,,,10.1111/acel.70638,0.75,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42481916-GSE171140-other-1,not significant,none,,,10.1111/acel.70638,0.8,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42481916-GSE171140-other-3,not significant,none,,,10.1111/acel.70638,0.74,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42481916-GSE171140-other-4,not significant,none,,,10.1111/acel.70638,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+MED-42481916-GSE171140-GrimAgeV2-5,lower,lower,,,10.1111/acel.70638,0.6,S4:openai:gpt-6-astra,,,,,False,OK
+PMC-PMC9158789-GSE142439-Horvathv1-1,lower,lower,,,PMC9158789,0.97,S4:openai:gpt-6-astra,,,,,True,OK
+PMC-PMC9158789-GSE53051-Horvathv1-4,higher,higher,,,PMC9158789,0.78,S4:openai:gpt-6-astra,,,,,False,OK
+PMC-PMC9158789-GSE100249-Horvathv1-5,not significant,none,,,PMC9158789,0.45,S4:openai:gpt-6-astra,,,,,False,OK

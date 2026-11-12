@@ -11,3 +11,4 @@ scores/
 .env.*
 *.pem
 *.key
+.memory/

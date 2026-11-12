@@ -1,0 +1,345 @@
+{
+  "export_date": "2026-11-12",
+  "inputs": [
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/ground_truth_t1_v2_final_2026-10-05.jsonl",
+      "sha256": "3bba762ad5f5caec2852ffdebfe66f82da602064a18ea63a0bfb4d627019221e",
+      "bytes": 1382587,
+      "mtime_ns": 1791237569000000000
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/results_2026_11_12/published_released_test.csv",
+      "sha256": "ef179031cceb92821bff9efafa09c2e9306e7c270e23ce103bb0908afa51fefe",
+      "bytes": 33743,
+      "mtime_ns": 1794482097141361158
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/results_2026_11_12/auroc.json",
+      "sha256": "887c8e304a2ea68a8d1ec7f9a8cfa509afcb35390d47cc5d478efcf7e12ffc3e",
+      "bytes": 11797,
+      "mtime_ns": 1794482097131664350
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/runs/t1-openai-002-s4/records.jsonl",
+      "sha256": "66ffce5557da058d05fd51b1d8a7959834f6694e6f38d4929f163107b7534ddf",
+      "bytes": 5509803,
+      "mtime_ns": 1791237264000000000
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/runs/t1new-openai-001-s4/records.jsonl",
+      "sha256": "74f48c202b57f6e95294f335f76134b673c0409cb657f6222c02c7dced0b7826",
+      "bytes": 11674447,
+      "mtime_ns": 1791240579000000000
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/agentbench/scored-001/records.jsonl",
+      "sha256": "7984a2c1cd3d09fdd4a99ac0173b7067a0df2010862ae96c9942f34617418305",
+      "bytes": 1289884,
+      "mtime_ns": 1791700776000000000
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/agentbench/scored-claude-001/records.jsonl",
+      "sha256": "1a27b33490ecfa3e3145e517b83d4779395545e398443c9e103e22d3633c6886",
+      "bytes": 1104299,
+      "mtime_ns": 1792299498000000000
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/agentbench/scored-biomni-001/records.jsonl",
+      "sha256": "c1fcb4a3edb8c4420ebd39f7674d902c17f1cc8c25ff72d135a48198fa3f67fa",
+      "bytes": 1097127,
+      "mtime_ns": 1792309919000000000
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/dnam/rows.jsonl",
+      "sha256": "079e8fb4ea1f9dabeea0882986cf1f50fdc8290e6b9a011ace3693353f8f2d06",
+      "bytes": 9019151,
+      "mtime_ns": 1794482042534553259
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/hs_rna/rows.jsonl",
+      "sha256": "8caa34066e127ee94ef8c0b978ca84b0ed925ebba5999732341358e7dc7ea7e2",
+      "bytes": 17629487,
+      "mtime_ns": 1794482046979713847
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/mm_rna/rows.jsonl",
+      "sha256": "2be2706c8e1dea4c052aa795a01eac6e4e853984bb14d0e56f4214e6f4e29730",
+      "bytes": 19552259,
+      "mtime_ns": 1794482051847473013
+    },
+    {
+      "path": "data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/a_result_stages.jsonl",
+      "sha256": "281f22e90f4de60901c5bcdc4a850a6190688c071664be3fd5f9cb2dec482be2",
+      "bytes": 217490,
+      "mtime_ns": 1794482071542698959
+    }
+  ],
+  "files": {
+    "clockbase_agent_stored.csv": {
+      "records": 107,
+      "calls": {
+        "not significant": 73,
+        "higher": 24,
+        "lower": 10
+      }
+    },
+    "clockbase_atlas_welch.csv": {
+      "records": 116,
+      "calls": {
+        "not significant": 77,
+        "higher": 25,
+        "lower": 11,
+        "": 3
+      }
+    },
+    "clockbase_paper_groups_welch.csv": {
+      "records": 154,
+      "calls": {
+        "not significant": 97,
+        "higher": 38,
+        "lower": 16,
+        "": 3
+      }
+    },
+    "language_model_gpt_4_1.csv": {
+      "records": 323,
+      "calls": {
+        "higher": 157,
+        "not significant": 135,
+        "lower": 31
+      }
+    },
+    "language_model_gpt_5_5.csv": {
+      "records": 324,
+      "calls": {
+        "higher": 91,
+        "not significant": 197,
+        "lower": 36
+      }
+    },
+    "language_model_gpt_6_astra.csv": {
+      "records": 324,
+      "calls": {
+        "higher": 79,
+        "not significant": 208,
+        "lower": 37
+      }
+    },
+    "language_model_gpt_6_luna.csv": {
+      "records": 324,
+      "calls": {
+        "higher": 65,
+        "lower": 32,
+        "not significant": 227
+      }
+    },
+    "language_model_gpt_6_sol.csv": {
+      "records": 324,
+      "calls": {
+        "higher": 85,
+        "lower": 35,
+        "not significant": 204
+      }
+    },
+    "constant_higher.csv": {
+      "records": 580,
+      "calls": {
+        "higher": 580
+      }
+    },
+    "clockbase_paper_groups.csv": {
+      "records": 110,
+      "calls": {
+        "not significant": 63,
+        "higher": 34,
+        "lower": 13
+      }
+    },
+    "clockbase_paper_groups_individual_readers.csv": {
+      "records": 110,
+      "calls": {
+        "not significant": 63,
+        "higher": 34,
+        "lower": 13
+      }
+    },
+    "clockbase_atlas_verified.csv": {
+      "records": 115,
+      "calls": {
+        "not significant": 75,
+        "higher": 27,
+        "lower": 10,
+        "": 3
+      }
+    },
+    "clockbase_paper_groups_guarded.csv": {
+      "records": 154,
+      "calls": {
+        "not significant": 95,
+        "higher": 38,
+        "lower": 16,
+        "": 5
+      }
+    },
+    "agent_codex_gpt_5_5_raw.csv": {
+      "records": 100,
+      "calls": {
+        "not significant": 62,
+        "higher": 27,
+        "lower": 8,
+        "": 3
+      }
+    },
+    "agent_codex_gpt_5_5_recomputed.csv": {
+      "records": 101,
+      "calls": {
+        "not significant": 58,
+        "higher": 30,
+        "": 6,
+        "lower": 7
+      }
+    },
+    "agent_codex_gpt_6_astra_raw.csv": {
+      "records": 84,
+      "calls": {
+        "not significant": 55,
+        "higher": 20,
+        "lower": 6,
+        "": 3
+      }
+    },
+    "agent_codex_gpt_6_astra_recomputed.csv": {
+      "records": 84,
+      "calls": {
+        "not significant": 58,
+        "higher": 19,
+        "lower": 3,
+        "": 4
+      }
+    },
+    "agent_codex_gpt_6_luna_raw.csv": {
+      "records": 92,
+      "calls": {
+        "not significant": 66,
+        "higher": 19,
+        "lower": 4,
+        "": 3
+      }
+    },
+    "agent_codex_gpt_6_luna_recomputed.csv": {
+      "records": 93,
+      "calls": {
+        "not significant": 58,
+        "higher": 26,
+        "": 6,
+        "lower": 3
+      }
+    },
+    "agent_codex_gpt_6_sol_raw.csv": {
+      "records": 86,
+      "calls": {
+        "not significant": 56,
+        "higher": 19,
+        "lower": 8,
+        "": 3
+      }
+    },
+    "agent_codex_gpt_6_sol_recomputed.csv": {
+      "records": 86,
+      "calls": {
+        "not significant": 50,
+        "higher": 24,
+        "lower": 7,
+        "": 5
+      }
+    },
+    "agent_claude_code_claude_opus_5_5_raw.csv": {
+      "records": 107,
+      "calls": {
+        "not significant": 62,
+        "higher": 30,
+        "lower": 12,
+        "": 3
+      }
+    },
+    "agent_claude_code_claude_opus_5_5_recomputed.csv": {
+      "records": 110,
+      "calls": {
+        "not significant": 60,
+        "higher": 33,
+        "lower": 10,
+        "": 7
+      }
+    },
+    "agent_biomni_gpt_6_astra_raw.csv": {
+      "records": 82,
+      "calls": {
+        "not significant": 54,
+        "higher": 18,
+        "lower": 7,
+        "": 3
+      }
+    },
+    "agent_biomni_gpt_6_astra_recomputed.csv": {
+      "records": 82,
+      "calls": {
+        "not significant": 55,
+        "higher": 17,
+        "": 4,
+        "lower": 6
+      }
+    },
+    "expert_agent.csv": {
+      "records": 290,
+      "calls": {
+        "not significant": 190,
+        "lower": 43,
+        "higher": 57
+      }
+    },
+    "expert_released.csv": {
+      "records": 269,
+      "calls": {
+        "not significant": 179,
+        "lower": 38,
+        "higher": 52
+      }
+    },
+    "expert_candidate.csv": {
+      "records": 257,
+      "calls": {
+        "not significant": 185,
+        "lower": 23,
+        "higher": 49
+      }
+    }
+  },
+  "cohorts": {
+    "main110": 110,
+    "paper_groups_welch113": 113,
+    "atlas_shared93": 93,
+    "agent_task158": 158,
+    "agent_shared_codex": 68,
+    "agent_shared_claude_code": 82,
+    "agent_shared_biomni": 70
+  },
+  "bootstrap": {
+    "balanced_accuracy": {
+      "replicates": 1000,
+      "seed": 20261005,
+      "unit": "paper"
+    },
+    "direction_auroc_and_effect": {
+      "replicates": 2000,
+      "seed": 20261009,
+      "unit": "paper"
+    }
+  },
+  "notes": [
+    "Only parsed predictions are exported. A missing row is an abstention or unavailable prediction, not a not-significant prediction. A blank call with status direction_only preserves an available direction without an inferential call.",
+    "The S3c and S3r source CSV stores calls, directions and P values but not effect estimates. Their effect columns are empty.",
+    "S3g effect pairs retain all 30 source numeric estimates. Four source predictions were recomputed after dropping clock outputs above 1000 years; source estimates and P values are preserved.",
+    "The original three-way CI uses 1000 paper bootstraps; the finding AUROC and effect correlation use 2000.",
+    "Expert results do not include unpublished annotation content or sample labels."
+  ]
+}

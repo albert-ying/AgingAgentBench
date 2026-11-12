@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clockeffectbench"
+version = "0.1.0"
+description = "Score analysis systems against published aging-clock effects"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Kejun Albert Ying"}]
+dependencies = ["numpy>=1.24", "pandas>=2.0", "scipy>=1.10"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+clockeffectbench = "clockeffectbench.cli:main"
+
+[tool.setuptools]
+packages = ["clockeffectbench", "clockeffectbench.data", "clockeffectbench.reference_results"]
+package-dir = {"clockeffectbench.data" = "data", "clockeffectbench.reference_results" = "reference_results"}
+license-files = ["LICENSE", "DATA_LICENSE.md"]
+
+[tool.setuptools.package-data]
+"clockeffectbench.data" = ["*.jsonl", "*.json", "*.csv", "*.md", "**/*.jsonl", "**/*.json", "**/*.csv", "**/*.md"]
+"clockeffectbench.reference_results" = ["*.jsonl", "*.json", "*.csv", "*.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,41 @@
+{
+  "inputs": [
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/engine/metrics.py",
+      "sha256": "5122140e62e4dcc27e76d4c1b7c5232b63fc777b05e867736dc748ee7d0762ba",
+      "bytes": 8195,
+      "mtime_ns": 1793781306621252866
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/summarize_2026_10_05.py",
+      "sha256": "866f106c358433d54ccff0446ec8c0100297ddacf81f97a234a6cd9c5534ea43",
+      "bytes": 15709,
+      "mtime_ns": 1793781306663731970
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/design_eval.py",
+      "sha256": "e2e87649e52ede02ffffb42eb44ce007cff11b91628bdf48f08b1b83045da22a",
+      "bytes": 44044,
+      "mtime_ns": 1794470705238707299
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/groupbench/published_released_test.py",
+      "sha256": "f6bcb3cd71d139a22d36fc9bdcc1e18bc7c0bdc78a1e50ee63e553e657f237f3",
+      "bytes": 19113,
+      "mtime_ns": 1793781306632866345
+    },
+    {
+      "path": "aging-ai-nature-appeal/benchmark/published_clock_2026_10_05/llm_baseline/prompts.py",
+      "sha256": "be243cd82e65bf06f099f490611d6aa3ab7c49deb94c31fcb8ae4c1772eb986b",
+      "bytes": 13978,
+      "mtime_ns": 1793781306661587958
+    },
+    {
+      "path": "reclass_2026-11-12/final_text/01_Manuscript_ClockBase_final_2026-11-06.txt",
+      "sha256": "d17d5b1f6e78166498edd6fdbe1c4cb7379b17762a3b10519af393fccf19591c",
+      "bytes": 273005,
+      "mtime_ns": 1794503505235039772
+    }
+  ],
+  "comparison": "Tests read archived source metric fixtures separately from computed results."
+}

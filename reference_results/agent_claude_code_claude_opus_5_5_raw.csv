@@ -1,0 +1,108 @@
+record_id,call,direction,p_value,effect,paper_id,confidence,source_system,method,row_ordinal,n_case,n_control,recognizes_publication,status
+MED-25678027-GSE25395-Horvathv1-0,not significant,higher,0.05693342772072061,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE25395-Horvathv1-1,not significant,higher,0.05693342772072061,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE63347-Horvathv1-2,higher,higher,9.195493851531398e-14,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE63347-Horvathv1-4,higher,higher,9.195493851531398e-14,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE63347-Horvathv1-5,higher,higher,9.195493851531398e-14,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE52588-Horvathv1-8,not significant,higher,0.10692158914808005,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE52588-Horvathv1-9,not significant,higher,0.10692158914808005,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE52588-Horvathv1-10,not significant,higher,0.10692158914808005,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE50586-Horvathv1-11,not significant,higher,0.6822950612143526,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25678027-GSE50586-Horvathv1-12,not significant,higher,0.6822950612143526,,10.1111/acel.12325,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25969563-GSE59457-Horvathv1-0,higher,higher,0.0010444314588781126,,10.1093/infdis/jiv277,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25969563-GSE67751-Horvathv1-7,higher,higher,0.0015017997417917815,,10.1093/infdis/jiv277,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25969563-GSE67751-Horvathv1-8,higher,higher,0.0015017997417917815,,10.1093/infdis/jiv277,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-29225347-GSE38873-Horvathv1-0,not significant,higher,0.16341748195443276,,10.1038/s41398-017-0048-8,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-29974462-GSE75008-Horvathv1-1,not significant,lower,0.2874047269033653,,10.1002/ijc.31641,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30185790-GSE60753-Horvathv1-2,not significant,higher,0.2488498293486178,,10.1038/s41398-018-0233-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30185790-GSE60753-Horvathv1-3,not significant,higher,0.2488498293486178,,10.1038/s41398-018-0233-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30185790-GSE49393-Horvathv1-5,not significant,lower,0.29919983676582207,,10.1038/s41398-018-0233-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-31409373-GSE74432-Horvathv1-0,higher,higher,0.001629275184213918,,10.1186/s13059-019-1753-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-31409373-GSE74432-Horvathv1-1,higher,higher,0.001629275184213918,,10.1186/s13059-019-1753-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-0,lower,lower,0.019230261908996772,,10.1038/s41467-020-15174-3,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-1,not significant,lower,0.08014060028509022,,10.1038/s41467-020-15174-3,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-2,not significant,lower,0.17369488331370422,,10.1038/s41467-020-15174-3,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32930491-GSE100249-PhenoAge-0,not significant,higher,0.2849541940004738,,10.1111/acel.13229,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-7,higher,higher,0.00042985294105722953,,10.1111/acel.13229,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-8,higher,higher,0.014296836072141871,,10.1111/acel.13229,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-9,higher,higher,0.00912855695237594,,10.1111/acel.13229,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32930491-GSE53051-PhenoAge-16,higher,higher,3.861181949839068e-16,,10.1111/acel.13229,,R:claude-opus-5-5:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE45727-Horvathv1-5,not significant,lower,0.08881451711930442,,PMC9158789,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00010,not significant,higher,0.10646465333456365,,10.1093/infdis/jiv277,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00021,higher,higher,0.023584332047757874,,10.18632/aging.101005,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00022,higher,higher,0.023584332047757874,,10.18632/aging.101005,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00023,higher,higher,0.023584332047757874,,10.18632/aging.101005,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00028,higher,higher,9.612401520935341e-06,,10.18632/aging.101414,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00029,higher,higher,1.2103518692260722e-05,,10.18632/aging.101414,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00030,not significant,higher,0.16218620376746928,,10.18632/aging.101414,,R:claude-opus-5-5:raw,,,,,,REPORTED
+curated-00032,higher,higher,1.409517776361103e-05,,10.18632/aging.101414,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-25856389-GSE62867-Horvathv1-0,higher,higher,1.0183488950897195e-05,,10.1371/journal.pone.0122601,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-26000617-GSE64491-Horvathv1-1,lower,lower,0.01529148011514509,,10.18632/aging.100742,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-26000617-GSE64509-Horvathv1-2,lower,lower,7.016166129255849e-14,,10.18632/aging.100742,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-27245352-GSE73747-Horvathv1-0,not significant,lower,0.5200905719108915,,10.1080/15592294.2016.1192736,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-27511193-GSE72777-Horvathv1-5,not significant,higher,0.10360477651426132,,10.1186/s13059-016-1030-0,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-27511193-GSE78874-Horvathv1-6,lower,lower,0.0030449973058703107,,10.1186/s13059-016-1030-0,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30575306-GSE69954-Horvathv1-0,higher,higher,4.785537707697003e-16,,10.1002/cam4.1917,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30587242-GSE73894-Horvathv1-0,not significant,lower,0.12359050202311689,,10.1186/s13148-018-0584-y,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-30587242-GSE73894-Horvathv1-2,not significant,higher,0.975591272086962,,10.1186/s13148-018-0584-y,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-31002714-GSE40279-Horvathv1-4,lower,lower,0.0004265942556546911,,10.1371/journal.pone.0207834,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-31002714-GSE40279-Horvathv1-5,lower,lower,0.0004265942556546911,,10.1371/journal.pone.0207834,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-31526398-GSE80559-Horvathv1-0,,lower,,,10.1186/s13104-019-4633-1,,R:claude-opus-5-5:raw,,,,,,direction_only
+MED-31526398-GSE80559-Horvathv1-1,,lower,,,10.1186/s13104-019-4633-1,,R:claude-opus-5-5:raw,,,,,,direction_only
+MED-31526398-GSE80559-Horvathv1-5,,lower,,,10.1186/s13104-019-4633-1,,R:claude-opus-5-5:raw,,,,,,direction_only
+MED-32582603-GSE85506-Horvathv1-6,not significant,higher,0.05497065592459751,,10.3389/fpubh.2020.00172,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32582603-GSE85506-PhenoAge-9,not significant,lower,0.9868038698802265,,10.3389/fpubh.2020.00172,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32819411-GSE141106-Horvathv1-0,not significant,higher,0.3938534532530492,,10.1186/s13148-020-00914-5,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-32819411-GSE141106-Horvathv1-1,not significant,higher,0.3188622293498461,,10.1186/s13148-020-00914-5,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-33530447-GSE152204-Horvathv1-0,lower,lower,0.011153429083348997,,10.3390/ijms22031190,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-2,not significant,lower,0.6441741051938983,,10.1038/s41598-021-87045-w,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-3,not significant,lower,0.6473780419281497,,10.1038/s41598-021-87045-w,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-4,not significant,higher,0.37114985122636246,,10.1038/s41598-021-87045-w,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-5,not significant,lower,0.6441741051938983,,10.1038/s41598-021-87045-w,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35113965-GSE109905-Horvathv1-0,not significant,higher,0.4824853208181997,,10.1371/journal.pone.0263478,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35113965-GSE109905-PhenoAge-3,higher,higher,0.04925951920729886,,10.1371/journal.pone.0263478,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-0,not significant,lower,0.867447148273294,,10.3389/fnut.2022.785281,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-1,not significant,lower,0.867447148273294,,10.3389/fnut.2022.785281,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-2,not significant,lower,0.867447148273294,,10.3389/fnut.2022.785281,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-3,not significant,lower,0.867447148273294,,10.3389/fnut.2022.785281,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-36052758-GSE210245-Horvathv1-1,not significant,higher,0.5875787750948526,,10.1111/acel.13696,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-36052758-GSE210245-PhenoAge-4,not significant,higher,0.9480303967219372,,10.1111/acel.13696,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-36092807-GSE106648-Horvathv1-0,lower,lower,0.03564269824021619,,10.3389/fnagi.2022.926468,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-36092807-GSE40360-Horvathv1-2,not significant,higher,0.11512116353173356,,10.3389/fnagi.2022.926468,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-2,not significant,lower,0.28722568930377734,,10.3390/cells12141922,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-3,not significant,higher,0.35338253042877443,,10.3390/cells12141922,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-6,not significant,lower,0.28722568930377734,,10.3390/cells12141922,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-7,not significant,higher,0.35338253042877443,,10.3390/cells12141922,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37508584-GSE53740-PhenoAge-10,not significant,higher,0.4239857273679144,,10.3390/cells12141922,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-37702598-GSE52588-PhenoAge-0,higher,higher,1.2103518692260722e-05,,10.18632/aging.205046,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-0,higher,higher,0.005778484914488707,,10.1111/acel.14170,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-1,not significant,lower,0.05524590333848352,,10.1111/acel.14170,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-2,lower,lower,0.02259164382577091,,10.1111/acel.14170,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38820227-GSE178887-DunedinPACE-5,higher,higher,0.0004499652581805828,,10.1080/15592294.2024.2360160,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38826624-GSE152084-Horvathv1-0,higher,higher,0.0001487023295238691,,10.1016/j.jacig.2024.100275,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-38826624-GSE152084-PhenoAge-2,higher,higher,0.00013276788546397216,,10.1016/j.jacig.2024.100275,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39095531-GSE91069-PhenoAge-2,higher,higher,0.014296836072141871,,10.1038/s42003-024-06609-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39375688-GSE148663-Horvathv1-1,not significant,lower,0.3655584215030788,,10.1186/s13073-024-01387-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39375688-GSE148663-PhenoAge-2,not significant,higher,0.194579999605429,,10.1186/s13073-024-01387-4,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39403983-GSE164056-DunedinPACE-6,not significant,lower,0.3267734838746721,,10.1002/npr2.12487,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39853302-GSE144858-Horvathv1-1,not significant,higher,0.6161326035665806,,10.18632/aging.206188,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39853302-GSE144858-PhenoAge-3,higher,higher,0.04909005455552162,,10.18632/aging.206188,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39853302-GSE144858-GrimAgeV2-6,not significant,higher,0.16114571332988814,,10.18632/aging.206188,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39980002-GSE119846-Horvathv1-0,lower,lower,0.018544082809187137,,10.1186/s13148-025-01837-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39980002-GSE119846-Horvathv1-1,not significant,higher,0.1690386649427315,,10.1186/s13148-025-01837-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39980002-GSE210301-Horvathv1-2,not significant,higher,0.3986504823934315,,10.1186/s13148-025-01837-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-39980002-GSE210301-Horvathv1-3,lower,lower,0.001697621367975036,,10.1186/s13148-025-01837-9,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-0,not significant,higher,0.8224156072376869,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-1,not significant,higher,0.3255886127904246,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-2,not significant,lower,0.3471495485301084,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-3,not significant,lower,0.559871347896728,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-8,not significant,higher,0.61437905110767,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-9,not significant,higher,0.4818654922773785,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-10,not significant,higher,0.7994808156997201,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-11,not significant,lower,0.5378377276404508,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-12,higher,higher,0.0017268932912329175,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-13,higher,higher,0.032462645276460755,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-14,not significant,lower,0.6763206054781112,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-15,not significant,lower,0.3028914870385632,,10.59249/xmgo7523,,R:claude-opus-5-5:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE142439-Horvathv1-1,lower,lower,0.019230261908996772,,PMC9158789,,R:claude-opus-5-5:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE100249-Horvathv1-5,not significant,higher,0.8797216535875323,,PMC9158789,,R:claude-opus-5-5:raw,,,,,,REPORTED

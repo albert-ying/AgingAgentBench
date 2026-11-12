@@ -161,7 +161,7 @@ def main():
         eligibility["clockbase_paper_groups"] = {"testable": bool(release.get("S3c_call")),
                                                   "status": release.get("S3c_method") or "NOT_SCORED"}
         published_call = (record["direction"] if record.get("significant") is True and record.get("direction") in ("higher", "lower")
-                          else "not significant" if record.get("significant") is False or record.get("direction") == "none" else None)
+                          else "not significant" if record.get("significant") is False else None)
         keep = ("tier", "gse", "modality", "tissue", "clock_reported", "clock_clockbase", "measure",
                 "case_label", "control_label", "case_definition", "control_definition", "n_case", "n_control",
                 "direction", "significant", "threshold", "p_value", "test", "covariates", "effect")

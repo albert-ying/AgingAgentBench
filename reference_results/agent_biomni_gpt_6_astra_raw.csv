@@ -1,0 +1,83 @@
+record_id,call,direction,p_value,effect,paper_id,confidence,source_system,method,row_ordinal,n_case,n_control,recognizes_publication,status
+MED-25678027-GSE25395-Horvathv1-0,not significant,higher,0.05693342772072053,,10.1111/acel.12325,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25678027-GSE25395-Horvathv1-1,not significant,higher,0.05693342772072053,,10.1111/acel.12325,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25678027-GSE52588-Horvathv1-10,not significant,higher,0.8445890648577175,,10.1111/acel.12325,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25678027-GSE50586-Horvathv1-11,not significant,higher,0.7205477260238359,,10.1111/acel.12325,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25678027-GSE50586-Horvathv1-12,not significant,higher,0.7205477260238359,,10.1111/acel.12325,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25969563-GSE67751-Horvathv1-7,higher,higher,0.03032711704200552,,10.1093/infdis/jiv277,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25969563-GSE67751-Horvathv1-8,higher,higher,0.03032711704200552,,10.1093/infdis/jiv277,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-29225347-GSE38873-Horvathv1-0,not significant,higher,0.210235295869468,,10.1038/s41398-017-0048-8,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-29974462-GSE75008-Horvathv1-1,not significant,lower,0.28740472690336527,,10.1002/ijc.31641,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-30185790-GSE60753-Horvathv1-2,not significant,higher,0.24884982934861768,,10.1038/s41398-018-0233-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-30185790-GSE60753-Horvathv1-3,not significant,higher,0.24884982934861768,,10.1038/s41398-018-0233-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-30185790-GSE49393-Horvathv1-5,not significant,lower,0.1802514838331392,,10.1038/s41398-018-0233-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-0,not significant,lower,0.17369488331370433,,10.1038/s41467-020-15174-3,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-1,not significant,lower,0.08014060028509024,,10.1038/s41467-020-15174-3,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32210226-GSE142439-Horvathv1-2,not significant,lower,0.17369488331370433,,10.1038/s41467-020-15174-3,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32930491-GSE100249-PhenoAge-0,not significant,higher,0.28495419400047395,,10.1111/acel.13229,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-7,higher,higher,0.00042985294105722904,,10.1111/acel.13229,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-8,higher,higher,0.01429683607214187,,10.1111/acel.13229,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32930491-GSE91069-PhenoAge-9,higher,higher,0.009128556952375936,,10.1111/acel.13229,,R:gpt-6-astra:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE45727-Horvathv1-5,not significant,lower,0.11858968750713385,,PMC9158789,,R:gpt-6-astra:raw,,,,,,REPORTED
+curated-00028,higher,higher,0.0036309376171312106,,10.18632/aging.101414,,R:gpt-6-astra:raw,,,,,,REPORTED
+curated-00032,higher,higher,0.010107160293164693,,10.18632/aging.101414,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-25856389-GSE62867-Horvathv1-0,higher,higher,1.0183488950897203e-05,,10.1371/journal.pone.0122601,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-26000617-GSE64509-Horvathv1-2,lower,lower,0.00033080693668677806,,10.18632/aging.100742,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-27245352-GSE73747-Horvathv1-0,not significant,lower,0.14939886302114777,,10.1080/15592294.2016.1192736,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-27511193-GSE72777-Horvathv1-5,not significant,higher,0.22964092871280023,,10.1186/s13059-016-1030-0,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-27511193-GSE78874-Horvathv1-6,lower,lower,0.0223768435106972,,10.1186/s13059-016-1030-0,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-30575306-GSE69954-Horvathv1-0,higher,higher,1.8477637676952903e-17,,10.1002/cam4.1917,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-30587242-GSE73894-Horvathv1-2,not significant,higher,0.9755912720869621,,10.1186/s13148-018-0584-y,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-31526398-GSE80559-Horvathv1-0,,lower,,,10.1186/s13104-019-4633-1,,R:gpt-6-astra:raw,,,,,,direction_only
+MED-31526398-GSE80559-Horvathv1-1,,lower,,,10.1186/s13104-019-4633-1,,R:gpt-6-astra:raw,,,,,,direction_only
+MED-31526398-GSE80559-Horvathv1-5,,lower,,,10.1186/s13104-019-4633-1,,R:gpt-6-astra:raw,,,,,,direction_only
+MED-32582603-GSE85506-Horvathv1-6,not significant,higher,0.19551116431793594,,10.3389/fpubh.2020.00172,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-32582603-GSE85506-PhenoAge-9,not significant,lower,0.8245762341827915,,10.3389/fpubh.2020.00172,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-3,not significant,lower,0.7012503866483866,,10.1038/s41598-021-87045-w,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-4,not significant,lower,0.8724625994196091,,10.1038/s41598-021-87045-w,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-33833304-GSE78975-Horvathv1-5,not significant,higher,0.4903850018504823,,10.1038/s41598-021-87045-w,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35113965-GSE109905-Horvathv1-0,not significant,higher,0.5111158186679451,,10.1371/journal.pone.0263478,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35113965-GSE109905-PhenoAge-3,not significant,higher,0.09674768846950212,,10.1371/journal.pone.0263478,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-0,not significant,lower,0.8806504098855881,,10.3389/fnut.2022.785281,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-1,not significant,lower,0.8806504098855881,,10.3389/fnut.2022.785281,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-2,not significant,lower,0.8806504098855881,,10.3389/fnut.2022.785281,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-35369101-GSE193836-Horvathv1-3,not significant,lower,0.8806504098855881,,10.3389/fnut.2022.785281,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-36052758-GSE210245-Horvathv1-1,not significant,higher,0.5875787750948526,,10.1111/acel.13696,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-36052758-GSE210245-PhenoAge-4,not significant,higher,0.9480303967219371,,10.1111/acel.13696,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-36092807-GSE106648-Horvathv1-0,not significant,lower,0.0573431743799477,,10.3389/fnagi.2022.926468,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-36092807-GSE40360-Horvathv1-2,higher,higher,0.02240349304506287,,10.3389/fnagi.2022.926468,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-2,lower,lower,0.03562739348209838,,10.3390/cells12141922,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-37508584-GSE53740-Horvathv1-6,lower,lower,0.03562739348209838,,10.3390/cells12141922,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-37508584-GSE53740-PhenoAge-10,not significant,higher,0.7692737351637458,,10.3390/cells12141922,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-0,higher,higher,0.005778484914488709,,10.1111/acel.14170,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-1,not significant,lower,0.05524590333848356,,10.1111/acel.14170,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38638005-GSE35069-Horvathv1-2,lower,lower,0.022591643825770915,,10.1111/acel.14170,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38820227-GSE178887-DunedinPACE-5,higher,higher,0.0007647158623664659,,10.1080/15592294.2024.2360160,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38826624-GSE152084-Horvathv1-0,higher,higher,0.000136689558705391,,10.1016/j.jacig.2024.100275,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-38826624-GSE152084-PhenoAge-2,higher,higher,4.879910766846256e-05,,10.1016/j.jacig.2024.100275,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39095531-GSE91069-PhenoAge-2,higher,higher,0.00042985294105722904,,10.1038/s42003-024-06609-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39375688-GSE148663-Horvathv1-1,not significant,lower,0.3655584215030792,,10.1186/s13073-024-01387-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39375688-GSE148663-PhenoAge-2,not significant,higher,0.19457999960542904,,10.1186/s13073-024-01387-4,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39403983-GSE164056-DunedinPACE-6,not significant,higher,0.9411103714264,,10.1002/npr2.12487,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39853302-GSE144858-Horvathv1-1,not significant,higher,0.708529165586851,,10.18632/aging.206188,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39853302-GSE144858-PhenoAge-3,not significant,higher,0.06283094087276737,,10.18632/aging.206188,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39853302-GSE144858-GrimAgeV2-6,not significant,higher,0.20381756047316515,,10.18632/aging.206188,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39980002-GSE119846-Horvathv1-0,lower,lower,0.018544082809187148,,10.1186/s13148-025-01837-9,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39980002-GSE119846-Horvathv1-1,not significant,higher,0.16903866494273145,,10.1186/s13148-025-01837-9,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39980002-GSE210301-Horvathv1-2,not significant,higher,0.3986504823934316,,10.1186/s13148-025-01837-9,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39980002-GSE210301-Horvathv1-3,lower,lower,0.001697621367975036,,10.1186/s13148-025-01837-9,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-39980002-GSE210301-Horvathv1-5,higher,higher,0.04836355865946552,,10.1186/s13148-025-01837-9,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-0,not significant,higher,0.8224156072376868,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-1,not significant,higher,0.3255886127904248,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-2,not significant,lower,0.3471495485301086,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-Horvathv1-3,not significant,lower,0.559871347896728,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-8,not significant,higher,0.61437905110767,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-9,not significant,higher,0.4818654922773786,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-10,not significant,higher,0.7994808156997202,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-PhenoAge-11,not significant,lower,0.537837727640451,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-12,higher,higher,0.0017268932912329195,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-13,higher,higher,0.03246264527646083,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-14,not significant,lower,0.6763206054781113,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+MED-40589934-GSE176394-DunedinPACE-15,not significant,lower,0.3028914870385631,,10.59249/xmgo7523,,R:gpt-6-astra:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE142439-Horvathv1-1,not significant,lower,0.17369488331370433,,PMC9158789,,R:gpt-6-astra:raw,,,,,,REPORTED
+PMC-PMC9158789-GSE100249-Horvathv1-5,not significant,higher,0.8797216535875321,,PMC9158789,,R:gpt-6-astra:raw,,,,,,REPORTED
