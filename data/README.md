@@ -72,6 +72,8 @@ or execution traces. `scripts/export_data_2026-11-12.py` recreates this export
 from the records deposit and its benchmark code; it makes no API calls.
 `--source-root` contains the deposit's `data/` directory. `--results-root`
 contains `published_released_test.csv` and the other benchmark result files.
+`--run` selects the verifier run and defaults to `final-2026-11-13`.
+The reference-results exporter accepts the same parameter.
 
 ```sh
 python scripts/export_data_2026-11-12.py --source-root RECORDS_DEPOSIT \

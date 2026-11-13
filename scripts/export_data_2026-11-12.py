@@ -74,12 +74,14 @@ def main():
     parser.add_argument("--results-root", type=Path, required=True,
                         help="Records deposit directory containing published_released_test.csv.")
     parser.add_argument("--out", type=Path, default=Path("data"))
+    parser.add_argument("--run", default="final-2026-11-13",
+                        help="Verifier and design-check run name.")
     args = parser.parse_args()
     source = args.source_root.resolve()
     bench = source / "data/clockbase-benchmark-2026-10-05"
     verifier = source / "data/clockbase-verifier-v3-2026-09-27"
     bundle = source / "data/bundle/clockbase_data"
-    atlas = verifier / "final-2026-11-12/public-export"
+    atlas = verifier / args.run / "public-export"
     results = args.results_root.resolve()
     receipts, missing = {}, []
 
@@ -309,7 +311,19 @@ def main():
                 "bytes": info["bytes"], "sha256": info["sha256"], "source": "records deposit/" + key,
                 "atlas_expected_sha256": entry["expected_sha256"], "hash_matches_atlas": info["sha256"] == entry["expected_sha256"]})
     write_json(args.out / "clockbase_outputs/manifest.json", output_manifest)
-    notes = {"export_date": "2026-11-12", "published_records": len(exported),
+    atlas_counts = Counter()
+    atlas_table = atlas / "atlas_v3_combined.csv"
+    if receipt(atlas_table):
+        with atlas_table.open(newline="") as handle:
+            for row in csv.DictReader(handle):
+                if row["v3_final_class"] in ("VERIFIED", "PROVISIONAL"):
+                    atlas_counts["released_rows"] += 1
+                    atlas_counts["released_" + row["modality"]] += 1
+                    if "LABEL_UNCONFIRMED" in row["v3_soft_flags"]:
+                        atlas_counts["labels_unconfirmed"] += 1
+                        atlas_counts["labels_unconfirmed_" + row["modality"]] += 1
+    notes = {"export_date": args.run.removeprefix("final-"), "verifier_run": args.run,
+        "atlas_counts": dict(atlas_counts), "published_records": len(exported),
         "papers": len({r["paper_id"] for r in exported}), "series": len({r["gse"] for r in exported}),
         "modality_counts": dict(Counter(r["modality"] for r in exported)),
         "first_author_missing": [r["id"] for r in exported if not r["source"]["first_author"]],
@@ -319,8 +333,12 @@ def main():
         "clock_output_source_bytes": total_bytes, "clock_output_files": len(output_manifest),
         "clock_output_hash_mismatches": [r["file"] for r in output_manifest if not r["hash_matches_atlas"]],
         "missing_inputs": missing, "inputs": list(receipts.values())}
+    notes["outputs"] = {str(p.relative_to(args.out)): {
+        "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size}
+        for p in sorted(args.out.rglob("*")) if p.is_file() and p.suffix in (".csv", ".json", ".jsonl", ".md")
+        and p != args.out / "export_notes.json"}
     write_json(args.out / "export_notes.json", notes)
-    print(json.dumps({k: v for k, v in notes.items() if k != "inputs"}, indent=2))
+    print(json.dumps({k: v for k, v in notes.items() if k not in ("inputs", "outputs")}, indent=2))
 
 
 if __name__ == "__main__":

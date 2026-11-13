@@ -1,9 +1,11 @@
 {
+  "export_date": "2026-11-13",
   "source": "Supplementary_Tables_S1-S21_2026-11-10.xlsx",
   "sheet": "S18",
   "records": 326,
-  "sha256": "225558734cff8a85876c12ebd227f84f835232bfc669610c84f1c2857312558f",
-  "mtime_ns": 1794503688245708452,
+  "output_sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
+  "sha256": "6a37c2f2b992e5c9d8b668b4dabee8ab818f78ecf7728aa4b2bc272f447a53c8",
+  "mtime_ns": 1794583485328960100,
   "caption": "Supplementary Table S18. ClockEffectBench: the verified atlas against published results and expert-defined groups (Methods, ClockEffectBench). One row per reference, modality, measure and stage or system; stages are the agent's stored result, the verification with a Welch t-test for every row, and the released rows; systems are ClockBase with the paper's groups, language models without data, a constant rule and the agent reruns (Codex with four language models, Claude Code with Claude Opus 5.5 and Biomni with GPT-6 Astra; reported and recomputed). Proportions are numerator / denominator; intervals are 95% (bootstrap over papers or series for AUROC and correlations; Clopper-Pearson on the design-effect-adjusted sample size for proportions in expert-annotated series).",
   "transformation": "Cell values A:K exported without workbook formatting; no recalculation."
 }

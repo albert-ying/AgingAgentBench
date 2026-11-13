@@ -10,6 +10,7 @@ from clockeffectbench.io import read_rows
 from clockeffectbench.metrics import score_predictions
 
 ROOT = Path(__file__).resolve().parents[1]
+EXPECTED = json.loads((ROOT / "reference_results/paper_metrics.json").read_text())
 
 
 @pytest.fixture
@@ -60,8 +61,9 @@ def test_cli_expert_subset(tmp_path, capsys):
           "--predictions", str(ROOT / "reference_results/expert_candidate.csv"),
           "--output", str(tmp_path / "expert.json")])
     result = json.loads(capsys.readouterr().out)
-    assert result["scored"] == 128
-    assert result["call_agreement"] == 126/128
+    expected = EXPECTED["expert_conclusions"]["A2"]["expert_design_call"]["candidate_call"]["labels confirmed"]
+    assert result["scored"] == expected["units"]
+    assert result["call_agreement"] == (expected["units"] - expected["errors"]) / expected["units"]
 
 
 def test_prompt_matches_frozen_input(capsys):
@@ -120,8 +122,23 @@ def test_s18_released_test_matches_computed_auroc():
     table = read_rows(ROOT / "reference_results/supplementary_table_s18.csv")
     row = next(r for r in table if r["reference"] == "Published results" and r["measure"] == "Direction AUROC"
                and r["stage"] == "Paper's groups, released test")
-    assert float(row["estimate"]) == pytest.approx(round(0.9965277777777778, 4), abs=1e-14)
-    assert float(row["ci_low"]) == pytest.approx(round(0.9809523809523809, 4), abs=1e-14)
+    assert float(row["estimate"]) == pytest.approx(round(EXPECTED["published_groups"]["S3c"]["direction_auroc"], 4), abs=1e-14)
+    assert float(row["ci_low"]) == pytest.approx(round(EXPECTED["published_groups"]["S3c"]["direction_auroc_interval"][0], 4), abs=1e-14)
+
+
+def test_s18_expert_conclusions_match_source_counts():
+    rows = read_rows(ROOT / "reference_results/supplementary_table_s18.csv")
+    stages = {"Raw agent": "agent_call", "Verifier, Welch test only": "released_call", "Released": "candidate_call"}
+    for row in rows:
+        if row["reference"] != "Expert-defined groups" or row["measure"] != "Conclusion agrees (direction and significance)":
+            continue
+        set_name = "A1" if row["modality"] == "Mouse RNA-seq" else "A2"
+        stage = stages[row["stage"]]
+        stratum = ("all rows of the agent" if stage == "agent_call" else
+                   "labels confirmed" if row["note"].startswith("labels confirmed;") else "all released rows")
+        expected = EXPECTED["expert_conclusions"][set_name]["expert_design_call"][stage][stratum]
+        assert int(row["numerator"]) == expected["units"] - expected["errors"]
+        assert int(row["denominator"]) == expected["units"]
 
 
 def test_wheel_contains_runtime_data_when_available():
@@ -137,6 +154,13 @@ def test_wheel_contains_runtime_data_when_available():
         assert "clockeffectbench/data/tasks.jsonl" in names
         assert "clockeffectbench/reference_results/cohorts.json" in names
         assert len([n for n in names if n.startswith("clockeffectbench/data/clockbase_outputs/") and n.endswith(".csv")]) == 159
+        for folder in ("data", "reference_results"):
+            for path in (ROOT / folder).rglob("*"):
+                if path.is_file() and path.suffix in (".csv", ".json", ".jsonl"):
+                    member = "clockeffectbench/" + str(path.relative_to(ROOT))
+                    # Reproduction results are generated after the wheel check.
+                    if path.name != "reproduced_metrics.json":
+                        assert archive.read(member) == path.read_bytes(), member
 
 
 def test_effect_selection_uses_submitted_estimates(tmp_path, capsys, truth):
@@ -263,8 +287,7 @@ def test_missing_frozen_prompt_does_not_promise_study_fallback(capsys):
 def test_expert_truth_preserves_source_methods():
     from collections import Counter
     rows = read_rows(ROOT / "reference_results/expert_truth.csv")
-    assert Counter(r["test"] for r in rows) == {"WELCH": 162, "AGE_ADJUSTED": 86,
-                                               "PAIRED": 46}
+    assert Counter(r["test"] for r in rows) == EXPECTED["expert_reference_methods"]
     assert all(r["method"] for r in rows)
 
 

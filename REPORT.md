@@ -1,151 +1,179 @@
 # ClockEffectBench reproduction
 
-The standalone package reproduces the benchmark performance claims from the shipped
-parsed predictions and published outcomes. The reproduction covers the
-ClockEffectBench results, Figure 4h-j, Extended Data Figure 23, and the
-exported S18 worksheet. Source checksums are retained.
+Source run `final-2026-11-13`. The scorer reads the shipped predictions
+and compares the results with independently archived source metrics.
+The paper's source table is retained in [paper_table.md](reference_results/paper_table.md).
+Full precision results and source comparisons are in
+`reference_results/reproduced_metrics.json`.
 
-## Published findings
+## Published paper groups
 
-Values below are computed from the exported records. Brackets are 95%
-intervals. Full precision results are in `reference_results/reproduced_metrics.json`.
+This comparison uses the paper's assigned groups. It is distinct from the
+released atlas-row comparison in the paper's summary table.
 
-| Measure | Manuscript | Reproduced |
-| --- | --- | --- |
-| Published contrasts, papers, series | 580, 93, 125 | 580, 93, 125 |
-| Shared paper-group results and papers | 110, 32 | 110, 32 |
-| Lower calls | 10/16 | 10/16 |
-| Higher calls | 30/36 | 30/36 |
-| Nulls kept null | 51/58 | 51/58 |
-| Balanced accuracy | 0.78 [0.68, 0.86] | 0.7792 [0.6788, 0.8641] |
-| Published significant effects with matching sign | 51/52 | 51/52 |
-| Significant in the published direction | 40/52 | 40/52 |
-| Significant in the opposite direction | 0 | 0 |
-| Paper-group direction AUROC | 1.00 [0.98, 1.00] | 0.9965 [0.9810, 1.0000] |
-| Atlas direction when both significant | 25/26 | 25/26 |
-| Atlas direction AUROC | 0.98 [0.91, 1.00] | 0.9793 [0.9127, 1.0000] |
-| Atlas shared call agreement | 82% of 93 | 81.7204% of 93 |
-| Welch-only shared call agreement | 69% of 93 | 68.8172% of 93 |
-| Paired improvement in percentage points | 13 [5, 22] | 12.9032 [5.2618, 21.5692] |
-| Effects in years and papers | 30, 7 | 30, 7 |
-| Year-effect Spearman correlation | 0.61 [0.27, 0.93] | 0.6071 [0.2725, 0.9313] |
-| Median absolute difference in years | 1.5 | 1.5137 |
-| Welch-only significant recovery | 33/54 | 33/54 |
-| Unrecovered significant results with 0.05 < P < 0.10 | 5 | 5 |
-
-The atlas gain resamples 43 papers in 115 shared covered records, of which
-93 have classifiable calls. Keeping that full sampling universe reproduces
-the source interval. AUROC 1.00 is rounded from 0.9965277778 for the main
-paper-group analysis. The additional individual-reader variant has AUROC
-1.00 exactly with interval [1.00, 1.00]; the variants are kept separately.
-
-## Language models without data
-
-The manuscript reports model ranges of 5-6/16 decreases, 12-28/36 increases,
-23-47/58 nulls, and balanced accuracy 0.46-0.52. The individual rows below
-reproduce the archived Figure 4 table and bootstrap intervals.
-
-| System | Lower | Higher | Null | Balanced accuracy with 95% CI |
+| System | Lower | Higher | Null | Balanced accuracy with interval |
 | --- | --- | --- | --- | --- |
-| Always higher | 0/16 | 36/36 | 0/58 | 0.3333 [0.3333, 0.3333] |
-| GPT-4.1 | 6/16 | 28/36 | 23/58 | 0.5164 [0.4157, 0.6202] |
-| GPT-5.5 | 6/16 | 17/36 | 38/58 | 0.5008 [0.3520, 0.6360] |
-| GPT-6 Astra | 5/16 | 16/36 | 47/58 | 0.5224 [0.3862, 0.6531] |
-| GPT-6 Luna | 5/16 | 12/36 | 42/58 | 0.4567 [0.3124, 0.5872] |
-| GPT-6 Sol | 5/16 | 15/36 | 43/58 | 0.4902 [0.3536, 0.6231] |
+| S0 | 0/16 | 36/36 | 0/58 | 0.3333 [0.3333, 0.3333] |
+| S3 | 7/16 | 26/36 | 52/58 | 0.6854 [0.5486, 0.8173] |
+| S3c | 10/16 | 30/36 | 51/58 | 0.7792 [0.6788, 0.8641] |
+| S3r | 10/16 | 30/36 | 51/58 | 0.7792 [0.6788, 0.8641] |
+| S4:openai:gpt-4.1 | 6/16 | 28/36 | 23/58 | 0.5164 [0.4157, 0.6202] |
+| S4:openai:gpt-5.5 | 6/16 | 17/36 | 38/58 | 0.5008 [0.3520, 0.6360] |
+| S4:openai:gpt-6-astra | 5/16 | 16/36 | 47/58 | 0.5224 [0.3862, 0.6531] |
+| S4:openai:gpt-6-luna | 5/16 | 12/36 | 42/58 | 0.4567 [0.3124, 0.5872] |
+| S4:openai:gpt-6-sol | 5/16 | 15/36 | 43/58 | 0.4902 [0.3536, 0.6231] |
+
+| System | Significant in published direction | Direction agreement | Direction AUROC with interval |
+| --- | --- | --- | --- |
+| S3 | 33/54 | 52/54 | 0.9655 [0.9071, 1.0000] |
+| S3c | 40/52 | 51/52 | 0.9965 [0.9810, 1.0000] |
+| S3r | 40/52 | 51/52 | 1.0000 [1.0000, 1.0000] |
+
+## Published atlas rows
+
+All cohorts preserve the source sampling universe, including rows without
+classifiable outcomes. Parentheses give the number of scored calls.
+
+| Cohort | System | Call agreement | Direction agreement | Balanced accuracy with interval |
+| --- | --- | --- | --- | --- |
+| own_coverage | S1 | 79.78% (89) | 30/35 | 0.6686 [0.5264, 0.8275] |
+| own_coverage | S2 | 68.09% (94) | 35/40 | 0.5778 [0.4313, 0.7329] |
+| own_coverage | S2c | 81.52% (92) | 36/39 | 0.6892 [0.5417, 0.8475] |
+| shared_S1_S2_S2c | S1 | 80.00% (85) | 29/34 | 0.6766 [0.5357, 0.8396] |
+| shared_S1_S2_S2c | S2 | 71.08% (83) | 30/34 | 0.6067 [0.4579, 0.7645] |
+| shared_S1_S2_S2c | S2c | 80.72% (83) | 32/34 | 0.6824 [0.5470, 0.8395] |
+| shared_S2_S2c | S2 | 68.48% (92) | 34/39 | 0.5825 [0.4334, 0.7365] |
+| shared_S2_S2c | S2c | 81.52% (92) | 36/39 | 0.6892 [0.5536, 0.8397] |
+| candidate_estimand_applied | S1 | 77.08% (48) | 15/19 | 0.6108 [0.4590, 0.7964] |
+| candidate_estimand_applied | S2 | 61.40% (57) | 20/24 | 0.4663 [0.3203, 0.6357] |
+| candidate_estimand_applied | S2c | 82.46% (57) | 22/24 | 0.6380 [0.4952, 0.8044] |
+
+The paired atlas gain is 13.0435 [5.3191, 21.8393] percentage points
+across 114 shared covered records. Atlas direction AUROC is
+0.9793 [0.9127, 1.0000].
+
+## Paper language-model cohort
+
+This cohort is the comparison with models given the paper description in the
+summary table. It uses the earlier paper-group Welch analysis.
+
+| System | Scored calls | Balanced accuracy with interval | Direction agreement |
+| --- | --- | --- | --- |
+| S0 | 115 | 0.3333 [0.3333, 0.3333] | 38/54 |
+| S3 | 113 | 0.6733 [0.5267, 0.8046] | 52/54 |
+| S4:openai:gpt-4.1 | 115 | 0.5160 [0.4162, 0.6164] | 38/54 |
+| S4:openai:gpt-5.5 | 115 | 0.5069 [0.3664, 0.6454] | 31/54 |
+| S4:openai:gpt-6-astra | 115 | 0.5177 [0.3837, 0.6513] | 30/54 |
+| S4:openai:gpt-6-luna | 115 | 0.4553 [0.3265, 0.5738] | 26/54 |
+| S4:openai:gpt-6-sol | 115 | 0.4959 [0.3555, 0.6223] | 33/54 |
+
+## Same-sample comparisons
+
+Calls and Cohen's kappa are recomputed from the exported matched contrasts.
+
+| Stage | Contrasts | Call agreement | Kappa with interval |
+| --- | --- | --- | --- |
+| agent | 53 | 86.79% | 0.7622 [0.6141, 0.9150] |
+| released | 53 | 81.13% | 0.6631 [0.4751, 0.8222] |
+| candidate | 53 | 86.79% | 0.7637 [0.6246, 0.9152] |
 
 ## Agent reruns
 
-The manuscript ranges are 77-90% call agreement, 90-95% direction
-agreement, and direction AUROC 0.977-0.995. The six raw reruns reproduce
-those ranges. Recomputed calls use the verification tests on each rerun's
-selected samples and reproduce the reported 78-86% range.
+Each row uses its own coverage of the frozen agent task.
 
-| Framework and model | Raw call agreement | Raw direction agreement | Raw direction AUROC | Recomputed call agreement |
-| --- | --- | --- | --- | --- |
-| Codex GPT-6 Astra | 82.86% of 70 | 25/27 (92.59%) | 0.978571 | 80.00% of 70 |
-| Codex GPT-6 Sol | 90.28% of 72 | 25/27 (92.59%) | 0.992063 | 85.71% of 70 |
-| Codex GPT-6 Luna | 77.33% of 75 | 27/30 (90.00%) | 0.981366 | 82.19% of 73 |
-| Codex GPT-5.5 | 79.27% of 82 | 32/34 (94.12%) | 0.984127 | 82.28% of 79 |
-| Claude Code Claude Opus 5.5 | 82.76% of 87 | 35/37 (94.59%) | 0.995238 | 86.05% of 86 |
-| Biomni GPT-6 Astra | 80.88% of 68 | 24/26 (92.31%) | 0.977444 | 77.61% of 67 |
-
-The manuscript also reports 82% call and 87% direction agreement for the
-stored ClockBase agent on this task, 85% call agreement for the verified
-atlas, 63-70% call and 53-70% direction agreement for the four GPT models
-without data, and 80% direction agreement for always higher.
-
-| Agent-task baseline | Call agreement | Direction agreement |
-| --- | --- | --- |
-| Stored ClockBase agent | 82.43% of 74 | 26/30 (86.67%) |
-| Verified atlas | 84.62% of 78 | 31/33 (93.94%) |
-| GPT-6 Astra without data | 70.18% of 114 | 26/43 (60.47%) |
-| GPT-6 Sol without data | 68.42% of 114 | 26/43 (60.47%) |
-| GPT-6 Luna without data | 63.16% of 114 | 23/43 (53.49%) |
-| GPT-5.5 without data | 66.67% of 114 | 30/43 (69.77%) |
-| Always higher | 32.03% of 128 | 41/51 (80.39%) |
-
-| Shared framework set | Manuscript agreement | Reproduced agreement |
-| --- | --- | --- |
-| codex (68 covered; 59 classifiable) | 83% stored agent; 81-92% reruns | 83.05% stored agent; 84.75%, 91.53%, 81.36%, 83.05% reruns |
-| claude_code (82 covered; 69 classifiable) | 84% stored agent; 88% rerun | 84.06% stored agent; 88.41% reruns |
-| biomni (70 covered; 60 classifiable) | 82% stored agent; 83% rerun | 81.67% stored agent; 83.33% reruns |
+| Framework | System | Scored calls | Call agreement | Direction agreement | Direction AUROC |
+| --- | --- | --- | --- | --- | --- |
+| codex | R:gpt-6-astra:raw | 70 | 82.86% | 25/27 | 0.978571 |
+| codex | R:gpt-6-astra:recomputed | 70 | 80.00% | 25/27 | 0.971429 |
+| codex | R:gpt-6-sol:raw | 72 | 90.28% | 25/27 | 0.992063 |
+| codex | R:gpt-6-sol:recomputed | 70 | 85.71% | 25/27 | 0.992063 |
+| codex | R:gpt-6-luna:raw | 75 | 77.33% | 27/30 | 0.981366 |
+| codex | R:gpt-6-luna:recomputed | 73 | 82.19% | 29/31 | 0.981366 |
+| codex | R:gpt-5.5:raw | 82 | 79.27% | 32/34 | 0.984127 |
+| codex | R:gpt-5.5:recomputed | 79 | 82.28% | 32/34 | 0.983516 |
+| claude_code | R:claude-opus-5-5:raw | 87 | 82.76% | 35/37 | 0.995238 |
+| claude_code | R:claude-opus-5-5:recomputed | 86 | 86.05% | 35/37 | 0.995074 |
+| biomni | R:gpt-6-astra:raw | 68 | 80.88% | 24/26 | 0.977444 |
+| biomni | R:gpt-6-astra:recomputed | 67 | 77.61% | 24/26 | 0.968254 |
 
 ## Expert group comparisons
 
-These comparisons score choice and orientation of groups against frozen
-complete-group calls. They do not repeat molecular preprocessing.
+These scores compare parsed calls with the frozen complete-group reference.
 
-| Set | Manuscript agreement | Reproduced agreement | Opposite significant calls |
+| Set | Stage | Orientation | Agreement | Opposite significant calls |
+| --- | --- | --- | --- | --- |
+| A1 | agent | all rows of the agent | 93/98 | 1 |
+| A1 | released | all released rows | 88/89 | 0 |
+| A1 | released | labels confirmed | 86/87 | 0 |
+| A1 | candidate | all released rows | 88/89 | 0 |
+| A1 | candidate | labels confirmed | 86/87 | 0 |
+| A2 | agent | all rows of the agent | 147/192 | 10 |
+| A2 | released | all released rows | 144/180 | 0 |
+| A2 | released | labels confirmed | 114/130 | 0 |
+| A2 | candidate | all released rows | 157/163 | 0 |
+| A2 | candidate | labels confirmed | 121/123 | 0 |
+
+## Effects in years
+
+The effect comparison contains 30 estimates from 7 papers.
+Spearman correlation is 0.6071 [0.2725, 0.9313].
+Median absolute difference is 1.5137 years.
+
+## Released atlas counts
+
+These counts are read from the source atlas and design-check rows.
+
+| Count | Value |
+| --- | --- |
+| released_rows | 63059 |
+| released_human DNAm | 12289 |
+| labels_unconfirmed | 2226 |
+| labels_unconfirmed_human DNAm | 1010 |
+| released_human RNA-seq | 24005 |
+| labels_unconfirmed_human RNA-seq | 690 |
+| released_mouse RNA-seq | 26765 |
+| labels_unconfirmed_mouse RNA-seq | 526 |
+| design checks rows | 64482 |
+| design checks significant | 19103 |
+| design checks applies | 7468 |
+| design checks no call | 1423 |
+| design checks gained | 491 |
+| design checks significant lost | 436 |
+
+## Design-error source results
+
+The summary table's design-error counts and intervals are retained from the
+source classification analysis. This package does not repeat those classifications
+or refit their design-effect-adjusted intervals.
+
+| Set | Stage | Errors | Source interval |
 | --- | --- | --- | --- |
-| Mouse RNA-seq with confirmed orientation | 86/87 | 86/87 | 0 |
-| Mouse RNA-seq including unconfirmed orientation | 88/89 | 88/89 | 0 |
-| Human DNAm with confirmed orientation | 126/128 | 126/128 | 0 |
-| Human DNAm including unconfirmed orientation | 162/168 | 162/168 | 0 |
+| A1 | agent | 20/98 | [0.061486, 0.435901] |
+| A1 | released | 5/89 | [0.003157, 0.233466] |
+| A1 | candidate | 5/89 | [0.003157, 0.233466] |
+| A1 | readers | 3/89 | [0.000048, 0.263356] |
+| A2 | agent | 39/44 | [0.578465, 0.993195] |
+| A2 | released | 32/41 | [0.416954, 0.969593] |
+| A2 | candidate | 11/41 | [0.055759, 0.612098] |
+| A2 | readers | 6/41 | [0.016035, 0.451073] |
 
-The stored agent has one mouse and ten human opposite significant calls,
-also reproduced by the regression tests. Prepared human annotations cover
-18 series; the frozen scored expert reference covers 16, matching the
-manuscript. GSE134429 and GSE53841 are in the prepared inventory but have
-no scored expert reference row.
+## Source coverage
 
-## Annotation reuse
+The published dataset has 580 contrasts from 93
+papers on 125 series. The 159 available
+clock-output tables total 12,848,572 bytes and match their atlas hashes.
 
-ComputAgeBench is public. Its two derivative annotation files retain CC
-BY-SA 4.0, with source revision and attribution in `data/expert/README.md`.
-They are exceptions to the compilation's CC BY 4.0 license.
+The following optional study exports are unavailable:
 
-Tyshkovskiy et al. is published as a Nature article, DOI
-10.1038/s41586-026-10542-3, and the rodent annotation is publicly deposited
-in Zenodo record 18763485. The record states a license for clock
-models and software but no annotation data license. The benchmark's factual
-mouse group rules and GSM lists ship with attribution and a source-terms
-notice. The original annotation workbook is not redistributed.
+- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-13/public-export/studies/dnam/GSE67748.json
+- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-13/public-export/studies/dnam/GSE67749.json
+- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-13/public-export/studies/dnam/GSE72778.json
 
-## Dataset and interval settings
-
-The 580 published results comprise 515 human DNA methylation results,
-64 human RNA-seq results, and one mouse RNA-seq result. Balanced-accuracy
-intervals use 1,000 bootstrap replicates with seed 20261005. Other intervals
-use 2,000 replicates with seed 20261009. Two of the 30 year-effect results
-were recomputed after removing clock outputs above 1,000 years; four rows
-in the full guarded Welch variant use this guard.
-
-Three atlas study exports required for additional sample-output coverage
-are absent. The export continued with the available source files:
-
-- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-12/public-export/studies/dnam/GSE67748.json
-- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-12/public-export/studies/dnam/GSE67749.json
-- Cannot proceed - required data file not found: records deposit/data/clockbase-verifier-v3-2026-09-27/final-2026-11-12/public-export/studies/dnam/GSE72778.json
-
-These absent study exports do not enter the scored 110-record paper-group
-comparison. No missing values were replaced. The 159 available clock-output
-tables total 12,848,572 bytes and match their released atlas hashes.
+These study exports do not enter the paper-group scores. Molecular preprocessing,
+source article extraction, design-error adjudication, and refitting molecular
+tests are outside this reproduction. No missing measurements were substituted.
 
 ## Validation environment
 
-Tests compare computed metrics with archived source fixtures, including
-full-precision bootstrap endpoints, and check CLI behavior, input validation,
-data integrity, and bundled wheel resources. See `VALIDATION.md` for commands.
-
 Python 3.12.13; NumPy 1.26.4; SciPy 1.11.4; pytest 9.2.0.
+All 528 source metric comparisons passed. See `VALIDATION.md` for commands.

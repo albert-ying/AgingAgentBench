@@ -45,11 +45,11 @@ Published results,Human DNAm,Direction AUROC,"Atlas row, released",,,0.979299999
 Published results,Human DNAm,Effect sign matches a significant reference effect,"Atlas row, released",36,39,0.9231,,,,
 Published results,Human DNAm,Same direction when both are significant,"Atlas row, released",25,26,0.9615,,,,
 Published results,Human DNAm,"Reference significant: ClockBase significant, same direction","Atlas row, released",25,39,0.641,,,,
-Published results,Human DNAm,Reference not significant: ClockBase not significant,"Atlas row, released",51,54,0.9444,,,,
-Published results,Human DNAm,Detection AUROC,"Atlas row, released",,,0.8915,0.8042,0.9537,37,bootstrap over papers
-Published results,Human DNAm,"Three-way call agrees (higher, lower, not significant)","Atlas row, verifier, Welch test only",64,93,0.6882,,,,115 results with a row at both verifier stages
-Published results,Human DNAm,"Three-way call agrees (higher, lower, not significant)","Atlas row, released",76,93,0.8172,,,,115 results with a row at both verifier stages
-Published results,Human DNAm,"Three-way call agreement, difference between the verifier stages","Released minus verifier, Welch test only",,,0.129,0.0526,0.2157,43,bootstrap over papers
+Published results,Human DNAm,Reference not significant: ClockBase not significant,"Atlas row, released",50,53,0.9434,,,,
+Published results,Human DNAm,Detection AUROC,"Atlas row, released",,,0.8895,0.7992,0.9532,37,bootstrap over papers
+Published results,Human DNAm,"Three-way call agrees (higher, lower, not significant)","Atlas row, verifier, Welch test only",63,92,0.6848,,,,114 results with a row at both verifier stages
+Published results,Human DNAm,"Three-way call agrees (higher, lower, not significant)","Atlas row, released",75,92,0.8152,,,,114 results with a row at both verifier stages
+Published results,Human DNAm,"Three-way call agreement, difference between the verifier stages","Released minus verifier, Welch test only",,,0.1304,0.0532,0.2184,43,bootstrap over papers
 Published results,Human DNAm,Effect in years: Spearman correlation,"Paper's groups, Welch test",,30,0.6071,0.2725,0.9313,7,overflow clock outputs excluded; bootstrap over papers
 Published results,Human DNAm,Effect in years: same sign,"Paper's groups, Welch test",25,30,0.8333,,,,overflow clock outputs excluded
 Published results,Human DNAm,Effect in years: median absolute difference (years),"Paper's groups, Welch test",,30,1.5137,,,,overflow clock outputs excluded; median published effect 1.92 years
@@ -301,8 +301,8 @@ Expert-defined groups,Mouse RNA-seq,Comparisons with a design flaw of any kind (
 Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),Raw agent,147,192,0.7655999999999999,0.5489000000000001,0.9127999999999999,16,all rows of the agent; Clopper-Pearson on the design-effect-adjusted sample size; 10 significant in the opposite direction
 Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),"Verifier, Welch test only",144,180,0.8,0.5538999999999999,0.9459,16,all released rows; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
 Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),"Verifier, Welch test only",114,130,0.8769,0.7492,0.9542,14,labels confirmed; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
-Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),Released,162,168,0.9643,0.7617,0.9998,15,all released rows; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
-Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),Released,126,128,0.9844000000000001,0.8272,1,14,labels confirmed; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
+Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),Released,157,163,0.9631999999999999,0.752,0.9998,15,all released rows; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
+Expert-defined groups,Human DNAm,Conclusion agrees (direction and significance),Released,121,123,0.9837,0.8185,1,14,labels confirmed; Clopper-Pearson on the design-effect-adjusted sample size; 0 significant in the opposite direction
 Expert-defined groups,Human DNAm,Direction AUROC,Raw agent,,,0.7103,0.4257,1,16,bootstrap over series
 Expert-defined groups,Human DNAm,Effect sign matches a significant reference effect,Raw agent,32,43,0.7442,,,,
 Expert-defined groups,Human DNAm,Same direction when both are significant,Raw agent,24,34,0.7059,,,,
@@ -316,11 +316,11 @@ Expert-defined groups,Human DNAm,"Reference significant: ClockBase significant, 
 Expert-defined groups,Human DNAm,Reference not significant: ClockBase not significant,"Verifier, Welch test only",116,143,0.8112,,,,
 Expert-defined groups,Human DNAm,Detection AUROC,"Verifier, Welch test only",,,0.8244,0.6598000000000001,0.9523,16,bootstrap over series
 Expert-defined groups,Human DNAm,Direction AUROC,Released,,,1,1,1,15,bootstrap over series
-Expert-defined groups,Human DNAm,Effect sign matches a significant reference effect,Released,34,35,0.9714,,,,
-Expert-defined groups,Human DNAm,Same direction when both are significant,Released,33,33,1,,,,
-Expert-defined groups,Human DNAm,"Reference significant: ClockBase significant, same direction",Released,33,35,0.9429,,,,
-Expert-defined groups,Human DNAm,Reference not significant: ClockBase not significant,Released,129,133,0.9699,,,,
-Expert-defined groups,Human DNAm,Detection AUROC,Released,,,0.9499,0.8196,1,15,bootstrap over series
+Expert-defined groups,Human DNAm,Effect sign matches a significant reference effect,Released,33,34,0.9706,,,,
+Expert-defined groups,Human DNAm,Same direction when both are significant,Released,32,32,1,,,,
+Expert-defined groups,Human DNAm,"Reference significant: ClockBase significant, same direction",Released,32,34,0.9412,,,,
+Expert-defined groups,Human DNAm,Reference not significant: ClockBase not significant,Released,125,129,0.969,,,,
+Expert-defined groups,Human DNAm,Detection AUROC,Released,,,0.9485,0.8106,1,15,bootstrap over series
 Expert-defined groups,Human DNAm,Comparisons with a design flaw of any kind (strict count),Raw agent,39,44,0.8864,0.5785,0.9932,,in-sample: the estimand was designed from this set
 Expert-defined groups,Human DNAm,Comparisons with a design flaw of any kind (strict count),"Verifier, Welch test only",32,41,0.7805,0.417,0.9696,,in-sample: the estimand was designed from this set
 Expert-defined groups,Human DNAm,Comparisons with a design flaw of any kind (strict count),Released,11,41,0.2683,0.0558,0.6121,,in-sample: the estimand was designed from this set

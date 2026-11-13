@@ -11,6 +11,7 @@ import hashlib
 import json
 import math
 import re
+import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -93,8 +94,10 @@ def main():
     parser.add_argument("--results-root", type=Path, required=True,
                         help="Records deposit directory containing published_released_test.csv.")
     parser.add_argument("--out", type=Path, default=Path("reference_results"))
+    parser.add_argument("--run", default="final-2026-11-13",
+                        help="Verifier and design-check run name.")
     args = parser.parse_args()
-    base = args.source_root
+    base = args.source_root.resolve()
     bench = base / "data/clockbase-benchmark-2026-10-05"
     results = args.results_root.resolve()
     out = args.out
@@ -133,10 +136,10 @@ def main():
     # Final verified atlas candidate, oriented to the published contrast.
     checks = {}
     for modality in ("dnam", "hs_rna", "mm_rna"):
-        for row in load_lines(bench / "groupbench/design-checks/final-2026-11-12" / modality / "rows.jsonl"):
+        for row in load_lines(bench / "groupbench/design-checks" / args.run / modality / "rows.jsonl"):
             checks[(modality, row["gse"], row["row_ordinal"])] = row
     modality_key = {"human DNAm": "dnam", "human RNA-seq": "hs_rna", "mouse RNA-seq": "mm_rna"}
-    verified = []
+    verified, applied = [], set()
     for r in records:
         s2 = r["systems"].get("S2", {})
         row = checks.get((modality_key[r["modality"]], r["gse"], s2.get("row_ordinal"))) if s2.get("covered") is True else None
@@ -149,6 +152,8 @@ def main():
                 effect = -candidate["estimate"] if s2.get("swapped") else candidate["estimate"]
                 result = {"covered": True, "direction": "higher" if effect > 0 else "lower" if effect < 0 else "none",
                           "p": candidate["p"], "mean_diff": effect, "method": candidate["method"], "row_ordinal": s2["row_ordinal"]}
+                if not candidate["method"].startswith("Welch t-test (released)"):
+                    applied.add(r["id"])
         p = prediction(r, result, "S2c")
         if p:
             verified.append(p)
@@ -188,10 +193,12 @@ def main():
     # Fixed intersections retain the exact paper comparison sets.
     common = set.intersection(release_ids["S3c"], release_ids["S3r"],
                               *({r["record_id"] for r in exports[n]} for s, n in names.items() if s.startswith("S4:")))
-    cohorts = {"main110": sorted(common), "paper_groups_welch113": sorted(r["id"] for r in released), "atlas_shared93": sorted({r["record_id"] for r in verified if r["call"] and r["record_id"] in {x["record_id"] for x in exports["clockbase_atlas_welch"] if x["call"]} and by_id[r["record_id"]].get("significant") in (True, False)})}
+    cohorts = {"main110": sorted(common), "paper_groups_welch113": sorted(r["id"] for r in released), "atlas_shared_calls": sorted({r["record_id"] for r in verified if r["call"] and r["record_id"] in {x["record_id"] for x in exports["clockbase_atlas_welch"] if x["call"]} and by_id[r["record_id"]].get("significant") in (True, False)})}
     frameworks = (("codex", "scored-001"), ("claude_code", "scored-claude-001"), ("biomni", "scored-biomni-001"))
     for framework, folder in frameworks:
         reruns = load_lines(bench / "agentbench" / folder / "records.jsonl")
+        exports["agent_" + framework + "_atlas_frozen"] = [p for r in reruns
+            if (p := prediction(by_id[r["id"]], r["systems"].get("S2c"), "S2c"))]
         cohorts.setdefault("agent_task158", sorted(r["id"] for r in reruns))
         own_sets = []
         systems = sorted({s for r in reruns for s in r["systems"] if s.startswith("R:")})
@@ -208,9 +215,51 @@ def main():
         own_sets.extend({r["id"] for r in reruns if r["systems"].get(system, {}).get("covered") is True and r["systems"][system].get("direction") in ("higher", "lower", "none")} for system in ("S1", "S2c"))
         cohorts["agent_shared_" + framework] = sorted(set.intersection(*own_sets))
     assert len(common) == 110
-    assert len(cohorts["atlas_shared93"]) == 93
+    atlas_key = "atlas_shared" + str(len(cohorts["atlas_shared_calls"]))
+    cohorts[atlas_key] = cohorts.pop("atlas_shared_calls")
+    available = {name: {p["record_id"] for p in rows} for name, rows in exports.items()}
+    atlas_covered = available["clockbase_atlas_verified"] & available["clockbase_atlas_welch"]
+    cohorts["atlas_shared_covered"] = sorted(atlas_covered)
+    cohorts["atlas_agent_shared"] = sorted(atlas_covered & available["clockbase_agent_stored"])
+    cohorts["atlas_estimand_applied"] = sorted(atlas_covered & applied)
+    summary_path = bench / "summaries/final-2026-10-05/summary.json"
+    summary = load_json(summary_path)["T1"]["shared_S3_S4"]
+    model_systems = summary["systems"]
+    cohorts["paper_models_shared"] = sorted(r["id"] for r in records if all(
+        r["systems"].get(s, {}).get("covered") is True and
+        r["systems"][s].get("direction") in ("higher", "lower", "none")
+        for s in model_systems if s != "S0"))
+    assert len(cohorts["paper_models_shared"]) == summary["records"]
+    # Export only calls and identifiers for the same-sample paper comparison.
+    linked_path = bench / "groupbench/b-v2/linked.jsonl"
+    same_samples = []
+    for entry in load_lines(linked_path):
+        link = entry.get("primary")
+        if not link or link["tier"] != "contained" or link["result"]["status"] != "OK":
+            continue
+        pub = entry["published"]
+        significant = pub["p_value"] < .05 if numeric(pub.get("p_value")) else pub.get("significant")
+        if significant is None or pub.get("direction") not in CALLS:
+            continue
+        truth_call = pub["direction"] if significant and pub["direction"] in ("higher", "lower") else "none"
+        calls = {}
+        for stage, side in (("agent", "historical"), ("released", "verified")):
+            result = link["result"].get(side) or {}
+            if result.get("direction") in CALLS and numeric(result.get("p")):
+                calls[stage] = result["direction"] if result["p"] < .05 and result["direction"] in ("higher", "lower") else "none"
+        row = checks.get((modality_key[entry["modality"]], entry["gse"], link["result"]["row_ordinal"]))
+        if len(calls) != 2 or row is None or row["candidate"]["status"] != "OK":
+            continue
+        candidate = row["candidate"]
+        effect = -candidate["estimate"] if link["swapped"] else candidate["estimate"]
+        direction = "higher" if effect > 0 else "lower" if effect < 0 else "none"
+        calls["candidate"] = direction if candidate["p"] < link["result"]["alpha"] and direction != "none" else "none"
+        same_samples.append({"record_id": entry["id"], "paper_id": entry["id"].split("-GSE")[0],
+                             "published_call": truth_call, **calls})
+    write_csv(out / "same_sample_calls.csv", same_samples,
+              ["record_id", "paper_id", "published_call", "agent", "released", "candidate"])
     # Expert agreement uses result-level ids distinct from published-paper ids.
-    expert = load_lines(bench / "groupbench/design-checks/final-2026-11-12/a_result_stages.jsonl")
+    expert = load_lines(bench / "groupbench/design-checks" / args.run / "a_result_stages.jsonl")
     expert_truth = []
     expert_out = {name: [] for name in ("agent", "released", "candidate")}
     for r in expert:
@@ -247,31 +296,72 @@ def main():
         write_csv(out / (name + ".csv"), rows,
                   FIELDS + ["effect_unit"] if name == "clockbase_paper_groups_guarded" else None)
     (out / "cohorts.json").write_text(json.dumps(cohorts, indent=2) + "\n")
-    sources = [bench / "ground_truth_t1_v2_final_2026-10-05.jsonl", results / "published_released_test.csv", results / "auroc.json"]
+    sources = [bench / "ground_truth_t1_v2_final_2026-10-05.jsonl", results / "published_released_test.csv", results / "auroc.json", summary_path, linked_path]
     sources.extend(bench / "runs" / name / "records.jsonl" for name in ("t1-openai-002-s4", "t1new-openai-001-s4"))
     sources.extend(bench / "agentbench" / folder / "records.jsonl" for _, folder in frameworks)
-    sources.extend(bench / "groupbench/design-checks/final-2026-11-12" / modality / "rows.jsonl" for modality in ("dnam", "hs_rna", "mm_rna"))
-    sources.append(bench / "groupbench/design-checks/final-2026-11-12/a_result_stages.jsonl")
-    notes = {"export_date": "2026-11-12", "inputs": [{"path": ("records deposit/benchmark/results/" + str(p.relative_to(results)) if p.is_relative_to(results) else "records deposit/" + str(p.relative_to(base))), "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size, "mtime_ns": p.stat().st_mtime_ns} for p in sources],
+    sources.extend(bench / "groupbench/design-checks" / args.run / modality / "rows.jsonl" for modality in ("dnam", "hs_rna", "mm_rna"))
+    sources.append(bench / "groupbench/design-checks" / args.run / "a_result_stages.jsonl")
+    sources.extend(results / name for name in ("three_way_by_class.json", "published_released_test.json", "conclusion_stages.json", "external.json", "figure_benchmark_data.json", "Table_benchmark_" + args.run.removeprefix("final-") + ".md"))
+    sources.extend(bench / "agentbench" / folder / "agent_reruns.json" for _, folder in frameworks)
+    notes = {"export_date": args.run.removeprefix("final-"), "verifier_run": args.run, "inputs": [{"path": ("records deposit/benchmark/results/" + str(p.relative_to(results)) if p.is_relative_to(results) else "records deposit/" + str(p.relative_to(base))), "sha256": hashlib.sha256(p.read_bytes()).hexdigest(), "bytes": p.stat().st_size, "mtime_ns": p.stat().st_mtime_ns} for p in sources],
              "files": {name + ".csv": {"records": len(rows), "calls": dict(Counter(r["call"] for r in rows))} for name, rows in exports.items()},
              "cohorts": {k: len(v) for k, v in cohorts.items()},
              "bootstrap": {"balanced_accuracy": {"replicates": 1000, "seed": 20261005, "unit": "paper"}, "direction_auroc_and_effect": {"replicates": 2000, "seed": 20261009, "unit": "paper"}},
              "notes": ["Only parsed predictions are exported. A missing row is an abstention or unavailable prediction, not a not-significant prediction. A blank call with status direction_only preserves an available direction without an inferential call.", "The S3c and S3r source CSV stores calls, directions and P values but not effect estimates. Their effect columns are empty.", "S3g effect pairs retain all 30 source numeric estimates. Four source predictions were recomputed after dropping clock outputs above 1000 years; source estimates and P values are preserved.", "The original three-way CI uses 1000 paper bootstraps; the finding AUROC and effect correlation use 2000.", "Expert results do not include unpublished annotation content or sample labels."]}
     (out / "export_notes.json").write_text(json.dumps(notes, indent=2) + "\n")
-    expected = {"source_date": "2026-11-12", "three_way": load_json(results / "three_way_by_class.json")["systems"],
+    expected = {"source_date": args.run.removeprefix("final-"), "three_way": load_json(results / "three_way_by_class.json")["systems"],
                 "published_groups": load_json(results / "published_released_test.json")["systems"]}
     atlas_metrics = load_json(results / "auroc.json")
     expected["published_atlas"] = atlas_metrics["published"]
     expected["effect_years"] = atlas_metrics["effect_agreement_human_DNAm"]
     expected["expert_conclusions"] = load_json(results / "conclusion_stages.json")
     external = load_json(results / "external.json")
-    expected["atlas_shared93"] = external["T1"]["shared_S2_S2c"]
+    expected[atlas_key] = external["T1"]["shared_S2_S2c"]
     expected["atlas_gain"] = external["T1"]["paired_difference"]
     expected["reruns"] = {}
     for framework, folder in frameworks:
         stored = load_json(bench / "agentbench" / folder / "agent_reruns.json")
         expected["reruns"][framework] = {k: stored[k] for k in ("own_coverage", "shared_agent_systems", "model_with_and_without_data")}
+    expected["external"] = external
+    expected["published_group_comparison"] = load_json(results / "published_released_test.json")["against_models_without_data"]
+    expected["expert_auroc"] = atlas_metrics["expert_groups"]
+    expected["paper_models_shared"] = summary
+    figure = load_json(results / "figure_benchmark_data.json")
+    expected["design_error_counts"] = figure["in_sample"]
+    expected["design_error_series"] = figure["series"]
+
+    # Source table and source aggregates remain distinct from recomputed scores.
+    table_path = results / ("Table_benchmark_" + args.run.removeprefix("final-") + ".md")
+    subprocess.run(["/bin/cp", "-f", str(table_path), str(out / "paper_table.md")], check=True)
+    expected["same_sample_bootstrap"] = {"replicates": 10000, "seed": 20261006}
+    changes = Counter()
+    for row in checks.values():
+        candidate = row["candidate"]
+        significant = row["released"]["call"] in ("higher", "lower")
+        changes["rows"] += 1
+        changes["significant"] += significant
+        changes["applies"] += not candidate["method"].startswith("Welch t-test (released)")
+        if candidate["status"] != "OK":
+            changes["no call"] += 1
+        elif candidate["call"] != row["released"]["call"]:
+            changes["significant lost" if significant else "gained"] += 1
+    expected["atlas_changes"] = dict(changes)
+    expected["expert_reference_methods"] = dict(Counter(r["test"] for r in expert_truth))
     (out / "paper_metrics.json").write_text(json.dumps(expected, indent=2) + "\n")
+    definitions = load_json(Path(__file__).resolve().parents[1] / "reference_results/source_definitions.json")
+    code_root = results.parent.parent
+    for item in definitions["inputs"]:
+        source_path = code_root / item["path"].removeprefix("records deposit/benchmark/")
+        item.update(sha256=hashlib.sha256(source_path.read_bytes()).hexdigest(),
+                    bytes=source_path.stat().st_size, mtime_ns=source_path.stat().st_mtime_ns)
+    (out / "source_definitions.json").write_text(json.dumps(definitions, indent=2) + "\n")
+    if (out / "supplementary_table_s18.json").exists():
+        notes["supplementary_table_s18"] = load_json(out / "supplementary_table_s18.json")
+    notes["outputs"] = {str(p.relative_to(out)): {"sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
+                        "bytes": p.stat().st_size}
+                        for p in sorted(out.iterdir()) if p.suffix in (".csv", ".json", ".md")
+                        and p.name not in ("export_notes.json", "reproduced_metrics.json")}
+    (out / "export_notes.json").write_text(json.dumps(notes, indent=2) + "\n")
     print(json.dumps({"prediction_files": len(exports), "cohorts": notes["cohorts"], "effect_pairs_years": len(effect_pairs), "expert_truth": len(expert_truth)}, indent=2))
 
 

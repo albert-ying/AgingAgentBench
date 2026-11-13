@@ -55,6 +55,17 @@ scorer and is kept separately from the archived test expectations.
 
 The expert truth columns `test` and `method` identify the reference test for
 each result. See the [test selection rules](../data/expert/README.md#test-selection).
-Confirmed arm orientation gives 86/87 mouse and 126/128 human DNA methylation
+Confirmed arm orientation gives 86/87 mouse and 121/123 human DNA methylation
 agreement for the final candidate; including unconfirmed orientation gives
-88/89 mouse and 162/168 human agreement.
+88/89 mouse and 157/163 human agreement.
+
+The source run is `final-2026-11-13`. `atlas_shared92` contains
+the classifiable shared atlas calls. `atlas_shared_covered` retains the full
+shared sampling universe for source bootstrap comparisons. `atlas_agent_shared`
+and `paper_models_shared` reproduce the corresponding summary-table cohorts.
+`same_sample_calls.csv` contains only published and stage calls for matched
+contrasts. `paper_table.md` preserves the paper's source table.
+
+The `agent_*_atlas_frozen.csv` files preserve each rerun's recorded atlas
+baseline. Those comparisons use their original source predictions;
+`clockbase_atlas_verified.csv` uses the current verifier run.

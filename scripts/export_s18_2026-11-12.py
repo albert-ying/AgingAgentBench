@@ -12,6 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--workbook", type=Path, required=True)
     parser.add_argument("--out", type=Path, default=Path("reference_results/supplementary_table_s18.csv"))
+    parser.add_argument("--export-date", default="2026-11-13")
     args = parser.parse_args()
     ns = {"s": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
     try:
@@ -45,7 +46,8 @@ def main():
         args.out.parent.mkdir(parents=True, exist_ok=True)
         with args.out.open("w", newline="") as handle:
             csv.writer(handle).writerows(rows)
-        manifest = {"source": args.workbook.name, "sheet": "S18", "records": len(rows) - 1,
+        manifest = {"export_date": args.export_date, "source": args.workbook.name, "sheet": "S18", "records": len(rows) - 1,
+                    "output_sha256": hashlib.sha256(args.out.read_bytes()).hexdigest(),
                     "sha256": hashlib.sha256(args.workbook.read_bytes()).hexdigest(),
                     "mtime_ns": args.workbook.stat().st_mtime_ns, "caption": title,
                     "transformation": "Cell values A:K exported without workbook formatting; no recalculation."}

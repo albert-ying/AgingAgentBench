@@ -84,7 +84,7 @@ def main(argv=None):
     commands = parser.add_subparsers(dest="command", required=True)
     score = commands.add_parser("score", help="Print and write metrics for a predictions file")
     score.add_argument("--predictions", type=Path, required=True)
-    score.add_argument("--cohort", default="all", help="all, main110, atlas_shared93, or an agent cohort")
+    score.add_argument("--cohort", default="all", help="all, main110, atlas_shared92, or an agent cohort")
     score.add_argument("--ground-truth", type=Path, help="Optional ground truth CSV or JSONL")
     score.add_argument("--output", type=Path, help="Defaults to scores/PREDICTIONS_COHORT.json")
     score.add_argument("--effects", type=Path, help="Select year-effect record_ids; estimates and units come from --predictions")

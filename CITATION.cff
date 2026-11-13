@@ -3,7 +3,7 @@ message: "Cite the ClockBase paper when using ClockEffectBench."
 title: ClockEffectBench
 type: software
 version: 0.1.0
-date-released: 2026-11-12
+date-released: 2026-11-13
 authors:
   - family-names: "Ying"
     given-names: "Kejun"

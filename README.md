@@ -96,10 +96,14 @@ recover the direction of a nonsignificant effect or a continuous AUROC score.
 
 For comparisons with the paper, use `main110` for the five language models,
 the constant rule, and ClockBase with the paper's groups. Use
-`atlas_shared93` to compare verified and Welch-only atlas calls. The
+`atlas_shared92` to compare verified and Welch-only atlas calls. The
 `agent_task158` cohort contains 158 published results on the task's clocks
 from 47 papers and 61 series. The three `agent_shared_*` cohorts restrict
 comparisons to results covered by the stored agent and each framework.
+The `atlas_shared_covered` cohort retains the full shared atlas sampling
+universe. The `atlas_agent_shared` cohort reproduces the summary table's
+comparison with the stored agent. The `paper_models_shared` cohort reproduces
+the summary table's comparison with language models.
 Their inventories include records without classifiable published calls;
 the scorer reports the smaller call denominator explicitly.
 
@@ -132,6 +136,12 @@ its group definitions still describe the comparison asked by each paper.
 
 ## Data and reference files
 
+The exports use verifier run `final-2026-11-13`. The source atlas releases
+63,059 rows, including 12,289 human DNAm rows. It marks
+2,226 released rows as `LABEL_UNCONFIRMED`, including 1,010 human
+DNAm rows. Implausible clock outputs are withheld, and inference uses
+individuals for repeated and single-cell observations.
+
 The [record schema](data/README.md) documents every field in
 `data/published.csv` and `data/published.jsonl`, including paper identifiers,
 author, year, clock, measure, group definitions, assigned GSM lists, reported
@@ -156,6 +166,11 @@ and one mouse result.
 
 ## Reference performance
 
+The [source summary table](reference_results/paper_table.md) reports the
+released atlas comparison on `atlas_agent_shared` and the language-model
+comparison on `paper_models_shared`. The paper-group table below uses
+`main110`, a separate comparison with released tests on the paper's groups.
+
 The first table uses the same 110 results for every system. Entries count
 correct calls within each published class; the interval resamples papers.
 
@@ -169,8 +184,8 @@ correct calls within each published class; the interval resamples papers.
 | GPT-6 Sol without data | 5 | 15 | 43 | 0.49 [0.35, 0.62] |
 | Always higher | 0 | 36 | 0 | 0.33 [0.33, 0.33] |
 
-Verified atlas rows match 82% of 93 published calls on the shared set,
-compared with 69% for Welch-only rows. Their direction agrees in 25 of 26
+Verified atlas rows match 82% of 92 published calls on the shared set,
+compared with 68% for Welch-only rows. Their direction agrees in 25 of 26
 results significant in both, with direction AUROC 0.98 [0.91, 1.00].
 The six reruns match 77% to 90% of covered calls and 90% to 95% of published
 significant directions. The [reproduction report](REPORT.md) gives each
@@ -183,7 +198,7 @@ same systems' selected samples. Parentheses give the metric denominator.
 | System | Call agreement | Direction agreement |
 | --- | ---: | ---: |
 | Stored ClockBase agent | 82.43% (74) | 86.67% (30) |
-| Verified atlas | 84.62% (78) | 93.94% (33) |
+| Verified atlas | 84.42% (77) | 93.94% (33) |
 | Codex with GPT-6 Astra | 82.86% (70) | 92.59% (27) |
 | Codex with GPT-6 Sol | 90.28% (72) | 92.59% (27) |
 | Codex with GPT-6 Luna | 77.33% (75) | 90.00% (30) |
@@ -206,9 +221,9 @@ clockeffectbench score --expert --expert-set mouse-confirmed \
   --predictions reference_results/expert_candidate.csv
 ```
 
-The final reference agrees in 86 of 87 mouse results and 126 of 128 human
+The final reference agrees in 86 of 87 mouse results and 121 of 123 human
 DNA methylation results with confirmed arm orientation. Including rows with
-unconfirmed orientation, agreement is 88 of 89 mouse results and 162 of 168
+unconfirmed orientation, agreement is 88 of 89 mouse results and 157 of 163
 human DNA methylation results. Use `mouse-confirmed` and `human-confirmed`
 for confirmed orientation, or `mouse` and `human` to include unconfirmed rows.
 

@@ -1,5 +1,6 @@
 {
-  "export_date": "2026-11-12",
+  "export_date": "2026-11-13",
+  "verifier_run": "final-2026-11-13",
   "inputs": [
     {
       "path": "records deposit/data/clockbase-benchmark-2026-10-05/ground_truth_t1_v2_final_2026-10-05.jsonl",
@@ -11,13 +12,25 @@
       "path": "records deposit/benchmark/results/published_released_test.csv",
       "sha256": "ef179031cceb92821bff9efafa09c2e9306e7c270e23ce103bb0908afa51fefe",
       "bytes": 33743,
-      "mtime_ns": 1794482097141361158
+      "mtime_ns": 1794583359107695030
     },
     {
       "path": "records deposit/benchmark/results/auroc.json",
-      "sha256": "887c8e304a2ea68a8d1ec7f9a8cfa509afcb35390d47cc5d478efcf7e12ffc3e",
+      "sha256": "d803ddf6548d28acb7ef4dc3c6764cdac858a1dd31cac6451a5e3a51add05914",
       "bytes": 11797,
-      "mtime_ns": 1794482097131664350
+      "mtime_ns": 1794583359094778680
+    },
+    {
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/summaries/final-2026-10-05/summary.json",
+      "sha256": "b04f0d4e148b5f075effe0e62dd354d8b3f0b91392a12e2d6a8be717ff5a31e3",
+      "bytes": 45834,
+      "mtime_ns": 1791240612000000000
+    },
+    {
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/b-v2/linked.jsonl",
+      "sha256": "d2477ef98f0e4bacc060ccf236f08962c24cb3c6f7c9e9e2308a07f48e8f2056",
+      "bytes": 273458,
+      "mtime_ns": 1791267912000000000
     },
     {
       "path": "records deposit/data/clockbase-benchmark-2026-10-05/runs/t1-openai-002-s4/records.jsonl",
@@ -50,28 +63,82 @@
       "mtime_ns": 1792309919000000000
     },
     {
-      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/dnam/rows.jsonl",
-      "sha256": "079e8fb4ea1f9dabeea0882986cf1f50fdc8290e6b9a011ace3693353f8f2d06",
-      "bytes": 9019151,
-      "mtime_ns": 1794482042534553259
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-13/dnam/rows.jsonl",
+      "sha256": "c6ed5ca3322c4aa857ca154b80a589324baaf512827bfed4381a0df2b6b0a33b",
+      "bytes": 9009279,
+      "mtime_ns": 1794583294284099795
     },
     {
-      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/hs_rna/rows.jsonl",
-      "sha256": "8caa34066e127ee94ef8c0b978ca84b0ed925ebba5999732341358e7dc7ea7e2",
-      "bytes": 17629487,
-      "mtime_ns": 1794482046979713847
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-13/hs_rna/rows.jsonl",
+      "sha256": "2b36a67dab510a2950441799aeab698775e250072c04fbce627707b4087d58fb",
+      "bytes": 17628022,
+      "mtime_ns": 1794583300948085872
     },
     {
-      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/mm_rna/rows.jsonl",
-      "sha256": "2be2706c8e1dea4c052aa795a01eac6e4e853984bb14d0e56f4214e6f4e29730",
-      "bytes": 19552259,
-      "mtime_ns": 1794482051847473013
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-13/mm_rna/rows.jsonl",
+      "sha256": "e255a55878b56e24cfcde4e66c10bd0ff8eaa5beb9e21e403e818c6dd45ff42a",
+      "bytes": 19548637,
+      "mtime_ns": 1794583307357241465
     },
     {
-      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-12/a_result_stages.jsonl",
-      "sha256": "281f22e90f4de60901c5bcdc4a850a6190688c071664be3fd5f9cb2dec482be2",
-      "bytes": 217490,
-      "mtime_ns": 1794482071542698959
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/groupbench/design-checks/final-2026-11-13/a_result_stages.jsonl",
+      "sha256": "7aec2adbb464cfd6ebb654399adf466d83797202ebf71d7f3c5987b67dda37f0",
+      "bytes": 217194,
+      "mtime_ns": 1794583329406489413
+    },
+    {
+      "path": "records deposit/benchmark/results/three_way_by_class.json",
+      "sha256": "dd72391ce7b97b37e3e60cbc28b4d89da9ce4dfaff74969b0e56e9e014c34fae",
+      "bytes": 3551,
+      "mtime_ns": 1794583359110857378
+    },
+    {
+      "path": "records deposit/benchmark/results/published_released_test.json",
+      "sha256": "aa7e84c6bb8c77043f2dc80c9fd0912ca49e567aacaaafe4a7dc61e285f4261e",
+      "bytes": 18943,
+      "mtime_ns": 1794583359105122102
+    },
+    {
+      "path": "records deposit/benchmark/results/conclusion_stages.json",
+      "sha256": "7ca1bb08a5010162c561ffc0702d6c800a187a1de1dc28a4fa29cad7fe318474",
+      "bytes": 66196,
+      "mtime_ns": 1794583359102468257
+    },
+    {
+      "path": "records deposit/benchmark/results/external.json",
+      "sha256": "e701cd6a78dbd9e08176c63ba5e3d47e44238d3385c9857e87fa5590df89d9fa",
+      "bytes": 11371,
+      "mtime_ns": 1794583359092639212
+    },
+    {
+      "path": "records deposit/benchmark/results/figure_benchmark_data.json",
+      "sha256": "61c1efa7164f2067147932ea705d47de87016709c2a609aa56abbea734c32e73",
+      "bytes": 8317,
+      "mtime_ns": 1794583363529644682
+    },
+    {
+      "path": "records deposit/benchmark/results/Table_benchmark_2026-11-13.md",
+      "sha256": "107cb7c29d202101be648929bbda1e189d446bf77e6f1d7954425f30441874cd",
+      "bytes": 4579,
+      "mtime_ns": 1794583361557731270
+    },
+    {
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/agentbench/scored-001/agent_reruns.json",
+      "sha256": "d7e635f101d10bee5ec88db0975d720ae3921ac671609d15e610d4e6c660d8e4",
+      "bytes": 66766,
+      "mtime_ns": 1791700776000000000
+    },
+    {
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/agentbench/scored-claude-001/agent_reruns.json",
+      "sha256": "42ac86c97ed171aa2fbb8ea1ed57beb3a798f49a2fa2a3cdb5531ea49f1a7928",
+      "bytes": 27724,
+      "mtime_ns": 1792299498000000000
+    },
+    {
+      "path": "records deposit/data/clockbase-benchmark-2026-10-05/agentbench/scored-biomni-001/agent_reruns.json",
+      "sha256": "e0d7dc807cbbee5e084726fb9bbc73c522ef535a00acf25375a568286f107896",
+      "bytes": 28459,
+      "mtime_ns": 1792309919000000000
     }
   ],
   "files": {
@@ -164,9 +231,9 @@
       }
     },
     "clockbase_atlas_verified.csv": {
-      "records": 115,
+      "records": 114,
       "calls": {
-        "not significant": 75,
+        "not significant": 74,
         "higher": 27,
         "lower": 10,
         "": 3
@@ -179,6 +246,14 @@
         "higher": 38,
         "lower": 16,
         "": 5
+      }
+    },
+    "agent_codex_atlas_frozen.csv": {
+      "records": 93,
+      "calls": {
+        "not significant": 59,
+        "higher": 25,
+        "lower": 9
       }
     },
     "agent_codex_gpt_5_5_raw.csv": {
@@ -253,6 +328,14 @@
         "": 5
       }
     },
+    "agent_claude_code_atlas_frozen.csv": {
+      "records": 93,
+      "calls": {
+        "not significant": 59,
+        "higher": 25,
+        "lower": 9
+      }
+    },
     "agent_claude_code_claude_opus_5_5_raw.csv": {
       "records": 107,
       "calls": {
@@ -269,6 +352,14 @@
         "higher": 33,
         "lower": 10,
         "": 7
+      }
+    },
+    "agent_biomni_atlas_frozen.csv": {
+      "records": 93,
+      "calls": {
+        "not significant": 59,
+        "higher": 25,
+        "lower": 9
       }
     },
     "agent_biomni_gpt_6_astra_raw.csv": {
@@ -306,22 +397,26 @@
       }
     },
     "expert_candidate.csv": {
-      "records": 257,
+      "records": 252,
       "calls": {
-        "not significant": 185,
+        "not significant": 181,
         "lower": 23,
-        "higher": 49
+        "higher": 48
       }
     }
   },
   "cohorts": {
     "main110": 110,
     "paper_groups_welch113": 113,
-    "atlas_shared93": 93,
     "agent_task158": 158,
     "agent_shared_codex": 68,
     "agent_shared_claude_code": 82,
-    "agent_shared_biomni": 70
+    "agent_shared_biomni": 70,
+    "atlas_shared92": 92,
+    "atlas_shared_covered": 114,
+    "atlas_agent_shared": 103,
+    "atlas_estimand_applied": 67,
+    "paper_models_shared": 154
   },
   "bootstrap": {
     "balanced_accuracy": {
@@ -341,5 +436,182 @@
     "S3g effect pairs retain all 30 source numeric estimates. Four source predictions were recomputed after dropping clock outputs above 1000 years; source estimates and P values are preserved.",
     "The original three-way CI uses 1000 paper bootstraps; the finding AUROC and effect correlation use 2000.",
     "Expert results do not include unpublished annotation content or sample labels."
-  ]
+  ],
+  "supplementary_table_s18": {
+    "export_date": "2026-11-13",
+    "source": "Supplementary_Tables_S1-S21_2026-11-10.xlsx",
+    "sheet": "S18",
+    "records": 326,
+    "output_sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
+    "sha256": "6a37c2f2b992e5c9d8b668b4dabee8ab818f78ecf7728aa4b2bc272f447a53c8",
+    "mtime_ns": 1794583485328960100,
+    "caption": "Supplementary Table S18. ClockEffectBench: the verified atlas against published results and expert-defined groups (Methods, ClockEffectBench). One row per reference, modality, measure and stage or system; stages are the agent's stored result, the verification with a Welch t-test for every row, and the released rows; systems are ClockBase with the paper's groups, language models without data, a constant rule and the agent reruns (Codex with four language models, Claude Code with Claude Opus 5.5 and Biomni with GPT-6 Astra; reported and recomputed). Proportions are numerator / denominator; intervals are 95% (bootstrap over papers or series for AUROC and correlations; Clopper-Pearson on the design-effect-adjusted sample size for proportions in expert-annotated series).",
+    "transformation": "Cell values A:K exported without workbook formatting; no recalculation."
+  },
+  "outputs": {
+    "README.md": {
+      "sha256": "34ae227408a037aadca34a654f4bbbcdc9ec8569d8c058f12986da179b070d88",
+      "bytes": 4087
+    },
+    "agent_biomni_atlas_frozen.csv": {
+      "sha256": "22c465f46ad5a195d4d7efd4d18e27fd3b01765c1b7bfccfd9f800fa0728d79f",
+      "bytes": 14115
+    },
+    "agent_biomni_gpt_6_astra_raw.csv": {
+      "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
+      "bytes": 10830
+    },
+    "agent_biomni_gpt_6_astra_recomputed.csv": {
+      "sha256": "bc0068da1147ca53803176384e9bfb55ba582cbbd0317166d3cac9794c660088",
+      "bytes": 13567
+    },
+    "agent_claude_code_atlas_frozen.csv": {
+      "sha256": "22c465f46ad5a195d4d7efd4d18e27fd3b01765c1b7bfccfd9f800fa0728d79f",
+      "bytes": 14115
+    },
+    "agent_claude_code_claude_opus_5_5_raw.csv": {
+      "sha256": "5e2578d3eaf9cd3ed7e7ff989a70a613ef9f592c317798796fe5a84dec4970b0",
+      "bytes": 14370
+    },
+    "agent_claude_code_claude_opus_5_5_recomputed.csv": {
+      "sha256": "e503c40bbabb5a45338d4d3a3234cdc7e42a5c1ca01d74d4e7c7518bcab00bd4",
+      "bytes": 18587
+    },
+    "agent_codex_atlas_frozen.csv": {
+      "sha256": "22c465f46ad5a195d4d7efd4d18e27fd3b01765c1b7bfccfd9f800fa0728d79f",
+      "bytes": 14115
+    },
+    "agent_codex_gpt_5_5_raw.csv": {
+      "sha256": "e8b17a76b781a5489c85b62cdb6f6956c4283cdf4b0f8bbb7cd943204c954ead",
+      "bytes": 12705
+    },
+    "agent_codex_gpt_5_5_recomputed.csv": {
+      "sha256": "2b4956f4f1f911f2917bc865a7c4a31653886ee43a2fd5760e8a2417e06d3070",
+      "bytes": 16329
+    },
+    "agent_codex_gpt_6_astra_raw.csv": {
+      "sha256": "0b1ab5dd3800e5ddf5a9bf9774bf83c651797692fcc36855d6f816a386fef162",
+      "bytes": 11099
+    },
+    "agent_codex_gpt_6_astra_recomputed.csv": {
+      "sha256": "4123bc8c0b8b8552ad492ee8bcd7e2ad39f6d45a9f38911ee49f0835ab94332b",
+      "bytes": 13913
+    },
+    "agent_codex_gpt_6_luna_raw.csv": {
+      "sha256": "0a4fc2beed7454d314ae98ecdf870092f4c390466f91435829d2baced1bc4781",
+      "bytes": 12081
+    },
+    "agent_codex_gpt_6_luna_recomputed.csv": {
+      "sha256": "293fdbea8a48b56c6e5b05d9fd1be8e52f59c71b8569168cc62c68073fff369b",
+      "bytes": 15312
+    },
+    "agent_codex_gpt_6_sol_raw.csv": {
+      "sha256": "0288cd2715cbbc7a64a3d39c1ccf41db547063f24719c971c03437bb9b0e569c",
+      "bytes": 11183
+    },
+    "agent_codex_gpt_6_sol_recomputed.csv": {
+      "sha256": "534fc2d04927c25db18e31cf859cb27b3bfb40a85de3ca12db7900fdec4cbe19",
+      "bytes": 14104
+    },
+    "clockbase_agent_stored.csv": {
+      "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
+      "bytes": 13173
+    },
+    "clockbase_atlas_verified.csv": {
+      "sha256": "4b770fbb63636955451c76ed0b4fd0b37623ce32cd15a93dfe32fd85623dcac5",
+      "bytes": 16846
+    },
+    "clockbase_atlas_welch.csv": {
+      "sha256": "1d3dce754aec7e9f2ca6d791d42ebd56b1148cbfbcfdbaf4ea317cd63cbde499",
+      "bytes": 16705
+    },
+    "clockbase_paper_groups.csv": {
+      "sha256": "367ff776974e129e78ddc503c199b32ccf43dd7e0f20ac33a107d24bfa2eadfd",
+      "bytes": 13579
+    },
+    "clockbase_paper_groups_guarded.csv": {
+      "sha256": "afbe16c3a6c833aa40ca29bbe1f4368b675bc3709152cc8b508576dc1a7bd400",
+      "bytes": 22811
+    },
+    "clockbase_paper_groups_individual_readers.csv": {
+      "sha256": "51c9441260ee5a03e94aa978b7a8754d7760ffd218f00b361e41280c2d3907e1",
+      "bytes": 13603
+    },
+    "clockbase_paper_groups_welch.csv": {
+      "sha256": "9404964d5f5fc76f41a71dc7fcd616ce4d08ca25f8be9113ea1749366bcff723",
+      "bytes": 21826
+    },
+    "cohorts.json": {
+      "sha256": "8fa0de1754417805def2610d14ef921ad178e1956c9b99c9b70dc758ce40ef18",
+      "bytes": 46701
+    },
+    "constant_higher.csv": {
+      "sha256": "6598bd8f734a94d71b7f19635674711570c41c5bec268b155178afe58f764ee2",
+      "bytes": 48546
+    },
+    "effect_pairs_years.csv": {
+      "sha256": "f018617da0b4dbfee7dedd31a67db45c21feafeccad931191b20227c78715018",
+      "bytes": 3079
+    },
+    "expert_agent.csv": {
+      "sha256": "1ef84c5ef15756b4f72dfcbaea86faf54d00094db90b212d4eba8ea7ec5cdc23",
+      "bytes": 35124
+    },
+    "expert_candidate.csv": {
+      "sha256": "d98ed755cc8ffeb04f8208cd353e9f07f88a8593964e2cd8d8f3018fe287cd49",
+      "bytes": 40132
+    },
+    "expert_released.csv": {
+      "sha256": "08f6225ab3833f49642b8efe6d70ca13fd5d0e7c6848ef457082df3212fbf374",
+      "bytes": 37660
+    },
+    "expert_truth.csv": {
+      "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",
+      "bytes": 61295
+    },
+    "language_model_gpt_4_1.csv": {
+      "sha256": "731f91671c11f626d66e1f4037f5f78f407f6f9295acb7bd0f19aaeb4a9f24b3",
+      "bytes": 36645
+    },
+    "language_model_gpt_5_5.csv": {
+      "sha256": "56288154a031fe1669e2f7aed5c4d54fa306003efdf617b8d3d7ef49dd8aba7a",
+      "bytes": 37384
+    },
+    "language_model_gpt_6_astra.csv": {
+      "sha256": "3b03ac8a8b9bc84ac2432c2cbe77abd4171b40350014dc106fb1b0580783e798",
+      "bytes": 38706
+    },
+    "language_model_gpt_6_luna.csv": {
+      "sha256": "51bfa849d9747571af126ba332a3392175637a0315a2c5c9dbb318f109278630",
+      "bytes": 38637
+    },
+    "language_model_gpt_6_sol.csv": {
+      "sha256": "31582230fb05b1a4e20ae9ddea1b3655cc1d9c7d41ce000ba4fdaf0eb53ae740",
+      "bytes": 38140
+    },
+    "paper_metrics.json": {
+      "sha256": "ecb41f97f375a050f4a4daca9c7c8200208005f8e42409f05aff9c9307df55cd",
+      "bytes": 312711
+    },
+    "paper_table.md": {
+      "sha256": "107cb7c29d202101be648929bbda1e189d446bf77e6f1d7954425f30441874cd",
+      "bytes": 4579
+    },
+    "same_sample_calls.csv": {
+      "sha256": "00a6a6d47aa7437b214f4e9325796621d049508e7061d03048b1e55e5ae7e704",
+      "bytes": 3806
+    },
+    "source_definitions.json": {
+      "sha256": "b0f8d0296bc8d18dc3227d50893cf6ff621af1c2a61514f1aa8be1dbfd316019",
+      "bytes": 1246
+    },
+    "supplementary_table_s18.csv": {
+      "sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
+      "bytes": 81588
+    },
+    "supplementary_table_s18.json": {
+      "sha256": "109f0e07f55756ed41f72f8f6266a5806cd8baa51156786532ee4ea8d21794e9",
+      "bytes": 1219
+    }
+  }
 }

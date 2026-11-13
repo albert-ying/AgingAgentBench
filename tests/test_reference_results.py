@@ -81,7 +81,7 @@ def test_published_significance_and_direction(system, filename):
 def test_verified_atlas_own_coverage_direction_auroc():
     actual = scored("clockbase_atlas_verified")
     expected = EXPECTED["published_atlas"]["human DNAm"]["S2c"]
-    assert actual["scored"] == 93
+    assert actual["scored"] == sum(expected["reference"].values())
     assert actual["same_direction_both_significant"] == [25, 26]
     assert actual["direction_auroc"] == pytest.approx(expected["direction_auroc"], abs=1e-14)
     assert actual["direction_auroc_interval"] == pytest.approx(expected["direction_auroc_interval"], abs=1e-14)
@@ -89,9 +89,9 @@ def test_verified_atlas_own_coverage_direction_auroc():
 
 @pytest.mark.parametrize("system,filename", [("S2", "clockbase_atlas_welch"), ("S2c", "clockbase_atlas_verified")])
 def test_atlas_shared_call_agreement(system, filename):
-    actual = scored(filename, "atlas_shared93")
-    expected = EXPECTED["atlas_shared93"]["metrics"][system]
-    assert actual["scored"] == expected["call_n"] == 93
+    actual = scored(filename, "atlas_shared92")
+    expected = EXPECTED["atlas_shared92"]["metrics"][system]
+    assert actual["scored"] == expected["call_n"]
     assert actual["call_agreement"] == pytest.approx(expected["call_agreement"], abs=1e-14)
     assert actual["balanced_accuracy"] == pytest.approx(expected["call_balanced_accuracy"], abs=1e-14)
 
@@ -118,8 +118,11 @@ def test_agent_rerun_calls_directions_and_auroc(framework, model, kind):
     assert actual["balanced_accuracy_interval"] == pytest.approx(expected["call_balanced_accuracy_interval"], abs=1e-14)
 
 
-@pytest.mark.parametrize("set_name,confirmed,k,n", [("A1", False, 88, 89), ("A2", False, 162, 168), ("A2", True, 126, 128)])
-def test_expert_candidate_call_agreement(set_name, confirmed, k, n):
+@pytest.mark.parametrize("set_name,confirmed", [("A1", False), ("A2", False), ("A2", True)])
+def test_expert_candidate_call_agreement(set_name, confirmed):
+    expected = EXPECTED["expert_conclusions"][set_name]["expert_design_call"]["candidate_call"]["labels confirmed" if confirmed else "all released rows"]
+    n = expected["units"]
+    k = n - expected["errors"]
     truth = csv_rows("expert_truth")
     selected = [r["record_id"] for r in truth if r["set"] == set_name and (not confirmed or r["label_unconfirmed"] == "False")]
     actual = score_predictions(csv_rows("expert_candidate"), truth, record_ids=selected)
@@ -151,7 +154,7 @@ def test_paired_atlas_call_gain():
     from clockeffectbench.metrics import compare_calls
     actual = compare_calls(csv_rows("clockbase_atlas_welch"), csv_rows("clockbase_atlas_verified"), published_truth())
     expected = EXPECTED["atlas_gain"]
-    assert actual["scored"] == 93
-    assert actual["common_records"] == 115
+    assert actual["scored"] == EXPECTED["external"]["T1"]["shared_S2_S2c"]["metrics"]["S2c"]["call_n"]
+    assert actual["common_records"] == EXPECTED["external"]["T1"]["shared_S2_S2c"]["records"]
     assert actual["difference"] == expected["call_agreement_S2c_minus_S2"]
     assert actual["interval"] == pytest.approx(expected["interval"], abs=1e-14)
