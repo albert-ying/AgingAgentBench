@@ -1,17 +1,18 @@
-# ClockEffectBench
+# AgingAgentBench
 
-ClockEffectBench measures whether an analysis system recovers aging-clock
+AgingAgentBench measures whether an analysis system recovers aging-clock
 effects reported in published studies of public GEO data. You can evaluate
 an agent, a pipeline, or a language model using the same reference outcomes.
 The reference is what each paper reports for its clock, measure, and groups.
-Agreement with these results measures recovery of published findings; it does
-not establish that an intervention changes lifespan or that every published
-finding is correct.
 
 The published-effects dataset contains 580 contrasts from 93 papers on 125
 GEO series. A separate expert task tests group choice and orientation against
 complete groups defined from sample annotation for 32 mouse RNA-seq and 16
 human DNA methylation series with scored results.
+
+The [repository](https://github.com/albert-ying/AgingAgentBench) contains the
+package and reference data. The [site](https://albert-ying.github.io/AgingAgentBench/)
+describes the benchmark.
 
 ## Quick start
 
@@ -22,7 +23,7 @@ at runtime. All scoring runs locally without API calls.
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[test]'
-clockeffectbench score \
+agingagentbench score \
   --predictions reference_results/clockbase_paper_groups.csv \
   --cohort main110
 pytest -q
@@ -41,7 +42,7 @@ years; four rows in the full guarded Welch variant use this guard. To reproduce
 this comparison, submit the guarded estimates with their explicit year units:
 
 ```sh
-clockeffectbench score \
+agingagentbench score \
   --predictions reference_results/clockbase_paper_groups_guarded.csv \
   --effects reference_results/effect_pairs_years.csv
 ```
@@ -79,9 +80,9 @@ MED-25678027-GSE25395-Horvathv1-1,not significant,higher,0.05693342772072061
 ```
 
 ```sh
-clockeffectbench score --predictions my_predictions.csv
-clockeffectbench score --predictions my_predictions.csv --cohort main110
-clockeffectbench score --predictions my_predictions.csv \
+agingagentbench score --predictions my_predictions.csv
+agingagentbench score --predictions my_predictions.csv --cohort main110
+agingagentbench score --predictions my_predictions.csv \
   --effects reference_results/effect_pairs_years.csv
 ```
 
@@ -115,12 +116,12 @@ and significance without consulting data or external tools. The prompt also
 asks for confidence and whether it recognizes the publication.
 
 ```sh
-clockeffectbench prompt MED-25678027-GSE25395-Horvathv1-1
+agingagentbench prompt MED-25678027-GSE25395-Horvathv1-1
 ```
 
 This prints the frozen input used by the original baseline. The repository
 contains 324 such inputs, including every record in `main110`. These are
-model inputs, not model responses. `clockeffectbench/prompts.py` preserves
+model inputs, not model responses. `agingagentbench/prompts.py` preserves
 the original neutral clock descriptions and redaction rules. Neutral prompts are available only for these 324 shipped records.
 The optional `--study study.json` rebuilds inputs from local GEO `title`,
 `summary`, `overall_design`, and `n_samples` fields for supported records.
@@ -215,9 +216,9 @@ results, matching the manuscript. To score predictions for the frozen expert
 comparisons, use the identifiers in `reference_results/expert_truth.csv`.
 
 ```sh
-clockeffectbench score --expert --expert-set human-confirmed \
+agingagentbench score --expert --expert-set human-confirmed \
   --predictions reference_results/expert_candidate.csv
-clockeffectbench score --expert --expert-set mouse-confirmed \
+agingagentbench score --expert --expert-set mouse-confirmed \
   --predictions reference_results/expert_candidate.csv
 ```
 

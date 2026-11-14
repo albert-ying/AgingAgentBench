@@ -12,3 +12,5 @@ scores/
 *.pem
 *.key
 .memory/
+*.bak-*
+build.bak-*/

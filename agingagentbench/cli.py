@@ -1,4 +1,4 @@
-"""Command line scoring and frozen prompt access without network requests."""
+"""AgingAgentBench scoring and frozen prompt access without network requests."""
 import argparse
 import json
 from pathlib import Path
@@ -80,7 +80,7 @@ def run_prompt(args):
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(prog="clockeffectbench", description=__doc__)
+    parser = argparse.ArgumentParser(prog="agingagentbench", description=__doc__)
     commands = parser.add_subparsers(dest="command", required=True)
     score = commands.add_parser("score", help="Print and write metrics for a predictions file")
     score.add_argument("--predictions", type=Path, required=True)
@@ -99,7 +99,7 @@ def main(argv=None):
     try:
         args.run(args)
     except (ValueError, OSError, KeyError) as error:
-        parser.exit(2, f"clockeffectbench: {error}\n")
+        parser.exit(2, f"agingagentbench: {error}\n")
 
 
 if __name__ == "__main__":

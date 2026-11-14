@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "clockeffectbench"
+name = "agingagentbench"
 version = "0.1.0"
 description = "Score analysis systems against published aging-clock effects"
 readme = "README.md"
@@ -16,16 +16,16 @@ dependencies = ["numpy>=1.24", "scipy>=1.10"]
 test = ["pytest>=8"]
 
 [project.scripts]
-clockeffectbench = "clockeffectbench.cli:main"
+agingagentbench = "agingagentbench.cli:main"
 
 [tool.setuptools]
-packages = ["clockeffectbench", "clockeffectbench.data", "clockeffectbench.reference_results"]
-package-dir = {"clockeffectbench.data" = "data", "clockeffectbench.reference_results" = "reference_results"}
+packages = ["agingagentbench", "agingagentbench.data", "agingagentbench.reference_results"]
+package-dir = {"agingagentbench.data" = "data", "agingagentbench.reference_results" = "reference_results"}
 license-files = ["LICENSE", "DATA_LICENSE.md"]
 
 [tool.setuptools.package-data]
-"clockeffectbench.data" = ["*.jsonl", "*.json", "*.csv", "*.md", "**/*.jsonl", "**/*.json", "**/*.csv", "**/*.md"]
-"clockeffectbench.reference_results" = ["*.jsonl", "*.json", "*.csv", "*.md"]
+"agingagentbench.data" = ["*.jsonl", "*.json", "*.csv", "*.md", "**/*.jsonl", "**/*.json", "**/*.csv", "**/*.md"]
+"agingagentbench.reference_results" = ["*.jsonl", "*.json", "*.csv", "*.md"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

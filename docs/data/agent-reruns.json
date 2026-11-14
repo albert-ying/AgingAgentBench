@@ -1,0 +1,118 @@
+{
+  "cohort": "agent_task158",
+  "records": 158,
+  "interval_method": "paper bootstrap",
+  "systems": [
+    {
+      "name": "Stored ClockBase agent",
+      "source_path": "reruns/codex/own_coverage/S1",
+      "published_call_agreement": 0.8243243243243243,
+      "interval": [
+        0.746017316017316,
+        0.9027777777777778
+      ],
+      "n": 74,
+      "direction_matches": [
+        26,
+        30
+      ],
+      "reproduced_key": "clockbase_agent_stored@agent_task158"
+    },
+    {
+      "name": "Codex with GPT-6 Astra",
+      "source_path": "reruns/codex/own_coverage/R:gpt-6-astra:raw",
+      "published_call_agreement": 0.8285714285714286,
+      "interval": [
+        0.6980945878848063,
+        0.9348172987974098
+      ],
+      "n": 70,
+      "direction_matches": [
+        25,
+        27
+      ],
+      "supplementary_row": 129,
+      "reproduced_key": "agent_codex_gpt_6_astra_raw@agent_task158"
+    },
+    {
+      "name": "Codex with GPT-6 Sol",
+      "source_path": "reruns/codex/own_coverage/R:gpt-6-sol:raw",
+      "published_call_agreement": 0.9027777777777778,
+      "interval": [
+        0.8115746180963572,
+        0.9753445305770887
+      ],
+      "n": 72,
+      "direction_matches": [
+        25,
+        27
+      ],
+      "supplementary_row": 137,
+      "reproduced_key": "agent_codex_gpt_6_sol_raw@agent_task158"
+    },
+    {
+      "name": "Codex with GPT-6 Luna",
+      "source_path": "reruns/codex/own_coverage/R:gpt-6-luna:raw",
+      "published_call_agreement": 0.7733333333333333,
+      "interval": [
+        0.6296031746031746,
+        0.891355072463768
+      ],
+      "n": 75,
+      "direction_matches": [
+        27,
+        30
+      ],
+      "supplementary_row": 145,
+      "reproduced_key": "agent_codex_gpt_6_luna_raw@agent_task158"
+    },
+    {
+      "name": "Codex with GPT-5.5",
+      "source_path": "reruns/codex/own_coverage/R:gpt-5.5:raw",
+      "published_call_agreement": 0.7926829268292683,
+      "interval": [
+        0.6666666666666666,
+        0.8979785585120124
+      ],
+      "n": 82,
+      "direction_matches": [
+        32,
+        34
+      ],
+      "supplementary_row": 153,
+      "reproduced_key": "agent_codex_gpt_5_5_raw@agent_task158"
+    },
+    {
+      "name": "Claude Code with Claude Opus 5.5",
+      "source_path": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw",
+      "published_call_agreement": 0.8275862068965517,
+      "interval": [
+        0.7173619271445358,
+        0.9253869541182974
+      ],
+      "n": 87,
+      "direction_matches": [
+        35,
+        37
+      ],
+      "supplementary_row": 219,
+      "reproduced_key": "agent_claude_code_claude_opus_5_5_raw@agent_task158"
+    },
+    {
+      "name": "Biomni with GPT-6 Astra",
+      "source_path": "reruns/biomni/own_coverage/R:gpt-6-astra:raw",
+      "published_call_agreement": 0.8088235294117647,
+      "interval": [
+        0.6727123695976155,
+        0.9275460242851548
+      ],
+      "n": 68,
+      "direction_matches": [
+        24,
+        26
+      ],
+      "supplementary_row": 246,
+      "reproduced_key": "agent_biomni_gpt_6_astra_raw@agent_task158"
+    }
+  ]
+}

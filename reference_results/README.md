@@ -1,4 +1,4 @@
-# Reference predictions
+# AgingAgentBench reference predictions
 
 Each prediction CSV uses `record_id`, `call`, `direction`, `p_value`, `effect`,
 `effect_unit`, `paper_id`, and optional source metadata. A call is `higher`, `lower`, or
@@ -64,7 +64,9 @@ the classifiable shared atlas calls. `atlas_shared_covered` retains the full
 shared sampling universe for source bootstrap comparisons. `atlas_agent_shared`
 and `paper_models_shared` reproduce the corresponding summary-table cohorts.
 `same_sample_calls.csv` contains only published and stage calls for matched
-contrasts. `paper_table.md` preserves the paper's source table.
+contrasts. `paper_table.md` preserves the paper's source table with the benchmark
+name updated. Archived workbook captions and export records retain the name
+used at export.
 
 The `agent_*_atlas_frozen.csv` files preserve each rerun's recorded atlas
 baseline. Those comparisons use their original source predictions;

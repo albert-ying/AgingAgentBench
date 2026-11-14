@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 
-from clockeffectbench.metrics import score_predictions
+from agingagentbench.metrics import score_predictions
 
 ROOT = Path(__file__).resolve().parents[1]
 REF = ROOT / "reference_results"
@@ -140,7 +140,7 @@ def test_expert_agent_opposite_significant_calls(set_name, opposite):
 
 
 def test_effect_pairs_in_years():
-    from clockeffectbench.metrics import score_effects
+    from agingagentbench.metrics import score_effects
     actual = score_effects(csv_rows("effect_pairs_years"))
     expected = EXPECTED["effect_years"]["S3g"]
     assert actual["pairs"] == expected["pairs"] == 30
@@ -151,7 +151,7 @@ def test_effect_pairs_in_years():
 
 
 def test_paired_atlas_call_gain():
-    from clockeffectbench.metrics import compare_calls
+    from agingagentbench.metrics import compare_calls
     actual = compare_calls(csv_rows("clockbase_atlas_welch"), csv_rows("clockbase_atlas_verified"), published_truth())
     expected = EXPECTED["atlas_gain"]
     assert actual["scored"] == EXPECTED["external"]["T1"]["shared_S2_S2c"]["metrics"]["S2c"]["call_n"]

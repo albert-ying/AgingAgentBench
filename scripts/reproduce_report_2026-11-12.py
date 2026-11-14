@@ -8,8 +8,8 @@ from pathlib import Path
 
 import numpy as np
 
-from clockeffectbench.io import read_rows, write_json
-from clockeffectbench.metrics import bootstrap, compare_calls, score_effects, score_predictions
+from agingagentbench.io import read_rows, write_json
+from agingagentbench.metrics import bootstrap, compare_calls, score_effects, score_predictions
 
 ROOT = Path(__file__).resolve().parents[1]
 REF = ROOT / "reference_results"
@@ -80,7 +80,7 @@ def main():
 
         ratio = lambda pair: f"{pair[0]}/{pair[1]}"
         interval = lambda value, bounds: f"{value:.4f} [{bounds[0]:.4f}, {bounds[1]:.4f}]"
-        lines = ["# ClockEffectBench reproduction", "",
+        lines = ["# AgingAgentBench reproduction", "",
                  f"Source run `{notes['verifier_run']}`. The scorer reads the shipped predictions",
                  "and compares the results with independently archived source metrics.",
                  "The paper's source table is retained in [paper_table.md](reference_results/paper_table.md).",

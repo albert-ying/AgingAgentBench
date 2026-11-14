@@ -1,4 +1,4 @@
-"""Published aging-clock effect scoring without model or network calls."""
+"""AgingAgentBench published aging-clock effect scoring without model or network calls."""
 from .metrics import score_predictions
 
 __version__ = "0.1.0"

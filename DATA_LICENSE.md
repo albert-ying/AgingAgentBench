@@ -1,9 +1,9 @@
 # Data reuse
 
-The ClockEffectBench data compilation and ClockBase numerical outputs are
+The AgingAgentBench data compilation and ClockBase numerical outputs are
 licensed under the Creative Commons Attribution 4.0 International license
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-Attribute ClockEffectBench to Ying K, et al. and cite the ClockBase preprint
+Attribute AgingAgentBench to Ying K, et al. and cite the ClockBase preprint
 DOI 10.1101/2023.02.28.530532. Retain each record's source identifiers when
 redistributing or using published contrasts and identify changes you make.
 

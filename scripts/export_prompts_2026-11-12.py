@@ -4,7 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from clockeffectbench.prompts import redact_emails
+from agingagentbench.prompts import redact_emails
 
 
 def main():

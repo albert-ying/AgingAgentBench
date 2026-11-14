@@ -1,4 +1,4 @@
-# ClockEffectBench reproduction
+# AgingAgentBench reproduction
 
 Source run `final-2026-11-13`. The scorer reads the shipped predictions
 and compares the results with independently archived source metrics.

@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "Cite the ClockBase paper when using ClockEffectBench."
-title: ClockEffectBench
+message: "Cite the ClockBase paper when using AgingAgentBench."
+title: AgingAgentBench
 type: software
+repository-code: https://github.com/albert-ying/AgingAgentBench
+url: https://albert-ying.github.io/AgingAgentBench/
 version: 0.1.0
 date-released: 2026-11-13
 authors:

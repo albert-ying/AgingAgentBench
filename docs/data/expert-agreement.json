@@ -1,0 +1,37 @@
+{
+  "prediction_variant": "expert_candidate.csv",
+  "systems": [
+    {
+      "name": "Mouse RNA-seq",
+      "scope": "Confirmed orientation",
+      "key": "A1.candidate.labels confirmed",
+      "matches": 86,
+      "n": 87,
+      "agreement": 0.9885057471264368
+    },
+    {
+      "name": "Mouse RNA-seq",
+      "scope": "All orientations",
+      "key": "A1.candidate.all released rows",
+      "matches": 88,
+      "n": 89,
+      "agreement": 0.9887640449438202
+    },
+    {
+      "name": "Human DNA methylation",
+      "scope": "Confirmed orientation",
+      "key": "A2.candidate.labels confirmed",
+      "matches": 121,
+      "n": 123,
+      "agreement": 0.983739837398374
+    },
+    {
+      "name": "Human DNA methylation",
+      "scope": "All orientations",
+      "key": "A2.candidate.all released rows",
+      "matches": 157,
+      "n": 163,
+      "agreement": 0.9631901840490797
+    }
+  ]
+}

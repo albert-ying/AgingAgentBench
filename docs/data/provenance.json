@@ -1,0 +1,118 @@
+{
+  "inputs": {
+    "README.md": {
+      "sha256": "fadeace649db3aedfa3add9e0e6c8b9b84ede2c5908cb7a9314109f560f70036",
+      "mtime_ns": 1794622281562574019
+    },
+    "DATA_LICENSE.md": {
+      "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
+      "mtime_ns": 1794621529257355808
+    },
+    "CITATION.cff": {
+      "sha256": "5d8ca46ec51b2f09fc05ef732207791741454945a847d41e08dc4a4828196f99",
+      "mtime_ns": 1794621529257101932
+    },
+    "reference_results/paper_metrics.json": {
+      "sha256": "ecb41f97f375a050f4a4daca9c7c8200208005f8e42409f05aff9c9307df55cd",
+      "mtime_ns": 1794585549503729970
+    },
+    "reference_results/reproduced_metrics.json": {
+      "sha256": "b3d791ae407fe82034b308f7b4a1b8e2a6542a26ed4d1fa668dd7a61ae06b020",
+      "mtime_ns": 1794621636509406047
+    },
+    "reference_results/cohorts.json": {
+      "sha256": "8fa0de1754417805def2610d14ef921ad178e1956c9b99c9b70dc758ce40ef18",
+      "mtime_ns": 1794585549434016676
+    },
+    "reference_results/supplementary_table_s18.csv": {
+      "sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
+      "mtime_ns": 1794585261302056056
+    },
+    "reference_results/constant_higher.csv": {
+      "sha256": "6598bd8f734a94d71b7f19635674711570c41c5bec268b155178afe58f764ee2",
+      "mtime_ns": 1794585549427088151
+    },
+    "reference_results/clockbase_paper_groups_welch.csv": {
+      "sha256": "9404964d5f5fc76f41a71dc7fcd616ce4d08ca25f8be9113ea1749366bcff723",
+      "mtime_ns": 1794585549423643097
+    },
+    "reference_results/clockbase_paper_groups.csv": {
+      "sha256": "367ff776974e129e78ddc503c199b32ccf43dd7e0f20ac33a107d24bfa2eadfd",
+      "mtime_ns": 1794585549427338194
+    },
+    "reference_results/clockbase_paper_groups_individual_readers.csv": {
+      "sha256": "51c9441260ee5a03e94aa978b7a8754d7760ffd218f00b361e41280c2d3907e1",
+      "mtime_ns": 1794585549427584445
+    },
+    "reference_results/language_model_gpt_4_1.csv": {
+      "sha256": "731f91671c11f626d66e1f4037f5f78f407f6f9295acb7bd0f19aaeb4a9f24b3",
+      "mtime_ns": 1794585549424184932
+    },
+    "reference_results/language_model_gpt_5_5.csv": {
+      "sha256": "56288154a031fe1669e2f7aed5c4d54fa306003efdf617b8d3d7ef49dd8aba7a",
+      "mtime_ns": 1794585549424715601
+    },
+    "reference_results/language_model_gpt_6_astra.csv": {
+      "sha256": "3b03ac8a8b9bc84ac2432c2cbe77abd4171b40350014dc106fb1b0580783e798",
+      "mtime_ns": 1794585549425271186
+    },
+    "reference_results/language_model_gpt_6_luna.csv": {
+      "sha256": "51bfa849d9747571af126ba332a3392175637a0315a2c5c9dbb318f109278630",
+      "mtime_ns": 1794585549425811063
+    },
+    "reference_results/language_model_gpt_6_sol.csv": {
+      "sha256": "31582230fb05b1a4e20ae9ddea1b3655cc1d9c7d41ce000ba4fdaf0eb53ae740",
+      "mtime_ns": 1794585549426368649
+    },
+    "reference_results/agent_codex_gpt_6_astra_raw.csv": {
+      "sha256": "0b1ab5dd3800e5ddf5a9bf9774bf83c651797692fcc36855d6f816a386fef162",
+      "mtime_ns": 1794585549429289034
+    },
+    "reference_results/agent_codex_gpt_6_sol_raw.csv": {
+      "sha256": "0288cd2715cbbc7a64a3d39c1ccf41db547063f24719c971c03437bb9b0e569c",
+      "mtime_ns": 1794585549430209371
+    },
+    "reference_results/agent_codex_gpt_6_luna_raw.csv": {
+      "sha256": "0a4fc2beed7454d314ae98ecdf870092f4c390466f91435829d2baced1bc4781",
+      "mtime_ns": 1794585549429741494
+    },
+    "reference_results/agent_codex_gpt_5_5_raw.csv": {
+      "sha256": "e8b17a76b781a5489c85b62cdb6f6956c4283cdf4b0f8bbb7cd943204c954ead",
+      "mtime_ns": 1794585549428784491
+    },
+    "reference_results/agent_claude_code_claude_opus_5_5_raw.csv": {
+      "sha256": "5e2578d3eaf9cd3ed7e7ff989a70a613ef9f592c317798796fe5a84dec4970b0",
+      "mtime_ns": 1794585549430965165
+    },
+    "reference_results/agent_biomni_gpt_6_astra_raw.csv": {
+      "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
+      "mtime_ns": 1794585549431738751
+    },
+    "reference_results/clockbase_agent_stored.csv": {
+      "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
+      "mtime_ns": 1794585549422917886
+    },
+    "reference_results/expert_truth.csv": {
+      "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",
+      "mtime_ns": 1794585549422633343
+    },
+    "reference_results/expert_candidate.csv": {
+      "sha256": "d98ed755cc8ffeb04f8208cd353e9f07f88a8593964e2cd8d8f3018fe287cd49",
+      "mtime_ns": 1794585549433762009
+    }
+  },
+  "inventory": {
+    "contrasts": 580,
+    "papers": 93,
+    "series": 125
+  },
+  "command_rename_fallback": false,
+  "citation": {
+    "title": "Autonomous AI Agents Discover Aging Interventions from Millions of Molecular Profiles",
+    "journal": "bioRxiv",
+    "year": "2025",
+    "doi": "10.1101/2023.02.28.530532"
+  },
+  "number_format": "Metrics retain full precision in JSON. Displayed metrics use decimal or percent formatting.",
+  "image_slot": "task.png remains hidden when absent at build time; rerun builder after adding it."
+}

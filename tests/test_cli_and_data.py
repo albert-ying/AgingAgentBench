@@ -5,9 +5,9 @@ from pathlib import Path
 
 import pytest
 
-from clockeffectbench.cli import main
-from clockeffectbench.io import read_rows
-from clockeffectbench.metrics import score_predictions
+from agingagentbench.cli import main
+from agingagentbench.io import read_rows
+from agingagentbench.metrics import score_predictions
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = json.loads((ROOT / "reference_results/paper_metrics.json").read_text())
@@ -144,20 +144,22 @@ def test_s18_expert_conclusions_match_source_counts():
 def test_wheel_contains_runtime_data_when_available():
     # Building a wheel is a packaging check, independent of the scientific tests.
     from zipfile import ZipFile
-    wheels = list((ROOT / ".venv/wheelcheck").glob("clockeffectbench-*.whl"))
+    wheels = list((ROOT / ".venv/wheelcheck").glob("agingagentbench-*.whl"))
     if not wheels:
         pytest.skip("No locally built wheel supplied for the optional packaging check")
     with ZipFile(wheels[-1]) as archive:
         names = set(archive.namelist())
-        assert "clockeffectbench/data/published.jsonl" in names
-        assert "clockeffectbench/data/prompts.jsonl" in names
-        assert "clockeffectbench/data/tasks.jsonl" in names
-        assert "clockeffectbench/reference_results/cohorts.json" in names
-        assert len([n for n in names if n.startswith("clockeffectbench/data/clockbase_outputs/") and n.endswith(".csv")]) == 159
+        assert not any(name.startswith("clockeffectbench/") for name in names)
+        assert not any(".bak-" in name for name in names)
+        assert "agingagentbench/data/published.jsonl" in names
+        assert "agingagentbench/data/prompts.jsonl" in names
+        assert "agingagentbench/data/tasks.jsonl" in names
+        assert "agingagentbench/reference_results/cohorts.json" in names
+        assert len([n for n in names if n.startswith("agingagentbench/data/clockbase_outputs/") and n.endswith(".csv")]) == 159
         for folder in ("data", "reference_results"):
             for path in (ROOT / folder).rglob("*"):
                 if path.is_file() and path.suffix in (".csv", ".json", ".jsonl"):
-                    member = "clockeffectbench/" + str(path.relative_to(ROOT))
+                    member = "agingagentbench/" + str(path.relative_to(ROOT))
                     # Reproduction results are generated after the wheel check.
                     if path.name != "reproduced_metrics.json":
                         assert archive.read(member) == path.read_bytes(), member
@@ -171,7 +173,7 @@ def test_effect_selection_uses_submitted_estimates(tmp_path, capsys, truth):
     # Submitted estimates deliberately differ from ClockBase and include one
     # eligible result outside the paper's effect subset.
     records = [r for r in truth if r["record_id"] in selected]
-    from clockeffectbench.metrics import effect_pair
+    from agingagentbench.metrics import effect_pair
     extra = next(r for r in truth if r["record_id"] not in selected
                  and effect_pair(r, {"effect": 2, "effect_unit": "years"}))
     predictions = [{"record_id": r["record_id"], "call": "higher", "effect": 2,
@@ -266,7 +268,7 @@ def test_tasks_exclude_outcomes(truth):
 
 
 def test_geo_email_redaction():
-    from clockeffectbench.prompts import EMAIL, redact_emails
+    from agingagentbench.prompts import EMAIL, redact_emails
     prompts = read_rows(ROOT / "data/prompts.jsonl")
     assert not any(EMAIL.search(r["prompt"]) for r in prompts)
     redacted = [r for r in prompts if "geo_email_redacted" in r["flags"]]

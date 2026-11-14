@@ -1,15 +1,18 @@
-# Package validation
+# AgingAgentBench validation
 
 The test environment uses Python 3.12.13, NumPy 1.26.4, SciPy 1.11.4, and
 pytest 9.2.0 on macOS arm64. The package supports Python 3.10 or later;
 these checks used Python 3.12.
 
 ```sh
-python -m pip wheel . --no-deps --no-build-isolation --no-index --no-cache-dir -w .venv/wheelcheck
-python -m pytest -q
-python scripts/reproduce_report_2026-11-12.py
+.venv/bin/python -m pip wheel . --no-deps --no-build-isolation --no-index --no-cache-dir -w .venv/wheelcheck
+.venv/bin/python -m pip install --no-deps --no-index --force-reinstall .venv/wheelcheck/agingagentbench-*.whl
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/reproduce_report_2026-11-12.py
+.venv/bin/agingagentbench --help
 ```
 
+Install the newly built AgingAgentBench wheel before running the checks.
 The suite passes 67 tests with the wheel built. Without a wheel in
 `.venv/wheelcheck`, the packaging test is skipped. Tests cover published
 counts and bootstrap endpoints, all six agent reruns, expert orientation

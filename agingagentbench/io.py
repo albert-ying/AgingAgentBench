@@ -9,7 +9,7 @@ def resource(folder, name):
     checkout = Path(__file__).resolve().parents[1] / folder / name
     if checkout.is_file():
         return checkout
-    return Path(str(files(f"clockeffectbench.{folder}").joinpath(name)))
+    return Path(str(files(f"agingagentbench.{folder}").joinpath(name)))
 
 
 def read_rows(path):
