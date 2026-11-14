@@ -25,111 +25,239 @@ REF = ROOT / 'reference_results'
 REPOSITORY = 'https://github.com/albert-ying/AgingAgentBench'
 PUBLIC = 'https://albert-ying.github.io/AgingAgentBench/'
 BACKUP = '.bak-2026-11-13r'
-REFERENCE = 'website_local_2026-11-07/clockbase-site-deploy-2026-10-18/frontend'
-# Values measured from the named ClockBase reference, not a new design system.
-TOKENS = {
-    'cb-bg': ('#eef3f5', 'src/styles.css', ':root --cb-bg'),
-    'cb-surface': ('#ffffff', 'src/styles.css', ':root --cb-surface'),
-    'cb-text': ('#10232c', 'src/styles.css', ':root --cb-text'),
-    'cb-muted': ('#4f6470', 'src/styles.css', ':root --cb-muted'),
-    'cb-line': ('rgba(16, 45, 60, 0.22)', 'src/styles.css', ':root --cb-line'),
-    'cb-accent': ('#0d4f93', 'src/styles.css', ':root --cb-accent'),
-    'cb-sans': ('"IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif', 'src/styles.css', ':root --cb-sans'),
-    'cb-mono': ('"IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace', 'src/styles.css', ':root --cb-mono'),
-    'page-width': ('1320px', 'src/styles.css', '.cb-page max-width'),
-    'page-pad': ('24px', 'src/styles.css', '.cb-page horizontal padding'),
-    'page-pad-wide': ('40px', 'src/styles.css', '.cb-page desktop horizontal padding'),
-    'title-size': ('30px', 'src/styles.css', '.cb-title font-size'),
-    'title-size-wide': ('34px', 'src/styles.css', '.cb-title desktop font-size'),
-    'heading-size': ('28px', 'src/styles.css', '.cb-h2 font-size'),
-    'heading-size-wide': ('32px', 'src/styles.css', '.cb-h2 desktop font-size'),
-    'heading-weight': ('600', 'src/styles.css', '.cb-title and .cb-h2 font-weight'),
-    'heading-leading': ('1.15', 'src/styles.css', '.cb-title and .cb-h2 line-height'),
-    'heading-tracking': ('-0.015em', 'src/styles.css', '.cb-title and .cb-h2 letter-spacing'),
-    'lede-size': ('16px', 'src/styles.css', '.cb-lede font-size'),
-    'lede-leading': ('1.6', 'src/styles.css', '.cb-lede line-height'),
-    'lede-width': ('72ch', 'src/styles.css', '.cb-lede max-width'),
-    'row-size': ('13px', 'src/components/Benchmark.jsx', 'Leaderboard row text-[13px]'),
-    'body-size': ('14px', 'src/components/Benchmark.jsx', 'Agent reruns table text-[14px]'),
-    'axis-size': ('11px', 'src/components/Benchmark.jsx', 'Leaderboard axis text-[11px]'),
-    'label-weight': ('500', 'src/components/Benchmark.jsx', 'Agent reruns th font-medium'),
-    'label-size': ('12px', 'src/components/Benchmark.jsx', 'Leaderboard header text-[12px]'),
-    'bar-height': ('16px', 'src/components/Benchmark.jsx', 'Leaderboard h-4'),
-    'bar-muted': ('color-mix(in srgb, var(--cb-muted) 42%, transparent)', 'src/components/Benchmark.jsx', 'Leaderboard non-ClockBase bar background'),
-    'whisker-width': ('1.5px', 'src/components/Benchmark.jsx', 'Leaderboard interval stroke'),
-}
-FONT_URL = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap'
-DARK = {'cb-bg': '#061820', 'cb-surface': '#0a222c', 'cb-text': '#e4edf1', 'cb-muted': '#8fa6b2', 'cb-line': 'rgba(150, 200, 220, 0.22)', 'cb-accent': '#9fc9f0'}
+BACKUP_ROOT = ROOT.parent / 'agingagentbench_2026-11-13' / 'backups_w6'
+REFERENCE = '/Users/A.Y/programs/formalbio-merged/release/formalbio-site'
+TOKENS = {'ground': ('#ffffff', 'dist/assets/site.css', ':root --ground'),
+ 'panel': ('#f4f3f4', 'dist/assets/site.css', ':root --panel'),
+ 'ink': ('#181114', 'dist/assets/site.css', ':root --ink'),
+ 'ink-2': ('#544b52', 'dist/assets/site.css', ':root --ink-2'),
+ 'ink-3': ('#6e676c', 'dist/assets/site.css', ':root --ink-3'),
+ 'rule': ('#dcd9da', 'dist/assets/site.css', ':root --rule'),
+ 'sans': ('Oxygen, "Helvetica Neue", Arial, sans-serif',
+          'dist/assets/site.css',
+          ':root --sans'),
+ 'mono': ('"JetBrains Mono", ui-monospace, Menlo, Consolas, monospace',
+          'dist/assets/site.css',
+          ':root --mono'),
+ 'bar-clockbase': ('#33414E', 'Figure 4', 'ClockBase bar, per task'),
+ 'bar-other': ('#B4B4B4', 'Figure 4', 'other systems, per task'),
+ 'bar-chance': ('#8C8C8C', 'Figure 4', 'dashed chance line, per task')}
+REFERENCE_RULES = [(':root', 'color-scheme: light;'), ('*, *::before, *::after', 'box-sizing: border-box;'),
+ ('[hidden]', 'display: none !important;'),
+ ('html', '-webkit-text-size-adjust: 100%;'),
+ ('body',
+  'margin: 0; background: var(--ground); color: var(--ink); font-family: '
+  'var(--sans); font-size: 16px; line-height: 26px; font-synthesis: none;'),
+ ('.wrap',
+  'max-width: 72rem; margin: 0 auto; padding-left: max(16px, '
+  'env(safe-area-inset-left, 0px)); padding-right: max(16px, '
+  'env(safe-area-inset-right, 0px)); padding-block: 24px 48px; display: flex; '
+  'flex-direction: column; gap: 48px;'),
+ ('main', 'display: flex; flex-direction: column; gap: 48px; min-width: 0;'),
+ ('main > section, main > div, main > figure', 'min-width: 0;'),
+ ('section', 'display: flex; flex-direction: column; gap: 16px; min-width: 0;'),
+ ('h1, h2, h3', 'margin: 0; font-weight: 700; text-wrap: balance;'),
+ ('h1', 'font-size: 36px; line-height: 44px; max-width: 30ch;'),
+ ('h2', 'font-size: 24px; line-height: 30px;'),
+ ('h3', 'font-size: 18px; line-height: 26px;'),
+ ('p, ul, ol, dl, figure, pre', 'margin: 0;'),
+ ('p, li, dd', 'max-width: 68ch;'),
+ ('a',
+  'color: var(--ink); text-decoration: underline; text-underline-offset: 3px; '
+  'text-decoration-thickness: 1px;'),
+ ('a:hover', 'text-decoration-thickness: 2px;'),
+ ('code, pre, kbd', 'font-family: var(--mono); font-size: 14px;'),
+ ('code, pre, kbd, textarea, .rel-chip, .sgraph text, .wgraph .mono',
+  'font-variant-ligatures: none;'),
+ ('var, em, i, cite', 'font-style: normal;'),
+ ('.standfirst', 'font-size: 18px; line-height: 28px; max-width: 60ch;'),
+ ('.caption, figcaption',
+  'font-size: 12px; line-height: 18px; color: var(--ink-3);'),
+ ('.num, .count, td.num', 'font-variant-numeric: tabular-nums;'),
+ ('.sha', 'white-space: nowrap;'),
+ ('.desig', 'font-size: 12px; color: var(--ink-3);'),
+ (':focus-visible', 'outline: 2px solid var(--ink); outline-offset: 2px;'),
+ ('.skip-link',
+  'position: absolute; left: 16px; top: -64px; padding: 8px 12px; background: '
+  'var(--ground); color: var(--ink); border: 2px solid var(--ink); '
+  'border-radius: 4px; z-index: 10;'),
+ ('.skip-link:focus', 'top: 8px;'),
+ ('main:focus', 'outline: none;'),
+ ('.site-head',
+  'display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; '
+  'padding-bottom: 16px; border-bottom: 1px solid var(--rule);'),
+ ('.wordmark', 'font-weight: 700; font-size: 18px; text-decoration: none;'),
+ ('.site-nav ul',
+  'list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 4px '
+  '24px; font-size: 14px; line-height: 20px;'),
+ ('.site-nav a', 'text-decoration: none;'),
+ ('.site-nav a:hover', 'text-decoration: underline;'),
+ ('.site-nav a[aria-current="page"]',
+  'font-weight: 700; text-decoration: underline; text-decoration-thickness: '
+  '2px;'),
+ ('.site-foot',
+  'border-top: 1px solid var(--rule); padding-top: 16px; font-size: 12px; '
+  'line-height: 18px; color: var(--ink-2); display: flex; flex-direction: '
+  'column; gap: 4px;'),
+ ('.site-foot p', 'max-width: none;'),
+ ('.caption code, figcaption code, .site-foot code', 'font-size: 12px;'),
+ ('.page-head', 'display: flex; flex-direction: column; gap: 12px;'),
+ ('button, .button',
+  'font: inherit; font-size: 14px; line-height: 20px; border-radius: 4px; '
+  'padding: 6px 14px; cursor: pointer; border: 1px solid var(--ink); '
+  'background: var(--ground); color: var(--ink);'),
+ ('.table-scroll', 'overflow-x: auto; max-width: 100%;'),
+ ('table',
+  'border-collapse: collapse; font-size: 14px; line-height: 20px; width: '
+  '100%;'),
+ ('caption',
+  'text-align: left; font-size: 12px; line-height: 18px; color: var(--ink-3); '
+  'padding-bottom: 8px;'),
+ ('th', 'text-align: left; font-weight: 700; vertical-align: bottom;'),
+ ('th, td',
+  'padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); '
+  'vertical-align: top;'),
+ ('td code, th code', 'font-size: 12px;'),
+ ('.cmd-table td:first-child', 'min-width: 12rem;'),
+ ('.cmd-table code .arg', 'white-space: nowrap;'),
+ ('pre',
+  'background: var(--panel); border-radius: 4px; padding: 12px 16px; '
+  'overflow-x: auto; max-width: 100%; font-size: 12px; line-height: 20px;'),
+ ('pre code', 'font-size: inherit;')]
+FONT_FACES = '''@font-face { font-family: Oxygen; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/oxygen-400-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: Oxygen; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/oxygen-400-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: Oxygen; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("assets/fonts/oxygen-700-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: Oxygen; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("assets/fonts/oxygen-700-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* JetBrains Mono 2.225, subset by tools/subset_mono_font.py; the range is the subset's character map. */
+@font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("assets/fonts/jetbrains-mono-400-subset.woff2") format("woff2");
+  unicode-range: U+0020-007E, U+00A0-00FF, U+0393-0394, U+03B1, U+03B9-03BA, U+2019, U+201C-201D, U+2026, U+2192, U+2194, U+2200, U+2203, U+2208-2209, U+220B-220C, U+2227-2228, U+2260, U+2264-2265, U+27E8-27E9; }
 
-CSS = '''
-* { box-sizing: border-box; }
-html { background: var(--cb-bg); color: var(--cb-text); color-scheme: light; }
-body { margin: 0; font-family: var(--cb-sans); -webkit-font-smoothing: antialiased; line-height: var(--lede-leading); font-size: var(--lede-size); }
-a { color: var(--cb-accent); text-underline-offset: 3px; }
+'''
+CSS = '''*, *::before, *::after { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--ground); color: var(--ink);
+  font-family: var(--sans); font-size: 16px; line-height: 26px; font-synthesis: none;
+}
+.wrap {
+  max-width: 72rem; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+  display: flex; flex-direction: column; gap: 48px;
+}
+main { display: flex; flex-direction: column; gap: 48px; min-width: 0; }
+main > section, main > div, main > figure { min-width: 0; }
+section { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+
+h1, h2, h3 { margin: 0; font-weight: 700; text-wrap: balance; }
+h1 { font-size: 36px; line-height: 44px; max-width: 30ch; }
+h2 { font-size: 24px; line-height: 30px; }
+h3 { font-size: 18px; line-height: 26px; }
+p, ul, ol, dl, figure, pre { margin: 0; }
+p, li, dd { max-width: 68ch; }
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 a:hover { text-decoration-thickness: 2px; }
-a:focus-visible, summary:focus-visible { outline: 2px solid var(--cb-accent); outline-offset: 4px; }
-main { max-width: var(--page-width); margin: 0 auto; padding: 40px var(--page-pad) 64px; min-width: 0; }
-h1, h2 { font-weight: var(--heading-weight); line-height: var(--heading-leading); letter-spacing: var(--heading-tracking); }
-h1 { font-size: var(--title-size); margin: 0 0 10px; }
-h2 { font-size: var(--heading-size); margin: 0 0 20px; }
-h3 { font-size: var(--lede-size); margin: 24px 0 10px; font-weight: var(--heading-weight); }
-p { margin: 0 0 16px; }
-header > p { font-size: var(--lede-size); line-height: var(--lede-leading); max-width: var(--lede-width); color: var(--cb-muted); margin-bottom: 28px; }
-section { margin-top: 40px; }
-.leaderboard { margin: 0; }
+code, pre, kbd { font-family: var(--mono); font-size: 14px; }
+/* Mono shows strings exactly as typed: contextual ligatures would draw != as ≠ and => as ⇒ in Lean. */
+code, pre, kbd, textarea, .rel-chip, .sgraph text, .wgraph .mono { font-variant-ligatures: none; }
+var, em, i, cite { font-style: normal; }
+.standfirst { font-size: 18px; line-height: 28px; max-width: 60ch; }
+.caption, figcaption { font-size: 12px; line-height: 18px; color: var(--ink-3); }
+.num, .count, td.num { font-variant-numeric: tabular-nums; }
+.sha { white-space: nowrap; }
+.desig { font-size: 12px; color: var(--ink-3); }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.skip-link { position: absolute; left: 16px; top: -64px; padding: 8px 12px; background: var(--ground); color: var(--ink);
+  border: 2px solid var(--ink); border-radius: 4px; z-index: 10; }
+.skip-link:focus { top: 8px; }
+main:focus { outline: none; }
+
+/* Header and footer */
+.site-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule); }
+.wordmark { font-weight: 700; font-size: 18px; text-decoration: none; }
+.site-nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 4px 24px; font-size: 14px; line-height: 20px; }
+.site-nav a { text-decoration: none; }
+.site-nav a:hover { text-decoration: underline; }
+.site-nav a[aria-current="page"] { font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; }
+.site-foot { border-top: 1px solid var(--rule); padding-top: 16px; font-size: 12px; line-height: 18px;
+  color: var(--ink-2); display: flex; flex-direction: column; gap: 4px; }
+.site-foot p { max-width: none; }
+.caption code, figcaption code, .site-foot code { font-size: 12px; }
+
+/* Page head */
+.page-head { display: flex; flex-direction: column; gap: 12px; }
+
+button, .button { font: inherit; font-size: 14px; line-height: 20px; border-radius: 4px; padding: 6px 14px;
+  cursor: pointer; border: 1px solid var(--ink); background: var(--ground); color: var(--ink); }
+.table-scroll { overflow-x: auto; max-width: 100%; }
+table { border-collapse: collapse; font-size: 14px; line-height: 20px; width: 100%; }
+caption { text-align: left; font-size: 12px; line-height: 18px; color: var(--ink-3); padding-bottom: 8px; }
+th { text-align: left; font-weight: 700; vertical-align: bottom; }
+th, td { padding: 8px 12px 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+td code, th code { font-size: 12px; }
+.cmd-table td:first-child { min-width: 12rem; }
+.cmd-table code .arg { white-space: nowrap; }
+
+/* Code */
+pre { background: var(--panel); border-radius: 4px; padding: 12px 16px; overflow-x: auto; max-width: 100%;
+  font-size: 12px; line-height: 20px; }
+pre code { font-size: inherit; }
+
 .board-grid { display: grid; grid-template-columns: 200px minmax(0, 1fr) 140px 78px 78px 116px; column-gap: 16px; align-items: center; }
-.board-head { color: var(--cb-muted); font-size: var(--label-size); align-items: end; padding: 0 0 8px; border-bottom: 1px solid var(--cb-line); }
+.board-head { color: var(--ink-2); font-size: 14px; line-height: 20px; font-weight: 700; align-items: end; padding: 0 0 8px; border-bottom: 1px solid var(--rule); }
 .board-head > span:nth-child(n+3) { text-align: right; }
 .board-head small { display: block; font: inherit; }
-.board-row { font-size: var(--row-size); padding: 12px 0; border-bottom: 1px solid var(--cb-line); }
-.system { line-height: 1.4; min-width: 0; }
-.lead .system, .lead .score, .lead .class-count { color: var(--cb-accent); font-weight: 600; }
-.bar { position: relative; height: var(--bar-height); min-width: 0; }
-.fill { position: absolute; inset: 0 auto 0 0; width: var(--estimate); background: var(--bar-muted); }
-.lead .fill { background: var(--cb-accent); }
-.chance { position: absolute; top: -6px; bottom: -6px; left: var(--chance); border-left: 1px dashed var(--cb-muted); }
-.interval { position: absolute; top: 50%; height: var(--whisker-width); left: var(--low); width: calc(var(--high) - var(--low)); background: var(--cb-text); transform: translateY(-50%); }
-.cap { position: absolute; top: -4px; bottom: -4px; width: var(--whisker-width); background: var(--cb-text); transform: translateX(-50%); }
+.board-row { font-size: 14px; line-height: 20px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.system { line-height: 20px; min-width: 0; }
+.lead .system, .lead .score, .lead .class-count { color: var(--ink); font-weight: 700; }
+.bar { position: relative; height: 16px; min-width: 0; }
+.fill { position: absolute; inset: 0 auto 0 0; width: var(--estimate); background: var(--bar-other); }
+.lead .fill { background: var(--bar-clockbase); }
+.chance { position: absolute; top: -6px; bottom: -6px; left: var(--chance); border-left: 1px dashed var(--bar-chance); }
+.interval { position: absolute; top: 50%; height: 1.5px; left: var(--low); width: calc(var(--high) - var(--low)); background: var(--ink); transform: translateY(-50%); }
+.cap { position: absolute; top: -4px; bottom: -4px; width: 1.5px; background: var(--ink); transform: translateX(-50%); }
 .cap-low { left: var(--low); } .cap-high { left: var(--high); }
-.score, .class-count { text-align: right; font-family: var(--cb-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.ci { color: var(--cb-muted); font-size: var(--label-size); font-weight: 400; }
+.score, .class-count { text-align: right; font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ci { color: var(--ink-2); font-size: 12px; font-weight: 400; }
 .mobile-counts { display: none; }
-.axis { grid-column: 2; position: relative; height: 28px; font: var(--axis-size) var(--cb-mono); color: var(--cb-muted); }
+.axis { grid-column: 2; position: relative; height: 28px; font: 12px var(--mono); color: var(--ink-2); }
 .tick { position: absolute; top: 4px; left: var(--tick); transform: translateX(-50%); }
 .tick:first-child { transform: none; } .tick:last-child { transform: translateX(-100%); }
-figcaption { font-size: var(--row-size); color: var(--cb-muted); max-width: 90ch; margin-top: 12px; }
-.method { max-width: 90ch; font-size: var(--body-size); color: var(--cb-muted); margin-top: 8px; }
-.downloads { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 20px 0 0; font-size: var(--body-size); }
-table { border-collapse: collapse; width: 100%; font-size: var(--body-size); }
-caption { text-align: left; margin-bottom: 12px; color: var(--cb-muted); font-size: var(--body-size); }
-th { font-weight: var(--label-weight); color: var(--cb-muted); text-align: left; }
-th, td { padding: 10px 16px 10px 0; border-bottom: 1px solid var(--cb-line); vertical-align: top; }
+
+.wordmark { display: inline-flex; align-items: center; gap: 8px; }
+.wordmark img { flex: none; }
+.site-nav { min-width: 0; }
+.board-head small { color: var(--ink-2); font-weight: 400; }
+figcaption { margin-top: 12px; max-width: 68ch; }
+.method { max-width: 68ch; font-size: 14px; line-height: 20px; color: var(--ink-2); }
+.downloads { display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 14px; line-height: 20px; max-width: none; }
 th:last-child, td:last-child { padding-right: 0; }
-td.numeric { font-family: var(--cb-mono); font-size: var(--row-size); font-variant-numeric: tabular-nums; white-space: nowrap; }
-.reruns th:first-child { width: 30%; }
-.reruns th:nth-child(2) { width: 30%; }
-.note { color: var(--cb-muted); font-size: var(--row-size); margin-top: 12px; max-width: 90ch; }
-.task { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 100ch; }
-.task dt { font-weight: var(--label-weight); margin: 0 0 10px; }
+td.numeric { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.reruns th:first-child, .reruns th:nth-child(2) { width: 30%; }
+.note { color: var(--ink-3); font-size: 12px; line-height: 18px; max-width: 68ch; }
+.task { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.task dt { font-weight: 700; margin-bottom: 8px; }
 .task dd { margin: 0; }
-.task dl { margin: 0; }
-.task ul { margin: 0; padding-left: 20px; }
-.task li { margin: 0 0 6px; }
-.task-image { display: block; width: 100%; max-width: 880px; height: auto; margin: 8px 0 24px; background: #ffffff; }
-.task-image[hidden] { display: none; }
-.prose { max-width: 90ch; }
-pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 16px 0; padding: 14px 0 14px 20px; border-left: 2px solid var(--cb-line); font-size: var(--row-size); line-height: 1.8; }
-code, pre { font-family: var(--cb-mono); }
+.task ul { padding-left: 24px; }
+.task li { margin-bottom: 8px; }
+.task-image { display: block; width: 100%; max-width: 880px; height: auto; }
+.prose { max-width: 68ch; }
 code { overflow-wrap: anywhere; }
-summary { cursor: pointer; color: var(--cb-accent); text-decoration: underline; text-underline-offset: 3px; }
-details { margin-top: 20px; }
-details p { margin-top: 12px; }
-.license-copy { font-size: var(--body-size); max-width: 90ch; }
-footer { margin-top: 40px; font-size: var(--body-size); display: flex; flex-wrap: wrap; gap: 8px 24px; }
-@media (min-width: 768px) {
-  main { padding: 40px var(--page-pad-wide) 80px; }
-  h1 { font-size: var(--title-size-wide); } h2 { font-size: var(--heading-size-wide); }
-}
+summary { cursor: pointer; text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+summary:hover { text-decoration-thickness: 2px; }
+.license-copy { display: flex; flex-direction: column; gap: 16px; padding-top: 12px; font-size: 14px; line-height: 20px; }
 @media (max-width: 1023px) {
   .board-grid { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 16px; }
   .bar-head, .class-head, .class-count { display: none; }
@@ -137,24 +265,23 @@ footer { margin-top: 40px; font-size: var(--body-size); display: flex; flex-wrap
   .system { grid-column: 1; grid-row: 1; }
   .score { grid-column: 2; grid-row: 1; }
   .bar { grid-column: 1 / -1; grid-row: 2; }
-  .mobile-counts { display: block; grid-column: 1 / -1; grid-row: 3; font-size: var(--label-size); color: var(--cb-muted); }
+  .mobile-counts { display: block; grid-column: 1 / -1; grid-row: 3; font-size: 12px; color: var(--ink-2); }
   .axis { grid-column: 1 / -1; }
 }
-@media (max-width: 600px) {
+@media (max-width: 639px) {
   .board-head { align-items: end; } .board-row { padding: 14px 0; }
   .board-row .system { max-width: 22ch; }
   .score .ci { display: block; }
   .mobile-counts { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 10px; }
   .reruns thead, .expert thead { display: none; }
-  .reruns tr, .expert tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 14px 0; border-bottom: 1px solid var(--cb-line); }
+  .reruns tr, .expert tr { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 12px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
   .reruns td, .expert td { border: 0; padding: 0; }
-  .reruns td:first-child, .expert td:first-child { grid-column: 1 / -1; font-weight: var(--label-weight); }
+  .reruns td:first-child, .expert td:first-child { grid-column: 1 / -1; font-weight: 700; }
   .reruns td:nth-child(2), .expert td:nth-child(2) { grid-column: 1; }
   .reruns td:nth-child(3), .expert td:nth-child(3) { grid-column: 2; }
   .reruns td:nth-child(4), .expert td:nth-child(4) { grid-column: 1 / -1; }
-  td[data-label]::before { content: attr(data-label) ' '; color: var(--cb-muted); font: var(--label-size) var(--cb-sans); }
+  td[data-label]::before { content: attr(data-label) ' '; color: var(--ink-2); font: 12px var(--sans); }
   .task { grid-template-columns: 1fr; gap: 24px; }
-  section { margin-top: 36px; }
 }
 '''
 
@@ -170,7 +297,12 @@ def save(path, content):
         if path.exists():
             if path.read_text() == content:
                 return
-            backup = Path(str(path) + BACKUP)
+            try:
+                relative = path.relative_to(ROOT)
+            except ValueError:
+                relative = Path(path.name)
+            backup = BACKUP_ROOT / relative.parent / (relative.name + BACKUP)
+            backup.parent.mkdir(parents=True, exist_ok=True)
             if not backup.exists():
                 subprocess.run(['/bin/cp', '-f', str(path), str(backup)], check=True)
         path.write_text(content)
@@ -254,7 +386,6 @@ class Builder:
         if not intro:
             raise ValueError('README measurement sentence is missing')
         intro = ' '.join(intro.group().split()).replace('ClockEffectBench', 'AgingAgentBench')
-        intro = intro.replace('AgingAgentBench measures', 'The benchmark measures', 1)   # the title already names it
         inventory = re.search(r'dataset contains (\d+) contrasts from (\d+) papers on (\d+)\s+GEO series', readme)
         if not inventory:
             raise ValueError('README published-effects inventory is missing')
@@ -394,7 +525,16 @@ class Builder:
             rendered = ''.join(pieces)
             rendered = re.sub(r'`([^`]+)`',r'<code>\1</code>',rendered)
             license_html.append('<p>'+rendered+'</p>')
+        compilation_license_html = self.sourced_text('CC BY '+re.search(r'CC BY ([\d.]+)',license_text).group(1),'DATA_LICENSE.md','compilation license')
         description = intro
+        logo_exists = (SITE / 'assets/logo.svg').is_file()
+        logo_image = '<img src="assets/logo.svg" width="28" height="28" alt="">' if logo_exists else ''
+        favicon = '<link rel="icon" href="assets/logo.svg" type="image/svg+xml">' if logo_exists else '<link rel="icon" href="data:,">'
+        inventory_intro = (f'The published-effects dataset contains {n(totals["contrasts"], "README.md", "dataset contrasts")} effects '
+                           f'from {n(totals["papers"], "README.md", "dataset papers")} papers on '
+                           f'{n(totals["series"], "README.md", "dataset GEO series")} GEO series.')
+        threshold = re.search(r'P < ([\d.]+)', readme).group(1)
+        threshold_html = self.sourced_text(threshold, 'README.md', 'Evaluate your system significance threshold')
         img = '<img class="task-image" src="assets/task.png" width="1600" height="900" alt="A benchmark task from public study inputs to an aging-clock call and comparison with the published result"'+('' if (SITE/'assets/task.png').is_file() else ' hidden')+'>'
         main_n = n(len(cohorts[main_key]),'reference_results/cohorts.json', main_key+'/length')
         published_papers = pn(paper['published_group_comparison']['papers'],'published_group_comparison/papers')
@@ -409,35 +549,75 @@ class Builder:
 <title>AgingAgentBench</title><meta name="description" content="{escape(description)}">
 <link rel="canonical" href="{PUBLIC}"><meta property="og:type" content="website"><meta property="og:title" content="AgingAgentBench"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{PUBLIC}"><meta property="og:image" content="{PUBLIC}assets/card.png"><meta property="og:image:width" content="1600"><meta property="og:image:height" content="900"><meta property="og:image:alt" content="AgingAgentBench published aging-clock effect benchmark">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="AgingAgentBench"><meta name="twitter:description" content="{escape(description)}"><meta name="twitter:image" content="{PUBLIC}assets/card.png"><meta name="twitter:image:alt" content="AgingAgentBench published aging-clock effect benchmark">
-<link rel="stylesheet" href="{escape(FONT_URL)}"><link rel="stylesheet" href="style.css"><link rel="icon" href="data:,"></head>
-<body><main><header><h1>AgingAgentBench</h1><p>{escape(intro)}</p></header>
-<figure class="leaderboard" aria-label="Shared comparison of recovery of published calls">
+<link rel="stylesheet" href="style.css">{favicon}</head>
+<body><a class="skip-link" href="#main">Skip to content</a><div class="wrap">
+<header class="site-head"><a class="wordmark" href="#main">{logo_image}AgingAgentBench</a><nav class="site-nav" aria-label="Sections"><ul><li><a href="#leaderboard">Leaderboard</a></li><li><a href="#reruns">Agents</a></li><li><a href="#task">Task</a></li><li><a href="#use">Use it</a></li><li><a href="#data">Data</a></li><li><a href="#citation">Cite</a></li><li><a href="{REPOSITORY}">GitHub</a></li></ul></nav></header>
+<main id="main" tabindex="-1"><div class="page-head"><h1>Can an AI system recover published aging-clock effects from raw data?</h1><p class="standfirst">{escape(intro)} {inventory_intro}</p></div>
+<section aria-labelledby="leaderboard"><h2 id="leaderboard">Leaderboard</h2><figure class="leaderboard" aria-label="Shared comparison of recovery of published calls">
 <div class="board-grid board-head"><span>System</span><span class="bar-head">Balanced accuracy</span><span class="score-head">Balanced accuracy<br>({level_display} CI)</span>{heads}</div>
 {''.join(rows)}<div class="board-grid"><div class="axis">{axis}</div></div>
 <figcaption>Balanced accuracy is the mean recall over the published classes. Whiskers show the confidence interval from resampling papers. The dashed line marks chance at {pn(chance,'three_way/S0/balanced_accuracy','decimal')}.</figcaption></figure>
 <p class="method">Every system is scored on the same {main_n} human DNA methylation results from {published_papers} papers using the paper's groups. Language models receive study descriptions and group definitions without data. The constant rule always answers higher.</p>
-<nav class="downloads" aria-label="Benchmark resources"><a href="{REPOSITORY}">Repository</a><a href="{REPOSITORY}/blob/main/data/published.csv">Published effects CSV</a><a href="data/leaderboard.json">Leaderboard JSON</a></nav>
+<nav class="downloads" aria-label="Benchmark resources"><a href="{REPOSITORY}">Repository</a><a href="{REPOSITORY}/blob/main/data/published.csv">Published effects CSV</a><a href="data/leaderboard.json">Leaderboard JSON</a></nav></section>
 <section aria-labelledby="reruns"><h2 id="reruns">Agent reruns</h2><table class="reruns"><caption>Reported calls on {task_series} benchmark series with {task_n} published results from {task_papers} papers. Each system is scored on the results it covers.</caption><thead><tr><th scope="col">System</th><th scope="col">Published-call agreement<br>({level_display} CI)</th><th scope="col">n</th><th scope="col">Direction matches</th></tr></thead><tbody>{''.join(rerun_rows)}</tbody></table><p class="note">Intervals resample papers. Direction matches use published significant results. <a href="data/agent-reruns.json">Agent rerun JSON</a></p></section>
 <section aria-labelledby="expert"><h2 id="expert">Expert annotation agreement</h2><table class="expert"><thead><tr><th scope="col">Modality</th><th scope="col">Arm orientation</th><th scope="col">Agreement</th><th scope="col">Matches</th></tr></thead><tbody>{expert_rows}</tbody></table><p class="note">Final candidate calls are compared with calls from complete expert-defined groups, using the same clock outputs and test rules. <a href="data/expert-agreement.json">Expert agreement JSON</a></p></section>
-<section aria-labelledby="task"><h2 id="task">The task</h2><div class="task"><dl><dt>Inputs</dt><dd><ul><li>Public GEO molecular data and sample annotation.</li><li>Study description, case and control groups, clock, and measure.</li><li>Answer-free task records with a preserved <code>record_id</code>.</li></ul></dd></dl><dl><dt>Returns</dt><dd><ul><li><code>higher</code>, <code>lower</code>, or <code>not significant</code>.</li><li>Optional direction and P value for direction AUROC.</li><li>Optional signed effect with units for effect-size scoring.</li></ul></dd></dl></div>{img}<p class="prose">Compare the case group with the control group using the specified clock and measure. Use the paper's significance threshold, or P &lt; {self.sourced_text(re.search(r'P &lt; ([\d.]+)|P < ([\d.]+)',readme).group(0).split()[-1],'README.md','Evaluate your system significance threshold')} when it states none. Balanced accuracy scores the mean recall of the published classes present. Missing predictions are abstentions; coverage and metric denominators are reported. Keep reference outcomes in the scoring environment.</p></section>
+<section aria-labelledby="task"><h2 id="task">The task</h2><div class="task"><dl><dt>Inputs</dt><dd><ul><li>Public GEO molecular data and sample annotation.</li><li>Study description, case and control groups, clock, and measure.</li><li>Answer-free task records with a preserved <code>record_id</code>.</li></ul></dd></dl><dl><dt>Returns</dt><dd><ul><li><code>higher</code>, <code>lower</code>, or <code>not significant</code>.</li><li>Optional direction and P value for direction AUROC.</li><li>Optional signed effect with units for effect-size scoring.</li></ul></dd></dl></div>{img}<p class="prose">Compare the case group with the control group using the specified clock and measure. Use the paper's significance threshold, or P &lt; {threshold_html} when it states none. Balanced accuracy scores the mean recall of the published classes present. Missing predictions are abstentions; coverage and metric denominators are reported. Keep reference outcomes in the scoring environment.</p></section>
 <section aria-labelledby="use"><h2 id="use">Use it</h2><pre><code>{self.sourced_text(commands,'README.md','Quick start shell block')}</code></pre><p class="prose">Install from a local checkout of the <a href="{REPOSITORY}">repository</a>. Submit predictions with the task identifiers and calls. <a href="{REPOSITORY}/blob/main/README.md#evaluate-your-system">Prediction format and scoring options</a></p></section>
-<section aria-labelledby="data"><h2 id="data">Data</h2><p class="prose">The published-effects dataset contains {n(totals['contrasts'],'README.md','dataset contrasts')} contrasts from {n(totals['papers'],'README.md','dataset papers')} papers on {n(totals['series'],'README.md','dataset GEO series')} GEO series. The reference is what each paper reports for its clock, measure, and groups.</p><p class="downloads"><a href="{REPOSITORY}/blob/main/data/tasks.jsonl">Task records</a><a href="{REPOSITORY}/tree/main/reference_results">Reference predictions</a><a href="{REPOSITORY}/blob/main/reference_results/supplementary_table_s18.csv">Supplementary source table</a><a href="data/provenance.json">Data provenance</a></p></section>
-<section aria-labelledby="license"><h2 id="license">License</h2><p class="prose">Code is licensed under <a href="{REPOSITORY}/blob/main/LICENSE">MIT</a>. The data compilation and numerical outputs use <a href="https://creativecommons.org/licenses/by/4.0/">{self.sourced_text('CC BY '+re.search(r'CC BY ([\d.]+)',license_text).group(1),'DATA_LICENSE.md','compilation license')}</a>.</p><details><summary>Data reuse terms</summary><div class="license-copy">{''.join(license_html)}</div></details></section>
+<section aria-labelledby="data"><h2 id="data">Data</h2><p class="prose">The published-effects dataset contains {n(totals['contrasts'],'README.md','dataset contrasts')} contrasts from {n(totals['papers'],'README.md','dataset papers')} papers on {n(totals['series'],'README.md','dataset GEO series')} GEO series. The reference is what each paper reports for its clock, measure, and groups.</p><p class="downloads"><a href="{REPOSITORY}/blob/main/data/tasks.jsonl">Task records</a><a href="{REPOSITORY}/tree/main/reference_results">Reference predictions</a><a href="{REPOSITORY}/blob/main/reference_results/supplementary_table_s18.csv">Supplementary source table</a><a href="data/provenance.json">Data provenance</a></p><h3 id="license">License</h3><p class="prose">Code is licensed under <a href="{REPOSITORY}/blob/main/LICENSE">MIT</a>. The data compilation and numerical outputs use <a href="https://creativecommons.org/licenses/by/4.0/">{compilation_license_html}</a>.</p><details><summary>Data reuse terms</summary><div class="license-copy">{''.join(license_html)}</div></details></section>
 <section aria-labelledby="citation"><h2 id="citation">Citation</h2><p class="prose">{self.sourced_text(citation,'CITATION.cff','preferred-citation')} <a href="https://doi.org/{escape(cff['doi'])}">{self.sourced_text(cff['doi'],'CITATION.cff','preferred-citation/doi')}</a></p></section>
-<footer><a href="{REPOSITORY}/blob/main/CITATION.cff">Citation file</a><a href="data/site-numbers.json">Site numbers JSON</a></footer></main></body></html>\n'''
-        root_css = ':root {\n' + ''.join(f'  --{key}: {value};\n' for key,(value,_,_) in TOKENS.items()) + '}\n'
-        dark_css = '@media (prefers-color-scheme: dark) {\n  :root {\n' + ''.join(f'    --{key}: {value};\n' for key,value in DARK.items()) + '  }\n  html { color-scheme: dark; }\n}\n'
+<footer class="site-foot"><a href="{REPOSITORY}/blob/main/CITATION.cff">Citation file</a><a href="data/site-numbers.json">Site numbers JSON</a></footer></main></div></body></html>\n'''
+        root_css = ':root {\n' + ''.join(f'  --{key}: {value};\n' for key,(value,_,_) in TOKENS.items()) + '  color-scheme: light;\n}\n'
         save(SITE/'index.html',html_text)
-        save(SITE/'style.css',root_css+CSS+dark_css)
+        save(SITE/'style.css',FONT_FACES+root_css+CSS)
         save(SITE/'.nojekyll','')
         self.json('leaderboard.json',{'cohort':main_key,'records':len(cohorts[main_key]),'papers':paper['published_group_comparison']['papers'],'confidence_level':level,'chance':chance,'systems':systems})
         self.json('agent-reruns.json',{'cohort':task_key,'records':len(cohorts[task_key]),'interval_method':'paper bootstrap','systems':reruns})
         self.json('expert-agreement.json',{'prediction_variant':'expert_candidate.csv','systems':experts})
         self.json('site-numbers.json',self.numbers)
         self.json('provenance.json',{'inputs':self.inputs,'inventory':totals,'command_rename_fallback':renamed_fallback,'citation':cff,'number_format':'Metrics retain full precision in JSON. Displayed metrics use decimal or percent formatting.','image_slot':'task.png remains hidden when absent at build time; rerun builder after adding it.'})
-        token_lines = [f'- `--{key}: {value}`. Source `{REFERENCE}/{file}`, `{selector}`.' for key,(value,file,selector) in TOKENS.items()]
-        token_lines += [f'- Dark `--{key}: {value}`. Source `{REFERENCE}/src/styles.css`, `html[data-theme="dark"]`.' for key,value in DARK.items()]
-        design = '# Website design\n\nThe working surface follows the ClockBase benchmark named in the task.\nThe leaderboard opens the page. Section order carries the explanation.\n\n## Tokens\n\n'+'\n'.join(token_lines)+'\n\n## Typography\n\nThe single Google Fonts stylesheet is copied from `'+REFERENCE+'/index.html`:\n\n`'+FONT_URL+'`\n\nThe stylesheet supplies IBM Plex Sans and IBM Plex Mono with system fallbacks.\n\n## Layout\n\n`'+REFERENCE+'/src/components/Benchmark.jsx`, `Leaderboard`, supplies the ranked bars, ClockBase-first ordering, class columns, chance line, and interval whiskers. The system column widens to fit the additional source variants. Phones stack the system and value above a full-width bar, followed by class matches. Row rules separate observations as in the reference. The neutral ground and one accent follow the source theme tokens. Dark mode follows the system preference without JavaScript. The source dark background gradients are omitted because this page is a static working surface.\n\n## Style checks\n\nThe title sentence and image dimensions are explicit task requirements. The title sentence is the README measurement sentence, not a marketing tagline. The task image is hidden when absent at build time. Rebuild after adding it. No script, decorative card, shadow, icon, or motion is used. Data tables and the command block have boundaries defined by their contents.\n\nThe style checker reports a trailing parenthetical on the agreement column. This is a confidence-interval abbreviation with its confidence level, copied from the reference table; it is a unit of the measurement, not a subtitle. It also flags the prediction filename in the command and the expert filenames in the license. The command is copied from README.md and must be executable. DATA_LICENSE.md assigns distinct terms to the named expert files, so those exact paths are necessary for reuse. These findings are retained with their source evidence.\n'
+        token_lines = [f'- `--{key}: {value}`. Source `{REFERENCE + "/" + file if file == "dist/assets/site.css" else file}`, `{selector}`.' for key,(value,file,selector) in TOKENS.items()]
+        rule_lines = [f'- `{selector}`: `{declarations}`. Source `{REFERENCE}/dist/assets/site.css`, same selector.' for selector,declarations in REFERENCE_RULES]
+        design = ('# Website design\n\n'
+                  'The page follows the BioLean site in `' + REFERENCE + '`.\n'
+                  'Its `dist/assets/site.css` and `DESIGN.md` supply the layout and type system.\n'
+                  'The page stays white in every system appearance.\n\n'
+                  '## Tokens\n\n' + '\n'.join(token_lines) + '\n\n'
+                  '## Reference rules\n\n'
+                  'These rules are copied from the reference. Each declaration records its\n'
+                  'selector and value, including layout, type, links, focus, and controls.\n\n' + '\n'.join(rule_lines) + '\n\n'
+                  '## Fonts\n\n'
+                  'The @font-face rules are copied from `dist/assets/site.css`, with relative\n'
+                  'URLs adjusted for this stylesheet. Oxygen regular and bold and JetBrains\n'
+                  'Mono load from `assets/fonts/`. The WOFF files and OFL.txt are copied from\n'
+                  'the reference `dist/assets/fonts/`. Font weights, ranges, and file names\n'
+                  'are preserved in `style.css`.\n\n'
+                  '## Layout\n\n'
+                  'These widths are derived from the reference declarations using its body\n'
+                  'font size for the default rem. Rendered review is performed separately.\n\n'
+                  'At a viewport of 1440px, `.wrap` is 1152px wide with 16px side padding. The content is 1120px wide and begins 160px from the viewport edge. At a viewport of 390px, `.wrap` is 390px wide with 16px side padding. The content is 358px wide and begins 16px from the viewport edge.\n\n'
+                  'The reference `.wrap` supplies the content width, safe-area side padding,\n'
+                  'block padding, and gap between header and main. `main` supplies the gap\n'
+                  'between sections. `section` supplies the gap within each section.\n'
+                  'The `.site-head` rule sits below the wordmark and wrapping navigation.\n'
+                  'The header does not stick. The `.page-head` gap separates the title and\n'
+                  'standfirst. No enclosing section boxes are added.\n\n'
+                  'The leaderboard retains its data columns, scale, interval geometry, row\n'
+                  'order, and phone stacking from the existing builder. Its type and rules\n'
+                  'use the reference table system. Bar colours follow the paper figure key,\n'
+                  'and whiskers use ink. Plot dimensions remain those of the existing builder.\n'
+                  'The responsive breakpoints follow the reference stylesheet at\n'
+                  '`@media (max-width: 1023px)` and `@media (max-width: 639px)`.\n'
+                  'The task image width and logo dimensions follow the task instruction.\n'
+                  'The inline wordmark alignment and spacing follow reference `.control-row`.\n'
+                  'The logo and favicon appear when the logo file exists at build time.\n'
+                  'Rebuild after adding it.\n\n'
+                  '## Source text\n\n'
+                  'The question title and standfirst are requested content. The measurement\n'
+                  'sentence and inventory come from README.md. The confidence-interval\n'
+                  'parenthetical is a measurement annotation. Command paths come from\n'
+                  'README.md and licence filenames come from DATA_LICENSE.md. Those strings\n'
+                  'identify executable inputs and reuse terms. Numeric comparisons remain\n'
+                  'in the builder.\n')
         save(SITE/'DESIGN.md',design)
         # Parse the saved file and compare every registered numeral with the text.
         class NumericParser(HTMLParser):
@@ -474,7 +654,7 @@ class Builder:
             for chunk in chunks: registered_numeric_tokens.extend(re.findall(r'\d+(?:[.,]\d+)*',chunk))
         self.check('all visible numeric tokens registered',sorted(visible_numeric_tokens),sorted(registered_numeric_tokens),'docs/index.html/body')
         save(SITE/'data/headings.md','\n\n'.join('# '+heading for heading in parser.headings)+'\n')
-        check={'passed':all(c['passed'] for c in self.checks),'inputs':self.inputs,'outputs':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in SITE.rglob('*') if p.is_file() and BACKUP not in p.name},'checks':self.checks,'numbers':self.numbers,'command_rename_fallback':renamed_fallback,'known_source_difference':'Archived expert_conclusions error counts differ from final candidate results. Expert agreement uses reproduced_metrics expert candidate recall counts and expert_candidate.csv; expert intervals are not displayed.'}
+        check={'passed':all(c['passed'] for c in self.checks),'inputs':self.inputs,'outputs':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in SITE.rglob('*') if p.is_file() and BACKUP not in p.name and p != check_output},'checks':self.checks,'numbers':self.numbers,'command_rename_fallback':renamed_fallback,'known_source_difference':'Archived expert_conclusions error counts differ from final candidate results. Expert agreement uses reproduced_metrics expert candidate recall counts and expert_candidate.csv; expert intervals are not displayed.'}
         save(check_output,json.dumps(check,indent=2,ensure_ascii=False)+'\n')
         print('Built '+str(SITE/'index.html'))
         print('Number comparison passed: '+str(check_output))
@@ -482,7 +662,7 @@ class Builder:
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--check-output',type=Path,default=ROOT.parent/'agingagentbench_2026-11-13/site_number_check.json')
+    parser.add_argument('--check-output',type=Path,default=SITE/'data/number-check.json')
     args=parser.parse_args()
     try:
         Builder().build(args.check_output)

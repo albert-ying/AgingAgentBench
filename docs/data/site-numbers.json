@@ -1353,102 +1353,6 @@
   },
   {
     "id": "169",
-    "value": 110,
-    "display": "110",
-    "source": "reference_results/cohorts.json",
-    "key": "main110/length",
-    "format": "int"
-  },
-  {
-    "id": "170",
-    "value": 32,
-    "display": "32",
-    "source": "reference_results/paper_metrics.json",
-    "key": "published_group_comparison/papers",
-    "format": "int"
-  },
-  {
-    "id": "171",
-    "value": 158,
-    "display": "158",
-    "source": "reference_results/cohorts.json",
-    "key": "agent_task158/length",
-    "format": "int"
-  },
-  {
-    "id": "172",
-    "value": 47,
-    "display": "47",
-    "source": "README.md",
-    "key": "agent task papers",
-    "format": "int"
-  },
-  {
-    "id": "173",
-    "value": 61,
-    "display": "61",
-    "source": "README.md",
-    "key": "agent task series",
-    "format": "int"
-  },
-  {
-    "id": "174",
-    "value": 0.3333333333333333,
-    "display": "0.33",
-    "source": "reference_results/paper_metrics.json",
-    "key": "three_way/S0/balanced_accuracy",
-    "format": "decimal"
-  },
-  {
-    "id": "175",
-    "value": "0.05",
-    "display": "0.05",
-    "source": "README.md",
-    "key": "Evaluate your system significance threshold",
-    "format": "literal"
-  },
-  {
-    "id": "176",
-    "value": "3",
-    "display": "3",
-    "source": "README.md",
-    "key": "Quick start shell block",
-    "format": "literal"
-  },
-  {
-    "id": "177",
-    "value": "110",
-    "display": "110",
-    "source": "README.md",
-    "key": "Quick start shell block",
-    "format": "literal"
-  },
-  {
-    "id": "178",
-    "value": 580,
-    "display": "580",
-    "source": "README.md",
-    "key": "dataset contrasts",
-    "format": "int"
-  },
-  {
-    "id": "179",
-    "value": 93,
-    "display": "93",
-    "source": "README.md",
-    "key": "dataset papers",
-    "format": "int"
-  },
-  {
-    "id": "180",
-    "value": 125,
-    "display": "125",
-    "source": "README.md",
-    "key": "dataset GEO series",
-    "format": "int"
-  },
-  {
-    "id": "181",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1456,7 +1360,127 @@
     "format": "literal"
   },
   {
+    "id": "170",
+    "value": 580,
+    "display": "580",
+    "source": "README.md",
+    "key": "dataset contrasts",
+    "format": "int"
+  },
+  {
+    "id": "171",
+    "value": 93,
+    "display": "93",
+    "source": "README.md",
+    "key": "dataset papers",
+    "format": "int"
+  },
+  {
+    "id": "172",
+    "value": 125,
+    "display": "125",
+    "source": "README.md",
+    "key": "dataset GEO series",
+    "format": "int"
+  },
+  {
+    "id": "173",
+    "value": "0.05",
+    "display": "0.05",
+    "source": "README.md",
+    "key": "Evaluate your system significance threshold",
+    "format": "literal"
+  },
+  {
+    "id": "174",
+    "value": 110,
+    "display": "110",
+    "source": "reference_results/cohorts.json",
+    "key": "main110/length",
+    "format": "int"
+  },
+  {
+    "id": "175",
+    "value": 32,
+    "display": "32",
+    "source": "reference_results/paper_metrics.json",
+    "key": "published_group_comparison/papers",
+    "format": "int"
+  },
+  {
+    "id": "176",
+    "value": 158,
+    "display": "158",
+    "source": "reference_results/cohorts.json",
+    "key": "agent_task158/length",
+    "format": "int"
+  },
+  {
+    "id": "177",
+    "value": 47,
+    "display": "47",
+    "source": "README.md",
+    "key": "agent task papers",
+    "format": "int"
+  },
+  {
+    "id": "178",
+    "value": 61,
+    "display": "61",
+    "source": "README.md",
+    "key": "agent task series",
+    "format": "int"
+  },
+  {
+    "id": "179",
+    "value": 0.3333333333333333,
+    "display": "0.33",
+    "source": "reference_results/paper_metrics.json",
+    "key": "three_way/S0/balanced_accuracy",
+    "format": "decimal"
+  },
+  {
+    "id": "180",
+    "value": "3",
+    "display": "3",
+    "source": "README.md",
+    "key": "Quick start shell block",
+    "format": "literal"
+  },
+  {
+    "id": "181",
+    "value": "110",
+    "display": "110",
+    "source": "README.md",
+    "key": "Quick start shell block",
+    "format": "literal"
+  },
+  {
     "id": "182",
+    "value": 580,
+    "display": "580",
+    "source": "README.md",
+    "key": "dataset contrasts",
+    "format": "int"
+  },
+  {
+    "id": "183",
+    "value": 93,
+    "display": "93",
+    "source": "README.md",
+    "key": "dataset papers",
+    "format": "int"
+  },
+  {
+    "id": "184",
+    "value": 125,
+    "display": "125",
+    "source": "README.md",
+    "key": "dataset GEO series",
+    "format": "int"
+  },
+  {
+    "id": "185",
     "value": "2025",
     "display": "2025",
     "source": "CITATION.cff",
@@ -1464,7 +1488,7 @@
     "format": "literal"
   },
   {
-    "id": "183",
+    "id": "186",
     "value": "10.1101",
     "display": "10.1101",
     "source": "CITATION.cff",
@@ -1472,7 +1496,7 @@
     "format": "literal"
   },
   {
-    "id": "184",
+    "id": "187",
     "value": "2023.02.28.530532",
     "display": "2023.02.28.530532",
     "source": "CITATION.cff",

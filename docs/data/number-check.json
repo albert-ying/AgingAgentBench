@@ -1,0 +1,5339 @@
+{
+  "passed": true,
+  "inputs": {
+    "README.md": {
+      "sha256": "1a7060b458974d7cacbc42e6399c8ec7880a2030aa889676ea59fcb0f70fb44f",
+      "mtime_ns": 1794625121959087155
+    },
+    "DATA_LICENSE.md": {
+      "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
+      "mtime_ns": 1794621529257355808
+    },
+    "CITATION.cff": {
+      "sha256": "5d8ca46ec51b2f09fc05ef732207791741454945a847d41e08dc4a4828196f99",
+      "mtime_ns": 1794621529257101932
+    },
+    "reference_results/paper_metrics.json": {
+      "sha256": "ecb41f97f375a050f4a4daca9c7c8200208005f8e42409f05aff9c9307df55cd",
+      "mtime_ns": 1794585549503729970
+    },
+    "reference_results/reproduced_metrics.json": {
+      "sha256": "b3d791ae407fe82034b308f7b4a1b8e2a6542a26ed4d1fa668dd7a61ae06b020",
+      "mtime_ns": 1794622339387078688
+    },
+    "reference_results/cohorts.json": {
+      "sha256": "8fa0de1754417805def2610d14ef921ad178e1956c9b99c9b70dc758ce40ef18",
+      "mtime_ns": 1794585549434016676
+    },
+    "reference_results/supplementary_table_s18.csv": {
+      "sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
+      "mtime_ns": 1794585261302056056
+    },
+    "reference_results/constant_higher.csv": {
+      "sha256": "6598bd8f734a94d71b7f19635674711570c41c5bec268b155178afe58f764ee2",
+      "mtime_ns": 1794585549427088151
+    },
+    "reference_results/clockbase_paper_groups_welch.csv": {
+      "sha256": "9404964d5f5fc76f41a71dc7fcd616ce4d08ca25f8be9113ea1749366bcff723",
+      "mtime_ns": 1794585549423643097
+    },
+    "reference_results/clockbase_paper_groups.csv": {
+      "sha256": "367ff776974e129e78ddc503c199b32ccf43dd7e0f20ac33a107d24bfa2eadfd",
+      "mtime_ns": 1794585549427338194
+    },
+    "reference_results/clockbase_paper_groups_individual_readers.csv": {
+      "sha256": "51c9441260ee5a03e94aa978b7a8754d7760ffd218f00b361e41280c2d3907e1",
+      "mtime_ns": 1794585549427584445
+    },
+    "reference_results/language_model_gpt_4_1.csv": {
+      "sha256": "731f91671c11f626d66e1f4037f5f78f407f6f9295acb7bd0f19aaeb4a9f24b3",
+      "mtime_ns": 1794585549424184932
+    },
+    "reference_results/language_model_gpt_5_5.csv": {
+      "sha256": "56288154a031fe1669e2f7aed5c4d54fa306003efdf617b8d3d7ef49dd8aba7a",
+      "mtime_ns": 1794585549424715601
+    },
+    "reference_results/language_model_gpt_6_astra.csv": {
+      "sha256": "3b03ac8a8b9bc84ac2432c2cbe77abd4171b40350014dc106fb1b0580783e798",
+      "mtime_ns": 1794585549425271186
+    },
+    "reference_results/language_model_gpt_6_luna.csv": {
+      "sha256": "51bfa849d9747571af126ba332a3392175637a0315a2c5c9dbb318f109278630",
+      "mtime_ns": 1794585549425811063
+    },
+    "reference_results/language_model_gpt_6_sol.csv": {
+      "sha256": "31582230fb05b1a4e20ae9ddea1b3655cc1d9c7d41ce000ba4fdaf0eb53ae740",
+      "mtime_ns": 1794585549426368649
+    },
+    "reference_results/agent_codex_gpt_6_astra_raw.csv": {
+      "sha256": "0b1ab5dd3800e5ddf5a9bf9774bf83c651797692fcc36855d6f816a386fef162",
+      "mtime_ns": 1794585549429289034
+    },
+    "reference_results/agent_codex_gpt_6_sol_raw.csv": {
+      "sha256": "0288cd2715cbbc7a64a3d39c1ccf41db547063f24719c971c03437bb9b0e569c",
+      "mtime_ns": 1794585549430209371
+    },
+    "reference_results/agent_codex_gpt_6_luna_raw.csv": {
+      "sha256": "0a4fc2beed7454d314ae98ecdf870092f4c390466f91435829d2baced1bc4781",
+      "mtime_ns": 1794585549429741494
+    },
+    "reference_results/agent_codex_gpt_5_5_raw.csv": {
+      "sha256": "e8b17a76b781a5489c85b62cdb6f6956c4283cdf4b0f8bbb7cd943204c954ead",
+      "mtime_ns": 1794585549428784491
+    },
+    "reference_results/agent_claude_code_claude_opus_5_5_raw.csv": {
+      "sha256": "5e2578d3eaf9cd3ed7e7ff989a70a613ef9f592c317798796fe5a84dec4970b0",
+      "mtime_ns": 1794585549430965165
+    },
+    "reference_results/agent_biomni_gpt_6_astra_raw.csv": {
+      "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
+      "mtime_ns": 1794585549431738751
+    },
+    "reference_results/clockbase_agent_stored.csv": {
+      "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
+      "mtime_ns": 1794585549422917886
+    },
+    "reference_results/expert_truth.csv": {
+      "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",
+      "mtime_ns": 1794585549422633343
+    },
+    "reference_results/expert_candidate.csv": {
+      "sha256": "d98ed755cc8ffeb04f8208cd353e9f07f88a8593964e2cd8d8f3018fe287cd49",
+      "mtime_ns": 1794585549433762009
+    }
+  },
+  "outputs": {
+    "docs/index.html": "094f9d983a65b189b17b2a2e3d26109e126656074fa2374f4c98f2cd5aa694d4",
+    "docs/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/style.css": "c3b34f3e97ba563823457740dda836cb670a1bc229bbf46964e735e6ff3bf89b",
+    "docs/DESIGN.md": "9780ee95e951e01e2fdf2fa85a547a9076755cebd0192e6b462d19f789156992",
+    "docs/data/expert-agreement.json": "c6a36e25bc3bd44db78ab2566517c963bfa9ec89966831cfd7a3a860cd83eec1",
+    "docs/data/provenance.json": "d480117bac98cc7b46118817b6132c0f9ea3debe9660d2e66437316b10b44384",
+    "docs/data/leaderboard.json": "3fafe47d13becb2a58d06c2beefe58e7924f01731dedebe12fbb6568d92bef78",
+    "docs/data/headings.md": "6b57de3bc30f1ac36593a7eada5e61b36851ca9886cb95d17caa603ce77bb828",
+    "docs/data/agent-reruns.json": "87b44e8603214eacb3945a8e9c724a3e408cf767413e333412778bef35aa90a5",
+    "docs/data/site-numbers.json": "b5c55aeba8c75370ba10e02fd14a5d5ddba8915f785fa376a1f16a5fdc7afd33",
+    "docs/assets/card.png": "aa092f4240a020585437eb933d5243644e73429f4f08169b9971ec76d827dce9",
+    "docs/assets/task.png": "7c6ba48e84daf3fbe4d76944409908471c554381e5b3ac8e214903cfeffaeee4",
+    "docs/assets/logo.svg": "5bc21a8d23e08ba165948bced0a0843d38a375760a62bd01c47ce9dbcbb51132",
+    "docs/assets/fonts/oxygen-700-latin-ext.woff2": "4631281a39607f852d949e60279fbd097296fadb0b999bceaa0c141b69399428",
+    "docs/assets/fonts/oxygen-700-latin.woff2": "8bbf11023865df653a3759ae3e3e879ea582bf807f98a8dbe81722d225e5edb4",
+    "docs/assets/fonts/oxygen-400-latin-ext.woff2": "ea942a1b5e5d1068aa3e175d6545b3cd04505c8aed9ff93a9347fb0e3a624d39",
+    "docs/assets/fonts/jetbrains-mono-400-subset.woff2": "71b8885ac87d7724e58ff38c0b2983991592f553fbcf7f382e199a7576fe5aa3",
+    "docs/assets/fonts/oxygen-400-latin.woff2": "e0663f59abfc2cab0f10b003f16255e85cc056645837161c718eec216253ab0a",
+    "docs/assets/fonts/OFL.txt": "76e1071e6036e6d69dec27e574efc3713d92ddccd102f8484226f03c62809f6d"
+  },
+  "checks": [
+    {
+      "name": "main cohort inventory",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/paper_metrics.json/published_group_comparison/records",
+      "passed": true
+    },
+    {
+      "name": "S0 CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/constant_higher@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S0/balanced_accuracy",
+      "computed": 0.3333333333333333,
+      "source": 0.3333333333333333,
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S0/balanced_accuracy_interval/0",
+      "computed": 0.3333333333333333,
+      "source": 0.3333333333333333,
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S0/balanced_accuracy_interval/1",
+      "computed": 0.3333333333333333,
+      "source": 0.3333333333333333,
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S0/recall/lower",
+      "computed": [
+        0,
+        16
+      ],
+      "source": [
+        0,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S0/recall/higher",
+      "computed": [
+        36,
+        36
+      ],
+      "source": [
+        36,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S0/recall/none",
+      "computed": [
+        0,
+        58
+      ],
+      "source": [
+        0,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S0/balanced_accuracy from recalls",
+      "computed": 0.3333333333333333,
+      "source": 0.3333333333333333,
+      "source_path": "reference_results/paper_metrics.json/three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "S3 CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_paper_groups_welch@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S3/balanced_accuracy",
+      "computed": 0.6854246487867178,
+      "source": 0.6854246487867178,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S3/balanced_accuracy_interval/0",
+      "computed": 0.548561507936508,
+      "source": 0.548561507936508,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3/balanced_accuracy_interval/1",
+      "computed": 0.8173287566543477,
+      "source": 0.8173287566543477,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3/recall/lower",
+      "computed": [
+        7,
+        16
+      ],
+      "source": [
+        7,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S3/recall/higher",
+      "computed": [
+        26,
+        36
+      ],
+      "source": [
+        26,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S3/recall/none",
+      "computed": [
+        52,
+        58
+      ],
+      "source": [
+        52,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S3/balanced_accuracy from recalls",
+      "computed": 0.6854246487867178,
+      "source": 0.6854246487867178,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3",
+      "passed": true
+    },
+    {
+      "name": "S3c CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_paper_groups@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S3c/balanced_accuracy",
+      "computed": 0.7792145593869733,
+      "source": 0.7792145593869731,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S3c/balanced_accuracy_interval/0",
+      "computed": 0.6788392857142856,
+      "source": 0.6788392857142856,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3c/balanced_accuracy_interval/1",
+      "computed": 0.8641439638056179,
+      "source": 0.8641439638056179,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3c/recall/lower",
+      "computed": [
+        10,
+        16
+      ],
+      "source": [
+        10,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S3c/recall/higher",
+      "computed": [
+        30,
+        36
+      ],
+      "source": [
+        30,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S3c/recall/none",
+      "computed": [
+        51,
+        58
+      ],
+      "source": [
+        51,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S3c/balanced_accuracy from recalls",
+      "computed": 0.7792145593869731,
+      "source": 0.7792145593869731,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c",
+      "passed": true
+    },
+    {
+      "name": "S3r CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_paper_groups_individual_readers@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S3r/balanced_accuracy",
+      "computed": 0.7792145593869733,
+      "source": 0.7792145593869731,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S3r/balanced_accuracy_interval/0",
+      "computed": 0.6788392857142856,
+      "source": 0.6788392857142856,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3r/balanced_accuracy_interval/1",
+      "computed": 0.8641439638056179,
+      "source": 0.8641439638056179,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S3r/recall/lower",
+      "computed": [
+        10,
+        16
+      ],
+      "source": [
+        10,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S3r/recall/higher",
+      "computed": [
+        30,
+        36
+      ],
+      "source": [
+        30,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S3r/recall/none",
+      "computed": [
+        51,
+        58
+      ],
+      "source": [
+        51,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S3r/balanced_accuracy from recalls",
+      "computed": 0.7792145593869731,
+      "source": 0.7792145593869731,
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1 CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/language_model_gpt_4_1@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/balanced_accuracy",
+      "computed": 0.5164431673052362,
+      "source": 0.5164431673052362,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/balanced_accuracy_interval/0",
+      "computed": 0.4156860594360594,
+      "source": 0.4156860594360594,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/balanced_accuracy_interval/1",
+      "computed": 0.6202094040154864,
+      "source": 0.6202094040154864,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/recall/lower",
+      "computed": [
+        6,
+        16
+      ],
+      "source": [
+        6,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/recall/higher",
+      "computed": [
+        28,
+        36
+      ],
+      "source": [
+        28,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/recall/none",
+      "computed": [
+        23,
+        58
+      ],
+      "source": [
+        23,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-4.1/balanced_accuracy from recalls",
+      "computed": 0.5164431673052362,
+      "source": 0.5164431673052362,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5 CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/language_model_gpt_5_5@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/balanced_accuracy",
+      "computed": 0.5007982120051085,
+      "source": 0.5007982120051085,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/balanced_accuracy_interval/0",
+      "computed": 0.3520227497388878,
+      "source": 0.3520227497388878,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/balanced_accuracy_interval/1",
+      "computed": 0.6359796626984126,
+      "source": 0.6359796626984126,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/recall/lower",
+      "computed": [
+        6,
+        16
+      ],
+      "source": [
+        6,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/recall/higher",
+      "computed": [
+        17,
+        36
+      ],
+      "source": [
+        17,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/recall/none",
+      "computed": [
+        38,
+        58
+      ],
+      "source": [
+        38,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-5.5/balanced_accuracy from recalls",
+      "computed": 0.5007982120051085,
+      "source": 0.5007982120051085,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/language_model_gpt_6_astra@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/balanced_accuracy",
+      "computed": 0.5224297573435505,
+      "source": 0.5224297573435505,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/balanced_accuracy_interval/0",
+      "computed": 0.38621148160544444,
+      "source": 0.38621148160544444,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/balanced_accuracy_interval/1",
+      "computed": 0.6531028155011432,
+      "source": 0.6531028155011432,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/recall/lower",
+      "computed": [
+        5,
+        16
+      ],
+      "source": [
+        5,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/recall/higher",
+      "computed": [
+        16,
+        36
+      ],
+      "source": [
+        16,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/recall/none",
+      "computed": [
+        47,
+        58
+      ],
+      "source": [
+        47,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-astra/balanced_accuracy from recalls",
+      "computed": 0.5224297573435505,
+      "source": 0.5224297573435505,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/language_model_gpt_6_luna@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/balanced_accuracy",
+      "computed": 0.45665708812260536,
+      "source": 0.45665708812260536,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/balanced_accuracy_interval/0",
+      "computed": 0.3123848137983028,
+      "source": 0.3123848137983028,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/balanced_accuracy_interval/1",
+      "computed": 0.5872033131590441,
+      "source": 0.5872033131590441,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/recall/lower",
+      "computed": [
+        5,
+        16
+      ],
+      "source": [
+        5,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/recall/higher",
+      "computed": [
+        12,
+        36
+      ],
+      "source": [
+        12,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/recall/none",
+      "computed": [
+        42,
+        58
+      ],
+      "source": [
+        42,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-luna/balanced_accuracy from recalls",
+      "computed": 0.45665708812260536,
+      "source": 0.45665708812260536,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol CSV submitted coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/reproduced_metrics.json/published/language_model_gpt_6_sol@main110/submitted",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/balanced_accuracy",
+      "computed": 0.4901819923371648,
+      "source": 0.4901819923371648,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/balanced_accuracy_interval/0",
+      "computed": 0.3536003454398263,
+      "source": 0.3536003454398263,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/balanced_accuracy_interval/1",
+      "computed": 0.6231062535370685,
+      "source": 0.6231062535370685,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/recall/lower",
+      "computed": [
+        5,
+        16
+      ],
+      "source": [
+        5,
+        16
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/recall/higher",
+      "computed": [
+        15,
+        36
+      ],
+      "source": [
+        15,
+        36
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/recall/none",
+      "computed": [
+        43,
+        58
+      ],
+      "source": [
+        43,
+        58
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none",
+      "passed": true
+    },
+    {
+      "name": "S4:openai:gpt-6-sol/balanced_accuracy from recalls",
+      "computed": 0.4901819923371648,
+      "source": 0.4901819923371648,
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol",
+      "passed": true
+    },
+    {
+      "name": "chance from classes",
+      "computed": 0.3333333333333333,
+      "source": 0.3333333333333333,
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "computed": 0.8285714285714286,
+      "source": 0.8285714285714286,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_n",
+      "computed": 70,
+      "source": 70,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-astra:raw/covered",
+      "computed": 84,
+      "source": 84,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_astra_raw CSV submitted coverage",
+      "computed": 84,
+      "source": 84,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_astra_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_astra_raw supplementary denominator",
+      "computed": 70,
+      "source": 70,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/129",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_astra_raw supplementary numerator",
+      "computed": 58,
+      "source": 58,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/129",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement",
+      "computed": 0.9027777777777778,
+      "source": 0.9027777777777778,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_n",
+      "computed": 72,
+      "source": 72,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-sol:raw/covered",
+      "computed": 86,
+      "source": 86,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_sol_raw CSV submitted coverage",
+      "computed": 86,
+      "source": 86,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_sol_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_sol_raw supplementary denominator",
+      "computed": 72,
+      "source": 72,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/137",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_sol_raw supplementary numerator",
+      "computed": 65,
+      "source": 65,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/137",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement",
+      "computed": 0.7733333333333333,
+      "source": 0.7733333333333333,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_n",
+      "computed": 75,
+      "source": 75,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-6-luna:raw/covered",
+      "computed": 92,
+      "source": 92,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_luna_raw CSV submitted coverage",
+      "computed": 92,
+      "source": 92,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_luna_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_luna_raw supplementary denominator",
+      "computed": 75,
+      "source": 75,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/145",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_6_luna_raw supplementary numerator",
+      "computed": 58,
+      "source": 58,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/145",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement",
+      "computed": 0.7926829268292683,
+      "source": 0.7926829268292683,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_n",
+      "computed": 82,
+      "source": 82,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/codex/own_coverage/R:gpt-5.5:raw/covered",
+      "computed": 100,
+      "source": 100,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_5_5_raw CSV submitted coverage",
+      "computed": 100,
+      "source": 100,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_5_5_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_5_5_raw supplementary denominator",
+      "computed": 82,
+      "source": 82,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/153",
+      "passed": true
+    },
+    {
+      "name": "agent_codex_gpt_5_5_raw supplementary numerator",
+      "computed": 65,
+      "source": 65,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/153",
+      "passed": true
+    },
+    {
+      "name": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement",
+      "computed": 0.8275862068965517,
+      "source": 0.8275862068965517,
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_n",
+      "computed": 87,
+      "source": 87,
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/covered",
+      "computed": 107,
+      "source": 107,
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_claude_code_claude_opus_5_5_raw CSV submitted coverage",
+      "computed": 107,
+      "source": 107,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_claude_code_claude_opus_5_5_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_claude_code_claude_opus_5_5_raw supplementary denominator",
+      "computed": 87,
+      "source": 87,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/219",
+      "passed": true
+    },
+    {
+      "name": "agent_claude_code_claude_opus_5_5_raw supplementary numerator",
+      "computed": 72,
+      "source": 72,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/219",
+      "passed": true
+    },
+    {
+      "name": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "computed": 0.8088235294117647,
+      "source": 0.8088235294117647,
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_n",
+      "computed": 68,
+      "source": 68,
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/covered",
+      "computed": 82,
+      "source": 82,
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/covered",
+      "passed": true
+    },
+    {
+      "name": "agent_biomni_gpt_6_astra_raw CSV submitted coverage",
+      "computed": 82,
+      "source": 82,
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_biomni_gpt_6_astra_raw@agent_task158",
+      "passed": true
+    },
+    {
+      "name": "agent_biomni_gpt_6_astra_raw supplementary denominator",
+      "computed": 68,
+      "source": 68,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/246",
+      "passed": true
+    },
+    {
+      "name": "agent_biomni_gpt_6_astra_raw supplementary numerator",
+      "computed": 55,
+      "source": 55,
+      "source_path": "reference_results/supplementary_table_s18.csv/row/246",
+      "passed": true
+    },
+    {
+      "name": "stored agent call agreement",
+      "computed": 0.8243243243243243,
+      "source": 0.8243243243243243,
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.labels confirmed CSV n",
+      "computed": 87,
+      "source": 87,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.labels confirmed CSV matches",
+      "computed": 86,
+      "source": 86,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.labels confirmed agreement from matches",
+      "computed": 0.9885057471264368,
+      "source": 0.9885057471264368,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.all released rows CSV n",
+      "computed": 89,
+      "source": 89,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.all released rows CSV matches",
+      "computed": 88,
+      "source": 88,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows",
+      "passed": true
+    },
+    {
+      "name": "A1.candidate.all released rows agreement from matches",
+      "computed": 0.9887640449438202,
+      "source": 0.9887640449438202,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.labels confirmed CSV n",
+      "computed": 123,
+      "source": 123,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.labels confirmed CSV matches",
+      "computed": 121,
+      "source": 121,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.labels confirmed agreement from matches",
+      "computed": 0.983739837398374,
+      "source": 0.983739837398374,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.all released rows CSV n",
+      "computed": 163,
+      "source": 163,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.all released rows CSV matches",
+      "computed": 157,
+      "source": 157,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows",
+      "passed": true
+    },
+    {
+      "name": "A2.candidate.all released rows agreement from matches",
+      "computed": 0.9631901840490797,
+      "source": 0.9631901840490797,
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved console command matches README",
+      "computed": "python3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install -e '.[test]'\nagingagentbench score \\\n  --predictions reference_results/clockbase_paper_groups.csv \\\n  --cohort main110",
+      "source": "python3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install -e '.[test]'\nagingagentbench score \\\n  --predictions reference_results/clockbase_paper_groups.csv \\\n  --cohort main110",
+      "source_path": "README.md/Quick start",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 0",
+      "computed": [
+        "95%",
+        "95%"
+      ],
+      "source": [
+        "95%",
+        "95%"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_paper_groups/bootstrap/level",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 1",
+      "computed": [
+        "16"
+      ],
+      "source": [
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 2",
+      "computed": [
+        "36"
+      ],
+      "source": [
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 3",
+      "computed": [
+        "58"
+      ],
+      "source": [
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 4",
+      "computed": [
+        "10",
+        "10"
+      ],
+      "source": [
+        "10",
+        "10"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 5",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 6",
+      "computed": [
+        "30",
+        "30"
+      ],
+      "source": [
+        "30",
+        "30"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 7",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 8",
+      "computed": [
+        "51",
+        "51"
+      ],
+      "source": [
+        "51",
+        "51"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 9",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 10",
+      "computed": [
+        "0.78"
+      ],
+      "source": [
+        "0.78"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 11",
+      "computed": [
+        "0.68"
+      ],
+      "source": [
+        "0.68"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 12",
+      "computed": [
+        "0.86"
+      ],
+      "source": [
+        "0.86"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3c/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 13",
+      "computed": [
+        "10",
+        "10"
+      ],
+      "source": [
+        "10",
+        "10"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 14",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 15",
+      "computed": [
+        "30",
+        "30"
+      ],
+      "source": [
+        "30",
+        "30"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 16",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 17",
+      "computed": [
+        "51",
+        "51"
+      ],
+      "source": [
+        "51",
+        "51"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 18",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 19",
+      "computed": [
+        "0.78"
+      ],
+      "source": [
+        "0.78"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 20",
+      "computed": [
+        "0.68"
+      ],
+      "source": [
+        "0.68"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 21",
+      "computed": [
+        "0.86"
+      ],
+      "source": [
+        "0.86"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3r/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 22",
+      "computed": [
+        "7",
+        "7"
+      ],
+      "source": [
+        "7",
+        "7"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 23",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 24",
+      "computed": [
+        "26",
+        "26"
+      ],
+      "source": [
+        "26",
+        "26"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 25",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 26",
+      "computed": [
+        "52",
+        "52"
+      ],
+      "source": [
+        "52",
+        "52"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 27",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 28",
+      "computed": [
+        "0.69"
+      ],
+      "source": [
+        "0.69"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 29",
+      "computed": [
+        "0.55"
+      ],
+      "source": [
+        "0.55"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 30",
+      "computed": [
+        "0.82"
+      ],
+      "source": [
+        "0.82"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S3/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 31",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 32",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 33",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 34",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 35",
+      "computed": [
+        "47",
+        "47"
+      ],
+      "source": [
+        "47",
+        "47"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 36",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 37",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 38",
+      "computed": [
+        "0.52"
+      ],
+      "source": [
+        "0.52"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 39",
+      "computed": [
+        "0.39"
+      ],
+      "source": [
+        "0.39"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 40",
+      "computed": [
+        "0.65"
+      ],
+      "source": [
+        "0.65"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 41",
+      "computed": [
+        "6",
+        "6"
+      ],
+      "source": [
+        "6",
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 42",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 43",
+      "computed": [
+        "28",
+        "28"
+      ],
+      "source": [
+        "28",
+        "28"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 44",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 45",
+      "computed": [
+        "23",
+        "23"
+      ],
+      "source": [
+        "23",
+        "23"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 46",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 47",
+      "computed": [
+        "4.1"
+      ],
+      "source": [
+        "4.1"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 48",
+      "computed": [
+        "0.52"
+      ],
+      "source": [
+        "0.52"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 49",
+      "computed": [
+        "0.42"
+      ],
+      "source": [
+        "0.42"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 50",
+      "computed": [
+        "0.62"
+      ],
+      "source": [
+        "0.62"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 51",
+      "computed": [
+        "6",
+        "6"
+      ],
+      "source": [
+        "6",
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 52",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 53",
+      "computed": [
+        "17",
+        "17"
+      ],
+      "source": [
+        "17",
+        "17"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 54",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 55",
+      "computed": [
+        "38",
+        "38"
+      ],
+      "source": [
+        "38",
+        "38"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 56",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 57",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 58",
+      "computed": [
+        "0.50"
+      ],
+      "source": [
+        "0.50"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 59",
+      "computed": [
+        "0.35"
+      ],
+      "source": [
+        "0.35"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 60",
+      "computed": [
+        "0.64"
+      ],
+      "source": [
+        "0.64"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 61",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 62",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 63",
+      "computed": [
+        "15",
+        "15"
+      ],
+      "source": [
+        "15",
+        "15"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 64",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 65",
+      "computed": [
+        "43",
+        "43"
+      ],
+      "source": [
+        "43",
+        "43"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 66",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 67",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 68",
+      "computed": [
+        "0.49"
+      ],
+      "source": [
+        "0.49"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 69",
+      "computed": [
+        "0.35"
+      ],
+      "source": [
+        "0.35"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 70",
+      "computed": [
+        "0.62"
+      ],
+      "source": [
+        "0.62"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 71",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 72",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 73",
+      "computed": [
+        "12",
+        "12"
+      ],
+      "source": [
+        "12",
+        "12"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 74",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 75",
+      "computed": [
+        "42",
+        "42"
+      ],
+      "source": [
+        "42",
+        "42"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 76",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 77",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 78",
+      "computed": [
+        "0.46"
+      ],
+      "source": [
+        "0.46"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 79",
+      "computed": [
+        "0.31"
+      ],
+      "source": [
+        "0.31"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 80",
+      "computed": [
+        "0.59"
+      ],
+      "source": [
+        "0.59"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 81",
+      "computed": [
+        "0",
+        "0"
+      ],
+      "source": [
+        "0",
+        "0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 82",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 83",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 84",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 85",
+      "computed": [
+        "0",
+        "0"
+      ],
+      "source": [
+        "0",
+        "0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 86",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 87",
+      "computed": [
+        "0.33"
+      ],
+      "source": [
+        "0.33"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 88",
+      "computed": [
+        "0.33"
+      ],
+      "source": [
+        "0.33"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 89",
+      "computed": [
+        "0.33"
+      ],
+      "source": [
+        "0.33"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 90",
+      "computed": [
+        "0.0"
+      ],
+      "source": [
+        "0.0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/derived scale endpoints from three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 91",
+      "computed": [
+        "0.25"
+      ],
+      "source": [
+        "0.25"
+      ],
+      "source_path": "reference_results/paper_metrics.json/derived scale endpoints from three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 92",
+      "computed": [
+        "0.5"
+      ],
+      "source": [
+        "0.5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/derived scale endpoints from three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 93",
+      "computed": [
+        "0.75"
+      ],
+      "source": [
+        "0.75"
+      ],
+      "source_path": "reference_results/paper_metrics.json/derived scale endpoints from three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 94",
+      "computed": [
+        "1.0"
+      ],
+      "source": [
+        "1.0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/derived scale endpoints from three_way/S0",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 95",
+      "computed": [
+        "82.43%"
+      ],
+      "source": [
+        "82.43%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 96",
+      "computed": [
+        "74.60%"
+      ],
+      "source": [
+        "74.60%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 97",
+      "computed": [
+        "90.28%"
+      ],
+      "source": [
+        "90.28%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 98",
+      "computed": [
+        "74"
+      ],
+      "source": [
+        "74"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 99",
+      "computed": [
+        "26"
+      ],
+      "source": [
+        "26"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_agent_stored@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 100",
+      "computed": [
+        "30"
+      ],
+      "source": [
+        "30"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_agent_stored@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 101",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 102",
+      "computed": [
+        "82.86%"
+      ],
+      "source": [
+        "82.86%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 103",
+      "computed": [
+        "69.81%"
+      ],
+      "source": [
+        "69.81%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 104",
+      "computed": [
+        "93.48%"
+      ],
+      "source": [
+        "93.48%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 105",
+      "computed": [
+        "70"
+      ],
+      "source": [
+        "70"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-astra:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 106",
+      "computed": [
+        "25"
+      ],
+      "source": [
+        "25"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_astra_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 107",
+      "computed": [
+        "27"
+      ],
+      "source": [
+        "27"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_astra_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 108",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 109",
+      "computed": [
+        "90.28%"
+      ],
+      "source": [
+        "90.28%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 110",
+      "computed": [
+        "81.16%"
+      ],
+      "source": [
+        "81.16%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 111",
+      "computed": [
+        "97.53%"
+      ],
+      "source": [
+        "97.53%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 112",
+      "computed": [
+        "72"
+      ],
+      "source": [
+        "72"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-sol:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 113",
+      "computed": [
+        "25"
+      ],
+      "source": [
+        "25"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_sol_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 114",
+      "computed": [
+        "27"
+      ],
+      "source": [
+        "27"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_sol_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 115",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 116",
+      "computed": [
+        "77.33%"
+      ],
+      "source": [
+        "77.33%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 117",
+      "computed": [
+        "62.96%"
+      ],
+      "source": [
+        "62.96%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 118",
+      "computed": [
+        "89.14%"
+      ],
+      "source": [
+        "89.14%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 119",
+      "computed": [
+        "75"
+      ],
+      "source": [
+        "75"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-6-luna:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 120",
+      "computed": [
+        "27"
+      ],
+      "source": [
+        "27"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_luna_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 121",
+      "computed": [
+        "30"
+      ],
+      "source": [
+        "30"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_6_luna_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 122",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 123",
+      "computed": [
+        "79.27%"
+      ],
+      "source": [
+        "79.27%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 124",
+      "computed": [
+        "66.67%"
+      ],
+      "source": [
+        "66.67%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 125",
+      "computed": [
+        "89.80%"
+      ],
+      "source": [
+        "89.80%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 126",
+      "computed": [
+        "82"
+      ],
+      "source": [
+        "82"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/R:gpt-5.5:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 127",
+      "computed": [
+        "32"
+      ],
+      "source": [
+        "32"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_5_5_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 128",
+      "computed": [
+        "34"
+      ],
+      "source": [
+        "34"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_codex_gpt_5_5_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 129",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 130",
+      "computed": [
+        "82.76%"
+      ],
+      "source": [
+        "82.76%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 131",
+      "computed": [
+        "71.74%"
+      ],
+      "source": [
+        "71.74%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 132",
+      "computed": [
+        "92.54%"
+      ],
+      "source": [
+        "92.54%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 133",
+      "computed": [
+        "87"
+      ],
+      "source": [
+        "87"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 134",
+      "computed": [
+        "35"
+      ],
+      "source": [
+        "35"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_claude_code_claude_opus_5_5_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 135",
+      "computed": [
+        "37"
+      ],
+      "source": [
+        "37"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_claude_code_claude_opus_5_5_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 136",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 137",
+      "computed": [
+        "80.88%"
+      ],
+      "source": [
+        "80.88%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 138",
+      "computed": [
+        "67.27%"
+      ],
+      "source": [
+        "67.27%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 139",
+      "computed": [
+        "92.75%"
+      ],
+      "source": [
+        "92.75%"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 140",
+      "computed": [
+        "68"
+      ],
+      "source": [
+        "68"
+      ],
+      "source_path": "reference_results/paper_metrics.json/reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_n",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 141",
+      "computed": [
+        "24"
+      ],
+      "source": [
+        "24"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_biomni_gpt_6_astra_raw@agent_task158/direction_agreement/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 142",
+      "computed": [
+        "26"
+      ],
+      "source": [
+        "26"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/published/agent_biomni_gpt_6_astra_raw@agent_task158/direction_agreement/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 143",
+      "computed": [
+        "98.85%"
+      ],
+      "source": [
+        "98.85%"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 144",
+      "computed": [
+        "86"
+      ],
+      "source": [
+        "86"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed/recall diagonal sum",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 145",
+      "computed": [
+        "87"
+      ],
+      "source": [
+        "87"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.labels confirmed/scored",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 146",
+      "computed": [
+        "98.88%"
+      ],
+      "source": [
+        "98.88%"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 147",
+      "computed": [
+        "88"
+      ],
+      "source": [
+        "88"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows/recall diagonal sum",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 148",
+      "computed": [
+        "89"
+      ],
+      "source": [
+        "89"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A1.candidate.all released rows/scored",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 149",
+      "computed": [
+        "98.37%"
+      ],
+      "source": [
+        "98.37%"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 150",
+      "computed": [
+        "121"
+      ],
+      "source": [
+        "121"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed/recall diagonal sum",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 151",
+      "computed": [
+        "123"
+      ],
+      "source": [
+        "123"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.labels confirmed/scored",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 152",
+      "computed": [
+        "96.32%"
+      ],
+      "source": [
+        "96.32%"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows/call_agreement",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 153",
+      "computed": [
+        "157"
+      ],
+      "source": [
+        "157"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows/recall diagonal sum",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 154",
+      "computed": [
+        "163"
+      ],
+      "source": [
+        "163"
+      ],
+      "source_path": "reference_results/reproduced_metrics.json/expert/A2.candidate.all released rows/scored",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 155",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 156",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license link label",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 157",
+      "computed": [
+        "10.1101"
+      ],
+      "source": [
+        "10.1101"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 158",
+      "computed": [
+        "2023.02.28.530532"
+      ],
+      "source": [
+        "2023.02.28.530532"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 159",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license link label",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 160",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 161",
+      "computed": [
+        "2026"
+      ],
+      "source": [
+        "2026"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 162",
+      "computed": [
+        "10.1038"
+      ],
+      "source": [
+        "10.1038"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 163",
+      "computed": [
+        "41586"
+      ],
+      "source": [
+        "41586"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 164",
+      "computed": [
+        "026"
+      ],
+      "source": [
+        "026"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 165",
+      "computed": [
+        "10542"
+      ],
+      "source": [
+        "10542"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 166",
+      "computed": [
+        "3"
+      ],
+      "source": [
+        "3"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 167",
+      "computed": [
+        "18763485"
+      ],
+      "source": [
+        "18763485"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 168",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 169",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/compilation license",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 170",
+      "computed": [
+        "580"
+      ],
+      "source": [
+        "580"
+      ],
+      "source_path": "README.md/dataset contrasts",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 171",
+      "computed": [
+        "93"
+      ],
+      "source": [
+        "93"
+      ],
+      "source_path": "README.md/dataset papers",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 172",
+      "computed": [
+        "125"
+      ],
+      "source": [
+        "125"
+      ],
+      "source_path": "README.md/dataset GEO series",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 173",
+      "computed": [
+        "0.05"
+      ],
+      "source": [
+        "0.05"
+      ],
+      "source_path": "README.md/Evaluate your system significance threshold",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 174",
+      "computed": [
+        "110"
+      ],
+      "source": [
+        "110"
+      ],
+      "source_path": "reference_results/cohorts.json/main110/length",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 175",
+      "computed": [
+        "32"
+      ],
+      "source": [
+        "32"
+      ],
+      "source_path": "reference_results/paper_metrics.json/published_group_comparison/papers",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 176",
+      "computed": [
+        "158"
+      ],
+      "source": [
+        "158"
+      ],
+      "source_path": "reference_results/cohorts.json/agent_task158/length",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 177",
+      "computed": [
+        "47"
+      ],
+      "source": [
+        "47"
+      ],
+      "source_path": "README.md/agent task papers",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 178",
+      "computed": [
+        "61"
+      ],
+      "source": [
+        "61"
+      ],
+      "source_path": "README.md/agent task series",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 179",
+      "computed": [
+        "0.33"
+      ],
+      "source": [
+        "0.33"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 180",
+      "computed": [
+        "3"
+      ],
+      "source": [
+        "3"
+      ],
+      "source_path": "README.md/Quick start shell block",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 181",
+      "computed": [
+        "110"
+      ],
+      "source": [
+        "110"
+      ],
+      "source_path": "README.md/Quick start shell block",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 182",
+      "computed": [
+        "580"
+      ],
+      "source": [
+        "580"
+      ],
+      "source_path": "README.md/dataset contrasts",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 183",
+      "computed": [
+        "93"
+      ],
+      "source": [
+        "93"
+      ],
+      "source_path": "README.md/dataset papers",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 184",
+      "computed": [
+        "125"
+      ],
+      "source": [
+        "125"
+      ],
+      "source_path": "README.md/dataset GEO series",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 185",
+      "computed": [
+        "2025"
+      ],
+      "source": [
+        "2025"
+      ],
+      "source_path": "CITATION.cff/preferred-citation",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 186",
+      "computed": [
+        "10.1101"
+      ],
+      "source": [
+        "10.1101"
+      ],
+      "source_path": "CITATION.cff/preferred-citation/doi",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 187",
+      "computed": [
+        "2023.02.28.530532"
+      ],
+      "source": [
+        "2023.02.28.530532"
+      ],
+      "source_path": "CITATION.cff/preferred-citation/doi",
+      "passed": true
+    },
+    {
+      "name": "all visible numeric tokens registered",
+      "computed": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.0",
+        "0.05",
+        "0.25",
+        "0.31",
+        "0.33",
+        "0.33",
+        "0.33",
+        "0.33",
+        "0.35",
+        "0.35",
+        "0.39",
+        "0.42",
+        "0.46",
+        "0.49",
+        "0.5",
+        "0.50",
+        "0.52",
+        "0.52",
+        "0.55",
+        "0.59",
+        "0.62",
+        "0.62",
+        "0.64",
+        "0.65",
+        "0.68",
+        "0.68",
+        "0.69",
+        "0.75",
+        "0.78",
+        "0.78",
+        "0.82",
+        "0.86",
+        "0.86",
+        "026",
+        "1.0",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10.1038",
+        "10.1101",
+        "10.1101",
+        "10542",
+        "110",
+        "110",
+        "12",
+        "12",
+        "121",
+        "123",
+        "125",
+        "125",
+        "15",
+        "15",
+        "157",
+        "158",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "163",
+        "17",
+        "17",
+        "18763485",
+        "2023.02.28.530532",
+        "2023.02.28.530532",
+        "2025",
+        "2026",
+        "23",
+        "23",
+        "24",
+        "25",
+        "25",
+        "26",
+        "26",
+        "26",
+        "26",
+        "27",
+        "27",
+        "27",
+        "28",
+        "28",
+        "3",
+        "3",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "32",
+        "32",
+        "34",
+        "35",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "37",
+        "38",
+        "38",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.1",
+        "41586",
+        "42",
+        "42",
+        "43",
+        "43",
+        "47",
+        "47",
+        "47",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5.5",
+        "5.5",
+        "5.5",
+        "51",
+        "51",
+        "51",
+        "51",
+        "52",
+        "52",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "580",
+        "580",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "61",
+        "62.96",
+        "66.67",
+        "67.27",
+        "68",
+        "69.81",
+        "7",
+        "7",
+        "70",
+        "71.74",
+        "72",
+        "74",
+        "74.60",
+        "75",
+        "77.33",
+        "79.27",
+        "80.88",
+        "81.16",
+        "82",
+        "82.43",
+        "82.76",
+        "82.86",
+        "86",
+        "87",
+        "87",
+        "88",
+        "89",
+        "89.14",
+        "89.80",
+        "90.28",
+        "90.28",
+        "92.54",
+        "92.75",
+        "93",
+        "93",
+        "93.48",
+        "95",
+        "95",
+        "96.32",
+        "97.53",
+        "98.37",
+        "98.85",
+        "98.88"
+      ],
+      "source": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0.0",
+        "0.05",
+        "0.25",
+        "0.31",
+        "0.33",
+        "0.33",
+        "0.33",
+        "0.33",
+        "0.35",
+        "0.35",
+        "0.39",
+        "0.42",
+        "0.46",
+        "0.49",
+        "0.5",
+        "0.50",
+        "0.52",
+        "0.52",
+        "0.55",
+        "0.59",
+        "0.62",
+        "0.62",
+        "0.64",
+        "0.65",
+        "0.68",
+        "0.68",
+        "0.69",
+        "0.75",
+        "0.78",
+        "0.78",
+        "0.82",
+        "0.86",
+        "0.86",
+        "026",
+        "1.0",
+        "10",
+        "10",
+        "10",
+        "10",
+        "10.1038",
+        "10.1101",
+        "10.1101",
+        "10542",
+        "110",
+        "110",
+        "12",
+        "12",
+        "121",
+        "123",
+        "125",
+        "125",
+        "15",
+        "15",
+        "157",
+        "158",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "163",
+        "17",
+        "17",
+        "18763485",
+        "2023.02.28.530532",
+        "2023.02.28.530532",
+        "2025",
+        "2026",
+        "23",
+        "23",
+        "24",
+        "25",
+        "25",
+        "26",
+        "26",
+        "26",
+        "26",
+        "27",
+        "27",
+        "27",
+        "28",
+        "28",
+        "3",
+        "3",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "30",
+        "32",
+        "32",
+        "34",
+        "35",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "37",
+        "38",
+        "38",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.0",
+        "4.1",
+        "41586",
+        "42",
+        "42",
+        "43",
+        "43",
+        "47",
+        "47",
+        "47",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5",
+        "5.5",
+        "5.5",
+        "5.5",
+        "51",
+        "51",
+        "51",
+        "51",
+        "52",
+        "52",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "580",
+        "580",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "6",
+        "61",
+        "62.96",
+        "66.67",
+        "67.27",
+        "68",
+        "69.81",
+        "7",
+        "7",
+        "70",
+        "71.74",
+        "72",
+        "74",
+        "74.60",
+        "75",
+        "77.33",
+        "79.27",
+        "80.88",
+        "81.16",
+        "82",
+        "82.43",
+        "82.76",
+        "82.86",
+        "86",
+        "87",
+        "87",
+        "88",
+        "89",
+        "89.14",
+        "89.80",
+        "90.28",
+        "90.28",
+        "92.54",
+        "92.75",
+        "93",
+        "93",
+        "93.48",
+        "95",
+        "95",
+        "96.32",
+        "97.53",
+        "98.37",
+        "98.85",
+        "98.88"
+      ],
+      "source_path": "docs/index.html/body",
+      "passed": true
+    }
+  ],
+  "numbers": [
+    {
+      "id": "0",
+      "value": 0.95,
+      "display": "95%",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/clockbase_paper_groups/bootstrap/level",
+      "format": "confidence"
+    },
+    {
+      "id": "1",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "2",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "3",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "4",
+      "value": 10,
+      "display": "10",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "5",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "6",
+      "value": 30,
+      "display": "30",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "7",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "8",
+      "value": 51,
+      "display": "51",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "9",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "10",
+      "value": 0.7792145593869731,
+      "display": "0.78",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "11",
+      "value": 0.6788392857142856,
+      "display": "0.68",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "12",
+      "value": 0.8641439638056179,
+      "display": "0.86",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3c/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "13",
+      "value": 10,
+      "display": "10",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "14",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "15",
+      "value": 30,
+      "display": "30",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "16",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "17",
+      "value": 51,
+      "display": "51",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "18",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "19",
+      "value": 0.7792145593869731,
+      "display": "0.78",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "20",
+      "value": 0.6788392857142856,
+      "display": "0.68",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "21",
+      "value": 0.8641439638056179,
+      "display": "0.86",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3r/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "22",
+      "value": 7,
+      "display": "7",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "23",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "24",
+      "value": 26,
+      "display": "26",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "25",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "26",
+      "value": 52,
+      "display": "52",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "27",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "28",
+      "value": 0.6854246487867178,
+      "display": "0.69",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "29",
+      "value": 0.548561507936508,
+      "display": "0.55",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "30",
+      "value": 0.8173287566543477,
+      "display": "0.82",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S3/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "31",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "32",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "33",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "34",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "35",
+      "value": 47,
+      "display": "47",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "36",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "37",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra",
+      "format": "literal"
+    },
+    {
+      "id": "38",
+      "value": 0.5224297573435505,
+      "display": "0.52",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "39",
+      "value": 0.38621148160544444,
+      "display": "0.39",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "40",
+      "value": 0.6531028155011432,
+      "display": "0.65",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "41",
+      "value": 6,
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "42",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "43",
+      "value": 28,
+      "display": "28",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "44",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "45",
+      "value": 23,
+      "display": "23",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "46",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "47",
+      "value": "4.1",
+      "display": "4.1",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1",
+      "format": "literal"
+    },
+    {
+      "id": "48",
+      "value": 0.5164431673052362,
+      "display": "0.52",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "49",
+      "value": 0.4156860594360594,
+      "display": "0.42",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "50",
+      "value": 0.6202094040154864,
+      "display": "0.62",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "51",
+      "value": 6,
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "52",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "53",
+      "value": 17,
+      "display": "17",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "54",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "55",
+      "value": 38,
+      "display": "38",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "56",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "57",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5",
+      "format": "literal"
+    },
+    {
+      "id": "58",
+      "value": 0.5007982120051085,
+      "display": "0.50",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "59",
+      "value": 0.3520227497388878,
+      "display": "0.35",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "60",
+      "value": 0.6359796626984126,
+      "display": "0.64",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "61",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "62",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "63",
+      "value": 15,
+      "display": "15",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "64",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "65",
+      "value": 43,
+      "display": "43",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "66",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "67",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol",
+      "format": "literal"
+    },
+    {
+      "id": "68",
+      "value": 0.4901819923371648,
+      "display": "0.49",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "69",
+      "value": 0.3536003454398263,
+      "display": "0.35",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "70",
+      "value": 0.6231062535370685,
+      "display": "0.62",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "71",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "72",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "73",
+      "value": 12,
+      "display": "12",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "74",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "75",
+      "value": 42,
+      "display": "42",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "76",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "77",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna",
+      "format": "literal"
+    },
+    {
+      "id": "78",
+      "value": 0.45665708812260536,
+      "display": "0.46",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "79",
+      "value": 0.3123848137983028,
+      "display": "0.31",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "80",
+      "value": 0.5872033131590441,
+      "display": "0.59",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "81",
+      "value": 0,
+      "display": "0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "82",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "83",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "84",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "85",
+      "value": 0,
+      "display": "0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "86",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "87",
+      "value": 0.3333333333333333,
+      "display": "0.33",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "88",
+      "value": 0.3333333333333333,
+      "display": "0.33",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "89",
+      "value": 0.3333333333333333,
+      "display": "0.33",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "90",
+      "value": 0.0,
+      "display": "0.0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "derived scale endpoints from three_way/S0",
+      "format": "literal"
+    },
+    {
+      "id": "91",
+      "value": 0.25,
+      "display": "0.25",
+      "source": "reference_results/paper_metrics.json",
+      "key": "derived scale endpoints from three_way/S0",
+      "format": "literal"
+    },
+    {
+      "id": "92",
+      "value": 0.5,
+      "display": "0.5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "derived scale endpoints from three_way/S0",
+      "format": "literal"
+    },
+    {
+      "id": "93",
+      "value": 0.75,
+      "display": "0.75",
+      "source": "reference_results/paper_metrics.json",
+      "key": "derived scale endpoints from three_way/S0",
+      "format": "literal"
+    },
+    {
+      "id": "94",
+      "value": 1.0,
+      "display": "1.0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "derived scale endpoints from three_way/S0",
+      "format": "literal"
+    },
+    {
+      "id": "95",
+      "value": 0.8243243243243243,
+      "display": "82.43%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/S1/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "96",
+      "value": 0.746017316017316,
+      "display": "74.60%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/S1/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "97",
+      "value": 0.9027777777777778,
+      "display": "90.28%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/S1/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "98",
+      "value": 74,
+      "display": "74",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/S1/call_n",
+      "format": "int"
+    },
+    {
+      "id": "99",
+      "value": 26,
+      "display": "26",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "100",
+      "value": 30,
+      "display": "30",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "101",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-astra:raw",
+      "format": "literal"
+    },
+    {
+      "id": "102",
+      "value": 0.8285714285714286,
+      "display": "82.86%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "103",
+      "value": 0.6980945878848063,
+      "display": "69.81%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "104",
+      "value": 0.9348172987974098,
+      "display": "93.48%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "105",
+      "value": 70,
+      "display": "70",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-astra:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "106",
+      "value": 25,
+      "display": "25",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_astra_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "107",
+      "value": 27,
+      "display": "27",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_astra_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "108",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-sol:raw",
+      "format": "literal"
+    },
+    {
+      "id": "109",
+      "value": 0.9027777777777778,
+      "display": "90.28%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "110",
+      "value": 0.8115746180963572,
+      "display": "81.16%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "111",
+      "value": 0.9753445305770887,
+      "display": "97.53%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "112",
+      "value": 72,
+      "display": "72",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-sol:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "113",
+      "value": 25,
+      "display": "25",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_sol_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "114",
+      "value": 27,
+      "display": "27",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_sol_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "115",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-luna:raw",
+      "format": "literal"
+    },
+    {
+      "id": "116",
+      "value": 0.7733333333333333,
+      "display": "77.33%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "117",
+      "value": 0.6296031746031746,
+      "display": "62.96%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "118",
+      "value": 0.891355072463768,
+      "display": "89.14%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "119",
+      "value": 75,
+      "display": "75",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-6-luna:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "120",
+      "value": 27,
+      "display": "27",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_luna_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "121",
+      "value": 30,
+      "display": "30",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_6_luna_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "122",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-5.5:raw",
+      "format": "literal"
+    },
+    {
+      "id": "123",
+      "value": 0.7926829268292683,
+      "display": "79.27%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "124",
+      "value": 0.6666666666666666,
+      "display": "66.67%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "125",
+      "value": 0.8979785585120124,
+      "display": "89.80%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "126",
+      "value": 82,
+      "display": "82",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/codex/own_coverage/R:gpt-5.5:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "127",
+      "value": 32,
+      "display": "32",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_5_5_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "128",
+      "value": 34,
+      "display": "34",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_codex_gpt_5_5_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "129",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw",
+      "format": "literal"
+    },
+    {
+      "id": "130",
+      "value": 0.8275862068965517,
+      "display": "82.76%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "131",
+      "value": 0.7173619271445358,
+      "display": "71.74%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "132",
+      "value": 0.9253869541182974,
+      "display": "92.54%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "133",
+      "value": 87,
+      "display": "87",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/claude_code/own_coverage/R:claude-opus-5-5:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "134",
+      "value": 35,
+      "display": "35",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_claude_code_claude_opus_5_5_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "135",
+      "value": 37,
+      "display": "37",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_claude_code_claude_opus_5_5_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "136",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/biomni/own_coverage/R:gpt-6-astra:raw",
+      "format": "literal"
+    },
+    {
+      "id": "137",
+      "value": 0.8088235294117647,
+      "display": "80.88%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "138",
+      "value": 0.6727123695976155,
+      "display": "67.27%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/low",
+      "format": "percent"
+    },
+    {
+      "id": "139",
+      "value": 0.9275460242851548,
+      "display": "92.75%",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_agreement_interval/high",
+      "format": "percent"
+    },
+    {
+      "id": "140",
+      "value": 68,
+      "display": "68",
+      "source": "reference_results/paper_metrics.json",
+      "key": "reruns/biomni/own_coverage/R:gpt-6-astra:raw/call_n",
+      "format": "int"
+    },
+    {
+      "id": "141",
+      "value": 24,
+      "display": "24",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_biomni_gpt_6_astra_raw@agent_task158/direction_agreement/numerator",
+      "format": "int"
+    },
+    {
+      "id": "142",
+      "value": 26,
+      "display": "26",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "published/agent_biomni_gpt_6_astra_raw@agent_task158/direction_agreement/denominator",
+      "format": "int"
+    },
+    {
+      "id": "143",
+      "value": 0.9885057471264368,
+      "display": "98.85%",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.labels confirmed/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "144",
+      "value": 86,
+      "display": "86",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.labels confirmed/recall diagonal sum",
+      "format": "int"
+    },
+    {
+      "id": "145",
+      "value": 87,
+      "display": "87",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.labels confirmed/scored",
+      "format": "int"
+    },
+    {
+      "id": "146",
+      "value": 0.9887640449438202,
+      "display": "98.88%",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.all released rows/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "147",
+      "value": 88,
+      "display": "88",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.all released rows/recall diagonal sum",
+      "format": "int"
+    },
+    {
+      "id": "148",
+      "value": 89,
+      "display": "89",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A1.candidate.all released rows/scored",
+      "format": "int"
+    },
+    {
+      "id": "149",
+      "value": 0.983739837398374,
+      "display": "98.37%",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.labels confirmed/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "150",
+      "value": 121,
+      "display": "121",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.labels confirmed/recall diagonal sum",
+      "format": "int"
+    },
+    {
+      "id": "151",
+      "value": 123,
+      "display": "123",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.labels confirmed/scored",
+      "format": "int"
+    },
+    {
+      "id": "152",
+      "value": 0.9631901840490797,
+      "display": "96.32%",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.all released rows/call_agreement",
+      "format": "percent"
+    },
+    {
+      "id": "153",
+      "value": 157,
+      "display": "157",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.all released rows/recall diagonal sum",
+      "format": "int"
+    },
+    {
+      "id": "154",
+      "value": 163,
+      "display": "163",
+      "source": "reference_results/reproduced_metrics.json",
+      "key": "expert/A2.candidate.all released rows/scored",
+      "format": "int"
+    },
+    {
+      "id": "155",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "156",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "license link label",
+      "format": "literal"
+    },
+    {
+      "id": "157",
+      "value": "10.1101",
+      "display": "10.1101",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "158",
+      "value": "2023.02.28.530532",
+      "display": "2023.02.28.530532",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "159",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "license link label",
+      "format": "literal"
+    },
+    {
+      "id": "160",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "161",
+      "value": "2026",
+      "display": "2026",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "162",
+      "value": "10.1038",
+      "display": "10.1038",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "163",
+      "value": "41586",
+      "display": "41586",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "164",
+      "value": "026",
+      "display": "026",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "165",
+      "value": "10542",
+      "display": "10542",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "166",
+      "value": "3",
+      "display": "3",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "167",
+      "value": "18763485",
+      "display": "18763485",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "168",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "license paragraphs",
+      "format": "literal"
+    },
+    {
+      "id": "169",
+      "value": "4.0",
+      "display": "4.0",
+      "source": "DATA_LICENSE.md",
+      "key": "compilation license",
+      "format": "literal"
+    },
+    {
+      "id": "170",
+      "value": 580,
+      "display": "580",
+      "source": "README.md",
+      "key": "dataset contrasts",
+      "format": "int"
+    },
+    {
+      "id": "171",
+      "value": 93,
+      "display": "93",
+      "source": "README.md",
+      "key": "dataset papers",
+      "format": "int"
+    },
+    {
+      "id": "172",
+      "value": 125,
+      "display": "125",
+      "source": "README.md",
+      "key": "dataset GEO series",
+      "format": "int"
+    },
+    {
+      "id": "173",
+      "value": "0.05",
+      "display": "0.05",
+      "source": "README.md",
+      "key": "Evaluate your system significance threshold",
+      "format": "literal"
+    },
+    {
+      "id": "174",
+      "value": 110,
+      "display": "110",
+      "source": "reference_results/cohorts.json",
+      "key": "main110/length",
+      "format": "int"
+    },
+    {
+      "id": "175",
+      "value": 32,
+      "display": "32",
+      "source": "reference_results/paper_metrics.json",
+      "key": "published_group_comparison/papers",
+      "format": "int"
+    },
+    {
+      "id": "176",
+      "value": 158,
+      "display": "158",
+      "source": "reference_results/cohorts.json",
+      "key": "agent_task158/length",
+      "format": "int"
+    },
+    {
+      "id": "177",
+      "value": 47,
+      "display": "47",
+      "source": "README.md",
+      "key": "agent task papers",
+      "format": "int"
+    },
+    {
+      "id": "178",
+      "value": 61,
+      "display": "61",
+      "source": "README.md",
+      "key": "agent task series",
+      "format": "int"
+    },
+    {
+      "id": "179",
+      "value": 0.3333333333333333,
+      "display": "0.33",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "180",
+      "value": "3",
+      "display": "3",
+      "source": "README.md",
+      "key": "Quick start shell block",
+      "format": "literal"
+    },
+    {
+      "id": "181",
+      "value": "110",
+      "display": "110",
+      "source": "README.md",
+      "key": "Quick start shell block",
+      "format": "literal"
+    },
+    {
+      "id": "182",
+      "value": 580,
+      "display": "580",
+      "source": "README.md",
+      "key": "dataset contrasts",
+      "format": "int"
+    },
+    {
+      "id": "183",
+      "value": 93,
+      "display": "93",
+      "source": "README.md",
+      "key": "dataset papers",
+      "format": "int"
+    },
+    {
+      "id": "184",
+      "value": 125,
+      "display": "125",
+      "source": "README.md",
+      "key": "dataset GEO series",
+      "format": "int"
+    },
+    {
+      "id": "185",
+      "value": "2025",
+      "display": "2025",
+      "source": "CITATION.cff",
+      "key": "preferred-citation",
+      "format": "literal"
+    },
+    {
+      "id": "186",
+      "value": "10.1101",
+      "display": "10.1101",
+      "source": "CITATION.cff",
+      "key": "preferred-citation/doi",
+      "format": "literal"
+    },
+    {
+      "id": "187",
+      "value": "2023.02.28.530532",
+      "display": "2023.02.28.530532",
+      "source": "CITATION.cff",
+      "key": "preferred-citation/doi",
+      "format": "literal"
+    }
+  ],
+  "command_rename_fallback": false,
+  "known_source_difference": "Archived expert_conclusions error counts differ from final candidate results. Expert agreement uses reproduced_metrics expert candidate recall counts and expert_candidate.csv; expert intervals are not displayed."
+}
