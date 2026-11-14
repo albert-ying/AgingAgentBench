@@ -83,7 +83,7 @@ td.numeric { font-family: var(--cb-mono); font-size: var(--row-size); font-varia
 .task dl { margin: 0; }
 .task ul { margin: 0; padding-left: 20px; }
 .task li { margin: 0 0 6px; }
-.task-image { display: block; max-width: 100%; width: 100%; height: auto; margin: 24px 0; }
+.task-image { display: block; width: 100%; max-width: 880px; height: auto; margin: 8px 0 24px; background: #ffffff; }
 .task-image[hidden] { display: none; }
 .prose { max-width: 90ch; }
 pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 16px 0; padding: 14px 0 14px 20px; border-left: 2px solid var(--cb-line); font-size: var(--row-size); line-height: 1.8; }
