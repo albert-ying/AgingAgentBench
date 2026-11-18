@@ -2,8 +2,8 @@
   "passed": true,
   "inputs": {
     "README.md": {
-      "sha256": "fc255be7c551a799e7fe897fe0da91eb86b57c3576c5425940dc77e1c0353c41",
-      "mtime_ns": 1794996195464784858
+      "sha256": "21c06c785c3625fe0a11326b57cd6b9d2f2d50f6d780713238cd2178c5f9b84a",
+      "mtime_ns": 1794997748890241362
     },
     "DATA_LICENSE.md": {
       "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
@@ -117,10 +117,6 @@
       "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
       "mtime_ns": 1794966063896505882
     },
-    "reference_results/clockbase_agent_stored.csv": {
-      "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
-      "mtime_ns": 1794966063897913724
-    },
     "reference_results/expert_truth.csv": {
       "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",
       "mtime_ns": 1794966063900166112
@@ -131,18 +127,18 @@
     }
   },
   "outputs": {
-    "docs/index.html": "25ee735ec8dc7a267b756d05e9925ee8ab2074919f686192342a1b9b301d186f",
+    "docs/index.html": "28cdadc959d22c84f690cd4ecf14278d6fb1ed5ae53cbbc06aced0b82777c0b4",
     "docs/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "docs/style.css": "c3b34f3e97ba563823457740dda836cb670a1bc229bbf46964e735e6ff3bf89b",
     "docs/DESIGN.md": "9780ee95e951e01e2fdf2fa85a547a9076755cebd0192e6b462d19f789156992",
     "docs/data/expert-agreement.json": "c6a36e25bc3bd44db78ab2566517c963bfa9ec89966831cfd7a3a860cd83eec1",
     "docs/data/claude-predictions-2026-11-17.csv": "0bb3be6ad2735adf270be88fdecf3e66d270263a6b8a142f56062558283f1f51",
-    "docs/data/provenance.json": "67293ae0228008ab7dabb2d3db371d76bda381cbb4dac7c43cb914c3fd90fcfa",
+    "docs/data/provenance.json": "706bba55d470adbd89a3027f9507beb0616fdfdfebf251f5549fc8c26014d583",
     "docs/data/claude-api-2026-11-17.json": "ec143ca32fb243cf96ec8a52577d506577ff71e3d691621ef276b6c7d8507345",
     "docs/data/leaderboard.json": "41758c7ea3f9909321257bc982c5d5e152e05eee51f17383c19668ad1c5c5c49",
     "docs/data/headings.md": "6b57de3bc30f1ac36593a7eada5e61b36851ca9886cb95d17caa603ce77bb828",
-    "docs/data/agent-reruns.json": "87b44e8603214eacb3945a8e9c724a3e408cf767413e333412778bef35aa90a5",
-    "docs/data/site-numbers.json": "a87c90ab98c43c99d9e5960f2129c1a2722b2ec2cd60b47b4f0c5476ec5bf85f",
+    "docs/data/agent-reruns.json": "7fd89fcfd1a7980d7fd9e3594eb3db4b59d96f399d429b3c745d32c7cce1ce0b",
+    "docs/data/site-numbers.json": "b834f2691f34d92c327c174a4c6d1170139dea59475a82f130e6359d4386df83",
     "docs/assets/card.png": "aa092f4240a020585437eb933d5243644e73429f4f08169b9971ec76d827dce9",
     "docs/assets/task.png": "7c6ba48e84daf3fbe4d76944409908471c554381e5b3ac8e214903cfeffaeee4",
     "docs/assets/logo.svg": "5bc21a8d23e08ba165948bced0a0843d38a375760a62bd01c47ce9dbcbb51132",
@@ -2337,13 +2333,6 @@
       "passed": true
     },
     {
-      "name": "stored agent call agreement",
-      "computed": 0.8243243243243243,
-      "source": 0.8243243243243243,
-      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1",
-      "passed": true
-    },
-    {
       "name": "A1.candidate.labels confirmed CSV n",
       "computed": 87,
       "source": 87,
@@ -4242,72 +4231,6 @@
     {
       "name": "saved HTML number 147",
       "computed": [
-        "82.43%"
-      ],
-      "source": [
-        "82.43%"
-      ],
-      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 148",
-      "computed": [
-        "74.60%"
-      ],
-      "source": [
-        "74.60%"
-      ],
-      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement_interval/low",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 149",
-      "computed": [
-        "90.28%"
-      ],
-      "source": [
-        "90.28%"
-      ],
-      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_agreement_interval/high",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 150",
-      "computed": [
-        "74"
-      ],
-      "source": [
-        "74"
-      ],
-      "source_path": "reference_results/paper_metrics.json/reruns/codex/own_coverage/S1/call_n",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 151",
-      "computed": [
-        "26"
-      ],
-      "source": [
-        "26"
-      ],
-      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_agent_stored@agent_task158/direction_agreement/numerator",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 152",
-      "computed": [
-        "30"
-      ],
-      "source": [
-        "30"
-      ],
-      "source_path": "reference_results/reproduced_metrics.json/published/clockbase_agent_stored@agent_task158/direction_agreement/denominator",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 153",
-      "computed": [
         "6"
       ],
       "source": [
@@ -4317,7 +4240,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 154",
+      "name": "saved HTML number 148",
       "computed": [
         "82.86%"
       ],
@@ -4328,7 +4251,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 155",
+      "name": "saved HTML number 149",
       "computed": [
         "69.81%"
       ],
@@ -4339,7 +4262,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 156",
+      "name": "saved HTML number 150",
       "computed": [
         "93.48%"
       ],
@@ -4350,7 +4273,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 157",
+      "name": "saved HTML number 151",
       "computed": [
         "70"
       ],
@@ -4361,7 +4284,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 158",
+      "name": "saved HTML number 152",
       "computed": [
         "25"
       ],
@@ -4372,7 +4295,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 159",
+      "name": "saved HTML number 153",
       "computed": [
         "27"
       ],
@@ -4383,7 +4306,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 160",
+      "name": "saved HTML number 154",
       "computed": [
         "6"
       ],
@@ -4394,7 +4317,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 161",
+      "name": "saved HTML number 155",
       "computed": [
         "90.28%"
       ],
@@ -4405,7 +4328,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 162",
+      "name": "saved HTML number 156",
       "computed": [
         "81.16%"
       ],
@@ -4416,7 +4339,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 163",
+      "name": "saved HTML number 157",
       "computed": [
         "97.53%"
       ],
@@ -4427,7 +4350,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 164",
+      "name": "saved HTML number 158",
       "computed": [
         "72"
       ],
@@ -4438,7 +4361,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 165",
+      "name": "saved HTML number 159",
       "computed": [
         "25"
       ],
@@ -4449,7 +4372,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 166",
+      "name": "saved HTML number 160",
       "computed": [
         "27"
       ],
@@ -4460,7 +4383,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 167",
+      "name": "saved HTML number 161",
       "computed": [
         "6"
       ],
@@ -4471,7 +4394,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 168",
+      "name": "saved HTML number 162",
       "computed": [
         "77.33%"
       ],
@@ -4482,7 +4405,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 169",
+      "name": "saved HTML number 163",
       "computed": [
         "62.96%"
       ],
@@ -4493,7 +4416,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 170",
+      "name": "saved HTML number 164",
       "computed": [
         "89.14%"
       ],
@@ -4504,7 +4427,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 171",
+      "name": "saved HTML number 165",
       "computed": [
         "75"
       ],
@@ -4515,7 +4438,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 172",
+      "name": "saved HTML number 166",
       "computed": [
         "27"
       ],
@@ -4526,7 +4449,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 173",
+      "name": "saved HTML number 167",
       "computed": [
         "30"
       ],
@@ -4537,7 +4460,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 174",
+      "name": "saved HTML number 168",
       "computed": [
         "5.5"
       ],
@@ -4548,7 +4471,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 175",
+      "name": "saved HTML number 169",
       "computed": [
         "79.27%"
       ],
@@ -4559,7 +4482,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 176",
+      "name": "saved HTML number 170",
       "computed": [
         "66.67%"
       ],
@@ -4570,7 +4493,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 177",
+      "name": "saved HTML number 171",
       "computed": [
         "89.80%"
       ],
@@ -4581,7 +4504,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 178",
+      "name": "saved HTML number 172",
       "computed": [
         "82"
       ],
@@ -4592,7 +4515,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 179",
+      "name": "saved HTML number 173",
       "computed": [
         "32"
       ],
@@ -4603,7 +4526,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 180",
+      "name": "saved HTML number 174",
       "computed": [
         "34"
       ],
@@ -4614,7 +4537,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 181",
+      "name": "saved HTML number 175",
       "computed": [
         "5.5"
       ],
@@ -4625,7 +4548,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 182",
+      "name": "saved HTML number 176",
       "computed": [
         "82.76%"
       ],
@@ -4636,7 +4559,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 183",
+      "name": "saved HTML number 177",
       "computed": [
         "71.74%"
       ],
@@ -4647,7 +4570,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 184",
+      "name": "saved HTML number 178",
       "computed": [
         "92.54%"
       ],
@@ -4658,7 +4581,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 185",
+      "name": "saved HTML number 179",
       "computed": [
         "87"
       ],
@@ -4669,7 +4592,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 186",
+      "name": "saved HTML number 180",
       "computed": [
         "35"
       ],
@@ -4680,7 +4603,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 187",
+      "name": "saved HTML number 181",
       "computed": [
         "37"
       ],
@@ -4691,7 +4614,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 188",
+      "name": "saved HTML number 182",
       "computed": [
         "6"
       ],
@@ -4702,7 +4625,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 189",
+      "name": "saved HTML number 183",
       "computed": [
         "80.88%"
       ],
@@ -4713,7 +4636,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 190",
+      "name": "saved HTML number 184",
       "computed": [
         "67.27%"
       ],
@@ -4724,7 +4647,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 191",
+      "name": "saved HTML number 185",
       "computed": [
         "92.75%"
       ],
@@ -4735,7 +4658,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 192",
+      "name": "saved HTML number 186",
       "computed": [
         "68"
       ],
@@ -4746,7 +4669,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 193",
+      "name": "saved HTML number 187",
       "computed": [
         "24"
       ],
@@ -4757,7 +4680,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 194",
+      "name": "saved HTML number 188",
       "computed": [
         "26"
       ],
@@ -4768,7 +4691,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 195",
+      "name": "saved HTML number 189",
       "computed": [
         "98.85%"
       ],
@@ -4779,7 +4702,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 196",
+      "name": "saved HTML number 190",
       "computed": [
         "86"
       ],
@@ -4790,7 +4713,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 197",
+      "name": "saved HTML number 191",
       "computed": [
         "87"
       ],
@@ -4801,7 +4724,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 198",
+      "name": "saved HTML number 192",
       "computed": [
         "98.88%"
       ],
@@ -4812,7 +4735,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 199",
+      "name": "saved HTML number 193",
       "computed": [
         "88"
       ],
@@ -4823,7 +4746,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 200",
+      "name": "saved HTML number 194",
       "computed": [
         "89"
       ],
@@ -4834,7 +4757,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 201",
+      "name": "saved HTML number 195",
       "computed": [
         "98.37%"
       ],
@@ -4845,7 +4768,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 202",
+      "name": "saved HTML number 196",
       "computed": [
         "121"
       ],
@@ -4856,7 +4779,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 203",
+      "name": "saved HTML number 197",
       "computed": [
         "123"
       ],
@@ -4867,7 +4790,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 204",
+      "name": "saved HTML number 198",
       "computed": [
         "96.32%"
       ],
@@ -4878,7 +4801,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 205",
+      "name": "saved HTML number 199",
       "computed": [
         "157"
       ],
@@ -4889,7 +4812,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 206",
+      "name": "saved HTML number 200",
       "computed": [
         "163"
       ],
@@ -4900,12 +4823,78 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 207",
+      "name": "saved HTML number 201",
       "computed": [
         "4.0"
       ],
       "source": [
         "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 202",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license link label",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 203",
+      "computed": [
+        "10.1101"
+      ],
+      "source": [
+        "10.1101"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 204",
+      "computed": [
+        "2023.02.28.530532"
+      ],
+      "source": [
+        "2023.02.28.530532"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 205",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license link label",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 206",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 207",
+      "computed": [
+        "2026"
+      ],
+      "source": [
+        "2026"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
@@ -4913,21 +4902,21 @@
     {
       "name": "saved HTML number 208",
       "computed": [
-        "4.0"
+        "10.1038"
       ],
       "source": [
-        "4.0"
+        "10.1038"
       ],
-      "source_path": "DATA_LICENSE.md/license link label",
+      "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
     },
     {
       "name": "saved HTML number 209",
       "computed": [
-        "10.1101"
+        "41586"
       ],
       "source": [
-        "10.1101"
+        "41586"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
@@ -4935,10 +4924,10 @@
     {
       "name": "saved HTML number 210",
       "computed": [
-        "2023.02.28.530532"
+        "026"
       ],
       "source": [
-        "2023.02.28.530532"
+        "026"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
@@ -4946,21 +4935,21 @@
     {
       "name": "saved HTML number 211",
       "computed": [
-        "4.0"
+        "10542"
       ],
       "source": [
-        "4.0"
+        "10542"
       ],
-      "source_path": "DATA_LICENSE.md/license link label",
+      "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
     },
     {
       "name": "saved HTML number 212",
       "computed": [
-        "4.0"
+        "3"
       ],
       "source": [
-        "4.0"
+        "3"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
@@ -4968,10 +4957,10 @@
     {
       "name": "saved HTML number 213",
       "computed": [
-        "2026"
+        "18763485"
       ],
       "source": [
-        "2026"
+        "18763485"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
@@ -4979,82 +4968,16 @@
     {
       "name": "saved HTML number 214",
       "computed": [
-        "10.1038"
+        "4.0"
       ],
       "source": [
-        "10.1038"
+        "4.0"
       ],
       "source_path": "DATA_LICENSE.md/license paragraphs",
       "passed": true
     },
     {
       "name": "saved HTML number 215",
-      "computed": [
-        "41586"
-      ],
-      "source": [
-        "41586"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 216",
-      "computed": [
-        "026"
-      ],
-      "source": [
-        "026"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 217",
-      "computed": [
-        "10542"
-      ],
-      "source": [
-        "10542"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 218",
-      "computed": [
-        "3"
-      ],
-      "source": [
-        "3"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 219",
-      "computed": [
-        "18763485"
-      ],
-      "source": [
-        "18763485"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 220",
-      "computed": [
-        "4.0"
-      ],
-      "source": [
-        "4.0"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 221",
       "computed": [
         "4.0"
       ],
@@ -5065,7 +4988,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 222",
+      "name": "saved HTML number 216",
       "computed": [
         "580"
       ],
@@ -5076,7 +4999,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 223",
+      "name": "saved HTML number 217",
       "computed": [
         "93"
       ],
@@ -5087,7 +5010,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 224",
+      "name": "saved HTML number 218",
       "computed": [
         "125"
       ],
@@ -5098,7 +5021,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 225",
+      "name": "saved HTML number 219",
       "computed": [
         "0.05"
       ],
@@ -5109,7 +5032,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 226",
+      "name": "saved HTML number 220",
       "computed": [
         "158"
       ],
@@ -5120,7 +5043,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 227",
+      "name": "saved HTML number 221",
       "computed": [
         "47"
       ],
@@ -5131,7 +5054,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 228",
+      "name": "saved HTML number 222",
       "computed": [
         "61"
       ],
@@ -5142,7 +5065,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 229",
+      "name": "saved HTML number 223",
       "computed": [
         "0.33"
       ],
@@ -5153,7 +5076,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 230",
+      "name": "saved HTML number 224",
       "computed": [
         "110"
       ],
@@ -5161,120 +5084,120 @@
         "110"
       ],
       "source_path": "reference_results/leaderboard_presentation.json/copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 225",
+      "computed": [
+        "32"
+      ],
+      "source": [
+        "32"
+      ],
+      "source_path": "reference_results/leaderboard_presentation.json/copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 226",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/leaderboard_presentation.json/copy/configuration_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 227",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/leaderboard_presentation.json/copy/configuration_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 228",
+      "computed": [
+        "17"
+      ],
+      "source": [
+        "17"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 229",
+      "computed": [
+        "2026"
+      ],
+      "source": [
+        "2026"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 230",
+      "computed": [
+        "4096"
+      ],
+      "source": [
+        "4096"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
       "passed": true
     },
     {
       "name": "saved HTML number 231",
       "computed": [
-        "32"
+        "4"
       ],
       "source": [
-        "32"
+        "4"
       ],
-      "source_path": "reference_results/leaderboard_presentation.json/copy/method_note",
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
       "passed": true
     },
     {
       "name": "saved HTML number 232",
       "computed": [
-        "6"
+        "5.1"
       ],
       "source": [
-        "6"
+        "5.1"
       ],
-      "source_path": "reference_results/leaderboard_presentation.json/copy/configuration_note",
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
       "passed": true
     },
     {
       "name": "saved HTML number 233",
       "computed": [
-        "6"
+        "3"
       ],
       "source": [
-        "6"
+        "3"
       ],
-      "source_path": "reference_results/leaderboard_presentation.json/copy/configuration_note",
+      "source_path": "README.md/Quick start shell block",
       "passed": true
     },
     {
       "name": "saved HTML number 234",
       "computed": [
-        "17"
+        "110"
       ],
       "source": [
-        "17"
+        "110"
       ],
-      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "source_path": "README.md/Quick start shell block",
       "passed": true
     },
     {
       "name": "saved HTML number 235",
-      "computed": [
-        "2026"
-      ],
-      "source": [
-        "2026"
-      ],
-      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 236",
-      "computed": [
-        "4096"
-      ],
-      "source": [
-        "4096"
-      ],
-      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 237",
-      "computed": [
-        "4"
-      ],
-      "source": [
-        "4"
-      ],
-      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 238",
-      "computed": [
-        "5.1"
-      ],
-      "source": [
-        "5.1"
-      ],
-      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 239",
-      "computed": [
-        "3"
-      ],
-      "source": [
-        "3"
-      ],
-      "source_path": "README.md/Quick start shell block",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 240",
-      "computed": [
-        "110"
-      ],
-      "source": [
-        "110"
-      ],
-      "source_path": "README.md/Quick start shell block",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 241",
       "computed": [
         "580"
       ],
@@ -5285,7 +5208,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 242",
+      "name": "saved HTML number 236",
       "computed": [
         "93"
       ],
@@ -5296,7 +5219,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 243",
+      "name": "saved HTML number 237",
       "computed": [
         "125"
       ],
@@ -5307,7 +5230,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 244",
+      "name": "saved HTML number 238",
       "computed": [
         "2025"
       ],
@@ -5318,7 +5241,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 245",
+      "name": "saved HTML number 239",
       "computed": [
         "10.1101"
       ],
@@ -5329,7 +5252,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 246",
+      "name": "saved HTML number 240",
       "computed": [
         "2023.02.28.530532"
       ],
@@ -5481,7 +5404,6 @@
         "26",
         "26",
         "26",
-        "26",
         "27",
         "27",
         "27",
@@ -5491,7 +5413,6 @@
         "3",
         "3",
         "3",
-        "30",
         "30",
         "30",
         "30",
@@ -5648,8 +5569,6 @@
         "70",
         "71.74",
         "72",
-        "74",
-        "74.60",
         "75",
         "77.33",
         "79.27",
@@ -5658,7 +5577,6 @@
         "80.88",
         "81.16",
         "82",
-        "82.43",
         "82.76",
         "82.86",
         "86",
@@ -5668,7 +5586,6 @@
         "89",
         "89.14",
         "89.80",
-        "90.28",
         "90.28",
         "92.54",
         "92.75",
@@ -5824,7 +5741,6 @@
         "26",
         "26",
         "26",
-        "26",
         "27",
         "27",
         "27",
@@ -5834,7 +5750,6 @@
         "3",
         "3",
         "3",
-        "30",
         "30",
         "30",
         "30",
@@ -5991,8 +5906,6 @@
         "70",
         "71.74",
         "72",
-        "74",
-        "74.60",
         "75",
         "77.33",
         "79.27",
@@ -6001,7 +5914,6 @@
         "80.88",
         "81.16",
         "82",
-        "82.43",
         "82.76",
         "82.86",
         "86",
@@ -6011,7 +5923,6 @@
         "89",
         "89.14",
         "89.80",
-        "90.28",
         "90.28",
         "92.54",
         "92.75",
@@ -7210,54 +7121,6 @@
     },
     {
       "id": "147",
-      "value": 0.8243243243243243,
-      "display": "82.43%",
-      "source": "reference_results/paper_metrics.json",
-      "key": "reruns/codex/own_coverage/S1/call_agreement",
-      "format": "percent"
-    },
-    {
-      "id": "148",
-      "value": 0.746017316017316,
-      "display": "74.60%",
-      "source": "reference_results/paper_metrics.json",
-      "key": "reruns/codex/own_coverage/S1/call_agreement_interval/low",
-      "format": "percent"
-    },
-    {
-      "id": "149",
-      "value": 0.9027777777777778,
-      "display": "90.28%",
-      "source": "reference_results/paper_metrics.json",
-      "key": "reruns/codex/own_coverage/S1/call_agreement_interval/high",
-      "format": "percent"
-    },
-    {
-      "id": "150",
-      "value": 74,
-      "display": "74",
-      "source": "reference_results/paper_metrics.json",
-      "key": "reruns/codex/own_coverage/S1/call_n",
-      "format": "int"
-    },
-    {
-      "id": "151",
-      "value": 26,
-      "display": "26",
-      "source": "reference_results/reproduced_metrics.json",
-      "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/numerator",
-      "format": "int"
-    },
-    {
-      "id": "152",
-      "value": 30,
-      "display": "30",
-      "source": "reference_results/reproduced_metrics.json",
-      "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/denominator",
-      "format": "int"
-    },
-    {
-      "id": "153",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -7265,7 +7128,7 @@
       "format": "literal"
     },
     {
-      "id": "154",
+      "id": "148",
       "value": 0.8285714285714286,
       "display": "82.86%",
       "source": "reference_results/paper_metrics.json",
@@ -7273,7 +7136,7 @@
       "format": "percent"
     },
     {
-      "id": "155",
+      "id": "149",
       "value": 0.6980945878848063,
       "display": "69.81%",
       "source": "reference_results/paper_metrics.json",
@@ -7281,7 +7144,7 @@
       "format": "percent"
     },
     {
-      "id": "156",
+      "id": "150",
       "value": 0.9348172987974098,
       "display": "93.48%",
       "source": "reference_results/paper_metrics.json",
@@ -7289,7 +7152,7 @@
       "format": "percent"
     },
     {
-      "id": "157",
+      "id": "151",
       "value": 70,
       "display": "70",
       "source": "reference_results/paper_metrics.json",
@@ -7297,7 +7160,7 @@
       "format": "int"
     },
     {
-      "id": "158",
+      "id": "152",
       "value": 25,
       "display": "25",
       "source": "reference_results/reproduced_metrics.json",
@@ -7305,7 +7168,7 @@
       "format": "int"
     },
     {
-      "id": "159",
+      "id": "153",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -7313,7 +7176,7 @@
       "format": "int"
     },
     {
-      "id": "160",
+      "id": "154",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -7321,7 +7184,7 @@
       "format": "literal"
     },
     {
-      "id": "161",
+      "id": "155",
       "value": 0.9027777777777778,
       "display": "90.28%",
       "source": "reference_results/paper_metrics.json",
@@ -7329,7 +7192,7 @@
       "format": "percent"
     },
     {
-      "id": "162",
+      "id": "156",
       "value": 0.8115746180963572,
       "display": "81.16%",
       "source": "reference_results/paper_metrics.json",
@@ -7337,7 +7200,7 @@
       "format": "percent"
     },
     {
-      "id": "163",
+      "id": "157",
       "value": 0.9753445305770887,
       "display": "97.53%",
       "source": "reference_results/paper_metrics.json",
@@ -7345,7 +7208,7 @@
       "format": "percent"
     },
     {
-      "id": "164",
+      "id": "158",
       "value": 72,
       "display": "72",
       "source": "reference_results/paper_metrics.json",
@@ -7353,7 +7216,7 @@
       "format": "int"
     },
     {
-      "id": "165",
+      "id": "159",
       "value": 25,
       "display": "25",
       "source": "reference_results/reproduced_metrics.json",
@@ -7361,7 +7224,7 @@
       "format": "int"
     },
     {
-      "id": "166",
+      "id": "160",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -7369,7 +7232,7 @@
       "format": "int"
     },
     {
-      "id": "167",
+      "id": "161",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -7377,7 +7240,7 @@
       "format": "literal"
     },
     {
-      "id": "168",
+      "id": "162",
       "value": 0.7733333333333333,
       "display": "77.33%",
       "source": "reference_results/paper_metrics.json",
@@ -7385,7 +7248,7 @@
       "format": "percent"
     },
     {
-      "id": "169",
+      "id": "163",
       "value": 0.6296031746031746,
       "display": "62.96%",
       "source": "reference_results/paper_metrics.json",
@@ -7393,7 +7256,7 @@
       "format": "percent"
     },
     {
-      "id": "170",
+      "id": "164",
       "value": 0.891355072463768,
       "display": "89.14%",
       "source": "reference_results/paper_metrics.json",
@@ -7401,7 +7264,7 @@
       "format": "percent"
     },
     {
-      "id": "171",
+      "id": "165",
       "value": 75,
       "display": "75",
       "source": "reference_results/paper_metrics.json",
@@ -7409,7 +7272,7 @@
       "format": "int"
     },
     {
-      "id": "172",
+      "id": "166",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -7417,7 +7280,7 @@
       "format": "int"
     },
     {
-      "id": "173",
+      "id": "167",
       "value": 30,
       "display": "30",
       "source": "reference_results/reproduced_metrics.json",
@@ -7425,7 +7288,7 @@
       "format": "int"
     },
     {
-      "id": "174",
+      "id": "168",
       "value": "5.5",
       "display": "5.5",
       "source": "reference_results/paper_metrics.json",
@@ -7433,7 +7296,7 @@
       "format": "literal"
     },
     {
-      "id": "175",
+      "id": "169",
       "value": 0.7926829268292683,
       "display": "79.27%",
       "source": "reference_results/paper_metrics.json",
@@ -7441,7 +7304,7 @@
       "format": "percent"
     },
     {
-      "id": "176",
+      "id": "170",
       "value": 0.6666666666666666,
       "display": "66.67%",
       "source": "reference_results/paper_metrics.json",
@@ -7449,7 +7312,7 @@
       "format": "percent"
     },
     {
-      "id": "177",
+      "id": "171",
       "value": 0.8979785585120124,
       "display": "89.80%",
       "source": "reference_results/paper_metrics.json",
@@ -7457,7 +7320,7 @@
       "format": "percent"
     },
     {
-      "id": "178",
+      "id": "172",
       "value": 82,
       "display": "82",
       "source": "reference_results/paper_metrics.json",
@@ -7465,7 +7328,7 @@
       "format": "int"
     },
     {
-      "id": "179",
+      "id": "173",
       "value": 32,
       "display": "32",
       "source": "reference_results/reproduced_metrics.json",
@@ -7473,7 +7336,7 @@
       "format": "int"
     },
     {
-      "id": "180",
+      "id": "174",
       "value": 34,
       "display": "34",
       "source": "reference_results/reproduced_metrics.json",
@@ -7481,7 +7344,7 @@
       "format": "int"
     },
     {
-      "id": "181",
+      "id": "175",
       "value": "5.5",
       "display": "5.5",
       "source": "reference_results/paper_metrics.json",
@@ -7489,7 +7352,7 @@
       "format": "literal"
     },
     {
-      "id": "182",
+      "id": "176",
       "value": 0.8275862068965517,
       "display": "82.76%",
       "source": "reference_results/paper_metrics.json",
@@ -7497,7 +7360,7 @@
       "format": "percent"
     },
     {
-      "id": "183",
+      "id": "177",
       "value": 0.7173619271445358,
       "display": "71.74%",
       "source": "reference_results/paper_metrics.json",
@@ -7505,7 +7368,7 @@
       "format": "percent"
     },
     {
-      "id": "184",
+      "id": "178",
       "value": 0.9253869541182974,
       "display": "92.54%",
       "source": "reference_results/paper_metrics.json",
@@ -7513,7 +7376,7 @@
       "format": "percent"
     },
     {
-      "id": "185",
+      "id": "179",
       "value": 87,
       "display": "87",
       "source": "reference_results/paper_metrics.json",
@@ -7521,7 +7384,7 @@
       "format": "int"
     },
     {
-      "id": "186",
+      "id": "180",
       "value": 35,
       "display": "35",
       "source": "reference_results/reproduced_metrics.json",
@@ -7529,7 +7392,7 @@
       "format": "int"
     },
     {
-      "id": "187",
+      "id": "181",
       "value": 37,
       "display": "37",
       "source": "reference_results/reproduced_metrics.json",
@@ -7537,7 +7400,7 @@
       "format": "int"
     },
     {
-      "id": "188",
+      "id": "182",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -7545,7 +7408,7 @@
       "format": "literal"
     },
     {
-      "id": "189",
+      "id": "183",
       "value": 0.8088235294117647,
       "display": "80.88%",
       "source": "reference_results/paper_metrics.json",
@@ -7553,7 +7416,7 @@
       "format": "percent"
     },
     {
-      "id": "190",
+      "id": "184",
       "value": 0.6727123695976155,
       "display": "67.27%",
       "source": "reference_results/paper_metrics.json",
@@ -7561,7 +7424,7 @@
       "format": "percent"
     },
     {
-      "id": "191",
+      "id": "185",
       "value": 0.9275460242851548,
       "display": "92.75%",
       "source": "reference_results/paper_metrics.json",
@@ -7569,7 +7432,7 @@
       "format": "percent"
     },
     {
-      "id": "192",
+      "id": "186",
       "value": 68,
       "display": "68",
       "source": "reference_results/paper_metrics.json",
@@ -7577,7 +7440,7 @@
       "format": "int"
     },
     {
-      "id": "193",
+      "id": "187",
       "value": 24,
       "display": "24",
       "source": "reference_results/reproduced_metrics.json",
@@ -7585,7 +7448,7 @@
       "format": "int"
     },
     {
-      "id": "194",
+      "id": "188",
       "value": 26,
       "display": "26",
       "source": "reference_results/reproduced_metrics.json",
@@ -7593,7 +7456,7 @@
       "format": "int"
     },
     {
-      "id": "195",
+      "id": "189",
       "value": 0.9885057471264368,
       "display": "98.85%",
       "source": "reference_results/reproduced_metrics.json",
@@ -7601,7 +7464,7 @@
       "format": "percent"
     },
     {
-      "id": "196",
+      "id": "190",
       "value": 86,
       "display": "86",
       "source": "reference_results/reproduced_metrics.json",
@@ -7609,7 +7472,7 @@
       "format": "int"
     },
     {
-      "id": "197",
+      "id": "191",
       "value": 87,
       "display": "87",
       "source": "reference_results/reproduced_metrics.json",
@@ -7617,7 +7480,7 @@
       "format": "int"
     },
     {
-      "id": "198",
+      "id": "192",
       "value": 0.9887640449438202,
       "display": "98.88%",
       "source": "reference_results/reproduced_metrics.json",
@@ -7625,7 +7488,7 @@
       "format": "percent"
     },
     {
-      "id": "199",
+      "id": "193",
       "value": 88,
       "display": "88",
       "source": "reference_results/reproduced_metrics.json",
@@ -7633,7 +7496,7 @@
       "format": "int"
     },
     {
-      "id": "200",
+      "id": "194",
       "value": 89,
       "display": "89",
       "source": "reference_results/reproduced_metrics.json",
@@ -7641,7 +7504,7 @@
       "format": "int"
     },
     {
-      "id": "201",
+      "id": "195",
       "value": 0.983739837398374,
       "display": "98.37%",
       "source": "reference_results/reproduced_metrics.json",
@@ -7649,7 +7512,7 @@
       "format": "percent"
     },
     {
-      "id": "202",
+      "id": "196",
       "value": 121,
       "display": "121",
       "source": "reference_results/reproduced_metrics.json",
@@ -7657,7 +7520,7 @@
       "format": "int"
     },
     {
-      "id": "203",
+      "id": "197",
       "value": 123,
       "display": "123",
       "source": "reference_results/reproduced_metrics.json",
@@ -7665,7 +7528,7 @@
       "format": "int"
     },
     {
-      "id": "204",
+      "id": "198",
       "value": 0.9631901840490797,
       "display": "96.32%",
       "source": "reference_results/reproduced_metrics.json",
@@ -7673,7 +7536,7 @@
       "format": "percent"
     },
     {
-      "id": "205",
+      "id": "199",
       "value": 157,
       "display": "157",
       "source": "reference_results/reproduced_metrics.json",
@@ -7681,7 +7544,7 @@
       "format": "int"
     },
     {
-      "id": "206",
+      "id": "200",
       "value": 163,
       "display": "163",
       "source": "reference_results/reproduced_metrics.json",
@@ -7689,7 +7552,7 @@
       "format": "int"
     },
     {
-      "id": "207",
+      "id": "201",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7697,7 +7560,7 @@
       "format": "literal"
     },
     {
-      "id": "208",
+      "id": "202",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7705,7 +7568,7 @@
       "format": "literal"
     },
     {
-      "id": "209",
+      "id": "203",
       "value": "10.1101",
       "display": "10.1101",
       "source": "DATA_LICENSE.md",
@@ -7713,7 +7576,7 @@
       "format": "literal"
     },
     {
-      "id": "210",
+      "id": "204",
       "value": "2023.02.28.530532",
       "display": "2023.02.28.530532",
       "source": "DATA_LICENSE.md",
@@ -7721,7 +7584,7 @@
       "format": "literal"
     },
     {
-      "id": "211",
+      "id": "205",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7729,7 +7592,7 @@
       "format": "literal"
     },
     {
-      "id": "212",
+      "id": "206",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7737,7 +7600,7 @@
       "format": "literal"
     },
     {
-      "id": "213",
+      "id": "207",
       "value": "2026",
       "display": "2026",
       "source": "DATA_LICENSE.md",
@@ -7745,7 +7608,7 @@
       "format": "literal"
     },
     {
-      "id": "214",
+      "id": "208",
       "value": "10.1038",
       "display": "10.1038",
       "source": "DATA_LICENSE.md",
@@ -7753,7 +7616,7 @@
       "format": "literal"
     },
     {
-      "id": "215",
+      "id": "209",
       "value": "41586",
       "display": "41586",
       "source": "DATA_LICENSE.md",
@@ -7761,7 +7624,7 @@
       "format": "literal"
     },
     {
-      "id": "216",
+      "id": "210",
       "value": "026",
       "display": "026",
       "source": "DATA_LICENSE.md",
@@ -7769,7 +7632,7 @@
       "format": "literal"
     },
     {
-      "id": "217",
+      "id": "211",
       "value": "10542",
       "display": "10542",
       "source": "DATA_LICENSE.md",
@@ -7777,7 +7640,7 @@
       "format": "literal"
     },
     {
-      "id": "218",
+      "id": "212",
       "value": "3",
       "display": "3",
       "source": "DATA_LICENSE.md",
@@ -7785,7 +7648,7 @@
       "format": "literal"
     },
     {
-      "id": "219",
+      "id": "213",
       "value": "18763485",
       "display": "18763485",
       "source": "DATA_LICENSE.md",
@@ -7793,7 +7656,7 @@
       "format": "literal"
     },
     {
-      "id": "220",
+      "id": "214",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7801,7 +7664,7 @@
       "format": "literal"
     },
     {
-      "id": "221",
+      "id": "215",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -7809,7 +7672,7 @@
       "format": "literal"
     },
     {
-      "id": "222",
+      "id": "216",
       "value": 580,
       "display": "580",
       "source": "README.md",
@@ -7817,7 +7680,7 @@
       "format": "int"
     },
     {
-      "id": "223",
+      "id": "217",
       "value": 93,
       "display": "93",
       "source": "README.md",
@@ -7825,7 +7688,7 @@
       "format": "int"
     },
     {
-      "id": "224",
+      "id": "218",
       "value": 125,
       "display": "125",
       "source": "README.md",
@@ -7833,7 +7696,7 @@
       "format": "int"
     },
     {
-      "id": "225",
+      "id": "219",
       "value": "0.05",
       "display": "0.05",
       "source": "README.md",
@@ -7841,7 +7704,7 @@
       "format": "literal"
     },
     {
-      "id": "226",
+      "id": "220",
       "value": 158,
       "display": "158",
       "source": "reference_results/cohorts.json",
@@ -7849,7 +7712,7 @@
       "format": "int"
     },
     {
-      "id": "227",
+      "id": "221",
       "value": 47,
       "display": "47",
       "source": "README.md",
@@ -7857,7 +7720,7 @@
       "format": "int"
     },
     {
-      "id": "228",
+      "id": "222",
       "value": 61,
       "display": "61",
       "source": "README.md",
@@ -7865,7 +7728,7 @@
       "format": "int"
     },
     {
-      "id": "229",
+      "id": "223",
       "value": 0.3333333333333333,
       "display": "0.33",
       "source": "reference_results/paper_metrics.json",
@@ -7873,7 +7736,7 @@
       "format": "decimal"
     },
     {
-      "id": "230",
+      "id": "224",
       "value": "110",
       "display": "110",
       "source": "reference_results/leaderboard_presentation.json",
@@ -7881,7 +7744,7 @@
       "format": "literal"
     },
     {
-      "id": "231",
+      "id": "225",
       "value": "32",
       "display": "32",
       "source": "reference_results/leaderboard_presentation.json",
@@ -7889,7 +7752,7 @@
       "format": "literal"
     },
     {
-      "id": "232",
+      "id": "226",
       "value": "6",
       "display": "6",
       "source": "reference_results/leaderboard_presentation.json",
@@ -7897,7 +7760,7 @@
       "format": "literal"
     },
     {
-      "id": "233",
+      "id": "227",
       "value": "6",
       "display": "6",
       "source": "reference_results/leaderboard_presentation.json",
@@ -7905,7 +7768,7 @@
       "format": "literal"
     },
     {
-      "id": "234",
+      "id": "228",
       "value": "17",
       "display": "17",
       "source": "reference_results/claude_api_2026-11-17.json",
@@ -7913,7 +7776,7 @@
       "format": "literal"
     },
     {
-      "id": "235",
+      "id": "229",
       "value": "2026",
       "display": "2026",
       "source": "reference_results/claude_api_2026-11-17.json",
@@ -7921,7 +7784,7 @@
       "format": "literal"
     },
     {
-      "id": "236",
+      "id": "230",
       "value": "4096",
       "display": "4096",
       "source": "reference_results/claude_api_2026-11-17.json",
@@ -7929,7 +7792,7 @@
       "format": "literal"
     },
     {
-      "id": "237",
+      "id": "231",
       "value": "4",
       "display": "4",
       "source": "reference_results/claude_api_2026-11-17.json",
@@ -7937,7 +7800,7 @@
       "format": "literal"
     },
     {
-      "id": "238",
+      "id": "232",
       "value": "5.1",
       "display": "5.1",
       "source": "reference_results/claude_api_2026-11-17.json",
@@ -7945,7 +7808,7 @@
       "format": "literal"
     },
     {
-      "id": "239",
+      "id": "233",
       "value": "3",
       "display": "3",
       "source": "README.md",
@@ -7953,7 +7816,7 @@
       "format": "literal"
     },
     {
-      "id": "240",
+      "id": "234",
       "value": "110",
       "display": "110",
       "source": "README.md",
@@ -7961,7 +7824,7 @@
       "format": "literal"
     },
     {
-      "id": "241",
+      "id": "235",
       "value": 580,
       "display": "580",
       "source": "README.md",
@@ -7969,7 +7832,7 @@
       "format": "int"
     },
     {
-      "id": "242",
+      "id": "236",
       "value": 93,
       "display": "93",
       "source": "README.md",
@@ -7977,7 +7840,7 @@
       "format": "int"
     },
     {
-      "id": "243",
+      "id": "237",
       "value": 125,
       "display": "125",
       "source": "README.md",
@@ -7985,7 +7848,7 @@
       "format": "int"
     },
     {
-      "id": "244",
+      "id": "238",
       "value": "2025",
       "display": "2025",
       "source": "CITATION.cff",
@@ -7993,7 +7856,7 @@
       "format": "literal"
     },
     {
-      "id": "245",
+      "id": "239",
       "value": "10.1101",
       "display": "10.1101",
       "source": "CITATION.cff",
@@ -8001,7 +7864,7 @@
       "format": "literal"
     },
     {
-      "id": "246",
+      "id": "240",
       "value": "2023.02.28.530532",
       "display": "2023.02.28.530532",
       "source": "CITATION.cff",

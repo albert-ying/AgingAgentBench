@@ -211,8 +211,6 @@ same systems' selected samples. Parentheses give the metric denominator.
 
 | System | Call agreement | Direction agreement |
 | --- | ---: | ---: |
-| Stored ClockBase agent | 82.43% (74) | 86.67% (30) |
-| Verified atlas | 84.42% (77) | 93.94% (33) |
 | Codex with GPT-6 Astra | 82.86% (70) | 92.59% (27) |
 | Codex with GPT-6 Sol | 90.28% (72) | 92.59% (27) |
 | Codex with GPT-6 Luna | 77.33% (75) | 90.00% (30) |

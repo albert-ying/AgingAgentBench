@@ -1,8 +1,8 @@
 {
   "inputs": {
     "README.md": {
-      "sha256": "fc255be7c551a799e7fe897fe0da91eb86b57c3576c5425940dc77e1c0353c41",
-      "mtime_ns": 1794996195464784858
+      "sha256": "21c06c785c3625fe0a11326b57cd6b9d2f2d50f6d780713238cd2178c5f9b84a",
+      "mtime_ns": 1794997748890241362
     },
     "DATA_LICENSE.md": {
       "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
@@ -115,10 +115,6 @@
     "reference_results/agent_biomni_gpt_6_astra_raw.csv": {
       "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
       "mtime_ns": 1794966063896505882
-    },
-    "reference_results/clockbase_agent_stored.csv": {
-      "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
-      "mtime_ns": 1794966063897913724
     },
     "reference_results/expert_truth.csv": {
       "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",

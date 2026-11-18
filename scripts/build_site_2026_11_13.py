@@ -509,11 +509,6 @@ class Builder:
                 self.check(stem+' supplementary denominator', result['scored'], int(supplemental['denominator']), 'reference_results/supplementary_table_s18.csv/row/'+str(sindex))
                 self.check(stem+' supplementary numerator', sum(pair[0] for pair in result['recall'].values()), int(supplemental['numerator']), 'reference_results/supplementary_table_s18.csv/row/'+str(sindex))
                 reruns.append({'name':label,'source_path':path,'published_call_agreement':metric['call_agreement'],'interval':metric['call_agreement_interval'],'n':metric['call_n'],'direction_matches':result['direction_agreement'],'supplementary_row':sindex,'reproduced_key':stem+'@'+task_key})
-        stored = paper['reruns']['codex']['own_coverage']['S1']
-        stored_result = reproduced['published']['clockbase_agent_stored@' + task_key]
-        self.read('reference_results/clockbase_agent_stored.csv')
-        self.check('stored agent call agreement', stored_result['call_agreement'], stored['call_agreement'], psource+'/reruns/codex/own_coverage/S1')
-        reruns.insert(0, {'name':'Stored ClockBase agent','source_path':'reruns/codex/own_coverage/S1','published_call_agreement':stored['call_agreement'],'interval':stored['call_agreement_interval'],'n':stored['call_n'],'direction_matches':stored_result['direction_agreement'],'reproduced_key':'clockbase_agent_stored@'+task_key})
         rerun_rows = []
         for row in reruns:
             k = row['source_path']

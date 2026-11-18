@@ -4,21 +4,6 @@
   "interval_method": "paper bootstrap",
   "systems": [
     {
-      "name": "Stored ClockBase agent",
-      "source_path": "reruns/codex/own_coverage/S1",
-      "published_call_agreement": 0.8243243243243243,
-      "interval": [
-        0.746017316017316,
-        0.9027777777777778
-      ],
-      "n": 74,
-      "direction_matches": [
-        26,
-        30
-      ],
-      "reproduced_key": "clockbase_agent_stored@agent_task158"
-    },
-    {
       "name": "Codex with GPT-6 Astra",
       "source_path": "reruns/codex/own_coverage/R:gpt-6-astra:raw",
       "published_call_agreement": 0.8285714285714286,

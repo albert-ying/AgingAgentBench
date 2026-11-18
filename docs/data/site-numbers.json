@@ -1177,54 +1177,6 @@
   },
   {
     "id": "147",
-    "value": 0.8243243243243243,
-    "display": "82.43%",
-    "source": "reference_results/paper_metrics.json",
-    "key": "reruns/codex/own_coverage/S1/call_agreement",
-    "format": "percent"
-  },
-  {
-    "id": "148",
-    "value": 0.746017316017316,
-    "display": "74.60%",
-    "source": "reference_results/paper_metrics.json",
-    "key": "reruns/codex/own_coverage/S1/call_agreement_interval/low",
-    "format": "percent"
-  },
-  {
-    "id": "149",
-    "value": 0.9027777777777778,
-    "display": "90.28%",
-    "source": "reference_results/paper_metrics.json",
-    "key": "reruns/codex/own_coverage/S1/call_agreement_interval/high",
-    "format": "percent"
-  },
-  {
-    "id": "150",
-    "value": 74,
-    "display": "74",
-    "source": "reference_results/paper_metrics.json",
-    "key": "reruns/codex/own_coverage/S1/call_n",
-    "format": "int"
-  },
-  {
-    "id": "151",
-    "value": 26,
-    "display": "26",
-    "source": "reference_results/reproduced_metrics.json",
-    "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/numerator",
-    "format": "int"
-  },
-  {
-    "id": "152",
-    "value": 30,
-    "display": "30",
-    "source": "reference_results/reproduced_metrics.json",
-    "key": "published/clockbase_agent_stored@agent_task158/direction_agreement/denominator",
-    "format": "int"
-  },
-  {
-    "id": "153",
     "value": "6",
     "display": "6",
     "source": "reference_results/paper_metrics.json",
@@ -1232,7 +1184,7 @@
     "format": "literal"
   },
   {
-    "id": "154",
+    "id": "148",
     "value": 0.8285714285714286,
     "display": "82.86%",
     "source": "reference_results/paper_metrics.json",
@@ -1240,7 +1192,7 @@
     "format": "percent"
   },
   {
-    "id": "155",
+    "id": "149",
     "value": 0.6980945878848063,
     "display": "69.81%",
     "source": "reference_results/paper_metrics.json",
@@ -1248,7 +1200,7 @@
     "format": "percent"
   },
   {
-    "id": "156",
+    "id": "150",
     "value": 0.9348172987974098,
     "display": "93.48%",
     "source": "reference_results/paper_metrics.json",
@@ -1256,7 +1208,7 @@
     "format": "percent"
   },
   {
-    "id": "157",
+    "id": "151",
     "value": 70,
     "display": "70",
     "source": "reference_results/paper_metrics.json",
@@ -1264,7 +1216,7 @@
     "format": "int"
   },
   {
-    "id": "158",
+    "id": "152",
     "value": 25,
     "display": "25",
     "source": "reference_results/reproduced_metrics.json",
@@ -1272,7 +1224,7 @@
     "format": "int"
   },
   {
-    "id": "159",
+    "id": "153",
     "value": 27,
     "display": "27",
     "source": "reference_results/reproduced_metrics.json",
@@ -1280,7 +1232,7 @@
     "format": "int"
   },
   {
-    "id": "160",
+    "id": "154",
     "value": "6",
     "display": "6",
     "source": "reference_results/paper_metrics.json",
@@ -1288,7 +1240,7 @@
     "format": "literal"
   },
   {
-    "id": "161",
+    "id": "155",
     "value": 0.9027777777777778,
     "display": "90.28%",
     "source": "reference_results/paper_metrics.json",
@@ -1296,7 +1248,7 @@
     "format": "percent"
   },
   {
-    "id": "162",
+    "id": "156",
     "value": 0.8115746180963572,
     "display": "81.16%",
     "source": "reference_results/paper_metrics.json",
@@ -1304,7 +1256,7 @@
     "format": "percent"
   },
   {
-    "id": "163",
+    "id": "157",
     "value": 0.9753445305770887,
     "display": "97.53%",
     "source": "reference_results/paper_metrics.json",
@@ -1312,7 +1264,7 @@
     "format": "percent"
   },
   {
-    "id": "164",
+    "id": "158",
     "value": 72,
     "display": "72",
     "source": "reference_results/paper_metrics.json",
@@ -1320,7 +1272,7 @@
     "format": "int"
   },
   {
-    "id": "165",
+    "id": "159",
     "value": 25,
     "display": "25",
     "source": "reference_results/reproduced_metrics.json",
@@ -1328,7 +1280,7 @@
     "format": "int"
   },
   {
-    "id": "166",
+    "id": "160",
     "value": 27,
     "display": "27",
     "source": "reference_results/reproduced_metrics.json",
@@ -1336,7 +1288,7 @@
     "format": "int"
   },
   {
-    "id": "167",
+    "id": "161",
     "value": "6",
     "display": "6",
     "source": "reference_results/paper_metrics.json",
@@ -1344,7 +1296,7 @@
     "format": "literal"
   },
   {
-    "id": "168",
+    "id": "162",
     "value": 0.7733333333333333,
     "display": "77.33%",
     "source": "reference_results/paper_metrics.json",
@@ -1352,7 +1304,7 @@
     "format": "percent"
   },
   {
-    "id": "169",
+    "id": "163",
     "value": 0.6296031746031746,
     "display": "62.96%",
     "source": "reference_results/paper_metrics.json",
@@ -1360,7 +1312,7 @@
     "format": "percent"
   },
   {
-    "id": "170",
+    "id": "164",
     "value": 0.891355072463768,
     "display": "89.14%",
     "source": "reference_results/paper_metrics.json",
@@ -1368,7 +1320,7 @@
     "format": "percent"
   },
   {
-    "id": "171",
+    "id": "165",
     "value": 75,
     "display": "75",
     "source": "reference_results/paper_metrics.json",
@@ -1376,7 +1328,7 @@
     "format": "int"
   },
   {
-    "id": "172",
+    "id": "166",
     "value": 27,
     "display": "27",
     "source": "reference_results/reproduced_metrics.json",
@@ -1384,7 +1336,7 @@
     "format": "int"
   },
   {
-    "id": "173",
+    "id": "167",
     "value": 30,
     "display": "30",
     "source": "reference_results/reproduced_metrics.json",
@@ -1392,7 +1344,7 @@
     "format": "int"
   },
   {
-    "id": "174",
+    "id": "168",
     "value": "5.5",
     "display": "5.5",
     "source": "reference_results/paper_metrics.json",
@@ -1400,7 +1352,7 @@
     "format": "literal"
   },
   {
-    "id": "175",
+    "id": "169",
     "value": 0.7926829268292683,
     "display": "79.27%",
     "source": "reference_results/paper_metrics.json",
@@ -1408,7 +1360,7 @@
     "format": "percent"
   },
   {
-    "id": "176",
+    "id": "170",
     "value": 0.6666666666666666,
     "display": "66.67%",
     "source": "reference_results/paper_metrics.json",
@@ -1416,7 +1368,7 @@
     "format": "percent"
   },
   {
-    "id": "177",
+    "id": "171",
     "value": 0.8979785585120124,
     "display": "89.80%",
     "source": "reference_results/paper_metrics.json",
@@ -1424,7 +1376,7 @@
     "format": "percent"
   },
   {
-    "id": "178",
+    "id": "172",
     "value": 82,
     "display": "82",
     "source": "reference_results/paper_metrics.json",
@@ -1432,7 +1384,7 @@
     "format": "int"
   },
   {
-    "id": "179",
+    "id": "173",
     "value": 32,
     "display": "32",
     "source": "reference_results/reproduced_metrics.json",
@@ -1440,7 +1392,7 @@
     "format": "int"
   },
   {
-    "id": "180",
+    "id": "174",
     "value": 34,
     "display": "34",
     "source": "reference_results/reproduced_metrics.json",
@@ -1448,7 +1400,7 @@
     "format": "int"
   },
   {
-    "id": "181",
+    "id": "175",
     "value": "5.5",
     "display": "5.5",
     "source": "reference_results/paper_metrics.json",
@@ -1456,7 +1408,7 @@
     "format": "literal"
   },
   {
-    "id": "182",
+    "id": "176",
     "value": 0.8275862068965517,
     "display": "82.76%",
     "source": "reference_results/paper_metrics.json",
@@ -1464,7 +1416,7 @@
     "format": "percent"
   },
   {
-    "id": "183",
+    "id": "177",
     "value": 0.7173619271445358,
     "display": "71.74%",
     "source": "reference_results/paper_metrics.json",
@@ -1472,7 +1424,7 @@
     "format": "percent"
   },
   {
-    "id": "184",
+    "id": "178",
     "value": 0.9253869541182974,
     "display": "92.54%",
     "source": "reference_results/paper_metrics.json",
@@ -1480,7 +1432,7 @@
     "format": "percent"
   },
   {
-    "id": "185",
+    "id": "179",
     "value": 87,
     "display": "87",
     "source": "reference_results/paper_metrics.json",
@@ -1488,7 +1440,7 @@
     "format": "int"
   },
   {
-    "id": "186",
+    "id": "180",
     "value": 35,
     "display": "35",
     "source": "reference_results/reproduced_metrics.json",
@@ -1496,7 +1448,7 @@
     "format": "int"
   },
   {
-    "id": "187",
+    "id": "181",
     "value": 37,
     "display": "37",
     "source": "reference_results/reproduced_metrics.json",
@@ -1504,7 +1456,7 @@
     "format": "int"
   },
   {
-    "id": "188",
+    "id": "182",
     "value": "6",
     "display": "6",
     "source": "reference_results/paper_metrics.json",
@@ -1512,7 +1464,7 @@
     "format": "literal"
   },
   {
-    "id": "189",
+    "id": "183",
     "value": 0.8088235294117647,
     "display": "80.88%",
     "source": "reference_results/paper_metrics.json",
@@ -1520,7 +1472,7 @@
     "format": "percent"
   },
   {
-    "id": "190",
+    "id": "184",
     "value": 0.6727123695976155,
     "display": "67.27%",
     "source": "reference_results/paper_metrics.json",
@@ -1528,7 +1480,7 @@
     "format": "percent"
   },
   {
-    "id": "191",
+    "id": "185",
     "value": 0.9275460242851548,
     "display": "92.75%",
     "source": "reference_results/paper_metrics.json",
@@ -1536,7 +1488,7 @@
     "format": "percent"
   },
   {
-    "id": "192",
+    "id": "186",
     "value": 68,
     "display": "68",
     "source": "reference_results/paper_metrics.json",
@@ -1544,7 +1496,7 @@
     "format": "int"
   },
   {
-    "id": "193",
+    "id": "187",
     "value": 24,
     "display": "24",
     "source": "reference_results/reproduced_metrics.json",
@@ -1552,7 +1504,7 @@
     "format": "int"
   },
   {
-    "id": "194",
+    "id": "188",
     "value": 26,
     "display": "26",
     "source": "reference_results/reproduced_metrics.json",
@@ -1560,7 +1512,7 @@
     "format": "int"
   },
   {
-    "id": "195",
+    "id": "189",
     "value": 0.9885057471264368,
     "display": "98.85%",
     "source": "reference_results/reproduced_metrics.json",
@@ -1568,7 +1520,7 @@
     "format": "percent"
   },
   {
-    "id": "196",
+    "id": "190",
     "value": 86,
     "display": "86",
     "source": "reference_results/reproduced_metrics.json",
@@ -1576,7 +1528,7 @@
     "format": "int"
   },
   {
-    "id": "197",
+    "id": "191",
     "value": 87,
     "display": "87",
     "source": "reference_results/reproduced_metrics.json",
@@ -1584,7 +1536,7 @@
     "format": "int"
   },
   {
-    "id": "198",
+    "id": "192",
     "value": 0.9887640449438202,
     "display": "98.88%",
     "source": "reference_results/reproduced_metrics.json",
@@ -1592,7 +1544,7 @@
     "format": "percent"
   },
   {
-    "id": "199",
+    "id": "193",
     "value": 88,
     "display": "88",
     "source": "reference_results/reproduced_metrics.json",
@@ -1600,7 +1552,7 @@
     "format": "int"
   },
   {
-    "id": "200",
+    "id": "194",
     "value": 89,
     "display": "89",
     "source": "reference_results/reproduced_metrics.json",
@@ -1608,7 +1560,7 @@
     "format": "int"
   },
   {
-    "id": "201",
+    "id": "195",
     "value": 0.983739837398374,
     "display": "98.37%",
     "source": "reference_results/reproduced_metrics.json",
@@ -1616,7 +1568,7 @@
     "format": "percent"
   },
   {
-    "id": "202",
+    "id": "196",
     "value": 121,
     "display": "121",
     "source": "reference_results/reproduced_metrics.json",
@@ -1624,7 +1576,7 @@
     "format": "int"
   },
   {
-    "id": "203",
+    "id": "197",
     "value": 123,
     "display": "123",
     "source": "reference_results/reproduced_metrics.json",
@@ -1632,7 +1584,7 @@
     "format": "int"
   },
   {
-    "id": "204",
+    "id": "198",
     "value": 0.9631901840490797,
     "display": "96.32%",
     "source": "reference_results/reproduced_metrics.json",
@@ -1640,7 +1592,7 @@
     "format": "percent"
   },
   {
-    "id": "205",
+    "id": "199",
     "value": 157,
     "display": "157",
     "source": "reference_results/reproduced_metrics.json",
@@ -1648,7 +1600,7 @@
     "format": "int"
   },
   {
-    "id": "206",
+    "id": "200",
     "value": 163,
     "display": "163",
     "source": "reference_results/reproduced_metrics.json",
@@ -1656,7 +1608,7 @@
     "format": "int"
   },
   {
-    "id": "207",
+    "id": "201",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1664,7 +1616,7 @@
     "format": "literal"
   },
   {
-    "id": "208",
+    "id": "202",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1672,7 +1624,7 @@
     "format": "literal"
   },
   {
-    "id": "209",
+    "id": "203",
     "value": "10.1101",
     "display": "10.1101",
     "source": "DATA_LICENSE.md",
@@ -1680,7 +1632,7 @@
     "format": "literal"
   },
   {
-    "id": "210",
+    "id": "204",
     "value": "2023.02.28.530532",
     "display": "2023.02.28.530532",
     "source": "DATA_LICENSE.md",
@@ -1688,7 +1640,7 @@
     "format": "literal"
   },
   {
-    "id": "211",
+    "id": "205",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1696,7 +1648,7 @@
     "format": "literal"
   },
   {
-    "id": "212",
+    "id": "206",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1704,7 +1656,7 @@
     "format": "literal"
   },
   {
-    "id": "213",
+    "id": "207",
     "value": "2026",
     "display": "2026",
     "source": "DATA_LICENSE.md",
@@ -1712,7 +1664,7 @@
     "format": "literal"
   },
   {
-    "id": "214",
+    "id": "208",
     "value": "10.1038",
     "display": "10.1038",
     "source": "DATA_LICENSE.md",
@@ -1720,7 +1672,7 @@
     "format": "literal"
   },
   {
-    "id": "215",
+    "id": "209",
     "value": "41586",
     "display": "41586",
     "source": "DATA_LICENSE.md",
@@ -1728,7 +1680,7 @@
     "format": "literal"
   },
   {
-    "id": "216",
+    "id": "210",
     "value": "026",
     "display": "026",
     "source": "DATA_LICENSE.md",
@@ -1736,7 +1688,7 @@
     "format": "literal"
   },
   {
-    "id": "217",
+    "id": "211",
     "value": "10542",
     "display": "10542",
     "source": "DATA_LICENSE.md",
@@ -1744,7 +1696,7 @@
     "format": "literal"
   },
   {
-    "id": "218",
+    "id": "212",
     "value": "3",
     "display": "3",
     "source": "DATA_LICENSE.md",
@@ -1752,7 +1704,7 @@
     "format": "literal"
   },
   {
-    "id": "219",
+    "id": "213",
     "value": "18763485",
     "display": "18763485",
     "source": "DATA_LICENSE.md",
@@ -1760,7 +1712,7 @@
     "format": "literal"
   },
   {
-    "id": "220",
+    "id": "214",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1768,7 +1720,7 @@
     "format": "literal"
   },
   {
-    "id": "221",
+    "id": "215",
     "value": "4.0",
     "display": "4.0",
     "source": "DATA_LICENSE.md",
@@ -1776,7 +1728,7 @@
     "format": "literal"
   },
   {
-    "id": "222",
+    "id": "216",
     "value": 580,
     "display": "580",
     "source": "README.md",
@@ -1784,7 +1736,7 @@
     "format": "int"
   },
   {
-    "id": "223",
+    "id": "217",
     "value": 93,
     "display": "93",
     "source": "README.md",
@@ -1792,7 +1744,7 @@
     "format": "int"
   },
   {
-    "id": "224",
+    "id": "218",
     "value": 125,
     "display": "125",
     "source": "README.md",
@@ -1800,7 +1752,7 @@
     "format": "int"
   },
   {
-    "id": "225",
+    "id": "219",
     "value": "0.05",
     "display": "0.05",
     "source": "README.md",
@@ -1808,7 +1760,7 @@
     "format": "literal"
   },
   {
-    "id": "226",
+    "id": "220",
     "value": 158,
     "display": "158",
     "source": "reference_results/cohorts.json",
@@ -1816,7 +1768,7 @@
     "format": "int"
   },
   {
-    "id": "227",
+    "id": "221",
     "value": 47,
     "display": "47",
     "source": "README.md",
@@ -1824,7 +1776,7 @@
     "format": "int"
   },
   {
-    "id": "228",
+    "id": "222",
     "value": 61,
     "display": "61",
     "source": "README.md",
@@ -1832,7 +1784,7 @@
     "format": "int"
   },
   {
-    "id": "229",
+    "id": "223",
     "value": 0.3333333333333333,
     "display": "0.33",
     "source": "reference_results/paper_metrics.json",
@@ -1840,7 +1792,7 @@
     "format": "decimal"
   },
   {
-    "id": "230",
+    "id": "224",
     "value": "110",
     "display": "110",
     "source": "reference_results/leaderboard_presentation.json",
@@ -1848,7 +1800,7 @@
     "format": "literal"
   },
   {
-    "id": "231",
+    "id": "225",
     "value": "32",
     "display": "32",
     "source": "reference_results/leaderboard_presentation.json",
@@ -1856,7 +1808,7 @@
     "format": "literal"
   },
   {
-    "id": "232",
+    "id": "226",
     "value": "6",
     "display": "6",
     "source": "reference_results/leaderboard_presentation.json",
@@ -1864,7 +1816,7 @@
     "format": "literal"
   },
   {
-    "id": "233",
+    "id": "227",
     "value": "6",
     "display": "6",
     "source": "reference_results/leaderboard_presentation.json",
@@ -1872,7 +1824,7 @@
     "format": "literal"
   },
   {
-    "id": "234",
+    "id": "228",
     "value": "17",
     "display": "17",
     "source": "reference_results/claude_api_2026-11-17.json",
@@ -1880,7 +1832,7 @@
     "format": "literal"
   },
   {
-    "id": "235",
+    "id": "229",
     "value": "2026",
     "display": "2026",
     "source": "reference_results/claude_api_2026-11-17.json",
@@ -1888,7 +1840,7 @@
     "format": "literal"
   },
   {
-    "id": "236",
+    "id": "230",
     "value": "4096",
     "display": "4096",
     "source": "reference_results/claude_api_2026-11-17.json",
@@ -1896,7 +1848,7 @@
     "format": "literal"
   },
   {
-    "id": "237",
+    "id": "231",
     "value": "4",
     "display": "4",
     "source": "reference_results/claude_api_2026-11-17.json",
@@ -1904,7 +1856,7 @@
     "format": "literal"
   },
   {
-    "id": "238",
+    "id": "232",
     "value": "5.1",
     "display": "5.1",
     "source": "reference_results/claude_api_2026-11-17.json",
@@ -1912,7 +1864,7 @@
     "format": "literal"
   },
   {
-    "id": "239",
+    "id": "233",
     "value": "3",
     "display": "3",
     "source": "README.md",
@@ -1920,7 +1872,7 @@
     "format": "literal"
   },
   {
-    "id": "240",
+    "id": "234",
     "value": "110",
     "display": "110",
     "source": "README.md",
@@ -1928,7 +1880,7 @@
     "format": "literal"
   },
   {
-    "id": "241",
+    "id": "235",
     "value": 580,
     "display": "580",
     "source": "README.md",
@@ -1936,7 +1888,7 @@
     "format": "int"
   },
   {
-    "id": "242",
+    "id": "236",
     "value": 93,
     "display": "93",
     "source": "README.md",
@@ -1944,7 +1896,7 @@
     "format": "int"
   },
   {
-    "id": "243",
+    "id": "237",
     "value": 125,
     "display": "125",
     "source": "README.md",
@@ -1952,7 +1904,7 @@
     "format": "int"
   },
   {
-    "id": "244",
+    "id": "238",
     "value": "2025",
     "display": "2025",
     "source": "CITATION.cff",
@@ -1960,7 +1912,7 @@
     "format": "literal"
   },
   {
-    "id": "245",
+    "id": "239",
     "value": "10.1101",
     "display": "10.1101",
     "source": "CITATION.cff",
@@ -1968,7 +1920,7 @@
     "format": "literal"
   },
   {
-    "id": "246",
+    "id": "240",
     "value": "2023.02.28.530532",
     "display": "2023.02.28.530532",
     "source": "CITATION.cff",
