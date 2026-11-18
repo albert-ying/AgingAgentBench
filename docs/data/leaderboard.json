@@ -7,7 +7,7 @@
   "systems": [
     {
       "id": "S3c",
-      "name": "ClockBase with the paper's groups",
+      "name": "ClockBase with GPT-6 Astra and GPT-6 Sol",
       "recall": {
         "lower": [
           10,
@@ -79,7 +79,7 @@
     },
     {
       "id": "S4:anthropic:claude-fable-5-2",
-      "name": "Claude Fable 5.2 without data",
+      "name": "Claude Fable 5.2",
       "recall": {
         "lower": [
           7,
@@ -109,7 +109,7 @@
     },
     {
       "id": "S4:anthropic:claude-sonnet-5-5",
-      "name": "Claude Sonnet 5.5 without data",
+      "name": "Claude Sonnet 5.5",
       "recall": {
         "lower": [
           8,
@@ -139,7 +139,7 @@
     },
     {
       "id": "S4:anthropic:claude-fable-5-1",
-      "name": "Claude Fable 5.1 without data",
+      "name": "Claude Fable 5.1",
       "recall": {
         "lower": [
           6,
@@ -169,7 +169,7 @@
     },
     {
       "id": "S4:openai:gpt-6-astra",
-      "name": "GPT-6 Astra without data",
+      "name": "GPT-6 Astra",
       "recall": {
         "lower": [
           5,
@@ -193,7 +193,7 @@
     },
     {
       "id": "S4:openai:gpt-4.1",
-      "name": "GPT-4.1 without data",
+      "name": "GPT-4.1",
       "recall": {
         "lower": [
           6,
@@ -217,7 +217,7 @@
     },
     {
       "id": "S4:openai:gpt-5.5",
-      "name": "GPT-5.5 without data",
+      "name": "GPT-5.5",
       "recall": {
         "lower": [
           6,
@@ -241,7 +241,7 @@
     },
     {
       "id": "S4:anthropic:claude-haiku-5-5",
-      "name": "Claude Haiku 5.5 without data",
+      "name": "Claude Haiku 5.5",
       "recall": {
         "lower": [
           5,
@@ -271,7 +271,7 @@
     },
     {
       "id": "S4:anthropic:claude-opus-5-5",
-      "name": "Claude Opus 5.5 without data",
+      "name": "Claude Opus 5.5",
       "recall": {
         "lower": [
           3,
@@ -301,7 +301,7 @@
     },
     {
       "id": "S4:openai:gpt-6-sol",
-      "name": "GPT-6 Sol without data",
+      "name": "GPT-6 Sol",
       "recall": {
         "lower": [
           5,
@@ -325,7 +325,7 @@
     },
     {
       "id": "S4:openai:gpt-6-luna",
-      "name": "GPT-6 Luna without data",
+      "name": "GPT-6 Luna",
       "recall": {
         "lower": [
           5,
@@ -371,5 +371,62 @@
       ],
       "prediction_file": "constant_higher.csv"
     }
-  ]
+  ],
+  "display_system_ids": [
+    "S3c",
+    "S4:anthropic:claude-fable-5-2",
+    "S4:anthropic:claude-sonnet-5-5",
+    "S4:anthropic:claude-fable-5-1",
+    "S4:openai:gpt-6-astra",
+    "S4:openai:gpt-4.1",
+    "S4:openai:gpt-5.5",
+    "S4:anthropic:claude-haiku-5-5",
+    "S4:anthropic:claude-opus-5-5",
+    "S4:openai:gpt-6-sol",
+    "S4:openai:gpt-6-luna",
+    "S0"
+  ],
+  "analysis_variant_ids": [
+    "S3r",
+    "S3"
+  ],
+  "presentation": {
+    "schema": "agingagentbench-leaderboard-presentation-v1",
+    "updated": "2026-11-18",
+    "primary_system": "S3c",
+    "primary_name": "ClockBase with GPT-6 Astra and GPT-6 Sol",
+    "analysis_variants": [
+      "S3r",
+      "S3"
+    ],
+    "group_assignment_models": [
+      "gpt-6-astra",
+      "gpt-6-sol"
+    ],
+    "model_provenance": [
+      {
+        "source": "runs/t1-openai-002-s4/manifest.json",
+        "sha256": "fcf2467d02d37ad57ef827299d93ff0fb32dafa10d8ac9d887dfa7b008544b0a",
+        "mtime_ns": 1791237264000000000,
+        "models": [
+          "openai:gpt-6-astra",
+          "openai:gpt-6-sol"
+        ]
+      },
+      {
+        "source": "runs/t1new-openai-001-s4/manifest.json",
+        "sha256": "08d403d5b7fd867cfc50edf9b15abb6f1b36b18164ec4bbd25d3783cdf3e4d8e",
+        "mtime_ns": 1791240579000000000,
+        "models": [
+          "openai:gpt-6-astra",
+          "openai:gpt-6-sol"
+        ]
+      }
+    ],
+    "copy": {
+      "variants_summary": "ClockBase analysis variants",
+      "configuration_note": "GPT-6 Astra and GPT-6 Sol assigned the published groups, and the primary result uses released tests.",
+      "method_note": "All systems are evaluated on a shared set of 110 records drawn from 32 papers. Model baselines read study descriptions and group definitions, with no access to sample data or external tools."
+    }
+  }
 }

@@ -1,8 +1,8 @@
 {
   "inputs": {
     "README.md": {
-      "sha256": "2489919d6ae641862ae22b68c95501aef45a5dd602d52d9f9946a57e59efb19c",
-      "mtime_ns": 1794966394849270252
+      "sha256": "fc255be7c551a799e7fe897fe0da91eb86b57c3576c5425940dc77e1c0353c41",
+      "mtime_ns": 1794996195464784858
     },
     "DATA_LICENSE.md": {
       "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
@@ -25,8 +25,12 @@
       "mtime_ns": 1794966063899284023
     },
     "reference_results/claude_api_2026-11-17.json": {
-      "sha256": "5279e543321b0de910bbe978b61ce4afac6ebee7af93ff4ff12adcde0f7f194f",
-      "mtime_ns": 1794966222514437173
+      "sha256": "ec143ca32fb243cf96ec8a52577d506577ff71e3d691621ef276b6c7d8507345",
+      "mtime_ns": 1794996195464302523
+    },
+    "reference_results/leaderboard_presentation.json": {
+      "sha256": "30beab73de2840e2a3285bf77e8a49c6b4d4e093efb951cf046c92dd47d1b7ae",
+      "mtime_ns": 1794996195463820396
     },
     "reference_results/supplementary_table_s18.csv": {
       "sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",

@@ -374,6 +374,8 @@ class Builder:
         cohorts = json.loads(self.read('reference_results/cohorts.json'))
         claude_source = 'reference_results/claude_api_2026-11-17.json'
         claude = json.loads(self.read(claude_source))
+        presentation_source = 'reference_results/leaderboard_presentation.json'
+        presentation = json.loads(self.read(presentation_source))
         s18 = list(csv.DictReader(self.read('reference_results/supplementary_table_s18.csv').splitlines()))
         psource = 'reference_results/paper_metrics.json'
         rsource = 'reference_results/reproduced_metrics.json'
@@ -400,14 +402,14 @@ class Builder:
         self.check('main cohort inventory', len(cohorts[main_key]), paper['published_group_comparison']['records'], psource + '/published_group_comparison/records')
         labels = {
             'S0': 'Always higher', 'S3': 'ClockBase with Welch tests',
-            'S3c': "ClockBase with the paper's groups",
+            'S3c': presentation['primary_name'],
             'S3r': 'ClockBase with individual readers',
         }
         files = {'S0': 'constant_higher', 'S3': 'clockbase_paper_groups_welch', 'S3c': 'clockbase_paper_groups', 'S3r': 'clockbase_paper_groups_individual_readers'}
         for system in paper['three_way']:
             if system.startswith('S4:'):
                 model = system.split(':')[-1]
-                labels[system] = model.replace('gpt-', 'GPT-', 1).replace('-astra', ' Astra').replace('-luna', ' Luna').replace('-sol', ' Sol') + ' without data'
+                labels[system] = model.replace('gpt-', 'GPT-', 1).replace('-astra', ' Astra').replace('-luna', ' Luna').replace('-sol', ' Sol')
                 files[system] = 'language_model_' + model.replace('-', '_').replace('.', '_')
         systems = []
         for system, metric in paper['three_way'].items():
@@ -456,6 +458,7 @@ class Builder:
         self.check('chance from classes', 1 / len(classes), chance, psource + '/three_way/S0/balanced_accuracy')
         heads = ''.join(f'<span class="class-head">{label}<small>of {pn(systems[0]["recall"][cls][1], "three_way/S3c/recall/"+cls+"/denominator")} published</small></span>' for cls, label in classes)
         rows = []
+        variant_rows = []
         for row in systems:
             ident = row['id']; key = 'three_way/' + ident
             source = row.get('source', psource)
@@ -468,9 +471,12 @@ class Builder:
             for cls, _ in classes:
                 source_class = 'not significant' if cls == 'none' and 'score_key' in row else cls
                 counts.append(f'{row_number(row["recall"][cls][0], "/recall/"+source_class+"/numerator")}/{row_number(row["recall"][cls][1], "/recall/"+source_class+"/denominator")}')
-            name = self.sourced_text(row['name'], source, row.get('model_key', key))
+            name_source = presentation_source if ident == presentation['primary_system'] else source
+            name_key = 'primary_name' if ident == presentation['primary_system'] else row.get('model_key', key)
+            name = self.sourced_text(row['name'], name_source, name_key)
             style = f'--estimate:{row["balanced_accuracy"] * 100}%;--low:{low * 100}%;--high:{high * 100}%;--chance:{chance * 100}%'
-            rows.append(f'''<div class="board-grid board-row{' lead' if ident == 'S3c' else ''}" style="{style}">
+            target_rows = variant_rows if ident in presentation['analysis_variants'] else rows
+            target_rows.append(f'''<div class="board-grid board-row{' lead' if ident == 'S3c' else ''}" style="{style}">
 <span class="system">{name}</span><div class="bar" aria-hidden="true"><span class="fill"></span><span class="chance"></span><span class="interval"></span><span class="cap cap-low"></span><span class="cap cap-high"></span></div>
 <span class="score">{row_number(row['balanced_accuracy'], '/balanced_accuracy', 'decimal')} <span class="ci">({ci(row['balanced_accuracy_interval'], source, key+'/balanced_accuracy_interval')})</span></span>
 {''.join('<span class="class-count">'+count+'</span>' for count in counts)}
@@ -570,8 +576,6 @@ class Builder:
         threshold = re.search(r'P < ([\d.]+)', readme).group(1)
         threshold_html = self.sourced_text(threshold, 'README.md', 'Evaluate your system significance threshold')
         img = '<img class="task-image" src="assets/task.png" width="1600" height="900" alt="A benchmark task from public study inputs to an aging-clock call and comparison with the published result"'+('' if (SITE/'assets/task.png').is_file() else ' hidden')+'>'
-        main_n = n(len(cohorts[main_key]),'reference_results/cohorts.json', main_key+'/length')
-        published_papers = pn(paper['published_group_comparison']['papers'],'published_group_comparison/papers')
         task_n = n(len(cohorts[task_key]),'reference_results/cohorts.json',task_key+'/length')
         task_summary = re.search(r'cohort contains (\d+) published results on the task.s clocks\s+from (\d+) papers and (\d+) series',readme)
         if not task_summary:
@@ -591,7 +595,8 @@ class Builder:
 <div class="board-grid board-head"><span>System</span><span class="bar-head">Balanced accuracy</span><span class="score-head">Balanced accuracy<br>({level_display} CI)</span>{heads}</div>
 {''.join(rows)}<div class="board-grid"><div class="axis">{axis}</div></div>
 <figcaption>Balanced accuracy is the mean recall over the published classes. Whiskers show the confidence interval from resampling papers. The dashed line marks chance at {pn(chance,'three_way/S0/balanced_accuracy','decimal')}.</figcaption></figure>
-<p class="method">Every system is scored on the same {main_n} human DNA methylation results from {published_papers} papers using the paper's groups. Language models receive study descriptions and group definitions without data. The constant rule always answers higher.</p>
+<p class="method">{self.sourced_text(presentation['copy']['method_note'], presentation_source, 'copy/method_note')} The constant rule always answers higher.</p>
+<details><summary>{escape(presentation['copy']['variants_summary'])}</summary><div class="license-copy"><p class="note">{self.sourced_text(presentation['copy']['configuration_note'], presentation_source, 'copy/configuration_note')}</p><figure class="leaderboard" aria-label="ClockBase analysis variants"><div class="board-grid board-head"><span>System</span><span class="bar-head">Balanced accuracy</span><span class="score-head">Balanced accuracy<br>({level_display} CI)</span>{heads}</div>{''.join(variant_rows)}<div class="board-grid"><div class="axis">{axis}</div></div></figure></div></details>
 <p class="method">{self.sourced_text(claude['website_copy']['method_note'], claude_source, 'website_copy/method_note')}</p>
 <details><summary>{escape(claude['website_copy']['details_summary'])}</summary><p class="note">{self.sourced_text(claude['website_copy']['parsing_note'], claude_source, 'website_copy/parsing_note')}</p></details>
 <nav class="downloads" aria-label="Benchmark resources"><a href="{REPOSITORY}">Repository</a><a href="{REPOSITORY}/blob/main/data/published.csv">Published effects CSV</a><a href="data/leaderboard.json">Leaderboard JSON</a><a href="data/claude-predictions-2026-11-17.csv">{escape(claude['website_copy']['download_label'])}</a><a href="data/claude-api-2026-11-17.json">{escape(claude['website_copy']['metadata_label'])}</a></nav></section>
@@ -606,7 +611,7 @@ class Builder:
         save(SITE/'index.html',html_text)
         save(SITE/'style.css',FONT_FACES+root_css+CSS)
         save(SITE/'.nojekyll','')
-        self.json('leaderboard.json',{'cohort':main_key,'records':len(cohorts[main_key]),'papers':paper['published_group_comparison']['papers'],'confidence_level':level,'chance':chance,'systems':systems})
+        self.json('leaderboard.json',{'cohort':main_key,'records':len(cohorts[main_key]),'papers':paper['published_group_comparison']['papers'],'confidence_level':level,'chance':chance,'systems':systems,'display_system_ids':[r['id'] for r in systems if r['id'] not in presentation['analysis_variants']],'analysis_variant_ids':presentation['analysis_variants'],'presentation':presentation})
         self.json('claude-api-2026-11-17.json', claude)
         buffer = io.StringIO(newline='')
         writer = csv.DictWriter(buffer, fieldnames=list(claude_predictions[0]), lineterminator='\n')

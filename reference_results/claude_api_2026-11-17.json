@@ -28,7 +28,7 @@
   "models": [
     {
       "model": "claude-fable-5-2",
-      "label": "Claude Fable 5.2 without data",
+      "label": "Claude Fable 5.2",
       "prediction_file": "language_model_claude_fable_5_2.csv",
       "score": {
         "records_in_cohort": 110,
@@ -192,7 +192,7 @@
     },
     {
       "model": "claude-fable-5-1",
-      "label": "Claude Fable 5.1 without data",
+      "label": "Claude Fable 5.1",
       "prediction_file": "language_model_claude_fable_5_1.csv",
       "score": {
         "records_in_cohort": 110,
@@ -317,7 +317,7 @@
     },
     {
       "model": "claude-opus-5-5",
-      "label": "Claude Opus 5.5 without data",
+      "label": "Claude Opus 5.5",
       "prediction_file": "language_model_claude_opus_5_5.csv",
       "score": {
         "records_in_cohort": 110,
@@ -495,7 +495,7 @@
     },
     {
       "model": "claude-sonnet-5-5",
-      "label": "Claude Sonnet 5.5 without data",
+      "label": "Claude Sonnet 5.5",
       "prediction_file": "language_model_claude_sonnet_5_5.csv",
       "score": {
         "records_in_cohort": 110,
@@ -724,7 +724,7 @@
     },
     {
       "model": "claude-haiku-5-5",
-      "label": "Claude Haiku 5.5 without data",
+      "label": "Claude Haiku 5.5",
       "prediction_file": "language_model_claude_haiku_5_5.csv",
       "score": {
         "records_in_cohort": 110,

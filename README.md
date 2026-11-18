@@ -181,17 +181,17 @@ correct calls within each published class; the interval resamples papers.
 
 | System | Lower of 16 | Higher of 36 | Null of 58 | Balanced accuracy with 95% CI |
 | --- | ---: | ---: | ---: | --- |
-| ClockBase with the paper's groups | 10 | 30 | 51 | 0.78 [0.68, 0.86] |
-| GPT-4.1 without data | 6 | 28 | 23 | 0.52 [0.42, 0.62] |
-| GPT-5.5 without data | 6 | 17 | 38 | 0.50 [0.35, 0.64] |
-| GPT-6 Astra without data | 5 | 16 | 47 | 0.52 [0.39, 0.65] |
-| GPT-6 Luna without data | 5 | 12 | 42 | 0.46 [0.31, 0.59] |
-| GPT-6 Sol without data | 5 | 15 | 43 | 0.49 [0.35, 0.62] |
-| Claude Fable 5.2 without data | 7 | 24 | 45 | 0.63 [0.49, 0.77] |
-| Claude Fable 5.1 without data | 6 | 14 | 47 | 0.52 [0.38, 0.65] |
-| Claude Opus 5.5 without data | 3 | 18 | 46 | 0.49 [0.36, 0.61] |
-| Claude Sonnet 5.5 without data | 8 | 18 | 35 | 0.53 [0.39, 0.69] |
-| Claude Haiku 5.5 without data | 5 | 19 | 38 | 0.50 [0.37, 0.62] |
+| ClockBase with GPT-6 Astra and GPT-6 Sol | 10 | 30 | 51 | 0.78 [0.68, 0.86] |
+| GPT-4.1 | 6 | 28 | 23 | 0.52 [0.42, 0.62] |
+| GPT-5.5 | 6 | 17 | 38 | 0.50 [0.35, 0.64] |
+| GPT-6 Astra | 5 | 16 | 47 | 0.52 [0.39, 0.65] |
+| GPT-6 Luna | 5 | 12 | 42 | 0.46 [0.31, 0.59] |
+| GPT-6 Sol | 5 | 15 | 43 | 0.49 [0.35, 0.62] |
+| Claude Fable 5.2 | 7 | 24 | 45 | 0.63 [0.49, 0.77] |
+| Claude Fable 5.1 | 6 | 14 | 47 | 0.52 [0.38, 0.65] |
+| Claude Opus 5.5 | 3 | 18 | 46 | 0.49 [0.36, 0.61] |
+| Claude Sonnet 5.5 | 8 | 18 | 35 | 0.53 [0.39, 0.69] |
+| Claude Haiku 5.5 | 5 | 19 | 38 | 0.50 [0.37, 0.62] |
 | Always higher | 0 | 36 | 0 | 0.33 [0.33, 0.33] |
 
 Claude models were evaluated through the Anthropic API on 17 November 2026 with medium effort, a 4096 output-token limit, one run per request and no tools.
