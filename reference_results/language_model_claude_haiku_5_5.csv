@@ -1,0 +1,111 @@
+record_id,call,direction,confidence,recognizes_publication,publication
+MED-25678027-GSE25395-Horvathv1-1,higher,higher,0.8,True,"Horvath S, Garagnani P, Bacalini MG, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell (2015)"
+MED-25678027-GSE50586-Horvathv1-11,higher,higher,0.8,True,"Horvath S, Garagnani P, et al. (2015). Accelerated epigenetic aging in Down syndrome. Aging Cell. This study used the buccal epithelium DS and control samples from GSE50586 and reported accelerated DNA methylation age in Down syndrome."
+MED-25678027-GSE50586-Horvathv1-12,higher,higher,0.8,True,"Horvath S, Garagnani P, Bacalini MG, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell (2015)"
+MED-25678027-GSE52588-Horvathv1-10,higher,higher,0.72,True,"Horvath S, et al. (2015). Accelerated epigenetic aging in Down syndrome. Aging Cell."
+MED-25678027-GSE52588-Horvathv1-8,higher,higher,0.7,True,"Horvath S, et al. (2015) DNA methylation age of human tissues and cell types, Genome Biology (Down syndrome data set; the blood DS samples in this series appear as data set 3 of that analysis)"
+MED-25678027-GSE52588-Horvathv1-9,higher,higher,0.7,True,"Horvath S, et al. (2015) Epigenetic clock and methylation studies in Down syndrome. Neurobiology of Aging. This study reported accelerated epigenetic aging in Down syndrome, including in blood, and the GEO series appears to be one of its datasets."
+MED-25678027-GSE63347-Horvathv1-2,higher,higher,0.7,True,"Horvath S, et al. Epigenetic clock and methylation studies in Down syndrome. Aging (2015)"
+MED-25678027-GSE63347-Horvathv1-4,higher,higher,0.8,True,"Horvath S, Garagnani P, et al. (2015) Epigenetic clock and methylation studies in Down syndrome, Neurobiology of Aging"
+MED-25678027-GSE63347-Horvathv1-5,higher,higher,0.8,True,"Horvath S, Garagnani P, Bacalini MG, et al. Epigenetic clock and methylation studies in Down syndrome. Aging (2015)"
+MED-25856389-GSE62867-Horvathv1-0,not significant,none,0.4,False,
+MED-25969563-GSE59457-Horvathv1-0,higher,higher,0.8,True,"Horvath S, Levine AJ. HIV-1 infection accelerates age according to the epigenetic clock. J Infect Dis. 2015"
+MED-25969563-GSE59457-Horvathv1-2,higher,higher,0.7,True,"Horvath S, et al. HIV-1 Infection Accelerates Age According to the Epigenetic Clock. J Infect Dis. 2016"
+MED-25969563-GSE67751-Horvathv1-7,higher,higher,0.8,True,"Horvath S, Levine AJ. HIV-1 infection accelerates age according to the epigenetic clock. J Infect Dis. 2015;212:1563-73."
+MED-27511193-GSE27317-Horvathv1-0,not significant,none,0.5,False,
+MED-27511193-GSE38873-Horvathv1-1,not significant,none,0.5,False,
+MED-27511193-GSE72773-Horvathv1-3,lower,lower,0.6,False,
+MED-27511193-GSE72773-Horvathv1-4,lower,lower,0.6,True,"Horvath S, Gurven M, Levine ME, et al. An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology. 2016."
+MED-27511193-GSE72777-Horvathv1-5,lower,lower,0.5,False,
+MED-27511193-GSE78874-Horvathv1-6,higher,higher,0.55,True,"Horvath S, et al. (c. 2016), saliva DNA methylation age analysis of the PEG cohort (GSE78874); likely Aging journal. Exact citation not verified."
+MED-27511193-GSE78874-Horvathv1-7,higher,higher,0.55,False,
+MED-29225347-GSE38873-Horvathv1-0,not significant,none,0.5,False,
+MED-29225347-GSE38873-Horvathv1-1,not significant,none,0.4,False,
+MED-29225347-GSE38873-Horvathv1-2,higher,higher,0.4,False,
+MED-29974462-GSE75008-Horvathv1-1,higher,higher,0.65,False,
+MED-30185790-GSE49393-Horvathv1-5,not significant,higher,0.5,False,
+MED-30575306-GSE69954-Horvathv1-0,higher,higher,0.55,False,
+MED-30814520-GSE38873-Horvathv1-3,not significant,none,0.55,False,
+MED-31943067-GSE133918-Horvathv1-0,not significant,none,0.5,False,
+MED-31943067-GSE133918-Horvathv1-1,not significant,none,0.6,False,
+MED-32210226-GSE142439-Horvathv1-0,lower,lower,0.8,True,"Transient non-integrative nuclear reprogramming promotes multifaceted reversal of aging in human cells (Aging Cell, 2022; Ocampo-lab mRNA OSKMLN study)"
+MED-32210226-GSE142439-Horvathv2-3,lower,lower,0.85,True,"Olova N, et al. 2019, Aging Cell: 'Transient non-integrative nuclear reprogramming promotes multifaceted reversal of aging in human cells' (GSE142439)"
+MED-32582603-GSE85506-Hannum-7,not significant,higher,0.5,False,
+MED-32582603-GSE85506-Horvathv1-6,not significant,higher,0.4,False,
+MED-32582603-GSE85506-Horvathv2-8,not significant,none,0.6,False,
+MED-32582603-GSE85506-PhenoAge-9,not significant,higher,0.5,False,
+MED-32660606-GSE142439-Horvathv2-10,lower,lower,0.7,False,
+MED-32660606-GSE151617-Horvathv2-7,lower,lower,0.7,True,Highly accurate Skin-Specific methylome analysis algorithm as a platform to screen and validate therapeutics for healthy aging (Horvath et al.)
+MED-32660606-GSE151617-Horvathv2-9,lower,lower,0.6,False,
+MED-32930491-GSE100249-Lin-1,not significant,higher,0.35,False,
+MED-32930491-GSE91069-Hannum-11,not significant,none,0.55,False,
+MED-32930491-GSE91069-Lin-5,higher,higher,0.8,True,DNA methylation patterns separate senescence from malignant transformation potential in human cells (GSE91069; BJ fibroblast replicative/oncogene-induced senescence and H-rasV12 transformation model)
+MED-32930491-GSE91069-Lin-6,higher,higher,0.6,False,
+MED-32930491-GSE91069-PhenoAge-7,higher,higher,0.6,False,
+MED-32930491-GSE91069-PhenoAge-8,higher,higher,0.6,False,
+MED-32930491-GSE91069-PhenoAge-9,not significant,none,0.55,False,
+MED-33530447-GSE152204-Horvathv1-0,not significant,none,0.6,False,
+MED-33815458-GSE30601-Horvathv1-0,higher,higher,0.7,False,
+MED-35092358-GSE125367-GrimAgeV1-3,not significant,none,0.55,True,"Choufani S, et al. (2020), DNA methylation signature for Nicolaides-Baraitser syndrome (SMARCA2 variants), Weksberg lab; GSE125367"
+MED-35092358-GSE125367-Hannum-1,not significant,none,0.6,True,"Choufani S, et al. (2020), DNA methylation signature for Nicolaides-Baraitser syndrome (SMARCA2 variants), Hum Mol Genet. Recalled from memory; not verified."
+MED-35092358-GSE125367-Horvathv1-0,not significant,none,0.6,True,"Choufani S et al. (2020), DNA methylation signature for Nicolaides-Baraitser syndrome (SMARCA2)"
+MED-35092358-GSE125367-PhenoAge-2,not significant,none,0.6,True,"Choufani et al. (2020), DNA methylation signature for Nicolaides-Baraitser syndrome (SMARCA2), blood DNAm study using the EPIC array"
+MED-35354948-GSE162560-Horvathv2-0,higher,higher,0.7,False,
+MED-35369101-GSE193836-Horvathv1-0,not significant,higher,0.5,False,
+MED-35369101-GSE193836-Horvathv1-2,not significant,higher,0.5,False,
+MED-35369101-GSE193836-Horvathv1-3,not significant,higher,0.4,False,
+MED-36038613-GSE185973-Horvathv2-0,not significant,higher,0.45,False,
+MED-36038613-GSE185973-Horvathv2-1,not significant,higher,0.4,False,
+MED-36046788-GSE199700-Horvathv1-3,not significant,lower,0.55,False,
+MED-36046788-GSE199700-Horvathv1-6,not significant,lower,0.45,False,
+MED-36052758-GSE210245-GrimAgeV1-0,lower,lower,0.6,False,
+MED-36052758-GSE210245-GrimAgeV1-5,lower,lower,0.6,False,
+MED-36052758-GSE210245-Hannum-2,lower,lower,0.7,False,
+MED-36052758-GSE210245-Horvathv1-1,lower,lower,0.6,False,
+MED-36052758-GSE210245-Horvathv2-3,lower,lower,0.6,False,
+MED-36052758-GSE210245-PhenoAge-4,lower,lower,0.6,False,
+MED-36092807-GSE106648-Horvathv1-0,not significant,higher,0.4,False,
+MED-36092807-GSE166207-Horvathv1-8,not significant,none,0.55,True,"DNA methylation changes in glial cells implicate functional changes in oligodendrocytes, astrocytes and microglial cells in the normal appearing white matter of Multiple Sclerosis patients (GSE166207 study)"
+MED-36092807-GSE166207-Horvathv1-9,not significant,higher,0.5,True,"Kular L, et al. 2022. DNA methylation changes in glial cells implicate functional changes in oligodendrocytes, astrocytes and microglial cells in the normal appearing white matter of Multiple Sclerosis patients."
+MED-36092807-GSE40360-Horvathv1-2,not significant,none,0.6,False,
+MED-36092807-GSE40360-Horvathv1-6,not significant,none,0.5,False,
+MED-37508584-GSE53740-GrimAgeV1-11,not significant,none,0.5,False,
+MED-37508584-GSE53740-GrimAgeV1-12,higher,higher,0.55,True,An Epigenetic Signature in Peripheral Blood Associated with Neurodegenerative Tauopathy and the Risk-Associated Haplotype on 17q21.31
+MED-37508584-GSE53740-Hannum-0,not significant,higher,0.4,False,
+MED-37508584-GSE53740-Hannum-1,not significant,none,0.6,True,An Epigenetic Signature in Peripheral Blood Associated with Neurodegenerative Tauopathy and the Risk-Associated Haplotype on 17q21.31 (GSE53740 source study)
+MED-37508584-GSE53740-Hannum-4,not significant,higher,0.4,False,
+MED-37508584-GSE53740-Hannum-5,not significant,none,0.6,True,An Epigenetic Signature in Peripheral Blood Associated with Neurodegenerative Tauopathy and the Risk-Associated Haplotype on 17q21.31 (GSE53740 source study)
+MED-37508584-GSE53740-Horvathv1-2,not significant,none,0.4,True,An Epigenetic Signature in Peripheral Blood Associated with Neurodegenerative Tauopathy and the Risk-Associated Haplotype on 17q21.31
+MED-37508584-GSE53740-Horvathv1-3,not significant,higher,0.4,True,"Allen M, et al. An Epigenetic Signature in Peripheral Blood Associated with Neurodegenerative Tauopathy and the Risk-Associated Haplotype on 17q21.31 (GSE53740)"
+MED-37508584-GSE53740-PhenoAge-10,not significant,higher,0.45,False,
+MED-38820227-GSE178887-DunedinPACE-5,higher,higher,0.6,False,
+MED-38826624-GSE152084-GrimAgeV1-3,not significant,higher,0.4,False,
+MED-38826624-GSE152084-Horvathv1-0,higher,higher,0.5,False,
+MED-38826624-GSE152084-Horvathv2-1,not significant,higher,0.4,False,
+MED-38826624-GSE152084-PhenoAge-2,higher,higher,0.5,False,
+MED-39403983-GSE164056-DunedinPACE-6,not significant,higher,0.4,False,
+MED-39403983-GSE164056-Hannum-1,not significant,none,0.6,False,
+MED-39403983-GSE164056-Horvathv2-2,not significant,none,0.6,False,
+MED-39680552-GSE199700-GrimAgeV1-3,higher,higher,0.6,False,
+MED-39680552-GSE199700-Hannum-1,higher,higher,0.6,False,
+MED-39680552-GSE199700-Horvathv1-0,higher,higher,0.55,False,
+MED-39680552-GSE199700-PhenoAge-2,higher,higher,0.5,False,
+MED-39853302-GSE144858-GrimAgeV1-5,not significant,higher,0.55,True,An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene
+MED-39853302-GSE144858-GrimAgeV2-6,higher,higher,0.6,False,
+MED-39853302-GSE144858-Hannum-2,not significant,higher,0.4,False,
+MED-39853302-GSE144858-Horvathv1-1,not significant,none,0.55,True,An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene (AddNeuroMed blood EWAS)
+MED-39853302-GSE144858-Horvathv2-4,not significant,higher,0.5,True,An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene (AddNeuroMed blood DNAm EWAS; likely Lunnon et al.)
+MED-39853302-GSE144858-PhenoAge-3,not significant,higher,0.5,True,An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene (AddNeuroMed blood EWAS; GSE144858)
+MED-39980002-GSE119846-Horvathv1-0,not significant,none,0.6,False,
+MED-39980002-GSE119846-Horvathv1-1,not significant,higher,0.4,True,"Provençal N, Suderman M, et al. Glucocorticoid exposure during hippocampal neurogenesis primes future stress response by inducing changes in DNA methylation. PNAS 2020"
+MED-39980002-GSE210301-Horvathv1-2,not significant,none,0.8,False,
+MED-39980002-GSE210301-Horvathv1-3,not significant,none,0.8,False,
+MED-39980002-GSE210301-Horvathv1-4,not significant,none,0.7,False,
+MED-39980002-GSE210301-Horvathv1-5,not significant,none,0.7,False,
+MED-40589934-GSE176394-DunedinPACE-12,not significant,lower,0.4,False,
+MED-40589934-GSE176394-DunedinPACE-13,not significant,lower,0.35,False,
+MED-40589934-GSE176394-DunedinPACE-14,not significant,none,0.5,False,
+MED-40589934-GSE176394-DunedinPACE-15,not significant,higher,0.4,False,
+PMC-PMC9158789-GSE142439-Horvathv1-1,lower,lower,0.8,False,
+PMC-PMC9158789-GSE45727-Horvathv1-5,not significant,none,0.6,False,
+PMC-PMC9158789-GSE53051-Horvathv1-4,higher,higher,0.6,False,

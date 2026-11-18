@@ -11,6 +11,7 @@ import argparse
 import csv
 import hashlib
 import html
+import io
 from html.parser import HTMLParser
 import json
 import math
@@ -371,6 +372,8 @@ class Builder:
         paper = json.loads(self.read('reference_results/paper_metrics.json'))
         reproduced = json.loads(self.read('reference_results/reproduced_metrics.json'))
         cohorts = json.loads(self.read('reference_results/cohorts.json'))
+        claude_source = 'reference_results/claude_api_2026-11-17.json'
+        claude = json.loads(self.read(claude_source))
         s18 = list(csv.DictReader(self.read('reference_results/supplementary_table_s18.csv').splitlines()))
         psource = 'reference_results/paper_metrics.json'
         rsource = 'reference_results/reproduced_metrics.json'
@@ -424,6 +427,29 @@ class Builder:
                 self.check(system + '/recall/' + cls, result['recall']['not significant' if cls == 'none' else cls], pair, psource + '/three_way/' + system + '/recall/' + cls)
             self.check(system + '/balanced_accuracy from recalls', sum(a / b for a,b in metric['recall'].values()) / len(metric['recall']), metric['balanced_accuracy'], psource + '/three_way/' + system)
             systems.append({'id': system, 'name': labels[system], **metric, 'prediction_file': files[system] + '.csv'})
+        claude_predictions = []
+        for index, model in enumerate(claude['models']):
+            score = model['score']
+            key = f'models/{index}/score'
+            prediction_file = 'reference_results/' + model['prediction_file']
+            prediction_text = self.read(prediction_file)
+            self.check(model['model'] + ' CSV hash', hashlib.sha256((ROOT/prediction_file).read_bytes()).hexdigest(),
+                       claude['source_files'][model['prediction_file']]['sha256'], claude_source + '/source_files')
+            predictions = list(csv.DictReader(prediction_text.splitlines()))
+            self.check(model['model'] + ' exact cohort identifiers', sorted(r['record_id'] for r in predictions),
+                       sorted(cohorts[main_key]), 'reference_results/cohorts.json/' + main_key)
+            self.check(model['model'] + ' scored coverage', score['scored'], len(cohorts[main_key]), claude_source + '/' + key)
+            self.check(model['model'] + ' balanced accuracy from recalls',
+                       sum(a / b for a, b in score['recall'].values()) / len(score['recall']),
+                       score['balanced_accuracy'], claude_source + '/' + key)
+            systems.append({'id': 'S4:anthropic:' + model['model'], 'name': model['label'],
+                            'recall': {('none' if c == 'not significant' else c): pair for c, pair in score['recall'].items()},
+                            'balanced_accuracy': score['balanced_accuracy'],
+                            'balanced_accuracy_interval': score['balanced_accuracy_interval'],
+                            'prediction_file': model['prediction_file'], 'source': claude_source,
+                            'score_key': key, 'model_key': f'models/{index}', 'evaluation_date': claude['evaluation_date'],
+                            'provider': claude['provider'], 'effort': claude['effort']})
+            claude_predictions.extend({'model': model['model'], **row} for row in predictions)
         systems.sort(key=lambda x: (x['id'] != 'S3c', -x['balanced_accuracy']))
         classes = [('lower', 'Decreases'), ('higher', 'Increases'), ('none', 'No significant difference')]
         chance = paper['three_way']['S0']['balanced_accuracy']
@@ -432,13 +458,21 @@ class Builder:
         rows = []
         for row in systems:
             ident = row['id']; key = 'three_way/' + ident
+            source = row.get('source', psource)
+            if 'score_key' in row:
+                key = row['score_key']
+            def row_number(value, suffix, fmt='int'):
+                return n(value, source, key + suffix, fmt)
             low, high = row['balanced_accuracy_interval']
-            counts = [f'{pn(row["recall"][cls][0], key+"/recall/"+cls+"/numerator")}/{pn(row["recall"][cls][1], key+"/recall/"+cls+"/denominator")}' for cls, _ in classes]
-            name = self.sourced_text(row['name'], psource, key)
+            counts = []
+            for cls, _ in classes:
+                source_class = 'not significant' if cls == 'none' and 'score_key' in row else cls
+                counts.append(f'{row_number(row["recall"][cls][0], "/recall/"+source_class+"/numerator")}/{row_number(row["recall"][cls][1], "/recall/"+source_class+"/denominator")}')
+            name = self.sourced_text(row['name'], source, row.get('model_key', key))
             style = f'--estimate:{row["balanced_accuracy"] * 100}%;--low:{low * 100}%;--high:{high * 100}%;--chance:{chance * 100}%'
             rows.append(f'''<div class="board-grid board-row{' lead' if ident == 'S3c' else ''}" style="{style}">
 <span class="system">{name}</span><div class="bar" aria-hidden="true"><span class="fill"></span><span class="chance"></span><span class="interval"></span><span class="cap cap-low"></span><span class="cap cap-high"></span></div>
-<span class="score">{pn(row['balanced_accuracy'], key+'/balanced_accuracy', 'decimal')} <span class="ci">({ci(row['balanced_accuracy_interval'], psource, key+'/balanced_accuracy_interval')})</span></span>
+<span class="score">{row_number(row['balanced_accuracy'], '/balanced_accuracy', 'decimal')} <span class="ci">({ci(row['balanced_accuracy_interval'], source, key+'/balanced_accuracy_interval')})</span></span>
 {''.join('<span class="class-count">'+count+'</span>' for count in counts)}
 <span class="mobile-counts">{''.join('<span>'+label+' '+count+'</span>' for (_,label), count in zip(classes,counts))}</span></div>''')
         endpoints = [paper['three_way']['S0']['recall']['lower'][0], max(paper['three_way']['S0']['balanced_accuracy_interval']) * len(classes)]
@@ -558,7 +592,9 @@ class Builder:
 {''.join(rows)}<div class="board-grid"><div class="axis">{axis}</div></div>
 <figcaption>Balanced accuracy is the mean recall over the published classes. Whiskers show the confidence interval from resampling papers. The dashed line marks chance at {pn(chance,'three_way/S0/balanced_accuracy','decimal')}.</figcaption></figure>
 <p class="method">Every system is scored on the same {main_n} human DNA methylation results from {published_papers} papers using the paper's groups. Language models receive study descriptions and group definitions without data. The constant rule always answers higher.</p>
-<nav class="downloads" aria-label="Benchmark resources"><a href="{REPOSITORY}">Repository</a><a href="{REPOSITORY}/blob/main/data/published.csv">Published effects CSV</a><a href="data/leaderboard.json">Leaderboard JSON</a></nav></section>
+<p class="method">{self.sourced_text(claude['website_copy']['method_note'], claude_source, 'website_copy/method_note')}</p>
+<details><summary>{escape(claude['website_copy']['details_summary'])}</summary><p class="note">{self.sourced_text(claude['website_copy']['parsing_note'], claude_source, 'website_copy/parsing_note')}</p></details>
+<nav class="downloads" aria-label="Benchmark resources"><a href="{REPOSITORY}">Repository</a><a href="{REPOSITORY}/blob/main/data/published.csv">Published effects CSV</a><a href="data/leaderboard.json">Leaderboard JSON</a><a href="data/claude-predictions-2026-11-17.csv">{escape(claude['website_copy']['download_label'])}</a><a href="data/claude-api-2026-11-17.json">{escape(claude['website_copy']['metadata_label'])}</a></nav></section>
 <section aria-labelledby="reruns"><h2 id="reruns">Agent reruns</h2><table class="reruns"><caption>Reported calls on {task_series} benchmark series with {task_n} published results from {task_papers} papers. Each system is scored on the results it covers.</caption><thead><tr><th scope="col">System</th><th scope="col">Published-call agreement<br>({level_display} CI)</th><th scope="col">n</th><th scope="col">Direction matches</th></tr></thead><tbody>{''.join(rerun_rows)}</tbody></table><p class="note">Intervals resample papers. Direction matches use published significant results. <a href="data/agent-reruns.json">Agent rerun JSON</a></p></section>
 <section aria-labelledby="expert"><h2 id="expert">Expert annotation agreement</h2><table class="expert"><thead><tr><th scope="col">Modality</th><th scope="col">Arm orientation</th><th scope="col">Agreement</th><th scope="col">Matches</th></tr></thead><tbody>{expert_rows}</tbody></table><p class="note">Final candidate calls are compared with calls from complete expert-defined groups, using the same clock outputs and test rules. <a href="data/expert-agreement.json">Expert agreement JSON</a></p></section>
 <section aria-labelledby="task"><h2 id="task">The task</h2><div class="task"><dl><dt>Inputs</dt><dd><ul><li>Public GEO molecular data and sample annotation.</li><li>Study description, case and control groups, clock, and measure.</li><li>Answer-free task records with a preserved <code>record_id</code>.</li></ul></dd></dl><dl><dt>Returns</dt><dd><ul><li><code>higher</code>, <code>lower</code>, or <code>not significant</code>.</li><li>Optional direction and P value for direction AUROC.</li><li>Optional signed effect with units for effect-size scoring.</li></ul></dd></dl></div>{img}<p class="prose">Compare the case group with the control group using the specified clock and measure. Use the paper's significance threshold, or P &lt; {threshold_html} when it states none. Balanced accuracy scores the mean recall of the published classes present. Missing predictions are abstentions; coverage and metric denominators are reported. Keep reference outcomes in the scoring environment.</p></section>
@@ -571,6 +607,12 @@ class Builder:
         save(SITE/'style.css',FONT_FACES+root_css+CSS)
         save(SITE/'.nojekyll','')
         self.json('leaderboard.json',{'cohort':main_key,'records':len(cohorts[main_key]),'papers':paper['published_group_comparison']['papers'],'confidence_level':level,'chance':chance,'systems':systems})
+        self.json('claude-api-2026-11-17.json', claude)
+        buffer = io.StringIO(newline='')
+        writer = csv.DictWriter(buffer, fieldnames=list(claude_predictions[0]), lineterminator='\n')
+        writer.writeheader()
+        writer.writerows(claude_predictions)
+        save(SITE/'data/claude-predictions-2026-11-17.csv', buffer.getvalue())
         self.json('agent-reruns.json',{'cohort':task_key,'records':len(cohorts[task_key]),'interval_method':'paper bootstrap','systems':reruns})
         self.json('expert-agreement.json',{'prediction_variant':'expert_candidate.csv','systems':experts})
         self.json('site-numbers.json',self.numbers)

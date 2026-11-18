@@ -78,6 +78,96 @@
       "prediction_file": "clockbase_paper_groups_welch.csv"
     },
     {
+      "id": "S4:anthropic:claude-fable-5-2",
+      "name": "Claude Fable 5.2 without data",
+      "recall": {
+        "lower": [
+          7,
+          16
+        ],
+        "higher": [
+          24,
+          36
+        ],
+        "none": [
+          45,
+          58
+        ]
+      },
+      "balanced_accuracy": 0.626676245210728,
+      "balanced_accuracy_interval": [
+        0.4944161264470527,
+        0.7717960062813003
+      ],
+      "prediction_file": "language_model_claude_fable_5_2.csv",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "score_key": "models/0/score",
+      "model_key": "models/0",
+      "evaluation_date": "2026-11-17",
+      "provider": "Anthropic official API",
+      "effort": "medium"
+    },
+    {
+      "id": "S4:anthropic:claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5 without data",
+      "recall": {
+        "lower": [
+          8,
+          16
+        ],
+        "higher": [
+          18,
+          36
+        ],
+        "none": [
+          35,
+          58
+        ]
+      },
+      "balanced_accuracy": 0.5344827586206896,
+      "balanced_accuracy_interval": [
+        0.39219467099979555,
+        0.6921130488134607
+      ],
+      "prediction_file": "language_model_claude_sonnet_5_5.csv",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "score_key": "models/3/score",
+      "model_key": "models/3",
+      "evaluation_date": "2026-11-17",
+      "provider": "Anthropic official API",
+      "effort": "medium"
+    },
+    {
+      "id": "S4:anthropic:claude-fable-5-1",
+      "name": "Claude Fable 5.1 without data",
+      "recall": {
+        "lower": [
+          6,
+          16
+        ],
+        "higher": [
+          14,
+          36
+        ],
+        "none": [
+          47,
+          58
+        ]
+      },
+      "balanced_accuracy": 0.5247445721583652,
+      "balanced_accuracy_interval": [
+        0.37725757575757574,
+        0.6543607707766275
+      ],
+      "prediction_file": "language_model_claude_fable_5_1.csv",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "score_key": "models/1/score",
+      "model_key": "models/1",
+      "evaluation_date": "2026-11-17",
+      "provider": "Anthropic official API",
+      "effort": "medium"
+    },
+    {
       "id": "S4:openai:gpt-6-astra",
       "name": "GPT-6 Astra without data",
       "recall": {
@@ -148,6 +238,66 @@
         0.6359796626984126
       ],
       "prediction_file": "language_model_gpt_5_5.csv"
+    },
+    {
+      "id": "S4:anthropic:claude-haiku-5-5",
+      "name": "Claude Haiku 5.5 without data",
+      "recall": {
+        "lower": [
+          5,
+          16
+        ],
+        "higher": [
+          19,
+          36
+        ],
+        "none": [
+          38,
+          58
+        ]
+      },
+      "balanced_accuracy": 0.4984833971902938,
+      "balanced_accuracy_interval": [
+        0.3689406877120349,
+        0.6222279472017517
+      ],
+      "prediction_file": "language_model_claude_haiku_5_5.csv",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "score_key": "models/4/score",
+      "model_key": "models/4",
+      "evaluation_date": "2026-11-17",
+      "provider": "Anthropic official API",
+      "effort": "medium"
+    },
+    {
+      "id": "S4:anthropic:claude-opus-5-5",
+      "name": "Claude Opus 5.5 without data",
+      "recall": {
+        "lower": [
+          3,
+          16
+        ],
+        "higher": [
+          18,
+          36
+        ],
+        "none": [
+          46,
+          58
+        ]
+      },
+      "balanced_accuracy": 0.4935344827586207,
+      "balanced_accuracy_interval": [
+        0.36239611015964884,
+        0.6141216161267038
+      ],
+      "prediction_file": "language_model_claude_opus_5_5.csv",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "score_key": "models/2/score",
+      "model_key": "models/2",
+      "evaluation_date": "2026-11-17",
+      "provider": "Anthropic official API",
+      "effort": "medium"
     },
     {
       "id": "S4:openai:gpt-6-sol",

@@ -56,6 +56,19 @@ def test_three_way_published_counts_and_bootstrap(system, filename):
     assert [matrix[i][i] for i in range(3)] == [expected["recall"][c][0] for c in ("lower", "higher", "none")]
 
 
+@pytest.mark.parametrize("model", json.loads((REF / "claude_api_2026-11-17.json").read_text())["models"],
+                         ids=lambda model: model["model"])
+def test_claude_api_published_counts_and_bootstrap(model):
+    actual = scored(Path(model["prediction_file"]).stem, "main110")
+    expected = model["score"]
+    assert actual["scored"] == actual["submitted"] == 110
+    assert actual["papers"] == 32
+    assert actual["recall"] == expected["recall"]
+    assert actual["balanced_accuracy"] == pytest.approx(expected["balanced_accuracy"], abs=1e-14)
+    assert actual["balanced_accuracy_interval"] == pytest.approx(expected["balanced_accuracy_interval"], abs=1e-14)
+    assert actual["call_agreement"] == expected["call_agreement"]
+
+
 @pytest.mark.parametrize("system,filename", [("S3c", "clockbase_paper_groups"), ("S3r", "clockbase_paper_groups_individual_readers"), ("S3", "clockbase_paper_groups_welch")])
 def test_published_significance_and_direction(system, filename):
     actual = scored(filename, "main110") if system != "S3" else scored(filename, "paper_groups_welch113")

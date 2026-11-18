@@ -2,117 +2,143 @@
   "passed": true,
   "inputs": {
     "README.md": {
-      "sha256": "1a7060b458974d7cacbc42e6399c8ec7880a2030aa889676ea59fcb0f70fb44f",
-      "mtime_ns": 1794625121959087155
+      "sha256": "2489919d6ae641862ae22b68c95501aef45a5dd602d52d9f9946a57e59efb19c",
+      "mtime_ns": 1794966394849270252
     },
     "DATA_LICENSE.md": {
       "sha256": "aebbaac171c91e4a0a2ce31e0cc05237a8e11d8d03d55dc03b72fa8d498cf22d",
-      "mtime_ns": 1794621529257355808
+      "mtime_ns": 1794966063831300792
     },
     "CITATION.cff": {
       "sha256": "5d8ca46ec51b2f09fc05ef732207791741454945a847d41e08dc4a4828196f99",
-      "mtime_ns": 1794621529257101932
+      "mtime_ns": 1794966063831202875
     },
     "reference_results/paper_metrics.json": {
       "sha256": "ecb41f97f375a050f4a4daca9c7c8200208005f8e42409f05aff9c9307df55cd",
-      "mtime_ns": 1794585549503729970
+      "mtime_ns": 1794966063901645454
     },
     "reference_results/reproduced_metrics.json": {
       "sha256": "b3d791ae407fe82034b308f7b4a1b8e2a6542a26ed4d1fa668dd7a61ae06b020",
-      "mtime_ns": 1794622339387078688
+      "mtime_ns": 1794966063902105623
     },
     "reference_results/cohorts.json": {
       "sha256": "8fa0de1754417805def2610d14ef921ad178e1956c9b99c9b70dc758ce40ef18",
-      "mtime_ns": 1794585549434016676
+      "mtime_ns": 1794966063899284023
+    },
+    "reference_results/claude_api_2026-11-17.json": {
+      "sha256": "5279e543321b0de910bbe978b61ce4afac6ebee7af93ff4ff12adcde0f7f194f",
+      "mtime_ns": 1794966222514437173
     },
     "reference_results/supplementary_table_s18.csv": {
       "sha256": "44555f50215a6aa7dd42b8b6ce40768645f7f1aa1ffe045e03d58e569d2c178e",
-      "mtime_ns": 1794585261302056056
+      "mtime_ns": 1794966063902438625
     },
     "reference_results/constant_higher.csv": {
       "sha256": "6598bd8f734a94d71b7f19635674711570c41c5bec268b155178afe58f764ee2",
-      "mtime_ns": 1794585549427088151
+      "mtime_ns": 1794966063899447108
     },
     "reference_results/clockbase_paper_groups_welch.csv": {
       "sha256": "9404964d5f5fc76f41a71dc7fcd616ce4d08ca25f8be9113ea1749366bcff723",
-      "mtime_ns": 1794585549423643097
+      "mtime_ns": 1794966063898864062
     },
     "reference_results/clockbase_paper_groups.csv": {
       "sha256": "367ff776974e129e78ddc503c199b32ccf43dd7e0f20ac33a107d24bfa2eadfd",
-      "mtime_ns": 1794585549427338194
+      "mtime_ns": 1794966063898501394
     },
     "reference_results/clockbase_paper_groups_individual_readers.csv": {
       "sha256": "51c9441260ee5a03e94aa978b7a8754d7760ffd218f00b361e41280c2d3907e1",
-      "mtime_ns": 1794585549427584445
+      "mtime_ns": 1794966063898754979
     },
     "reference_results/language_model_gpt_4_1.csv": {
       "sha256": "731f91671c11f626d66e1f4037f5f78f407f6f9295acb7bd0f19aaeb4a9f24b3",
-      "mtime_ns": 1794585549424184932
+      "mtime_ns": 1794966063900366280
     },
     "reference_results/language_model_gpt_5_5.csv": {
       "sha256": "56288154a031fe1669e2f7aed5c4d54fa306003efdf617b8d3d7ef49dd8aba7a",
-      "mtime_ns": 1794585549424715601
+      "mtime_ns": 1794966063900554364
     },
     "reference_results/language_model_gpt_6_astra.csv": {
       "sha256": "3b03ac8a8b9bc84ac2432c2cbe77abd4171b40350014dc106fb1b0580783e798",
-      "mtime_ns": 1794585549425271186
+      "mtime_ns": 1794966063900689740
     },
     "reference_results/language_model_gpt_6_luna.csv": {
       "sha256": "51bfa849d9747571af126ba332a3392175637a0315a2c5c9dbb318f109278630",
-      "mtime_ns": 1794585549425811063
+      "mtime_ns": 1794966063900823574
     },
     "reference_results/language_model_gpt_6_sol.csv": {
       "sha256": "31582230fb05b1a4e20ae9ddea1b3655cc1d9c7d41ce000ba4fdaf0eb53ae740",
-      "mtime_ns": 1794585549426368649
+      "mtime_ns": 1794966063901128493
+    },
+    "reference_results/language_model_claude_fable_5_2.csv": {
+      "sha256": "cb00862f49f346cb57fabf92c6a9adfda04ab536fe8eecfaaee766afbea1326e",
+      "mtime_ns": 1794965396942732083
+    },
+    "reference_results/language_model_claude_fable_5_1.csv": {
+      "sha256": "422cdd8248d6068fe5cba0a92b84f4a2c4d317cab4dc8ba09b40e785cddf1779",
+      "mtime_ns": 1794965354503653507
+    },
+    "reference_results/language_model_claude_opus_5_5.csv": {
+      "sha256": "a2867d8af6ff967a693800f9cc11b5b6a1f697b89cdfad892857a094ff4e8c78",
+      "mtime_ns": 1794963340440494911
+    },
+    "reference_results/language_model_claude_sonnet_5_5.csv": {
+      "sha256": "8b6b48fec0321de4e4faabc833518992109a4da0bdc6894f07c37fdc59c8b68e",
+      "mtime_ns": 1794965396946282687
+    },
+    "reference_results/language_model_claude_haiku_5_5.csv": {
+      "sha256": "e4291fd29860dad1d0de5bb5754f45158644ba814e535d944c1d6ad798b9b44a",
+      "mtime_ns": 1794965414043129909
     },
     "reference_results/agent_codex_gpt_6_astra_raw.csv": {
       "sha256": "0b1ab5dd3800e5ddf5a9bf9774bf83c651797692fcc36855d6f816a386fef162",
-      "mtime_ns": 1794585549429289034
+      "mtime_ns": 1794966063897443263
     },
     "reference_results/agent_codex_gpt_6_sol_raw.csv": {
       "sha256": "0288cd2715cbbc7a64a3d39c1ccf41db547063f24719c971c03437bb9b0e569c",
-      "mtime_ns": 1794585549430209371
+      "mtime_ns": 1794966063897763264
     },
     "reference_results/agent_codex_gpt_6_luna_raw.csv": {
       "sha256": "0a4fc2beed7454d314ae98ecdf870092f4c390466f91435829d2baced1bc4781",
-      "mtime_ns": 1794585549429741494
+      "mtime_ns": 1794966063897612180
     },
     "reference_results/agent_codex_gpt_5_5_raw.csv": {
       "sha256": "e8b17a76b781a5489c85b62cdb6f6956c4283cdf4b0f8bbb7cd943204c954ead",
-      "mtime_ns": 1794585549428784491
+      "mtime_ns": 1794966063897105511
     },
     "reference_results/agent_claude_code_claude_opus_5_5_raw.csv": {
       "sha256": "5e2578d3eaf9cd3ed7e7ff989a70a613ef9f592c317798796fe5a84dec4970b0",
-      "mtime_ns": 1794585549430965165
+      "mtime_ns": 1794966063896733383
     },
     "reference_results/agent_biomni_gpt_6_astra_raw.csv": {
       "sha256": "ade230b4266c84e44279e13fd5163c1c201ca066c04ad8432adde1cf6af2020e",
-      "mtime_ns": 1794585549431738751
+      "mtime_ns": 1794966063896505882
     },
     "reference_results/clockbase_agent_stored.csv": {
       "sha256": "cb1d622f99f56763b2fb1eda5f667d2dcf9927546ccde5d26d3f9f5860accfef",
-      "mtime_ns": 1794585549422917886
+      "mtime_ns": 1794966063897913724
     },
     "reference_results/expert_truth.csv": {
       "sha256": "8386dcd4e4b42790e592c879ab6e2abe18ab3abf98e09fefba7bf06441c0d075",
-      "mtime_ns": 1794585549422633343
+      "mtime_ns": 1794966063900166112
     },
     "reference_results/expert_candidate.csv": {
       "sha256": "d98ed755cc8ffeb04f8208cd353e9f07f88a8593964e2cd8d8f3018fe287cd49",
-      "mtime_ns": 1794585549433762009
+      "mtime_ns": 1794966063899881152
     }
   },
   "outputs": {
-    "docs/index.html": "094f9d983a65b189b17b2a2e3d26109e126656074fa2374f4c98f2cd5aa694d4",
+    "docs/index.html": "3fbd65be1403f29ff032a12f265720276c6422618d74ebdab21d0000600a0380",
     "docs/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "docs/style.css": "c3b34f3e97ba563823457740dda836cb670a1bc229bbf46964e735e6ff3bf89b",
     "docs/DESIGN.md": "9780ee95e951e01e2fdf2fa85a547a9076755cebd0192e6b462d19f789156992",
     "docs/data/expert-agreement.json": "c6a36e25bc3bd44db78ab2566517c963bfa9ec89966831cfd7a3a860cd83eec1",
-    "docs/data/provenance.json": "d480117bac98cc7b46118817b6132c0f9ea3debe9660d2e66437316b10b44384",
-    "docs/data/leaderboard.json": "3fafe47d13becb2a58d06c2beefe58e7924f01731dedebe12fbb6568d92bef78",
+    "docs/data/claude-predictions-2026-11-17.csv": "0bb3be6ad2735adf270be88fdecf3e66d270263a6b8a142f56062558283f1f51",
+    "docs/data/provenance.json": "a7c0b119139e2cffeaa55841d9cfcbf3d1d5ec3c95b68de1b19658ddee83e285",
+    "docs/data/claude-api-2026-11-17.json": "5279e543321b0de910bbe978b61ce4afac6ebee7af93ff4ff12adcde0f7f194f",
+    "docs/data/leaderboard.json": "f965dd0d9c873e5f1602af58e0722bda51d1e7c2c70b968218694c5de9562728",
     "docs/data/headings.md": "6b57de3bc30f1ac36593a7eada5e61b36851ca9886cb95d17caa603ce77bb828",
     "docs/data/agent-reruns.json": "87b44e8603214eacb3945a8e9c724a3e408cf767413e333412778bef35aa90a5",
-    "docs/data/site-numbers.json": "b5c55aeba8c75370ba10e02fd14a5d5ddba8915f785fa376a1f16a5fdc7afd33",
+    "docs/data/site-numbers.json": "1f0a8a982fc6780ea8df556850b7b1733e7e4d37d7bb345eef7bae08585201cb",
     "docs/assets/card.png": "aa092f4240a020585437eb933d5243644e73429f4f08169b9971ec76d827dce9",
     "docs/assets/task.png": "7c6ba48e84daf3fbe4d76944409908471c554381e5b3ac8e214903cfeffaeee4",
     "docs/assets/logo.svg": "5bc21a8d23e08ba165948bced0a0843d38a375760a62bd01c47ce9dbcbb51132",
@@ -348,7 +374,7 @@
     },
     {
       "name": "S3c/balanced_accuracy from recalls",
-      "computed": 0.7792145593869731,
+      "computed": 0.7792145593869733,
       "source": 0.7792145593869731,
       "source_path": "reference_results/paper_metrics.json/three_way/S3c",
       "passed": true
@@ -422,7 +448,7 @@
     },
     {
       "name": "S3r/balanced_accuracy from recalls",
-      "computed": 0.7792145593869731,
+      "computed": 0.7792145593869733,
       "source": 0.7792145593869731,
       "source_path": "reference_results/paper_metrics.json/three_way/S3r",
       "passed": true
@@ -795,6 +821,1256 @@
       "computed": 0.4901819923371648,
       "source": 0.4901819923371648,
       "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-2 CSV hash",
+      "computed": "cb00862f49f346cb57fabf92c6a9adfda04ab536fe8eecfaaee766afbea1326e",
+      "source": "cb00862f49f346cb57fabf92c6a9adfda04ab536fe8eecfaaee766afbea1326e",
+      "source_path": "reference_results/claude_api_2026-11-17.json/source_files",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-2 exact cohort identifiers",
+      "computed": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source_path": "reference_results/cohorts.json/main110",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-2 scored coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-2 balanced accuracy from recalls",
+      "computed": 0.626676245210728,
+      "source": 0.626676245210728,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-1 CSV hash",
+      "computed": "422cdd8248d6068fe5cba0a92b84f4a2c4d317cab4dc8ba09b40e785cddf1779",
+      "source": "422cdd8248d6068fe5cba0a92b84f4a2c4d317cab4dc8ba09b40e785cddf1779",
+      "source_path": "reference_results/claude_api_2026-11-17.json/source_files",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-1 exact cohort identifiers",
+      "computed": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source_path": "reference_results/cohorts.json/main110",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-1 scored coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score",
+      "passed": true
+    },
+    {
+      "name": "claude-fable-5-1 balanced accuracy from recalls",
+      "computed": 0.5247445721583652,
+      "source": 0.5247445721583652,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score",
+      "passed": true
+    },
+    {
+      "name": "claude-opus-5-5 CSV hash",
+      "computed": "a2867d8af6ff967a693800f9cc11b5b6a1f697b89cdfad892857a094ff4e8c78",
+      "source": "a2867d8af6ff967a693800f9cc11b5b6a1f697b89cdfad892857a094ff4e8c78",
+      "source_path": "reference_results/claude_api_2026-11-17.json/source_files",
+      "passed": true
+    },
+    {
+      "name": "claude-opus-5-5 exact cohort identifiers",
+      "computed": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source_path": "reference_results/cohorts.json/main110",
+      "passed": true
+    },
+    {
+      "name": "claude-opus-5-5 scored coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score",
+      "passed": true
+    },
+    {
+      "name": "claude-opus-5-5 balanced accuracy from recalls",
+      "computed": 0.4935344827586207,
+      "source": 0.4935344827586207,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score",
+      "passed": true
+    },
+    {
+      "name": "claude-sonnet-5-5 CSV hash",
+      "computed": "8b6b48fec0321de4e4faabc833518992109a4da0bdc6894f07c37fdc59c8b68e",
+      "source": "8b6b48fec0321de4e4faabc833518992109a4da0bdc6894f07c37fdc59c8b68e",
+      "source_path": "reference_results/claude_api_2026-11-17.json/source_files",
+      "passed": true
+    },
+    {
+      "name": "claude-sonnet-5-5 exact cohort identifiers",
+      "computed": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source_path": "reference_results/cohorts.json/main110",
+      "passed": true
+    },
+    {
+      "name": "claude-sonnet-5-5 scored coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score",
+      "passed": true
+    },
+    {
+      "name": "claude-sonnet-5-5 balanced accuracy from recalls",
+      "computed": 0.5344827586206896,
+      "source": 0.5344827586206896,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score",
+      "passed": true
+    },
+    {
+      "name": "claude-haiku-5-5 CSV hash",
+      "computed": "e4291fd29860dad1d0de5bb5754f45158644ba814e535d944c1d6ad798b9b44a",
+      "source": "e4291fd29860dad1d0de5bb5754f45158644ba814e535d944c1d6ad798b9b44a",
+      "source_path": "reference_results/claude_api_2026-11-17.json/source_files",
+      "passed": true
+    },
+    {
+      "name": "claude-haiku-5-5 exact cohort identifiers",
+      "computed": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36038613-GSE185973-Horvathv2-1",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39403983-GSE164056-Hannum-1",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "source_path": "reference_results/cohorts.json/main110",
+      "passed": true
+    },
+    {
+      "name": "claude-haiku-5-5 scored coverage",
+      "computed": 110,
+      "source": 110,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score",
+      "passed": true
+    },
+    {
+      "name": "claude-haiku-5-5 balanced accuracy from recalls",
+      "computed": 0.4984833971902938,
+      "source": 0.4984833971902938,
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score",
       "passed": true
     },
     {
@@ -1536,14 +2812,14 @@
     {
       "name": "saved HTML number 31",
       "computed": [
-        "5",
-        "5"
+        "7",
+        "7"
       ],
       "source": [
-        "5",
-        "5"
+        "7",
+        "7"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/lower/numerator",
       "passed": true
     },
     {
@@ -1556,20 +2832,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 33",
       "computed": [
-        "16",
-        "16"
+        "24",
+        "24"
       ],
       "source": [
-        "16",
-        "16"
+        "24",
+        "24"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/higher/numerator",
       "passed": true
     },
     {
@@ -1582,20 +2858,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 35",
       "computed": [
-        "47",
-        "47"
+        "45",
+        "45"
       ],
       "source": [
-        "47",
-        "47"
+        "45",
+        "45"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/not significant/numerator",
       "passed": true
     },
     {
@@ -1608,64 +2884,64 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/recall/not significant/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 37",
       "computed": [
-        "6"
+        "5.2"
       ],
       "source": [
-        "6"
+        "5.2"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0",
       "passed": true
     },
     {
       "name": "saved HTML number 38",
       "computed": [
-        "0.52"
+        "0.63"
       ],
       "source": [
-        "0.52"
+        "0.63"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/balanced_accuracy",
       "passed": true
     },
     {
       "name": "saved HTML number 39",
       "computed": [
-        "0.39"
+        "0.49"
       ],
       "source": [
-        "0.39"
+        "0.49"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/balanced_accuracy_interval/low",
       "passed": true
     },
     {
       "name": "saved HTML number 40",
       "computed": [
-        "0.65"
+        "0.77"
       ],
       "source": [
-        "0.65"
+        "0.77"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/0/score/balanced_accuracy_interval/high",
       "passed": true
     },
     {
       "name": "saved HTML number 41",
       "computed": [
-        "6",
-        "6"
+        "8",
+        "8"
       ],
       "source": [
-        "6",
-        "6"
+        "8",
+        "8"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/lower/numerator",
       "passed": true
     },
     {
@@ -1678,20 +2954,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 43",
       "computed": [
-        "28",
-        "28"
+        "18",
+        "18"
       ],
       "source": [
-        "28",
-        "28"
+        "18",
+        "18"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/higher/numerator",
       "passed": true
     },
     {
@@ -1704,20 +2980,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 45",
       "computed": [
-        "23",
-        "23"
+        "35",
+        "35"
       ],
       "source": [
-        "23",
-        "23"
+        "35",
+        "35"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/not significant/numerator",
       "passed": true
     },
     {
@@ -1730,51 +3006,51 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/recall/not significant/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 47",
       "computed": [
-        "4.1"
+        "5.5"
       ],
       "source": [
-        "4.1"
+        "5.5"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3",
       "passed": true
     },
     {
       "name": "saved HTML number 48",
       "computed": [
-        "0.52"
+        "0.53"
       ],
       "source": [
-        "0.52"
+        "0.53"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/balanced_accuracy",
       "passed": true
     },
     {
       "name": "saved HTML number 49",
       "computed": [
-        "0.42"
+        "0.39"
       ],
       "source": [
-        "0.42"
+        "0.39"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/balanced_accuracy_interval/low",
       "passed": true
     },
     {
       "name": "saved HTML number 50",
       "computed": [
-        "0.62"
+        "0.69"
       ],
       "source": [
-        "0.62"
+        "0.69"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/3/score/balanced_accuracy_interval/high",
       "passed": true
     },
     {
@@ -1787,7 +3063,7 @@
         "6",
         "6"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/lower/numerator",
       "passed": true
     },
     {
@@ -1800,20 +3076,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 53",
       "computed": [
-        "17",
-        "17"
+        "14",
+        "14"
       ],
       "source": [
-        "17",
-        "17"
+        "14",
+        "14"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/higher/numerator",
       "passed": true
     },
     {
@@ -1826,20 +3102,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 55",
       "computed": [
-        "38",
-        "38"
+        "47",
+        "47"
       ],
       "source": [
-        "38",
-        "38"
+        "47",
+        "47"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/numerator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/not significant/numerator",
       "passed": true
     },
     {
@@ -1852,51 +3128,51 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/denominator",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/recall/not significant/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 57",
       "computed": [
-        "5.5"
+        "5.1"
       ],
       "source": [
-        "5.5"
+        "5.1"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1",
       "passed": true
     },
     {
       "name": "saved HTML number 58",
       "computed": [
-        "0.50"
+        "0.52"
       ],
       "source": [
-        "0.50"
+        "0.52"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/balanced_accuracy",
       "passed": true
     },
     {
       "name": "saved HTML number 59",
       "computed": [
-        "0.35"
+        "0.38"
       ],
       "source": [
-        "0.35"
+        "0.38"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/balanced_accuracy_interval/low",
       "passed": true
     },
     {
       "name": "saved HTML number 60",
       "computed": [
-        "0.64"
+        "0.65"
       ],
       "source": [
-        "0.64"
+        "0.65"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/1/score/balanced_accuracy_interval/high",
       "passed": true
     },
     {
@@ -1909,7 +3185,7 @@
         "5",
         "5"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
       "passed": true
     },
     {
@@ -1922,20 +3198,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 63",
       "computed": [
-        "15",
-        "15"
+        "16",
+        "16"
       ],
       "source": [
-        "15",
-        "15"
+        "16",
+        "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
       "passed": true
     },
     {
@@ -1948,20 +3224,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 65",
       "computed": [
-        "43",
-        "43"
+        "47",
+        "47"
       ],
       "source": [
-        "43",
-        "43"
+        "47",
+        "47"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/numerator",
       "passed": true
     },
     {
@@ -1974,7 +3250,7 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/recall/none/denominator",
       "passed": true
     },
     {
@@ -1985,53 +3261,53 @@
       "source": [
         "6"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra",
       "passed": true
     },
     {
       "name": "saved HTML number 68",
       "computed": [
-        "0.49"
+        "0.52"
       ],
       "source": [
-        "0.49"
+        "0.52"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy",
       "passed": true
     },
     {
       "name": "saved HTML number 69",
       "computed": [
-        "0.35"
+        "0.39"
       ],
       "source": [
-        "0.35"
+        "0.39"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
       "passed": true
     },
     {
       "name": "saved HTML number 70",
       "computed": [
-        "0.62"
+        "0.65"
       ],
       "source": [
-        "0.62"
+        "0.65"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
       "passed": true
     },
     {
       "name": "saved HTML number 71",
       "computed": [
-        "5",
-        "5"
+        "6",
+        "6"
       ],
       "source": [
-        "5",
-        "5"
+        "6",
+        "6"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/numerator",
       "passed": true
     },
     {
@@ -2044,20 +3320,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 73",
       "computed": [
-        "12",
-        "12"
+        "28",
+        "28"
       ],
       "source": [
-        "12",
-        "12"
+        "28",
+        "28"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/numerator",
       "passed": true
     },
     {
@@ -2070,20 +3346,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 75",
       "computed": [
-        "42",
-        "42"
+        "23",
+        "23"
       ],
       "source": [
-        "42",
-        "42"
+        "23",
+        "23"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/numerator",
       "passed": true
     },
     {
@@ -2096,64 +3372,64 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/recall/none/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 77",
       "computed": [
-        "6"
+        "4.1"
       ],
       "source": [
-        "6"
+        "4.1"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1",
       "passed": true
     },
     {
       "name": "saved HTML number 78",
       "computed": [
-        "0.46"
+        "0.52"
       ],
       "source": [
-        "0.46"
+        "0.52"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy",
       "passed": true
     },
     {
       "name": "saved HTML number 79",
       "computed": [
-        "0.31"
+        "0.42"
       ],
       "source": [
-        "0.31"
+        "0.42"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
       "passed": true
     },
     {
       "name": "saved HTML number 80",
       "computed": [
-        "0.59"
+        "0.62"
       ],
       "source": [
-        "0.59"
+        "0.62"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
       "passed": true
     },
     {
       "name": "saved HTML number 81",
       "computed": [
-        "0",
-        "0"
+        "6",
+        "6"
       ],
       "source": [
-        "0",
-        "0"
+        "6",
+        "6"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/numerator",
       "passed": true
     },
     {
@@ -2166,20 +3442,20 @@
         "16",
         "16"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/lower/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 83",
       "computed": [
-        "36",
-        "36"
+        "17",
+        "17"
       ],
       "source": [
-        "36",
-        "36"
+        "17",
+        "17"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/numerator",
       "passed": true
     },
     {
@@ -2192,20 +3468,20 @@
         "36",
         "36"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/higher/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 85",
       "computed": [
-        "0",
-        "0"
+        "38",
+        "38"
       ],
       "source": [
-        "0",
-        "0"
+        "38",
+        "38"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/numerator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/numerator",
       "passed": true
     },
     {
@@ -2218,11 +3494,621 @@
         "58",
         "58"
       ],
-      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/denominator",
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/recall/none/denominator",
       "passed": true
     },
     {
       "name": "saved HTML number 87",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 88",
+      "computed": [
+        "0.50"
+      ],
+      "source": [
+        "0.50"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 89",
+      "computed": [
+        "0.35"
+      ],
+      "source": [
+        "0.35"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 90",
+      "computed": [
+        "0.64"
+      ],
+      "source": [
+        "0.64"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 91",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 92",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 93",
+      "computed": [
+        "19",
+        "19"
+      ],
+      "source": [
+        "19",
+        "19"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 94",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 95",
+      "computed": [
+        "38",
+        "38"
+      ],
+      "source": [
+        "38",
+        "38"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/not significant/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 96",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/recall/not significant/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 97",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 98",
+      "computed": [
+        "0.50"
+      ],
+      "source": [
+        "0.50"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 99",
+      "computed": [
+        "0.37"
+      ],
+      "source": [
+        "0.37"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 100",
+      "computed": [
+        "0.62"
+      ],
+      "source": [
+        "0.62"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/4/score/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 101",
+      "computed": [
+        "3",
+        "3"
+      ],
+      "source": [
+        "3",
+        "3"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 102",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 103",
+      "computed": [
+        "18",
+        "18"
+      ],
+      "source": [
+        "18",
+        "18"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 104",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 105",
+      "computed": [
+        "46",
+        "46"
+      ],
+      "source": [
+        "46",
+        "46"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/not significant/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 106",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/recall/not significant/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 107",
+      "computed": [
+        "5.5"
+      ],
+      "source": [
+        "5.5"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 108",
+      "computed": [
+        "0.49"
+      ],
+      "source": [
+        "0.49"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 109",
+      "computed": [
+        "0.36"
+      ],
+      "source": [
+        "0.36"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 110",
+      "computed": [
+        "0.61"
+      ],
+      "source": [
+        "0.61"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/models/2/score/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 111",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 112",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 113",
+      "computed": [
+        "15",
+        "15"
+      ],
+      "source": [
+        "15",
+        "15"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 114",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 115",
+      "computed": [
+        "43",
+        "43"
+      ],
+      "source": [
+        "43",
+        "43"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 116",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 117",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 118",
+      "computed": [
+        "0.49"
+      ],
+      "source": [
+        "0.49"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 119",
+      "computed": [
+        "0.35"
+      ],
+      "source": [
+        "0.35"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 120",
+      "computed": [
+        "0.62"
+      ],
+      "source": [
+        "0.62"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 121",
+      "computed": [
+        "5",
+        "5"
+      ],
+      "source": [
+        "5",
+        "5"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 122",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 123",
+      "computed": [
+        "12",
+        "12"
+      ],
+      "source": [
+        "12",
+        "12"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 124",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 125",
+      "computed": [
+        "42",
+        "42"
+      ],
+      "source": [
+        "42",
+        "42"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 126",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 127",
+      "computed": [
+        "6"
+      ],
+      "source": [
+        "6"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 128",
+      "computed": [
+        "0.46"
+      ],
+      "source": [
+        "0.46"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 129",
+      "computed": [
+        "0.31"
+      ],
+      "source": [
+        "0.31"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 130",
+      "computed": [
+        "0.59"
+      ],
+      "source": [
+        "0.59"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 131",
+      "computed": [
+        "0",
+        "0"
+      ],
+      "source": [
+        "0",
+        "0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 132",
+      "computed": [
+        "16",
+        "16"
+      ],
+      "source": [
+        "16",
+        "16"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/lower/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 133",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 134",
+      "computed": [
+        "36",
+        "36"
+      ],
+      "source": [
+        "36",
+        "36"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/higher/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 135",
+      "computed": [
+        "0",
+        "0"
+      ],
+      "source": [
+        "0",
+        "0"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/numerator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 136",
+      "computed": [
+        "58",
+        "58"
+      ],
+      "source": [
+        "58",
+        "58"
+      ],
+      "source_path": "reference_results/paper_metrics.json/three_way/S0/recall/none/denominator",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 137",
       "computed": [
         "0.33"
       ],
@@ -2233,7 +4119,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 88",
+      "name": "saved HTML number 138",
       "computed": [
         "0.33"
       ],
@@ -2244,7 +4130,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 89",
+      "name": "saved HTML number 139",
       "computed": [
         "0.33"
       ],
@@ -2255,7 +4141,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 90",
+      "name": "saved HTML number 140",
       "computed": [
         "0.0"
       ],
@@ -2266,7 +4152,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 91",
+      "name": "saved HTML number 141",
       "computed": [
         "0.25"
       ],
@@ -2277,7 +4163,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 92",
+      "name": "saved HTML number 142",
       "computed": [
         "0.5"
       ],
@@ -2288,7 +4174,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 93",
+      "name": "saved HTML number 143",
       "computed": [
         "0.75"
       ],
@@ -2299,7 +4185,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 94",
+      "name": "saved HTML number 144",
       "computed": [
         "1.0"
       ],
@@ -2310,7 +4196,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 95",
+      "name": "saved HTML number 145",
       "computed": [
         "82.43%"
       ],
@@ -2321,7 +4207,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 96",
+      "name": "saved HTML number 146",
       "computed": [
         "74.60%"
       ],
@@ -2332,7 +4218,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 97",
+      "name": "saved HTML number 147",
       "computed": [
         "90.28%"
       ],
@@ -2343,7 +4229,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 98",
+      "name": "saved HTML number 148",
       "computed": [
         "74"
       ],
@@ -2354,7 +4240,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 99",
+      "name": "saved HTML number 149",
       "computed": [
         "26"
       ],
@@ -2365,7 +4251,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 100",
+      "name": "saved HTML number 150",
       "computed": [
         "30"
       ],
@@ -2376,7 +4262,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 101",
+      "name": "saved HTML number 151",
       "computed": [
         "6"
       ],
@@ -2387,7 +4273,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 102",
+      "name": "saved HTML number 152",
       "computed": [
         "82.86%"
       ],
@@ -2398,7 +4284,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 103",
+      "name": "saved HTML number 153",
       "computed": [
         "69.81%"
       ],
@@ -2409,7 +4295,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 104",
+      "name": "saved HTML number 154",
       "computed": [
         "93.48%"
       ],
@@ -2420,7 +4306,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 105",
+      "name": "saved HTML number 155",
       "computed": [
         "70"
       ],
@@ -2431,7 +4317,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 106",
+      "name": "saved HTML number 156",
       "computed": [
         "25"
       ],
@@ -2442,7 +4328,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 107",
+      "name": "saved HTML number 157",
       "computed": [
         "27"
       ],
@@ -2453,7 +4339,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 108",
+      "name": "saved HTML number 158",
       "computed": [
         "6"
       ],
@@ -2464,7 +4350,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 109",
+      "name": "saved HTML number 159",
       "computed": [
         "90.28%"
       ],
@@ -2475,7 +4361,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 110",
+      "name": "saved HTML number 160",
       "computed": [
         "81.16%"
       ],
@@ -2486,7 +4372,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 111",
+      "name": "saved HTML number 161",
       "computed": [
         "97.53%"
       ],
@@ -2497,7 +4383,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 112",
+      "name": "saved HTML number 162",
       "computed": [
         "72"
       ],
@@ -2508,7 +4394,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 113",
+      "name": "saved HTML number 163",
       "computed": [
         "25"
       ],
@@ -2519,7 +4405,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 114",
+      "name": "saved HTML number 164",
       "computed": [
         "27"
       ],
@@ -2530,7 +4416,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 115",
+      "name": "saved HTML number 165",
       "computed": [
         "6"
       ],
@@ -2541,7 +4427,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 116",
+      "name": "saved HTML number 166",
       "computed": [
         "77.33%"
       ],
@@ -2552,7 +4438,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 117",
+      "name": "saved HTML number 167",
       "computed": [
         "62.96%"
       ],
@@ -2563,7 +4449,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 118",
+      "name": "saved HTML number 168",
       "computed": [
         "89.14%"
       ],
@@ -2574,7 +4460,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 119",
+      "name": "saved HTML number 169",
       "computed": [
         "75"
       ],
@@ -2585,7 +4471,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 120",
+      "name": "saved HTML number 170",
       "computed": [
         "27"
       ],
@@ -2596,7 +4482,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 121",
+      "name": "saved HTML number 171",
       "computed": [
         "30"
       ],
@@ -2607,7 +4493,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 122",
+      "name": "saved HTML number 172",
       "computed": [
         "5.5"
       ],
@@ -2618,7 +4504,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 123",
+      "name": "saved HTML number 173",
       "computed": [
         "79.27%"
       ],
@@ -2629,7 +4515,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 124",
+      "name": "saved HTML number 174",
       "computed": [
         "66.67%"
       ],
@@ -2640,7 +4526,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 125",
+      "name": "saved HTML number 175",
       "computed": [
         "89.80%"
       ],
@@ -2651,7 +4537,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 126",
+      "name": "saved HTML number 176",
       "computed": [
         "82"
       ],
@@ -2662,7 +4548,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 127",
+      "name": "saved HTML number 177",
       "computed": [
         "32"
       ],
@@ -2673,7 +4559,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 128",
+      "name": "saved HTML number 178",
       "computed": [
         "34"
       ],
@@ -2684,7 +4570,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 129",
+      "name": "saved HTML number 179",
       "computed": [
         "5.5"
       ],
@@ -2695,7 +4581,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 130",
+      "name": "saved HTML number 180",
       "computed": [
         "82.76%"
       ],
@@ -2706,7 +4592,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 131",
+      "name": "saved HTML number 181",
       "computed": [
         "71.74%"
       ],
@@ -2717,7 +4603,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 132",
+      "name": "saved HTML number 182",
       "computed": [
         "92.54%"
       ],
@@ -2728,7 +4614,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 133",
+      "name": "saved HTML number 183",
       "computed": [
         "87"
       ],
@@ -2739,7 +4625,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 134",
+      "name": "saved HTML number 184",
       "computed": [
         "35"
       ],
@@ -2750,7 +4636,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 135",
+      "name": "saved HTML number 185",
       "computed": [
         "37"
       ],
@@ -2761,7 +4647,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 136",
+      "name": "saved HTML number 186",
       "computed": [
         "6"
       ],
@@ -2772,7 +4658,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 137",
+      "name": "saved HTML number 187",
       "computed": [
         "80.88%"
       ],
@@ -2783,7 +4669,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 138",
+      "name": "saved HTML number 188",
       "computed": [
         "67.27%"
       ],
@@ -2794,7 +4680,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 139",
+      "name": "saved HTML number 189",
       "computed": [
         "92.75%"
       ],
@@ -2805,7 +4691,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 140",
+      "name": "saved HTML number 190",
       "computed": [
         "68"
       ],
@@ -2816,7 +4702,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 141",
+      "name": "saved HTML number 191",
       "computed": [
         "24"
       ],
@@ -2827,7 +4713,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 142",
+      "name": "saved HTML number 192",
       "computed": [
         "26"
       ],
@@ -2838,7 +4724,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 143",
+      "name": "saved HTML number 193",
       "computed": [
         "98.85%"
       ],
@@ -2849,7 +4735,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 144",
+      "name": "saved HTML number 194",
       "computed": [
         "86"
       ],
@@ -2860,7 +4746,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 145",
+      "name": "saved HTML number 195",
       "computed": [
         "87"
       ],
@@ -2871,7 +4757,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 146",
+      "name": "saved HTML number 196",
       "computed": [
         "98.88%"
       ],
@@ -2882,7 +4768,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 147",
+      "name": "saved HTML number 197",
       "computed": [
         "88"
       ],
@@ -2893,7 +4779,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 148",
+      "name": "saved HTML number 198",
       "computed": [
         "89"
       ],
@@ -2904,7 +4790,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 149",
+      "name": "saved HTML number 199",
       "computed": [
         "98.37%"
       ],
@@ -2915,7 +4801,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 150",
+      "name": "saved HTML number 200",
       "computed": [
         "121"
       ],
@@ -2926,7 +4812,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 151",
+      "name": "saved HTML number 201",
       "computed": [
         "123"
       ],
@@ -2937,7 +4823,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 152",
+      "name": "saved HTML number 202",
       "computed": [
         "96.32%"
       ],
@@ -2948,7 +4834,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 153",
+      "name": "saved HTML number 203",
       "computed": [
         "157"
       ],
@@ -2959,7 +4845,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 154",
+      "name": "saved HTML number 204",
       "computed": [
         "163"
       ],
@@ -2970,7 +4856,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 155",
+      "name": "saved HTML number 205",
       "computed": [
         "4.0"
       ],
@@ -2981,40 +4867,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 156",
-      "computed": [
-        "4.0"
-      ],
-      "source": [
-        "4.0"
-      ],
-      "source_path": "DATA_LICENSE.md/license link label",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 157",
-      "computed": [
-        "10.1101"
-      ],
-      "source": [
-        "10.1101"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 158",
-      "computed": [
-        "2023.02.28.530532"
-      ],
-      "source": [
-        "2023.02.28.530532"
-      ],
-      "source_path": "DATA_LICENSE.md/license paragraphs",
-      "passed": true
-    },
-    {
-      "name": "saved HTML number 159",
+      "name": "saved HTML number 206",
       "computed": [
         "4.0"
       ],
@@ -3025,7 +4878,40 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 160",
+      "name": "saved HTML number 207",
+      "computed": [
+        "10.1101"
+      ],
+      "source": [
+        "10.1101"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 208",
+      "computed": [
+        "2023.02.28.530532"
+      ],
+      "source": [
+        "2023.02.28.530532"
+      ],
+      "source_path": "DATA_LICENSE.md/license paragraphs",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 209",
+      "computed": [
+        "4.0"
+      ],
+      "source": [
+        "4.0"
+      ],
+      "source_path": "DATA_LICENSE.md/license link label",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 210",
       "computed": [
         "4.0"
       ],
@@ -3036,7 +4922,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 161",
+      "name": "saved HTML number 211",
       "computed": [
         "2026"
       ],
@@ -3047,7 +4933,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 162",
+      "name": "saved HTML number 212",
       "computed": [
         "10.1038"
       ],
@@ -3058,7 +4944,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 163",
+      "name": "saved HTML number 213",
       "computed": [
         "41586"
       ],
@@ -3069,7 +4955,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 164",
+      "name": "saved HTML number 214",
       "computed": [
         "026"
       ],
@@ -3080,7 +4966,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 165",
+      "name": "saved HTML number 215",
       "computed": [
         "10542"
       ],
@@ -3091,7 +4977,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 166",
+      "name": "saved HTML number 216",
       "computed": [
         "3"
       ],
@@ -3102,7 +4988,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 167",
+      "name": "saved HTML number 217",
       "computed": [
         "18763485"
       ],
@@ -3113,7 +4999,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 168",
+      "name": "saved HTML number 218",
       "computed": [
         "4.0"
       ],
@@ -3124,7 +5010,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 169",
+      "name": "saved HTML number 219",
       "computed": [
         "4.0"
       ],
@@ -3135,7 +5021,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 170",
+      "name": "saved HTML number 220",
       "computed": [
         "580"
       ],
@@ -3146,7 +5032,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 171",
+      "name": "saved HTML number 221",
       "computed": [
         "93"
       ],
@@ -3157,7 +5043,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 172",
+      "name": "saved HTML number 222",
       "computed": [
         "125"
       ],
@@ -3168,7 +5054,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 173",
+      "name": "saved HTML number 223",
       "computed": [
         "0.05"
       ],
@@ -3179,7 +5065,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 174",
+      "name": "saved HTML number 224",
       "computed": [
         "110"
       ],
@@ -3190,7 +5076,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 175",
+      "name": "saved HTML number 225",
       "computed": [
         "32"
       ],
@@ -3201,7 +5087,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 176",
+      "name": "saved HTML number 226",
       "computed": [
         "158"
       ],
@@ -3212,7 +5098,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 177",
+      "name": "saved HTML number 227",
       "computed": [
         "47"
       ],
@@ -3223,7 +5109,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 178",
+      "name": "saved HTML number 228",
       "computed": [
         "61"
       ],
@@ -3234,7 +5120,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 179",
+      "name": "saved HTML number 229",
       "computed": [
         "0.33"
       ],
@@ -3245,7 +5131,62 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 180",
+      "name": "saved HTML number 230",
+      "computed": [
+        "17"
+      ],
+      "source": [
+        "17"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 231",
+      "computed": [
+        "2026"
+      ],
+      "source": [
+        "2026"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 232",
+      "computed": [
+        "4096"
+      ],
+      "source": [
+        "4096"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/method_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 233",
+      "computed": [
+        "4"
+      ],
+      "source": [
+        "4"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 234",
+      "computed": [
+        "5.1"
+      ],
+      "source": [
+        "5.1"
+      ],
+      "source_path": "reference_results/claude_api_2026-11-17.json/website_copy/parsing_note",
+      "passed": true
+    },
+    {
+      "name": "saved HTML number 235",
       "computed": [
         "3"
       ],
@@ -3256,7 +5197,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 181",
+      "name": "saved HTML number 236",
       "computed": [
         "110"
       ],
@@ -3267,7 +5208,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 182",
+      "name": "saved HTML number 237",
       "computed": [
         "580"
       ],
@@ -3278,7 +5219,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 183",
+      "name": "saved HTML number 238",
       "computed": [
         "93"
       ],
@@ -3289,7 +5230,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 184",
+      "name": "saved HTML number 239",
       "computed": [
         "125"
       ],
@@ -3300,7 +5241,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 185",
+      "name": "saved HTML number 240",
       "computed": [
         "2025"
       ],
@@ -3311,7 +5252,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 186",
+      "name": "saved HTML number 241",
       "computed": [
         "10.1101"
       ],
@@ -3322,7 +5263,7 @@
       "passed": true
     },
     {
-      "name": "saved HTML number 187",
+      "name": "saved HTML number 242",
       "computed": [
         "2023.02.28.530532"
       ],
@@ -3349,24 +5290,39 @@
         "0.33",
         "0.35",
         "0.35",
+        "0.36",
+        "0.37",
+        "0.38",
+        "0.39",
         "0.39",
         "0.42",
         "0.46",
         "0.49",
+        "0.49",
+        "0.49",
         "0.5",
+        "0.50",
         "0.50",
         "0.52",
         "0.52",
+        "0.52",
+        "0.53",
         "0.55",
         "0.59",
+        "0.61",
         "0.62",
         "0.62",
+        "0.62",
+        "0.63",
         "0.64",
+        "0.65",
         "0.65",
         "0.68",
         "0.68",
         "0.69",
+        "0.69",
         "0.75",
+        "0.77",
         "0.78",
         "0.78",
         "0.82",
@@ -3390,6 +5346,8 @@
         "123",
         "125",
         "125",
+        "14",
+        "14",
         "15",
         "15",
         "157",
@@ -3415,16 +5373,36 @@
         "16",
         "16",
         "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
         "163",
         "17",
         "17",
+        "17",
+        "18",
+        "18",
+        "18",
+        "18",
         "18763485",
+        "19",
+        "19",
         "2023.02.28.530532",
         "2023.02.28.530532",
         "2025",
         "2026",
+        "2026",
         "23",
         "23",
+        "24",
+        "24",
         "24",
         "25",
         "25",
@@ -3439,6 +5417,8 @@
         "28",
         "3",
         "3",
+        "3",
+        "3",
         "30",
         "30",
         "30",
@@ -3449,6 +5429,18 @@
         "32",
         "34",
         "35",
+        "35",
+        "35",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
         "36",
         "36",
         "36",
@@ -3473,6 +5465,9 @@
         "37",
         "38",
         "38",
+        "38",
+        "38",
+        "4",
         "4.0",
         "4.0",
         "4.0",
@@ -3480,20 +5475,35 @@
         "4.0",
         "4.0",
         "4.1",
+        "4096",
         "41586",
         "42",
         "42",
         "43",
         "43",
+        "45",
+        "45",
+        "46",
+        "46",
         "47",
         "47",
         "47",
+        "47",
+        "47",
         "5",
         "5",
         "5",
         "5",
         "5",
         "5",
+        "5",
+        "5",
+        "5.1",
+        "5.1",
+        "5.2",
+        "5.5",
+        "5.5",
+        "5.5",
         "5.5",
         "5.5",
         "5.5",
@@ -3522,8 +5532,20 @@
         "58",
         "58",
         "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
         "580",
         "580",
+        "6",
+        "6",
         "6",
         "6",
         "6",
@@ -3543,6 +5565,8 @@
         "69.81",
         "7",
         "7",
+        "7",
+        "7",
         "70",
         "71.74",
         "72",
@@ -3551,6 +5575,8 @@
         "75",
         "77.33",
         "79.27",
+        "8",
+        "8",
         "80.88",
         "81.16",
         "82",
@@ -3594,24 +5620,39 @@
         "0.33",
         "0.35",
         "0.35",
+        "0.36",
+        "0.37",
+        "0.38",
+        "0.39",
         "0.39",
         "0.42",
         "0.46",
         "0.49",
+        "0.49",
+        "0.49",
         "0.5",
+        "0.50",
         "0.50",
         "0.52",
         "0.52",
+        "0.52",
+        "0.53",
         "0.55",
         "0.59",
+        "0.61",
         "0.62",
         "0.62",
+        "0.62",
+        "0.63",
         "0.64",
+        "0.65",
         "0.65",
         "0.68",
         "0.68",
         "0.69",
+        "0.69",
         "0.75",
+        "0.77",
         "0.78",
         "0.78",
         "0.82",
@@ -3635,6 +5676,8 @@
         "123",
         "125",
         "125",
+        "14",
+        "14",
         "15",
         "15",
         "157",
@@ -3660,16 +5703,36 @@
         "16",
         "16",
         "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
+        "16",
         "163",
         "17",
         "17",
+        "17",
+        "18",
+        "18",
+        "18",
+        "18",
         "18763485",
+        "19",
+        "19",
         "2023.02.28.530532",
         "2023.02.28.530532",
         "2025",
         "2026",
+        "2026",
         "23",
         "23",
+        "24",
+        "24",
         "24",
         "25",
         "25",
@@ -3684,6 +5747,8 @@
         "28",
         "3",
         "3",
+        "3",
+        "3",
         "30",
         "30",
         "30",
@@ -3694,6 +5759,18 @@
         "32",
         "34",
         "35",
+        "35",
+        "35",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
+        "36",
         "36",
         "36",
         "36",
@@ -3718,6 +5795,9 @@
         "37",
         "38",
         "38",
+        "38",
+        "38",
+        "4",
         "4.0",
         "4.0",
         "4.0",
@@ -3725,20 +5805,35 @@
         "4.0",
         "4.0",
         "4.1",
+        "4096",
         "41586",
         "42",
         "42",
         "43",
         "43",
+        "45",
+        "45",
+        "46",
+        "46",
         "47",
         "47",
         "47",
+        "47",
+        "47",
         "5",
         "5",
         "5",
         "5",
         "5",
         "5",
+        "5",
+        "5",
+        "5.1",
+        "5.1",
+        "5.2",
+        "5.5",
+        "5.5",
+        "5.5",
         "5.5",
         "5.5",
         "5.5",
@@ -3767,8 +5862,20 @@
         "58",
         "58",
         "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
+        "58",
         "580",
         "580",
+        "6",
+        "6",
         "6",
         "6",
         "6",
@@ -3788,6 +5895,8 @@
         "69.81",
         "7",
         "7",
+        "7",
+        "7",
         "70",
         "71.74",
         "72",
@@ -3796,6 +5905,8 @@
         "75",
         "77.33",
         "79.27",
+        "8",
+        "8",
         "80.88",
         "81.16",
         "82",
@@ -4079,242 +6190,242 @@
     },
     {
       "id": "31",
-      "value": 5,
-      "display": "5",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
+      "value": 7,
+      "display": "7",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/lower/numerator",
       "format": "int"
     },
     {
       "id": "32",
       "value": 16,
       "display": "16",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "33",
-      "value": 16,
-      "display": "16",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
+      "value": 24,
+      "display": "24",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/higher/numerator",
       "format": "int"
     },
     {
       "id": "34",
       "value": 36,
       "display": "36",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "35",
-      "value": 47,
-      "display": "47",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/none/numerator",
+      "value": 45,
+      "display": "45",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/not significant/numerator",
       "format": "int"
     },
     {
       "id": "36",
       "value": 58,
       "display": "58",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/recall/none/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/recall/not significant/denominator",
       "format": "int"
     },
     {
       "id": "37",
-      "value": "6",
-      "display": "6",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra",
+      "value": "5.2",
+      "display": "5.2",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0",
       "format": "literal"
     },
     {
       "id": "38",
-      "value": 0.5224297573435505,
-      "display": "0.52",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy",
+      "value": 0.626676245210728,
+      "display": "0.63",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/balanced_accuracy",
       "format": "decimal"
     },
     {
       "id": "39",
-      "value": 0.38621148160544444,
-      "display": "0.39",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
+      "value": 0.4944161264470527,
+      "display": "0.49",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/balanced_accuracy_interval/low",
       "format": "decimal"
     },
     {
       "id": "40",
-      "value": 0.6531028155011432,
-      "display": "0.65",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
+      "value": 0.7717960062813003,
+      "display": "0.77",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/0/score/balanced_accuracy_interval/high",
       "format": "decimal"
     },
     {
       "id": "41",
-      "value": 6,
-      "display": "6",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/lower/numerator",
+      "value": 8,
+      "display": "8",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/lower/numerator",
       "format": "int"
     },
     {
       "id": "42",
       "value": 16,
       "display": "16",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/lower/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "43",
-      "value": 28,
-      "display": "28",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/higher/numerator",
+      "value": 18,
+      "display": "18",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/higher/numerator",
       "format": "int"
     },
     {
       "id": "44",
       "value": 36,
       "display": "36",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/higher/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "45",
-      "value": 23,
-      "display": "23",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/none/numerator",
+      "value": 35,
+      "display": "35",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/not significant/numerator",
       "format": "int"
     },
     {
       "id": "46",
       "value": 58,
       "display": "58",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/recall/none/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/recall/not significant/denominator",
       "format": "int"
     },
     {
       "id": "47",
-      "value": "4.1",
-      "display": "4.1",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3",
       "format": "literal"
     },
     {
       "id": "48",
-      "value": 0.5164431673052362,
-      "display": "0.52",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy",
+      "value": 0.5344827586206896,
+      "display": "0.53",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/balanced_accuracy",
       "format": "decimal"
     },
     {
       "id": "49",
-      "value": 0.4156860594360594,
-      "display": "0.42",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
+      "value": 0.39219467099979555,
+      "display": "0.39",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/balanced_accuracy_interval/low",
       "format": "decimal"
     },
     {
       "id": "50",
-      "value": 0.6202094040154864,
-      "display": "0.62",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
+      "value": 0.6921130488134607,
+      "display": "0.69",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/3/score/balanced_accuracy_interval/high",
       "format": "decimal"
     },
     {
       "id": "51",
       "value": 6,
       "display": "6",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/lower/numerator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/lower/numerator",
       "format": "int"
     },
     {
       "id": "52",
       "value": 16,
       "display": "16",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/lower/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "53",
-      "value": 17,
-      "display": "17",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/higher/numerator",
+      "value": 14,
+      "display": "14",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/higher/numerator",
       "format": "int"
     },
     {
       "id": "54",
       "value": 36,
       "display": "36",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/higher/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "55",
-      "value": 38,
-      "display": "38",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/none/numerator",
+      "value": 47,
+      "display": "47",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/not significant/numerator",
       "format": "int"
     },
     {
       "id": "56",
       "value": 58,
       "display": "58",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/recall/none/denominator",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/recall/not significant/denominator",
       "format": "int"
     },
     {
       "id": "57",
-      "value": "5.5",
-      "display": "5.5",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5",
+      "value": "5.1",
+      "display": "5.1",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1",
       "format": "literal"
     },
     {
       "id": "58",
-      "value": 0.5007982120051085,
-      "display": "0.50",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "value": 0.5247445721583652,
+      "display": "0.52",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/balanced_accuracy",
       "format": "decimal"
     },
     {
       "id": "59",
-      "value": 0.3520227497388878,
-      "display": "0.35",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "value": 0.37725757575757574,
+      "display": "0.38",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/balanced_accuracy_interval/low",
       "format": "decimal"
     },
     {
       "id": "60",
-      "value": 0.6359796626984126,
-      "display": "0.64",
-      "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "value": 0.6543607707766275,
+      "display": "0.65",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/1/score/balanced_accuracy_interval/high",
       "format": "decimal"
     },
     {
@@ -4322,7 +6433,7 @@
       "value": 5,
       "display": "5",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/numerator",
       "format": "int"
     },
     {
@@ -4330,15 +6441,15 @@
       "value": 16,
       "display": "16",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "63",
-      "value": 15,
-      "display": "15",
+      "value": 16,
+      "display": "16",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/numerator",
       "format": "int"
     },
     {
@@ -4346,15 +6457,15 @@
       "value": 36,
       "display": "36",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "65",
-      "value": 43,
-      "display": "43",
+      "value": 47,
+      "display": "47",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/none/numerator",
       "format": "int"
     },
     {
@@ -4362,7 +6473,7 @@
       "value": 58,
       "display": "58",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "key": "three_way/S4:openai:gpt-6-astra/recall/none/denominator",
       "format": "int"
     },
     {
@@ -4370,39 +6481,39 @@
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol",
+      "key": "three_way/S4:openai:gpt-6-astra",
       "format": "literal"
     },
     {
       "id": "68",
-      "value": 0.4901819923371648,
-      "display": "0.49",
+      "value": 0.5224297573435505,
+      "display": "0.52",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy",
       "format": "decimal"
     },
     {
       "id": "69",
-      "value": 0.3536003454398263,
-      "display": "0.35",
+      "value": 0.38621148160544444,
+      "display": "0.39",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/low",
       "format": "decimal"
     },
     {
       "id": "70",
-      "value": 0.6231062535370685,
-      "display": "0.62",
+      "value": 0.6531028155011432,
+      "display": "0.65",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "key": "three_way/S4:openai:gpt-6-astra/balanced_accuracy_interval/high",
       "format": "decimal"
     },
     {
       "id": "71",
-      "value": 5,
-      "display": "5",
+      "value": 6,
+      "display": "6",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/lower/numerator",
       "format": "int"
     },
     {
@@ -4410,15 +6521,15 @@
       "value": 16,
       "display": "16",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "73",
-      "value": 12,
-      "display": "12",
+      "value": 28,
+      "display": "28",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/higher/numerator",
       "format": "int"
     },
     {
@@ -4426,15 +6537,15 @@
       "value": 36,
       "display": "36",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "75",
-      "value": 42,
-      "display": "42",
+      "value": 23,
+      "display": "23",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/none/numerator",
       "format": "int"
     },
     {
@@ -4442,47 +6553,47 @@
       "value": 58,
       "display": "58",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "key": "three_way/S4:openai:gpt-4.1/recall/none/denominator",
       "format": "int"
     },
     {
       "id": "77",
-      "value": "6",
-      "display": "6",
+      "value": "4.1",
+      "display": "4.1",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna",
+      "key": "three_way/S4:openai:gpt-4.1",
       "format": "literal"
     },
     {
       "id": "78",
-      "value": 0.45665708812260536,
-      "display": "0.46",
+      "value": 0.5164431673052362,
+      "display": "0.52",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy",
       "format": "decimal"
     },
     {
       "id": "79",
-      "value": 0.3123848137983028,
-      "display": "0.31",
+      "value": 0.4156860594360594,
+      "display": "0.42",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/low",
       "format": "decimal"
     },
     {
       "id": "80",
-      "value": 0.5872033131590441,
-      "display": "0.59",
+      "value": 0.6202094040154864,
+      "display": "0.62",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "key": "three_way/S4:openai:gpt-4.1/balanced_accuracy_interval/high",
       "format": "decimal"
     },
     {
       "id": "81",
-      "value": 0,
-      "display": "0",
+      "value": 6,
+      "display": "6",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/lower/numerator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/lower/numerator",
       "format": "int"
     },
     {
@@ -4490,15 +6601,15 @@
       "value": 16,
       "display": "16",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/lower/denominator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/lower/denominator",
       "format": "int"
     },
     {
       "id": "83",
-      "value": 36,
-      "display": "36",
+      "value": 17,
+      "display": "17",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/higher/numerator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/higher/numerator",
       "format": "int"
     },
     {
@@ -4506,15 +6617,15 @@
       "value": 36,
       "display": "36",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/higher/denominator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/higher/denominator",
       "format": "int"
     },
     {
       "id": "85",
-      "value": 0,
-      "display": "0",
+      "value": 38,
+      "display": "38",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/none/numerator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/none/numerator",
       "format": "int"
     },
     {
@@ -4522,11 +6633,411 @@
       "value": 58,
       "display": "58",
       "source": "reference_results/paper_metrics.json",
-      "key": "three_way/S0/recall/none/denominator",
+      "key": "three_way/S4:openai:gpt-5.5/recall/none/denominator",
       "format": "int"
     },
     {
       "id": "87",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5",
+      "format": "literal"
+    },
+    {
+      "id": "88",
+      "value": 0.5007982120051085,
+      "display": "0.50",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "89",
+      "value": 0.3520227497388878,
+      "display": "0.35",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "90",
+      "value": 0.6359796626984126,
+      "display": "0.64",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-5.5/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "91",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "92",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "93",
+      "value": 19,
+      "display": "19",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "94",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "95",
+      "value": 38,
+      "display": "38",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/not significant/numerator",
+      "format": "int"
+    },
+    {
+      "id": "96",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/recall/not significant/denominator",
+      "format": "int"
+    },
+    {
+      "id": "97",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4",
+      "format": "literal"
+    },
+    {
+      "id": "98",
+      "value": 0.4984833971902938,
+      "display": "0.50",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "99",
+      "value": 0.3689406877120349,
+      "display": "0.37",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "100",
+      "value": 0.6222279472017517,
+      "display": "0.62",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/4/score/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "101",
+      "value": 3,
+      "display": "3",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "102",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "103",
+      "value": 18,
+      "display": "18",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "104",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "105",
+      "value": 46,
+      "display": "46",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/not significant/numerator",
+      "format": "int"
+    },
+    {
+      "id": "106",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/recall/not significant/denominator",
+      "format": "int"
+    },
+    {
+      "id": "107",
+      "value": "5.5",
+      "display": "5.5",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2",
+      "format": "literal"
+    },
+    {
+      "id": "108",
+      "value": 0.4935344827586207,
+      "display": "0.49",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "109",
+      "value": 0.36239611015964884,
+      "display": "0.36",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "110",
+      "value": 0.6141216161267038,
+      "display": "0.61",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "models/2/score/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "111",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "112",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "113",
+      "value": 15,
+      "display": "15",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "114",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "115",
+      "value": 43,
+      "display": "43",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "116",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "117",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol",
+      "format": "literal"
+    },
+    {
+      "id": "118",
+      "value": 0.4901819923371648,
+      "display": "0.49",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "119",
+      "value": 0.3536003454398263,
+      "display": "0.35",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "120",
+      "value": 0.6231062535370685,
+      "display": "0.62",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-sol/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "121",
+      "value": 5,
+      "display": "5",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "122",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "123",
+      "value": 12,
+      "display": "12",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "124",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "125",
+      "value": 42,
+      "display": "42",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "126",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "127",
+      "value": "6",
+      "display": "6",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna",
+      "format": "literal"
+    },
+    {
+      "id": "128",
+      "value": 0.45665708812260536,
+      "display": "0.46",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy",
+      "format": "decimal"
+    },
+    {
+      "id": "129",
+      "value": 0.3123848137983028,
+      "display": "0.31",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/low",
+      "format": "decimal"
+    },
+    {
+      "id": "130",
+      "value": 0.5872033131590441,
+      "display": "0.59",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S4:openai:gpt-6-luna/balanced_accuracy_interval/high",
+      "format": "decimal"
+    },
+    {
+      "id": "131",
+      "value": 0,
+      "display": "0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/lower/numerator",
+      "format": "int"
+    },
+    {
+      "id": "132",
+      "value": 16,
+      "display": "16",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/lower/denominator",
+      "format": "int"
+    },
+    {
+      "id": "133",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/higher/numerator",
+      "format": "int"
+    },
+    {
+      "id": "134",
+      "value": 36,
+      "display": "36",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/higher/denominator",
+      "format": "int"
+    },
+    {
+      "id": "135",
+      "value": 0,
+      "display": "0",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/none/numerator",
+      "format": "int"
+    },
+    {
+      "id": "136",
+      "value": 58,
+      "display": "58",
+      "source": "reference_results/paper_metrics.json",
+      "key": "three_way/S0/recall/none/denominator",
+      "format": "int"
+    },
+    {
+      "id": "137",
       "value": 0.3333333333333333,
       "display": "0.33",
       "source": "reference_results/paper_metrics.json",
@@ -4534,7 +7045,7 @@
       "format": "decimal"
     },
     {
-      "id": "88",
+      "id": "138",
       "value": 0.3333333333333333,
       "display": "0.33",
       "source": "reference_results/paper_metrics.json",
@@ -4542,7 +7053,7 @@
       "format": "decimal"
     },
     {
-      "id": "89",
+      "id": "139",
       "value": 0.3333333333333333,
       "display": "0.33",
       "source": "reference_results/paper_metrics.json",
@@ -4550,7 +7061,7 @@
       "format": "decimal"
     },
     {
-      "id": "90",
+      "id": "140",
       "value": 0.0,
       "display": "0.0",
       "source": "reference_results/paper_metrics.json",
@@ -4558,7 +7069,7 @@
       "format": "literal"
     },
     {
-      "id": "91",
+      "id": "141",
       "value": 0.25,
       "display": "0.25",
       "source": "reference_results/paper_metrics.json",
@@ -4566,7 +7077,7 @@
       "format": "literal"
     },
     {
-      "id": "92",
+      "id": "142",
       "value": 0.5,
       "display": "0.5",
       "source": "reference_results/paper_metrics.json",
@@ -4574,7 +7085,7 @@
       "format": "literal"
     },
     {
-      "id": "93",
+      "id": "143",
       "value": 0.75,
       "display": "0.75",
       "source": "reference_results/paper_metrics.json",
@@ -4582,7 +7093,7 @@
       "format": "literal"
     },
     {
-      "id": "94",
+      "id": "144",
       "value": 1.0,
       "display": "1.0",
       "source": "reference_results/paper_metrics.json",
@@ -4590,7 +7101,7 @@
       "format": "literal"
     },
     {
-      "id": "95",
+      "id": "145",
       "value": 0.8243243243243243,
       "display": "82.43%",
       "source": "reference_results/paper_metrics.json",
@@ -4598,7 +7109,7 @@
       "format": "percent"
     },
     {
-      "id": "96",
+      "id": "146",
       "value": 0.746017316017316,
       "display": "74.60%",
       "source": "reference_results/paper_metrics.json",
@@ -4606,7 +7117,7 @@
       "format": "percent"
     },
     {
-      "id": "97",
+      "id": "147",
       "value": 0.9027777777777778,
       "display": "90.28%",
       "source": "reference_results/paper_metrics.json",
@@ -4614,7 +7125,7 @@
       "format": "percent"
     },
     {
-      "id": "98",
+      "id": "148",
       "value": 74,
       "display": "74",
       "source": "reference_results/paper_metrics.json",
@@ -4622,7 +7133,7 @@
       "format": "int"
     },
     {
-      "id": "99",
+      "id": "149",
       "value": 26,
       "display": "26",
       "source": "reference_results/reproduced_metrics.json",
@@ -4630,7 +7141,7 @@
       "format": "int"
     },
     {
-      "id": "100",
+      "id": "150",
       "value": 30,
       "display": "30",
       "source": "reference_results/reproduced_metrics.json",
@@ -4638,7 +7149,7 @@
       "format": "int"
     },
     {
-      "id": "101",
+      "id": "151",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -4646,7 +7157,7 @@
       "format": "literal"
     },
     {
-      "id": "102",
+      "id": "152",
       "value": 0.8285714285714286,
       "display": "82.86%",
       "source": "reference_results/paper_metrics.json",
@@ -4654,7 +7165,7 @@
       "format": "percent"
     },
     {
-      "id": "103",
+      "id": "153",
       "value": 0.6980945878848063,
       "display": "69.81%",
       "source": "reference_results/paper_metrics.json",
@@ -4662,7 +7173,7 @@
       "format": "percent"
     },
     {
-      "id": "104",
+      "id": "154",
       "value": 0.9348172987974098,
       "display": "93.48%",
       "source": "reference_results/paper_metrics.json",
@@ -4670,7 +7181,7 @@
       "format": "percent"
     },
     {
-      "id": "105",
+      "id": "155",
       "value": 70,
       "display": "70",
       "source": "reference_results/paper_metrics.json",
@@ -4678,7 +7189,7 @@
       "format": "int"
     },
     {
-      "id": "106",
+      "id": "156",
       "value": 25,
       "display": "25",
       "source": "reference_results/reproduced_metrics.json",
@@ -4686,7 +7197,7 @@
       "format": "int"
     },
     {
-      "id": "107",
+      "id": "157",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -4694,7 +7205,7 @@
       "format": "int"
     },
     {
-      "id": "108",
+      "id": "158",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -4702,7 +7213,7 @@
       "format": "literal"
     },
     {
-      "id": "109",
+      "id": "159",
       "value": 0.9027777777777778,
       "display": "90.28%",
       "source": "reference_results/paper_metrics.json",
@@ -4710,7 +7221,7 @@
       "format": "percent"
     },
     {
-      "id": "110",
+      "id": "160",
       "value": 0.8115746180963572,
       "display": "81.16%",
       "source": "reference_results/paper_metrics.json",
@@ -4718,7 +7229,7 @@
       "format": "percent"
     },
     {
-      "id": "111",
+      "id": "161",
       "value": 0.9753445305770887,
       "display": "97.53%",
       "source": "reference_results/paper_metrics.json",
@@ -4726,7 +7237,7 @@
       "format": "percent"
     },
     {
-      "id": "112",
+      "id": "162",
       "value": 72,
       "display": "72",
       "source": "reference_results/paper_metrics.json",
@@ -4734,7 +7245,7 @@
       "format": "int"
     },
     {
-      "id": "113",
+      "id": "163",
       "value": 25,
       "display": "25",
       "source": "reference_results/reproduced_metrics.json",
@@ -4742,7 +7253,7 @@
       "format": "int"
     },
     {
-      "id": "114",
+      "id": "164",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -4750,7 +7261,7 @@
       "format": "int"
     },
     {
-      "id": "115",
+      "id": "165",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -4758,7 +7269,7 @@
       "format": "literal"
     },
     {
-      "id": "116",
+      "id": "166",
       "value": 0.7733333333333333,
       "display": "77.33%",
       "source": "reference_results/paper_metrics.json",
@@ -4766,7 +7277,7 @@
       "format": "percent"
     },
     {
-      "id": "117",
+      "id": "167",
       "value": 0.6296031746031746,
       "display": "62.96%",
       "source": "reference_results/paper_metrics.json",
@@ -4774,7 +7285,7 @@
       "format": "percent"
     },
     {
-      "id": "118",
+      "id": "168",
       "value": 0.891355072463768,
       "display": "89.14%",
       "source": "reference_results/paper_metrics.json",
@@ -4782,7 +7293,7 @@
       "format": "percent"
     },
     {
-      "id": "119",
+      "id": "169",
       "value": 75,
       "display": "75",
       "source": "reference_results/paper_metrics.json",
@@ -4790,7 +7301,7 @@
       "format": "int"
     },
     {
-      "id": "120",
+      "id": "170",
       "value": 27,
       "display": "27",
       "source": "reference_results/reproduced_metrics.json",
@@ -4798,7 +7309,7 @@
       "format": "int"
     },
     {
-      "id": "121",
+      "id": "171",
       "value": 30,
       "display": "30",
       "source": "reference_results/reproduced_metrics.json",
@@ -4806,7 +7317,7 @@
       "format": "int"
     },
     {
-      "id": "122",
+      "id": "172",
       "value": "5.5",
       "display": "5.5",
       "source": "reference_results/paper_metrics.json",
@@ -4814,7 +7325,7 @@
       "format": "literal"
     },
     {
-      "id": "123",
+      "id": "173",
       "value": 0.7926829268292683,
       "display": "79.27%",
       "source": "reference_results/paper_metrics.json",
@@ -4822,7 +7333,7 @@
       "format": "percent"
     },
     {
-      "id": "124",
+      "id": "174",
       "value": 0.6666666666666666,
       "display": "66.67%",
       "source": "reference_results/paper_metrics.json",
@@ -4830,7 +7341,7 @@
       "format": "percent"
     },
     {
-      "id": "125",
+      "id": "175",
       "value": 0.8979785585120124,
       "display": "89.80%",
       "source": "reference_results/paper_metrics.json",
@@ -4838,7 +7349,7 @@
       "format": "percent"
     },
     {
-      "id": "126",
+      "id": "176",
       "value": 82,
       "display": "82",
       "source": "reference_results/paper_metrics.json",
@@ -4846,7 +7357,7 @@
       "format": "int"
     },
     {
-      "id": "127",
+      "id": "177",
       "value": 32,
       "display": "32",
       "source": "reference_results/reproduced_metrics.json",
@@ -4854,7 +7365,7 @@
       "format": "int"
     },
     {
-      "id": "128",
+      "id": "178",
       "value": 34,
       "display": "34",
       "source": "reference_results/reproduced_metrics.json",
@@ -4862,7 +7373,7 @@
       "format": "int"
     },
     {
-      "id": "129",
+      "id": "179",
       "value": "5.5",
       "display": "5.5",
       "source": "reference_results/paper_metrics.json",
@@ -4870,7 +7381,7 @@
       "format": "literal"
     },
     {
-      "id": "130",
+      "id": "180",
       "value": 0.8275862068965517,
       "display": "82.76%",
       "source": "reference_results/paper_metrics.json",
@@ -4878,7 +7389,7 @@
       "format": "percent"
     },
     {
-      "id": "131",
+      "id": "181",
       "value": 0.7173619271445358,
       "display": "71.74%",
       "source": "reference_results/paper_metrics.json",
@@ -4886,7 +7397,7 @@
       "format": "percent"
     },
     {
-      "id": "132",
+      "id": "182",
       "value": 0.9253869541182974,
       "display": "92.54%",
       "source": "reference_results/paper_metrics.json",
@@ -4894,7 +7405,7 @@
       "format": "percent"
     },
     {
-      "id": "133",
+      "id": "183",
       "value": 87,
       "display": "87",
       "source": "reference_results/paper_metrics.json",
@@ -4902,7 +7413,7 @@
       "format": "int"
     },
     {
-      "id": "134",
+      "id": "184",
       "value": 35,
       "display": "35",
       "source": "reference_results/reproduced_metrics.json",
@@ -4910,7 +7421,7 @@
       "format": "int"
     },
     {
-      "id": "135",
+      "id": "185",
       "value": 37,
       "display": "37",
       "source": "reference_results/reproduced_metrics.json",
@@ -4918,7 +7429,7 @@
       "format": "int"
     },
     {
-      "id": "136",
+      "id": "186",
       "value": "6",
       "display": "6",
       "source": "reference_results/paper_metrics.json",
@@ -4926,7 +7437,7 @@
       "format": "literal"
     },
     {
-      "id": "137",
+      "id": "187",
       "value": 0.8088235294117647,
       "display": "80.88%",
       "source": "reference_results/paper_metrics.json",
@@ -4934,7 +7445,7 @@
       "format": "percent"
     },
     {
-      "id": "138",
+      "id": "188",
       "value": 0.6727123695976155,
       "display": "67.27%",
       "source": "reference_results/paper_metrics.json",
@@ -4942,7 +7453,7 @@
       "format": "percent"
     },
     {
-      "id": "139",
+      "id": "189",
       "value": 0.9275460242851548,
       "display": "92.75%",
       "source": "reference_results/paper_metrics.json",
@@ -4950,7 +7461,7 @@
       "format": "percent"
     },
     {
-      "id": "140",
+      "id": "190",
       "value": 68,
       "display": "68",
       "source": "reference_results/paper_metrics.json",
@@ -4958,7 +7469,7 @@
       "format": "int"
     },
     {
-      "id": "141",
+      "id": "191",
       "value": 24,
       "display": "24",
       "source": "reference_results/reproduced_metrics.json",
@@ -4966,7 +7477,7 @@
       "format": "int"
     },
     {
-      "id": "142",
+      "id": "192",
       "value": 26,
       "display": "26",
       "source": "reference_results/reproduced_metrics.json",
@@ -4974,7 +7485,7 @@
       "format": "int"
     },
     {
-      "id": "143",
+      "id": "193",
       "value": 0.9885057471264368,
       "display": "98.85%",
       "source": "reference_results/reproduced_metrics.json",
@@ -4982,7 +7493,7 @@
       "format": "percent"
     },
     {
-      "id": "144",
+      "id": "194",
       "value": 86,
       "display": "86",
       "source": "reference_results/reproduced_metrics.json",
@@ -4990,7 +7501,7 @@
       "format": "int"
     },
     {
-      "id": "145",
+      "id": "195",
       "value": 87,
       "display": "87",
       "source": "reference_results/reproduced_metrics.json",
@@ -4998,7 +7509,7 @@
       "format": "int"
     },
     {
-      "id": "146",
+      "id": "196",
       "value": 0.9887640449438202,
       "display": "98.88%",
       "source": "reference_results/reproduced_metrics.json",
@@ -5006,7 +7517,7 @@
       "format": "percent"
     },
     {
-      "id": "147",
+      "id": "197",
       "value": 88,
       "display": "88",
       "source": "reference_results/reproduced_metrics.json",
@@ -5014,7 +7525,7 @@
       "format": "int"
     },
     {
-      "id": "148",
+      "id": "198",
       "value": 89,
       "display": "89",
       "source": "reference_results/reproduced_metrics.json",
@@ -5022,7 +7533,7 @@
       "format": "int"
     },
     {
-      "id": "149",
+      "id": "199",
       "value": 0.983739837398374,
       "display": "98.37%",
       "source": "reference_results/reproduced_metrics.json",
@@ -5030,7 +7541,7 @@
       "format": "percent"
     },
     {
-      "id": "150",
+      "id": "200",
       "value": 121,
       "display": "121",
       "source": "reference_results/reproduced_metrics.json",
@@ -5038,7 +7549,7 @@
       "format": "int"
     },
     {
-      "id": "151",
+      "id": "201",
       "value": 123,
       "display": "123",
       "source": "reference_results/reproduced_metrics.json",
@@ -5046,7 +7557,7 @@
       "format": "int"
     },
     {
-      "id": "152",
+      "id": "202",
       "value": 0.9631901840490797,
       "display": "96.32%",
       "source": "reference_results/reproduced_metrics.json",
@@ -5054,7 +7565,7 @@
       "format": "percent"
     },
     {
-      "id": "153",
+      "id": "203",
       "value": 157,
       "display": "157",
       "source": "reference_results/reproduced_metrics.json",
@@ -5062,7 +7573,7 @@
       "format": "int"
     },
     {
-      "id": "154",
+      "id": "204",
       "value": 163,
       "display": "163",
       "source": "reference_results/reproduced_metrics.json",
@@ -5070,7 +7581,7 @@
       "format": "int"
     },
     {
-      "id": "155",
+      "id": "205",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5078,7 +7589,7 @@
       "format": "literal"
     },
     {
-      "id": "156",
+      "id": "206",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5086,7 +7597,7 @@
       "format": "literal"
     },
     {
-      "id": "157",
+      "id": "207",
       "value": "10.1101",
       "display": "10.1101",
       "source": "DATA_LICENSE.md",
@@ -5094,7 +7605,7 @@
       "format": "literal"
     },
     {
-      "id": "158",
+      "id": "208",
       "value": "2023.02.28.530532",
       "display": "2023.02.28.530532",
       "source": "DATA_LICENSE.md",
@@ -5102,7 +7613,7 @@
       "format": "literal"
     },
     {
-      "id": "159",
+      "id": "209",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5110,7 +7621,7 @@
       "format": "literal"
     },
     {
-      "id": "160",
+      "id": "210",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5118,7 +7629,7 @@
       "format": "literal"
     },
     {
-      "id": "161",
+      "id": "211",
       "value": "2026",
       "display": "2026",
       "source": "DATA_LICENSE.md",
@@ -5126,7 +7637,7 @@
       "format": "literal"
     },
     {
-      "id": "162",
+      "id": "212",
       "value": "10.1038",
       "display": "10.1038",
       "source": "DATA_LICENSE.md",
@@ -5134,7 +7645,7 @@
       "format": "literal"
     },
     {
-      "id": "163",
+      "id": "213",
       "value": "41586",
       "display": "41586",
       "source": "DATA_LICENSE.md",
@@ -5142,7 +7653,7 @@
       "format": "literal"
     },
     {
-      "id": "164",
+      "id": "214",
       "value": "026",
       "display": "026",
       "source": "DATA_LICENSE.md",
@@ -5150,7 +7661,7 @@
       "format": "literal"
     },
     {
-      "id": "165",
+      "id": "215",
       "value": "10542",
       "display": "10542",
       "source": "DATA_LICENSE.md",
@@ -5158,7 +7669,7 @@
       "format": "literal"
     },
     {
-      "id": "166",
+      "id": "216",
       "value": "3",
       "display": "3",
       "source": "DATA_LICENSE.md",
@@ -5166,7 +7677,7 @@
       "format": "literal"
     },
     {
-      "id": "167",
+      "id": "217",
       "value": "18763485",
       "display": "18763485",
       "source": "DATA_LICENSE.md",
@@ -5174,7 +7685,7 @@
       "format": "literal"
     },
     {
-      "id": "168",
+      "id": "218",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5182,7 +7693,7 @@
       "format": "literal"
     },
     {
-      "id": "169",
+      "id": "219",
       "value": "4.0",
       "display": "4.0",
       "source": "DATA_LICENSE.md",
@@ -5190,7 +7701,7 @@
       "format": "literal"
     },
     {
-      "id": "170",
+      "id": "220",
       "value": 580,
       "display": "580",
       "source": "README.md",
@@ -5198,7 +7709,7 @@
       "format": "int"
     },
     {
-      "id": "171",
+      "id": "221",
       "value": 93,
       "display": "93",
       "source": "README.md",
@@ -5206,7 +7717,7 @@
       "format": "int"
     },
     {
-      "id": "172",
+      "id": "222",
       "value": 125,
       "display": "125",
       "source": "README.md",
@@ -5214,7 +7725,7 @@
       "format": "int"
     },
     {
-      "id": "173",
+      "id": "223",
       "value": "0.05",
       "display": "0.05",
       "source": "README.md",
@@ -5222,7 +7733,7 @@
       "format": "literal"
     },
     {
-      "id": "174",
+      "id": "224",
       "value": 110,
       "display": "110",
       "source": "reference_results/cohorts.json",
@@ -5230,7 +7741,7 @@
       "format": "int"
     },
     {
-      "id": "175",
+      "id": "225",
       "value": 32,
       "display": "32",
       "source": "reference_results/paper_metrics.json",
@@ -5238,7 +7749,7 @@
       "format": "int"
     },
     {
-      "id": "176",
+      "id": "226",
       "value": 158,
       "display": "158",
       "source": "reference_results/cohorts.json",
@@ -5246,7 +7757,7 @@
       "format": "int"
     },
     {
-      "id": "177",
+      "id": "227",
       "value": 47,
       "display": "47",
       "source": "README.md",
@@ -5254,7 +7765,7 @@
       "format": "int"
     },
     {
-      "id": "178",
+      "id": "228",
       "value": 61,
       "display": "61",
       "source": "README.md",
@@ -5262,7 +7773,7 @@
       "format": "int"
     },
     {
-      "id": "179",
+      "id": "229",
       "value": 0.3333333333333333,
       "display": "0.33",
       "source": "reference_results/paper_metrics.json",
@@ -5270,7 +7781,47 @@
       "format": "decimal"
     },
     {
-      "id": "180",
+      "id": "230",
+      "value": "17",
+      "display": "17",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "website_copy/method_note",
+      "format": "literal"
+    },
+    {
+      "id": "231",
+      "value": "2026",
+      "display": "2026",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "website_copy/method_note",
+      "format": "literal"
+    },
+    {
+      "id": "232",
+      "value": "4096",
+      "display": "4096",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "website_copy/method_note",
+      "format": "literal"
+    },
+    {
+      "id": "233",
+      "value": "4",
+      "display": "4",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "website_copy/parsing_note",
+      "format": "literal"
+    },
+    {
+      "id": "234",
+      "value": "5.1",
+      "display": "5.1",
+      "source": "reference_results/claude_api_2026-11-17.json",
+      "key": "website_copy/parsing_note",
+      "format": "literal"
+    },
+    {
+      "id": "235",
       "value": "3",
       "display": "3",
       "source": "README.md",
@@ -5278,7 +7829,7 @@
       "format": "literal"
     },
     {
-      "id": "181",
+      "id": "236",
       "value": "110",
       "display": "110",
       "source": "README.md",
@@ -5286,7 +7837,7 @@
       "format": "literal"
     },
     {
-      "id": "182",
+      "id": "237",
       "value": 580,
       "display": "580",
       "source": "README.md",
@@ -5294,7 +7845,7 @@
       "format": "int"
     },
     {
-      "id": "183",
+      "id": "238",
       "value": 93,
       "display": "93",
       "source": "README.md",
@@ -5302,7 +7853,7 @@
       "format": "int"
     },
     {
-      "id": "184",
+      "id": "239",
       "value": 125,
       "display": "125",
       "source": "README.md",
@@ -5310,7 +7861,7 @@
       "format": "int"
     },
     {
-      "id": "185",
+      "id": "240",
       "value": "2025",
       "display": "2025",
       "source": "CITATION.cff",
@@ -5318,7 +7869,7 @@
       "format": "literal"
     },
     {
-      "id": "186",
+      "id": "241",
       "value": "10.1101",
       "display": "10.1101",
       "source": "CITATION.cff",
@@ -5326,7 +7877,7 @@
       "format": "literal"
     },
     {
-      "id": "187",
+      "id": "242",
       "value": "2023.02.28.530532",
       "display": "2023.02.28.530532",
       "source": "CITATION.cff",

@@ -71,3 +71,9 @@ used at export.
 The `agent_*_atlas_frozen.csv` files preserve each rerun's recorded atlas
 baseline. Those comparisons use their original source predictions;
 `clockbase_atlas_verified.csv` uses the current verifier run.
+
+Claude models were evaluated through the Anthropic API on 17 November 2026 with medium effort, a 4096 output-token limit, one run per request and no tools.
+
+Responses were parsed with the original S4 parser. A single valid JSON answer embedded in prose was extracted with its values unchanged, and one incomplete Fable 5.1 response that stopped during auxiliary metadata was scored on its fully returned prediction and significance fields, with no fields inferred and no repeat request; sensitivity results are in the downloadable evaluation JSON.
+
+[Claude evaluation metadata](claude_api_2026-11-17.json)

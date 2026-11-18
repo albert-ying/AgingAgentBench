@@ -99,7 +99,7 @@ Unknown or duplicate identifiers, invalid calls, invalid numeric values, and
 contradictory signed fields are rejected. A three-way call alone cannot
 recover the direction of a nonsignificant effect or a continuous AUROC score.
 
-For comparisons with the paper, use `main110` for the five language models,
+For comparisons with the paper, use `main110` for the language models,
 the constant rule, and ClockBase with the paper's groups. Use
 `atlas_shared92` to compare verified and Welch-only atlas calls. The
 `agent_task158` cohort contains 158 published results on the task's clocks
@@ -187,7 +187,16 @@ correct calls within each published class; the interval resamples papers.
 | GPT-6 Astra without data | 5 | 16 | 47 | 0.52 [0.39, 0.65] |
 | GPT-6 Luna without data | 5 | 12 | 42 | 0.46 [0.31, 0.59] |
 | GPT-6 Sol without data | 5 | 15 | 43 | 0.49 [0.35, 0.62] |
+| Claude Fable 5.2 without data | 7 | 24 | 45 | 0.63 [0.49, 0.77] |
+| Claude Fable 5.1 without data | 6 | 14 | 47 | 0.52 [0.38, 0.65] |
+| Claude Opus 5.5 without data | 3 | 18 | 46 | 0.49 [0.36, 0.61] |
+| Claude Sonnet 5.5 without data | 8 | 18 | 35 | 0.53 [0.39, 0.69] |
+| Claude Haiku 5.5 without data | 5 | 19 | 38 | 0.50 [0.37, 0.62] |
 | Always higher | 0 | 36 | 0 | 0.33 [0.33, 0.33] |
+
+Claude models were evaluated through the Anthropic API on 17 November 2026 with medium effort, a 4096 output-token limit, one run per request and no tools.
+See [Claude evaluation metadata](reference_results/claude_api_2026-11-17.json)
+for parsing rules, coverage, and sensitivity results.
 
 Verified atlas rows match 82% of 92 published calls on the shared set,
 compared with 68% for Welch-only rows. Their direction agrees in 25 of 26

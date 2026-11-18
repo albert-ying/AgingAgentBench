@@ -1,0 +1,111 @@
+record_id,call,direction,confidence,recognizes_publication,publication
+MED-25678027-GSE25395-Horvathv1-1,higher,higher,0.9,True,"Horvath S, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015 (used GSE25395 blood data from Kerkel et al. 2010)"
+MED-25678027-GSE50586-Horvathv1-11,higher,higher,0.85,True,"Horvath S, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015;14(3):491-495"
+MED-25678027-GSE50586-Horvathv1-12,higher,higher,0.85,True,Horvath S et al. (2015) Accelerated epigenetic aging in Down syndrome. Aging Cell 14(3):491-495
+MED-25678027-GSE52588-Horvathv1-10,higher,higher,0.92,True,"Horvath S, Garagnani P, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015;14(3):491-495"
+MED-25678027-GSE52588-Horvathv1-8,higher,higher,0.95,True,"Horvath S, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015;14(3):491-495."
+MED-25678027-GSE52588-Horvathv1-9,higher,higher,0.92,True,"Horvath S, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015;14(3):491-495"
+MED-25678027-GSE63347-Horvathv1-2,higher,higher,0.9,True,Horvath S et al. (2015) Accelerated epigenetic aging in Down syndrome. Aging Cell 14(3):491-495
+MED-25678027-GSE63347-Horvathv1-4,higher,higher,0.93,True,"Horvath S, et al. Accelerated epigenetic aging in Down syndrome. Aging Cell 2015;14(3):491-495."
+MED-25678027-GSE63347-Horvathv1-5,higher,higher,0.9,True,Horvath S et al. (2015) Accelerated epigenetic aging in Down syndrome. Aging Cell 14(3):491-495
+MED-25856389-GSE62867-Horvathv1-0,not significant,lower,0.45,False,
+MED-25969563-GSE59457-Horvathv1-0,higher,higher,0.9,True,"Horvath S, Levine AJ. HIV-1 infection accelerates age according to the epigenetic clock. J Infect Dis. 2015;212(10):1563-1573."
+MED-25969563-GSE59457-Horvathv1-2,not significant,higher,0.7,True,"Horvath S, Levine AJ. HIV-1 infection accelerates age according to the epigenetic clock. J Infect Dis 2015"
+MED-25969563-GSE67751-Horvathv1-7,higher,higher,0.9,True,"Horvath S, Levine AJ. HIV-1 infection accelerates age according to the epigenetic clock. J Infect Dis. 2015;212(10):1563-1573."
+MED-27511193-GSE27317-Horvathv1-0,not significant,lower,0.55,False,
+MED-27511193-GSE38873-Horvathv1-1,not significant,none,0.45,False,
+MED-27511193-GSE72773-Horvathv1-3,lower,lower,0.7,True,"Horvath S, Gurven M, Levine ME, et al. An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology 2016;17:171."
+MED-27511193-GSE72773-Horvathv1-4,higher,higher,0.7,True,"Horvath S, Gurven M, Levine ME, et al. An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology 2016;17:171."
+MED-27511193-GSE72777-Horvathv1-5,lower,lower,0.6,True,"Horvath S et al. (2016) An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology 17:171"
+MED-27511193-GSE78874-Horvathv1-6,lower,lower,0.75,True,"Horvath S, et al. (2016) An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology 17:171."
+MED-27511193-GSE78874-Horvathv1-7,not significant,higher,0.65,True,"Horvath S, Gurven M, Levine ME, et al. An epigenetic clock analysis of race/ethnicity, sex, and coronary heart disease. Genome Biology 2016;17:171."
+MED-29225347-GSE38873-Horvathv1-0,not significant,higher,0.5,False,
+MED-29225347-GSE38873-Horvathv1-1,not significant,none,0.45,False,
+MED-29225347-GSE38873-Horvathv1-2,not significant,higher,0.5,False,
+MED-29974462-GSE75008-Horvathv1-1,higher,higher,0.7,False,
+MED-30185790-GSE49393-Horvathv1-5,not significant,higher,0.6,False,
+MED-30575306-GSE69954-Horvathv1-0,higher,higher,0.75,False,
+MED-30814520-GSE38873-Horvathv1-3,not significant,none,0.45,False,
+MED-31943067-GSE133918-Horvathv1-0,not significant,higher,0.5,False,
+MED-31943067-GSE133918-Horvathv1-1,not significant,higher,0.55,False,
+MED-32210226-GSE142439-Horvathv1-0,lower,lower,0.92,True,"Sarkar TJ et al. 2020, Nature Communications, 'Transient non-integrative expression of nuclear reprogramming factors promotes multifaceted amelioration of aging in human cells'"
+MED-32210226-GSE142439-Horvathv2-3,lower,lower,0.93,True,"Sarkar TJ et al., 2020, Nature Communications, 'Transient non-integrative expression of nuclear reprogramming factors promotes multifaceted amelioration of aging in human cells'"
+MED-32582603-GSE85506-Hannum-7,not significant,higher,0.5,False,
+MED-32582603-GSE85506-Horvathv1-6,not significant,higher,0.5,False,
+MED-32582603-GSE85506-Horvathv2-8,not significant,higher,0.5,False,
+MED-32582603-GSE85506-PhenoAge-9,not significant,higher,0.55,False,
+MED-32660606-GSE142439-Horvathv2-10,lower,lower,0.9,True,Sarkar TJ et al. (2020) Transient non-integrative expression of nuclear reprogramming factors promotes multifaceted amelioration of aging in human cells. Nature Communications 11:1545
+MED-32660606-GSE151617-Horvathv2-7,not significant,lower,0.55,True,"Boroni M, et al. Highly accurate skin-specific methylome analysis algorithm as a platform to screen and validate therapeutics for healthy aging. Clinical Epigenetics 2020;12:105"
+MED-32660606-GSE151617-Horvathv2-9,not significant,lower,0.55,True,"Boroni M, et al. Highly accurate skin-specific methylome analysis algorithm as a platform to screen and validate therapeutics for healthy aging. Clinical Epigenetics 2020;12:105"
+MED-32930491-GSE100249-Lin-1,not significant,higher,0.5,False,
+MED-32930491-GSE91069-Hannum-11,not significant,none,0.5,False,
+MED-32930491-GSE91069-Lin-5,higher,higher,0.8,False,
+MED-32930491-GSE91069-Lin-6,higher,higher,0.85,False,
+MED-32930491-GSE91069-PhenoAge-7,higher,higher,0.75,False,
+MED-32930491-GSE91069-PhenoAge-8,higher,higher,0.85,False,
+MED-32930491-GSE91069-PhenoAge-9,not significant,none,0.45,False,
+MED-33530447-GSE152204-Horvathv1-0,not significant,none,0.5,False,
+MED-33815458-GSE30601-Horvathv1-0,higher,higher,0.75,False,
+MED-35092358-GSE125367-GrimAgeV1-3,not significant,higher,0.5,False,
+MED-35092358-GSE125367-Hannum-1,not significant,none,0.45,False,
+MED-35092358-GSE125367-Horvathv1-0,not significant,none,0.45,False,
+MED-35092358-GSE125367-PhenoAge-2,not significant,higher,0.5,False,
+MED-35354948-GSE162560-Horvathv2-0,not significant,higher,0.6,False,
+MED-35369101-GSE193836-Horvathv1-0,not significant,higher,0.55,False,
+MED-35369101-GSE193836-Horvathv1-2,not significant,higher,0.55,False,
+MED-35369101-GSE193836-Horvathv1-3,not significant,higher,0.55,False,
+MED-36038613-GSE185973-Horvathv2-0,not significant,none,0.4,False,
+MED-36038613-GSE185973-Horvathv2-1,not significant,none,0.45,False,
+MED-36046788-GSE199700-Horvathv1-3,not significant,none,0.5,False,
+MED-36046788-GSE199700-Horvathv1-6,not significant,higher,0.5,False,
+MED-36052758-GSE210245-GrimAgeV1-0,lower,lower,0.8,True,"Clement J, Yan Q, Agrawal M, et al., Horvath S. Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers. Aging Cell 2022"
+MED-36052758-GSE210245-GrimAgeV1-5,not significant,lower,0.55,True,"Clement J, et al. 'Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers.' Aging Cell 2022"
+MED-36052758-GSE210245-Hannum-2,not significant,lower,0.55,True,"Clement J, et al. 'Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers.' Aging Cell 2022 (Horvath lab, Elevian/Plasma Biosciences study)"
+MED-36052758-GSE210245-Horvathv1-1,not significant,lower,0.55,True,"Clement J, Yan Q, Agrawal M, et al. Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers. Aging Cell 2022"
+MED-36052758-GSE210245-Horvathv2-3,not significant,lower,0.55,True,"Clement J, et al. 'Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers.' Aging Cell 2022 (Horvath lab, Elevian/Steve Horvath collaboration)"
+MED-36052758-GSE210245-PhenoAge-4,not significant,lower,0.55,True,"Clement J et al., 'Umbilical cord plasma concentrate has beneficial effects on DNA methylation GrimAge and human clinical biomarkers', Aging Cell 2022"
+MED-36092807-GSE106648-Horvathv1-0,not significant,higher,0.5,True,"Theodoropoulou E, Alfredsson L, Piehl F, Marabita F, Jagodic M. Different epigenetic clocks reflect distinct pathophysiological features of multiple sclerosis. Epigenomics 2019 (also Kular et al. 2018 Nat Commun DNA methylation in MS HLA-DRB1)"
+MED-36092807-GSE166207-Horvathv1-8,not significant,none,0.5,False,
+MED-36092807-GSE166207-Horvathv1-9,not significant,higher,0.5,False,
+MED-36092807-GSE40360-Horvathv1-2,not significant,higher,0.5,False,
+MED-36092807-GSE40360-Horvathv1-6,not significant,lower,0.55,False,
+MED-37508584-GSE53740-GrimAgeV1-11,higher,higher,0.7,False,
+MED-37508584-GSE53740-GrimAgeV1-12,higher,higher,0.62,False,
+MED-37508584-GSE53740-Hannum-0,not significant,higher,0.55,False,
+MED-37508584-GSE53740-Hannum-1,not significant,higher,0.55,False,
+MED-37508584-GSE53740-Hannum-4,not significant,higher,0.55,False,
+MED-37508584-GSE53740-Hannum-5,not significant,higher,0.55,False,
+MED-37508584-GSE53740-Horvathv1-2,not significant,higher,0.55,False,
+MED-37508584-GSE53740-Horvathv1-3,not significant,higher,0.55,False,
+MED-37508584-GSE53740-PhenoAge-10,higher,higher,0.65,False,
+MED-38820227-GSE178887-DunedinPACE-5,not significant,higher,0.6,False,
+MED-38826624-GSE152084-GrimAgeV1-3,not significant,higher,0.55,False,
+MED-38826624-GSE152084-Horvathv1-0,not significant,higher,0.5,False,
+MED-38826624-GSE152084-Horvathv2-1,not significant,higher,0.45,False,
+MED-38826624-GSE152084-PhenoAge-2,not significant,higher,0.55,False,
+MED-39403983-GSE164056-DunedinPACE-6,not significant,higher,0.55,False,
+MED-39403983-GSE164056-Hannum-1,not significant,higher,0.5,False,
+MED-39403983-GSE164056-Horvathv2-2,not significant,higher,0.45,False,
+MED-39680552-GSE199700-GrimAgeV1-3,not significant,higher,0.7,False,
+MED-39680552-GSE199700-Hannum-1,not significant,higher,0.6,False,
+MED-39680552-GSE199700-Horvathv1-0,not significant,higher,0.55,False,
+MED-39680552-GSE199700-PhenoAge-2,not significant,higher,0.65,False,
+MED-39853302-GSE144858-GrimAgeV1-5,higher,higher,0.7,False,
+MED-39853302-GSE144858-GrimAgeV2-6,higher,higher,0.65,False,
+MED-39853302-GSE144858-Hannum-2,not significant,higher,0.6,True,"Roubroeks JAY et al. 2020, Neurobiology of Aging — An epigenome-wide association study of Alzheimer's disease blood highlights robust DNA hypermethylation in the HOXB6 gene (AddNeuroMed EWAS); epigenetic age acceleration in AddNeuroMed blood was not reported as significantly different in this paper to my knowledge"
+MED-39853302-GSE144858-Horvathv1-1,not significant,higher,0.55,False,
+MED-39853302-GSE144858-Horvathv2-4,not significant,higher,0.55,False,
+MED-39853302-GSE144858-PhenoAge-3,not significant,higher,0.6,False,
+MED-39980002-GSE119846-Horvathv1-0,not significant,none,0.45,True,"Provençal N, Arloth J, et al. Glucocorticoid exposure during hippocampal neurogenesis primes future stress response by inducing changes in DNA methylation. PNAS 2020;117(38):23280-23285."
+MED-39980002-GSE119846-Horvathv1-1,not significant,higher,0.45,True,"Provençal N, Arloth J, Cattaneo A, et al. Glucocorticoid exposure during hippocampal neurogenesis primes future stress response by inducing changes in DNA methylation. PNAS 2020;117(38):23280-23285."
+MED-39980002-GSE210301-Horvathv1-2,not significant,none,0.5,False,
+MED-39980002-GSE210301-Horvathv1-3,not significant,none,0.6,False,
+MED-39980002-GSE210301-Horvathv1-4,not significant,none,0.5,False,
+MED-39980002-GSE210301-Horvathv1-5,not significant,none,0.6,False,
+MED-40589934-GSE176394-DunedinPACE-12,not significant,none,0.45,True,"Shepherd R, et al. Gender-affirming hormone therapy induces specific DNA methylation changes in blood. Clinical Epigenetics 2022;14:24 (Novakovic lab, MCRI)"
+MED-40589934-GSE176394-DunedinPACE-13,not significant,none,0.45,True,"Shepherd R, et al. Gender-affirming hormone therapy induces specific DNA methylation changes in blood. Clinical Epigenetics 2022 (Melbourne, Saffery/Novakovic group)"
+MED-40589934-GSE176394-DunedinPACE-14,not significant,higher,0.5,True,"Shepherd R, et al. Gender-affirming hormone therapy induces specific DNA methylation changes in blood. Clinical Epigenetics 2022;14:24"
+MED-40589934-GSE176394-DunedinPACE-15,not significant,higher,0.55,True,"Shepherd R, Bretherton I, Pang K, et al. Gender-affirming hormone therapy induces specific DNA methylation changes in blood. Clinical Epigenetics 2022 (Novakovic lab, Murdoch Children's Research Institute); epigenetic clock analyses reported no significant change with GAHT, though DunedinPACE specifically was not a primary reported result to my knowledge"
+PMC-PMC9158789-GSE142439-Horvathv1-1,lower,lower,0.92,True,
+PMC-PMC9158789-GSE45727-Horvathv1-5,not significant,none,0.45,False,
+PMC-PMC9158789-GSE53051-Horvathv1-4,higher,higher,0.7,False,

@@ -1,0 +1,902 @@
+{
+  "schema": "agingagentbench-claude-api-v1",
+  "evaluation_date": "2026-11-17",
+  "provider": "Anthropic official API",
+  "endpoint": "https://api.anthropic.com/v1/messages",
+  "cohort": "main110",
+  "records": 110,
+  "papers": 32,
+  "effort": "medium",
+  "max_output_tokens": 4096,
+  "runs_per_unique_request": 1,
+  "sample_data": false,
+  "external_tools": false,
+  "temperature": "omitted",
+  "bootstrap": {
+    "unit": "paper",
+    "replicates": 1000,
+    "seed": 20261005,
+    "confidence_level": 0.95
+  },
+  "website_copy": {
+    "method_note": "Claude models were evaluated through the Anthropic API on 17 November 2026 with medium effort, a 4096 output-token limit, one run per request and no tools.",
+    "parsing_note": "Responses were parsed with the original S4 parser. A single valid JSON answer embedded in prose was extracted with its values unchanged, and one incomplete Fable 5.1 response that stopped during auxiliary metadata was scored on its fully returned prediction and significance fields, with no fields inferred and no repeat request; sensitivity results are in the downloadable evaluation JSON.",
+    "details_summary": "Claude evaluation details",
+    "download_label": "Claude predictions (CSV)",
+    "metadata_label": "Evaluation metadata (JSON)"
+  },
+  "models": [
+    {
+      "model": "claude-fable-5-2",
+      "label": "Claude Fable 5.2 without data",
+      "prediction_file": "language_model_claude_fable_5_2.csv",
+      "score": {
+        "records_in_cohort": 110,
+        "submitted": 110,
+        "scored": 110,
+        "papers": 32,
+        "call_agreement": 0.6909090909090909,
+        "recall": {
+          "lower": [
+            7,
+            16
+          ],
+          "higher": [
+            24,
+            36
+          ],
+          "not significant": [
+            45,
+            58
+          ]
+        },
+        "confusion_matrix": {
+          "rows": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "columns": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "values": [
+            [
+              7,
+              3,
+              4
+            ],
+            [
+              1,
+              24,
+              9
+            ],
+            [
+              8,
+              9,
+              45
+            ]
+          ]
+        },
+        "balanced_accuracy": 0.626676245210728,
+        "balanced_accuracy_interval": [
+          0.4944161264470527,
+          0.7717960062813003
+        ],
+        "published_significant": 52,
+        "direction_agreement": [
+          42,
+          52
+        ],
+        "direction_significant_records_expected": 52,
+        "significant_in_published_direction": [
+          31,
+          52
+        ],
+        "significant_opposite": [
+          4,
+          52
+        ],
+        "same_direction_both_significant": [
+          31,
+          35
+        ],
+        "null_kept_null": [
+          45,
+          58
+        ],
+        "direction_auroc": null,
+        "direction_auroc_interval": null,
+        "auroc_significant_records": 0,
+        "effect_years": {
+          "pairs": 0,
+          "papers": 0,
+          "spearman": null,
+          "spearman_interval": null,
+          "median_absolute_difference": null
+        },
+        "bootstrap": {
+          "unit": "paper",
+          "level": 0.95,
+          "balanced_accuracy": {
+            "replicates": 1000,
+            "seed": 20261005
+          },
+          "auroc_and_effect": {
+            "replicates": 2000,
+            "seed": 20261009
+          }
+        }
+      },
+      "strict_json_only_coverage": 68,
+      "json_extraction_record_ids": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-39403983-GSE164056-Horvathv2-2",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1"
+      ],
+      "classification_core_recovery": {
+        "rule": "Read only completed top-level JSON prediction and significance fields from the returned prefix. Auxiliary fields may remain unavailable; no field is inferred or completed.",
+        "record_ids": [],
+        "extra_model_calls": 0,
+        "stop_reasons": {},
+        "note": "Added after a returned answer ended during publication metadata, before inspecting its reference label; applied uniformly to the model comparison."
+      },
+      "recognizes_publication_count": 46,
+      "unique_requests": 108,
+      "usage": {
+        "input_tokens": 87536,
+        "output_tokens": 43784,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "model": "claude-fable-5-1",
+      "label": "Claude Fable 5.1 without data",
+      "prediction_file": "language_model_claude_fable_5_1.csv",
+      "score": {
+        "records_in_cohort": 110,
+        "submitted": 110,
+        "scored": 110,
+        "papers": 32,
+        "call_agreement": 0.6090909090909091,
+        "recall": {
+          "lower": [
+            6,
+            16
+          ],
+          "higher": [
+            14,
+            36
+          ],
+          "not significant": [
+            47,
+            58
+          ]
+        },
+        "confusion_matrix": {
+          "rows": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "columns": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "values": [
+            [
+              6,
+              0,
+              2
+            ],
+            [
+              2,
+              14,
+              9
+            ],
+            [
+              8,
+              22,
+              47
+            ]
+          ]
+        },
+        "balanced_accuracy": 0.5247445721583652,
+        "balanced_accuracy_interval": [
+          0.37725757575757574,
+          0.6543607707766275
+        ],
+        "published_significant": 52,
+        "direction_agreement": [
+          36,
+          52
+        ],
+        "direction_significant_records_expected": 52,
+        "significant_in_published_direction": [
+          20,
+          52
+        ],
+        "significant_opposite": [
+          2,
+          52
+        ],
+        "same_direction_both_significant": [
+          20,
+          22
+        ],
+        "null_kept_null": [
+          47,
+          58
+        ],
+        "direction_auroc": null,
+        "direction_auroc_interval": null,
+        "auroc_significant_records": 0,
+        "effect_years": {
+          "pairs": 0,
+          "papers": 0,
+          "spearman": null,
+          "spearman_interval": null,
+          "median_absolute_difference": null
+        },
+        "bootstrap": {
+          "unit": "paper",
+          "level": 0.95,
+          "balanced_accuracy": {
+            "replicates": 1000,
+            "seed": 20261005
+          },
+          "auroc_and_effect": {
+            "replicates": 2000,
+            "seed": 20261009
+          }
+        }
+      },
+      "strict_json_only_coverage": 109,
+      "json_extraction_record_ids": [],
+      "classification_core_recovery": {
+        "rule": "Read only completed top-level JSON prediction and significance fields from the returned prefix. Auxiliary fields may remain unavailable; no field is inferred or completed.",
+        "record_ids": [
+          "PMC-PMC9158789-GSE142439-Horvathv1-1"
+        ],
+        "extra_model_calls": 0,
+        "stop_reasons": {
+          "PMC-PMC9158789-GSE142439-Horvathv1-1": "refusal"
+        },
+        "note": "Added after a returned answer ended during publication metadata, before inspecting its reference label; applied uniformly to the model comparison."
+      },
+      "recognizes_publication_count": 37,
+      "unique_requests": 108,
+      "usage": {
+        "input_tokens": 87536,
+        "output_tokens": 10317,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "model": "claude-opus-5-5",
+      "label": "Claude Opus 5.5 without data",
+      "prediction_file": "language_model_claude_opus_5_5.csv",
+      "score": {
+        "records_in_cohort": 110,
+        "submitted": 110,
+        "scored": 110,
+        "papers": 32,
+        "call_agreement": 0.6090909090909091,
+        "recall": {
+          "lower": [
+            3,
+            16
+          ],
+          "higher": [
+            18,
+            36
+          ],
+          "not significant": [
+            46,
+            58
+          ]
+        },
+        "confusion_matrix": {
+          "rows": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "columns": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "values": [
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              5,
+              18,
+              10
+            ],
+            [
+              8,
+              17,
+              46
+            ]
+          ]
+        },
+        "balanced_accuracy": 0.4935344827586207,
+        "balanced_accuracy_interval": [
+          0.36239611015964884,
+          0.6141216161267038
+        ],
+        "published_significant": 52,
+        "direction_agreement": [
+          35,
+          52
+        ],
+        "direction_significant_records_expected": 52,
+        "significant_in_published_direction": [
+          21,
+          52
+        ],
+        "significant_opposite": [
+          6,
+          52
+        ],
+        "same_direction_both_significant": [
+          21,
+          27
+        ],
+        "null_kept_null": [
+          46,
+          58
+        ],
+        "direction_auroc": null,
+        "direction_auroc_interval": null,
+        "auroc_significant_records": 0,
+        "effect_years": {
+          "pairs": 0,
+          "papers": 0,
+          "spearman": null,
+          "spearman_interval": null,
+          "median_absolute_difference": null
+        },
+        "bootstrap": {
+          "unit": "paper",
+          "level": 0.95,
+          "balanced_accuracy": {
+            "replicates": 1000,
+            "seed": 20261005
+          },
+          "auroc_and_effect": {
+            "replicates": 2000,
+            "seed": 20261009
+          }
+        }
+      },
+      "strict_json_only_coverage": 51,
+      "json_extraction_record_ids": [
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5"
+      ],
+      "classification_core_recovery": {
+        "record_ids": [],
+        "extra_model_calls": 0
+      },
+      "recognizes_publication_count": 32,
+      "unique_requests": 108,
+      "usage": {
+        "input_tokens": 87536,
+        "output_tokens": 46475,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "model": "claude-sonnet-5-5",
+      "label": "Claude Sonnet 5.5 without data",
+      "prediction_file": "language_model_claude_sonnet_5_5.csv",
+      "score": {
+        "records_in_cohort": 110,
+        "submitted": 110,
+        "scored": 110,
+        "papers": 32,
+        "call_agreement": 0.5545454545454546,
+        "recall": {
+          "lower": [
+            8,
+            16
+          ],
+          "higher": [
+            18,
+            36
+          ],
+          "not significant": [
+            35,
+            58
+          ]
+        },
+        "confusion_matrix": {
+          "rows": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "columns": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "values": [
+            [
+              8,
+              1,
+              10
+            ],
+            [
+              1,
+              18,
+              13
+            ],
+            [
+              7,
+              17,
+              35
+            ]
+          ]
+        },
+        "balanced_accuracy": 0.5344827586206896,
+        "balanced_accuracy_interval": [
+          0.39219467099979555,
+          0.6921130488134607
+        ],
+        "published_significant": 52,
+        "direction_agreement": [
+          39,
+          52
+        ],
+        "direction_significant_records_expected": 52,
+        "significant_in_published_direction": [
+          26,
+          52
+        ],
+        "significant_opposite": [
+          2,
+          52
+        ],
+        "same_direction_both_significant": [
+          26,
+          28
+        ],
+        "null_kept_null": [
+          35,
+          58
+        ],
+        "direction_auroc": null,
+        "direction_auroc_interval": null,
+        "auroc_significant_records": 0,
+        "effect_years": {
+          "pairs": 0,
+          "papers": 0,
+          "spearman": null,
+          "spearman_interval": null,
+          "median_absolute_difference": null
+        },
+        "bootstrap": {
+          "unit": "paper",
+          "level": 0.95,
+          "balanced_accuracy": {
+            "replicates": 1000,
+            "seed": 20261005
+          },
+          "auroc_and_effect": {
+            "replicates": 2000,
+            "seed": 20261009
+          }
+        }
+      },
+      "strict_json_only_coverage": 3,
+      "json_extraction_record_ids": [
+        "MED-25678027-GSE25395-Horvathv1-1",
+        "MED-25678027-GSE50586-Horvathv1-11",
+        "MED-25678027-GSE50586-Horvathv1-12",
+        "MED-25678027-GSE52588-Horvathv1-10",
+        "MED-25678027-GSE52588-Horvathv1-8",
+        "MED-25678027-GSE52588-Horvathv1-9",
+        "MED-25678027-GSE63347-Horvathv1-2",
+        "MED-25678027-GSE63347-Horvathv1-4",
+        "MED-25678027-GSE63347-Horvathv1-5",
+        "MED-25856389-GSE62867-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-0",
+        "MED-25969563-GSE59457-Horvathv1-2",
+        "MED-25969563-GSE67751-Horvathv1-7",
+        "MED-27511193-GSE27317-Horvathv1-0",
+        "MED-27511193-GSE38873-Horvathv1-1",
+        "MED-27511193-GSE72773-Horvathv1-3",
+        "MED-27511193-GSE72773-Horvathv1-4",
+        "MED-27511193-GSE72777-Horvathv1-5",
+        "MED-27511193-GSE78874-Horvathv1-6",
+        "MED-27511193-GSE78874-Horvathv1-7",
+        "MED-29225347-GSE38873-Horvathv1-0",
+        "MED-29225347-GSE38873-Horvathv1-1",
+        "MED-29225347-GSE38873-Horvathv1-2",
+        "MED-29974462-GSE75008-Horvathv1-1",
+        "MED-30185790-GSE49393-Horvathv1-5",
+        "MED-30575306-GSE69954-Horvathv1-0",
+        "MED-30814520-GSE38873-Horvathv1-3",
+        "MED-31943067-GSE133918-Horvathv1-0",
+        "MED-31943067-GSE133918-Horvathv1-1",
+        "MED-32210226-GSE142439-Horvathv1-0",
+        "MED-32210226-GSE142439-Horvathv2-3",
+        "MED-32582603-GSE85506-Hannum-7",
+        "MED-32582603-GSE85506-Horvathv1-6",
+        "MED-32582603-GSE85506-Horvathv2-8",
+        "MED-32582603-GSE85506-PhenoAge-9",
+        "MED-32660606-GSE142439-Horvathv2-10",
+        "MED-32660606-GSE151617-Horvathv2-7",
+        "MED-32660606-GSE151617-Horvathv2-9",
+        "MED-32930491-GSE100249-Lin-1",
+        "MED-32930491-GSE91069-Hannum-11",
+        "MED-32930491-GSE91069-Lin-5",
+        "MED-32930491-GSE91069-Lin-6",
+        "MED-32930491-GSE91069-PhenoAge-7",
+        "MED-32930491-GSE91069-PhenoAge-8",
+        "MED-32930491-GSE91069-PhenoAge-9",
+        "MED-33530447-GSE152204-Horvathv1-0",
+        "MED-33815458-GSE30601-Horvathv1-0",
+        "MED-35092358-GSE125367-GrimAgeV1-3",
+        "MED-35092358-GSE125367-Hannum-1",
+        "MED-35092358-GSE125367-Horvathv1-0",
+        "MED-35092358-GSE125367-PhenoAge-2",
+        "MED-35354948-GSE162560-Horvathv2-0",
+        "MED-35369101-GSE193836-Horvathv1-0",
+        "MED-35369101-GSE193836-Horvathv1-2",
+        "MED-35369101-GSE193836-Horvathv1-3",
+        "MED-36038613-GSE185973-Horvathv2-0",
+        "MED-36046788-GSE199700-Horvathv1-3",
+        "MED-36046788-GSE199700-Horvathv1-6",
+        "MED-36052758-GSE210245-GrimAgeV1-0",
+        "MED-36052758-GSE210245-GrimAgeV1-5",
+        "MED-36052758-GSE210245-Hannum-2",
+        "MED-36052758-GSE210245-Horvathv1-1",
+        "MED-36052758-GSE210245-Horvathv2-3",
+        "MED-36052758-GSE210245-PhenoAge-4",
+        "MED-36092807-GSE106648-Horvathv1-0",
+        "MED-36092807-GSE166207-Horvathv1-8",
+        "MED-36092807-GSE166207-Horvathv1-9",
+        "MED-36092807-GSE40360-Horvathv1-2",
+        "MED-36092807-GSE40360-Horvathv1-6",
+        "MED-37508584-GSE53740-GrimAgeV1-11",
+        "MED-37508584-GSE53740-GrimAgeV1-12",
+        "MED-37508584-GSE53740-Hannum-0",
+        "MED-37508584-GSE53740-Hannum-1",
+        "MED-37508584-GSE53740-Hannum-4",
+        "MED-37508584-GSE53740-Hannum-5",
+        "MED-37508584-GSE53740-Horvathv1-2",
+        "MED-37508584-GSE53740-Horvathv1-3",
+        "MED-37508584-GSE53740-PhenoAge-10",
+        "MED-38820227-GSE178887-DunedinPACE-5",
+        "MED-38826624-GSE152084-GrimAgeV1-3",
+        "MED-38826624-GSE152084-Horvathv1-0",
+        "MED-38826624-GSE152084-Horvathv2-1",
+        "MED-38826624-GSE152084-PhenoAge-2",
+        "MED-39403983-GSE164056-DunedinPACE-6",
+        "MED-39680552-GSE199700-GrimAgeV1-3",
+        "MED-39680552-GSE199700-Hannum-1",
+        "MED-39680552-GSE199700-Horvathv1-0",
+        "MED-39680552-GSE199700-PhenoAge-2",
+        "MED-39853302-GSE144858-GrimAgeV1-5",
+        "MED-39853302-GSE144858-GrimAgeV2-6",
+        "MED-39853302-GSE144858-Hannum-2",
+        "MED-39853302-GSE144858-Horvathv1-1",
+        "MED-39853302-GSE144858-Horvathv2-4",
+        "MED-39853302-GSE144858-PhenoAge-3",
+        "MED-39980002-GSE119846-Horvathv1-0",
+        "MED-39980002-GSE119846-Horvathv1-1",
+        "MED-39980002-GSE210301-Horvathv1-2",
+        "MED-39980002-GSE210301-Horvathv1-3",
+        "MED-39980002-GSE210301-Horvathv1-4",
+        "MED-39980002-GSE210301-Horvathv1-5",
+        "MED-40589934-GSE176394-DunedinPACE-12",
+        "MED-40589934-GSE176394-DunedinPACE-13",
+        "MED-40589934-GSE176394-DunedinPACE-14",
+        "MED-40589934-GSE176394-DunedinPACE-15",
+        "PMC-PMC9158789-GSE142439-Horvathv1-1",
+        "PMC-PMC9158789-GSE45727-Horvathv1-5",
+        "PMC-PMC9158789-GSE53051-Horvathv1-4"
+      ],
+      "classification_core_recovery": {
+        "rule": "Read only completed top-level JSON prediction and significance fields from the returned prefix. Auxiliary fields may remain unavailable; no field is inferred or completed.",
+        "record_ids": [],
+        "extra_model_calls": 0,
+        "stop_reasons": {},
+        "note": "Added after a returned answer ended during publication metadata, before inspecting its reference label; applied uniformly to the model comparison."
+      },
+      "recognizes_publication_count": 21,
+      "unique_requests": 108,
+      "usage": {
+        "input_tokens": 87536,
+        "output_tokens": 35339,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    },
+    {
+      "model": "claude-haiku-5-5",
+      "label": "Claude Haiku 5.5 without data",
+      "prediction_file": "language_model_claude_haiku_5_5.csv",
+      "score": {
+        "records_in_cohort": 110,
+        "submitted": 110,
+        "scored": 110,
+        "papers": 32,
+        "call_agreement": 0.5636363636363636,
+        "recall": {
+          "lower": [
+            5,
+            16
+          ],
+          "higher": [
+            19,
+            36
+          ],
+          "not significant": [
+            38,
+            58
+          ]
+        },
+        "confusion_matrix": {
+          "rows": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "columns": [
+            "lower",
+            "higher",
+            "not significant"
+          ],
+          "values": [
+            [
+              5,
+              0,
+              10
+            ],
+            [
+              4,
+              19,
+              10
+            ],
+            [
+              7,
+              17,
+              38
+            ]
+          ]
+        },
+        "balanced_accuracy": 0.4984833971902938,
+        "balanced_accuracy_interval": [
+          0.3689406877120349,
+          0.6222279472017517
+        ],
+        "published_significant": 52,
+        "direction_agreement": [
+          31,
+          52
+        ],
+        "direction_significant_records_expected": 52,
+        "significant_in_published_direction": [
+          24,
+          52
+        ],
+        "significant_opposite": [
+          4,
+          52
+        ],
+        "same_direction_both_significant": [
+          24,
+          28
+        ],
+        "null_kept_null": [
+          38,
+          58
+        ],
+        "direction_auroc": null,
+        "direction_auroc_interval": null,
+        "auroc_significant_records": 0,
+        "effect_years": {
+          "pairs": 0,
+          "papers": 0,
+          "spearman": null,
+          "spearman_interval": null,
+          "median_absolute_difference": null
+        },
+        "bootstrap": {
+          "unit": "paper",
+          "level": 0.95,
+          "balanced_accuracy": {
+            "replicates": 1000,
+            "seed": 20261005
+          },
+          "auroc_and_effect": {
+            "replicates": 2000,
+            "seed": 20261009
+          }
+        }
+      },
+      "strict_json_only_coverage": 110,
+      "json_extraction_record_ids": [],
+      "classification_core_recovery": {
+        "rule": "Read only completed top-level JSON prediction and significance fields from the returned prefix. Auxiliary fields may remain unavailable; no field is inferred or completed.",
+        "record_ids": [],
+        "extra_model_calls": 0,
+        "stop_reasons": {},
+        "note": "Added after a returned answer ended during publication metadata, before inspecting its reference label; applied uniformly to the model comparison."
+      },
+      "recognizes_publication_count": 34,
+      "unique_requests": 108,
+      "usage": {
+        "input_tokens": 87536,
+        "output_tokens": 53095,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0
+      }
+    }
+  ],
+  "source_files": {
+    "language_model_claude_fable_5_2.csv": {
+      "sha256": "cb00862f49f346cb57fabf92c6a9adfda04ab536fe8eecfaaee766afbea1326e",
+      "bytes": 14574
+    },
+    "language_model_claude_fable_5_1.csv": {
+      "sha256": "422cdd8248d6068fe5cba0a92b84f4a2c4d317cab4dc8ba09b40e785cddf1779",
+      "bytes": 13060
+    },
+    "language_model_claude_opus_5_5.csv": {
+      "sha256": "a2867d8af6ff967a693800f9cc11b5b6a1f697b89cdfad892857a094ff4e8c78",
+      "bytes": 12712
+    },
+    "language_model_claude_sonnet_5_5.csv": {
+      "sha256": "8b6b48fec0321de4e4faabc833518992109a4da0bdc6894f07c37fdc59c8b68e",
+      "bytes": 9615
+    },
+    "language_model_claude_haiku_5_5.csv": {
+      "sha256": "e4291fd29860dad1d0de5bb5754f45158644ba814e535d944c1d6ad798b9b44a",
+      "bytes": 12184
+    },
+    "data/prompts.jsonl": {
+      "sha256": "892ea827a08fde16b0fc6d9a49db2a82df6135fbc7a3aba65f609561d67db4c2",
+      "bytes": 749386,
+      "mtime_ns": 1794966063886765658
+    },
+    "data/published.jsonl": {
+      "sha256": "96633b2be965c95a96efbd854aa13f3913319be6e089ebb0c566ac2be8dba899",
+      "bytes": 1767365,
+      "mtime_ns": 1794966063891116225
+    },
+    "reference_results/cohorts.json": {
+      "sha256": "8fa0de1754417805def2610d14ef921ad178e1956c9b99c9b70dc758ce40ef18",
+      "bytes": 46701,
+      "mtime_ns": 1794966063899284023
+    },
+    "agingagentbench/metrics.py": {
+      "sha256": "940adf92e0dc10247e63af6ddd1136401af50deab651ab85d16ec320bb4dc528",
+      "bytes": 12872,
+      "mtime_ns": 1794966063832388382
+    }
+  },
+  "sensitivity": {
+    "model": "claude-fable-5-1",
+    "record_ids_with_incomplete_auxiliary_metadata": [
+      "PMC-PMC9158789-GSE142439-Horvathv1-1"
+    ],
+    "reported_classification_score": 0.5247445721583652,
+    "treat_incomplete_metadata_as_abstention": {
+      "scored": 109,
+      "conditional_balanced_accuracy": 0.5108556832694764,
+      "fixed_110_denominator_balanced_accuracy": 0.5039112388250319
+    },
+    "additional_api_calls": 0
+  }
+}
